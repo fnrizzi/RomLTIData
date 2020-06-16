@@ -1,0 +1,45 @@
+Directories Passed: 
+/home/fnrizzi/romAccuracyT4/fom_mesh512x2048_nThreads_36_dt_0.1_T_2000.0_snaps_true_seismo_true_mat_prem_fRank_1_train_0
+/home/fnrizzi/romAccuracyT4/fom_mesh512x2048_nThreads_36_dt_0.1_T_2000.0_snaps_true_seismo_true_mat_prem_fRank_1_train_1
+
+Reading snapshots: /home/fnrizzi/romAccuracyT4/fom_mesh512x2048_nThreads_36_dt_0.1_T_2000.0_snaps_true_seismo_true_mat_prem_fRank_1_train_0/snaps_vp_0
+Using Binary 
+8388608000 bytes read
+Current snapshots size: 1048576 1000
+
+Reading snapshots: /home/fnrizzi/romAccuracyT4/fom_mesh512x2048_nThreads_36_dt_0.1_T_2000.0_snaps_true_seismo_true_mat_prem_fRank_1_train_1/snaps_vp_0
+Using Binary 
+8388608000 bytes read
+Current snapshots size: 1048576 1000
+Final snapshot matrix size: 1048576 2000
+svd:read:vp: 11.6552759590
+Computing SVD method 0
+MinMax(A) -0.0000490089 0.0000470955
+svd_matrix_vp_rank = 1002
+Printing sing values
+
+Printing left-sing vectors to file
+Done with SVD
+----------------
+svd:timevp: 5032.7214922980
+
+Reading snapshots: /home/fnrizzi/romAccuracyT4/fom_mesh512x2048_nThreads_36_dt_0.1_T_2000.0_snaps_true_seismo_true_mat_prem_fRank_1_train_0/snaps_sp_0
+Using Binary 
+16756736000 bytes read
+Current snapshots size: 2094592 1000
+
+Reading snapshots: /home/fnrizzi/romAccuracyT4/fom_mesh512x2048_nThreads_36_dt_0.1_T_2000.0_snaps_true_seismo_true_mat_prem_fRank_1_train_1/snaps_sp_0
+Using Binary 
+16756736000 bytes read
+Current snapshots size: 2094592 1000
+Final snapshot matrix size: 2094592 2000
+svd:read:sp: 34.4337391340
+Computing SVD method 0
+MinMax(A) -2156.8979989752 1675.0158852734
+svd_matrix_sp_rank = 1001
+Printing sing values
+
+Printing left-sing vectors to file
+Done with SVD
+----------------
+svd:timesp: 9307.7280721570

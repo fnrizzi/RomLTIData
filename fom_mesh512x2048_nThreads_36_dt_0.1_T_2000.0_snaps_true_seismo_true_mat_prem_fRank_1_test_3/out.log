@@ -20,7 +20,7 @@ Freq_ = 20
 Locations: 5 10 15 20 25 30 35 40 45 50 55 60 65 70 75 80 85 90 95 100 105 110 115 120 125 130 135 140 145 150 155 160 165 170 175 
 matModelType = prem 
 
-signal  type= ricker depth[km]= 150 angle[deg]= 0 period[sec]= 69 delay[sec]= 90 
+signal  type= ricker depth[km]= 150 angle[deg]= 0 period[sec]= 64.0889 delay[sec]= 90 
 
 enableSampling = false 
 
@@ -128,9 +128,9 @@ Source mapped to GID = 991233 with depth (km) = 152.75342465753388 with angle (r
 centerFreq = 0.032727312485611407
 minPeriod  = 30.555518435546791
 Numerical dispersion criterion along r: OK! 
-drr = 5657.5342465753429, ratio = 22080
+drr = 5657.5342465753429, ratio = 20508.450895314905
 Numerical dispersion criterion along theta: OK! 
-maxArc = 9777.7658993749737, ratio = 22080
+maxArc = 9777.7658993749737, ratio = 20508.450895314905
 CFL: OK! 
 cfl = 0.19239658409449523
 FOM-KOKKOS step = 2000
@@ -144,23 +144,23 @@ FOM-KOKKOS step = 16000
 FOM-KOKKOS step = 18000
 FOM-KOKKOS step = 20000
 
-loopTime = 54.4459147260
-dataCollectionTime = 0.2224645510
+loopTime = 61.1105672940
+dataCollectionTime = 0.1952989760
 flops = 19899907.0000000000
 memMB = 303.7070465088
 flops/bytes = 0.0624879482
-aveBandwidth(GB/s) =   109.57 
-minBandwidth(GB/s) =    62.95 
-maxBandwidth(GB/s) =   113.69 
-aveGFlop =  7.3520 
-minGFlop =  4.2234 
-maxGFlop =  7.6285 
-totTime(se) = 54.1349 
-aveTime(ms) =  2.7067 
-maxTime(ms) =  4.7118 
-minTime(ms) =  2.6086 
+aveBandwidth(GB/s) =    97.53 
+minBandwidth(GB/s) =     9.11 
+maxBandwidth(GB/s) =   105.62 
+aveGFlop =  6.5439 
+minGFlop =  0.6112 
+maxGFlop =  7.0865 
+totTime(se) = 60.8198 
+aveTime(ms) =  3.0410 
+maxTime(ms) = 32.5602 
+minTime(ms) =  2.8081 
 Writing snapshots vp... Done
 Writing snapshots sp... Done
 Writing seismogram ... Done
 
-finalProcessTime = 1.1311551250
+finalProcessTime = 13.1724642400

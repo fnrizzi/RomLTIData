@@ -1,7 +1,0 @@
-reading fom    state /home/fnrizzi/romAccuracyT4/fom_mesh512x2048_nThreads_36_dt_0.1_T_2000.0_snaps_true_seismo_true_mat_prem_fRank_1_test_1/finalFomState_vp_0
-reading approx state /home/fnrizzi/romAccuracyT4/rom_mesh512x2048_nThreads_18_dt_0.1_T_2000.0_snaps_true_mat_prem_fRank_6_nPod_415_415/finalFomState_vp_1
- vp_fom_minmax    = -8.394216289507892e-08 7.937560613197554e-08
- vp_approx_minmax = -8.390157346556588e-08 7.937354850501928e-08
- vp_err_minmax    = -1.1989830016070485e-10 1.6437269289003062e-10
- vp_err_abs_rel_ltwo_norms = 5.628200832781553e-09 0.003038661937326289
- vp_err_abs_rel_linf_norms = 1.6437269289003062e-10 0.001958166042200789

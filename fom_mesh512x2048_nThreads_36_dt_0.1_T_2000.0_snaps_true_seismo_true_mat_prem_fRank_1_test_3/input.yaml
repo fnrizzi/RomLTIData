@@ -59,7 +59,7 @@ source:
     kind: ricker
     depth: 150.0
     angle: 0.0
-    period: 69.0
+    period: 64.08890904785909
     delay: 90.0
 material:
   kind: prem

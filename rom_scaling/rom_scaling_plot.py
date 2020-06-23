@@ -11,8 +11,9 @@ import matplotlib.pyplot as plt
 
 np.set_printoptions(edgeitems=10, linewidth=100000)
 
-# for mrsteam
-peakMemBW = 84 #GB
+# peak BW for mrstem
+# (GB) = 21333.33 * 4 at time of doing these runs
+peakMemBW = 85.
 
 myAlpha = 0.9
 
@@ -68,7 +69,7 @@ def computeMetricValue(lineData, currValueF, nThr, metric, stat):
   #   return lineData[14] * float(4096/currValueF)
 
 #=====================================================================
-def createDicByNumThreads(data, metric, stat):
+def createDataDic(data, metric, stat):
   # create a dictionary where
   # key = num threads
   # value = array with values for each numOfthread (in increasing order)
@@ -170,12 +171,10 @@ def plotBar(dataDic, nThreads, metric, stat):
     ax.tick_params(axis='y', which='major', labelsize=15)
     ax.tick_params(axis='y', which='minor', labelsize=13)
 
-  elif metric =="looptime":
-    ax.set_yscale('log')
-    ax.set_ylabel("LoopTime (sec)", fontsize=18)
-
   elif metric =="itertime":
     ax.set_yscale('log')
+    ax.set_yscale('log')
+    ax.set_ylim([1e-1, 1e4])
     ax.tick_params(axis='y', which='major', labelsize=15)
     ax.tick_params(axis='y', which='minor', labelsize=13)
 
@@ -255,7 +254,7 @@ def plotLines(dataDic, nThreads, metric, stat):
 #=====================================================================
 def main(dataFile, metric, stat):
   data = np.loadtxt(dataFile)
-  dataDic = createDicByNumThreads(data, metric, stat)
+  dataDic = createDataDic(data, metric, stat)
   print(dataDic)
   pp.pprint(dataDic)
 
@@ -267,9 +266,9 @@ def main(dataFile, metric, stat):
 if __name__== "__main__":
 #////////////////////////////////////////////
   parser = ArgumentParser()
-  parser.add_argument("-file", "--file",
-                      dest="dataFile",
-                      help="where to get data from\n")
+  # parser.add_argument("-file", "--file",
+  #                     dest="dataFile",
+  #                     help="where to get data from\n")
 
   parser.add_argument("-metric", "--metric",
                       dest="metric", default="mem",
@@ -280,10 +279,6 @@ if __name__== "__main__":
                       help="ave, min or max\n")
 
   args = parser.parse_args()
-  assert(args.metric in ['mem', 'cpu', 'looptime', 'itertime'])
+  assert(args.metric in ['mem', 'cpu', 'itertime'])
 
-  if (args.metric in ['looptime']):
-    print("for {}, I don't use the stat arg".format(args.metric))
-
-  main(args.dataFile, args.metric, args.stat)
-#////////////////////////////////////////////
+  main('./rom_scaling_final.txt', args.metric, args.stat)

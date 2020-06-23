@@ -14,11 +14,7 @@ import seaborn as sea
 np.set_printoptions(edgeitems=10, linewidth=100000)
 
 targetThreads = [2, 4, 12, 18, 36]
-
-fomIDToDofs = {0: 785152,
-               1: 3143168,
-               2: 12577792,
-               3: 50321408}
+fomIDToDofs   = {0: 785152, 1: 3143168, 2: 12577792, 3: 50321408}
 
 #=====================================================================
 def extractAllFCases(data):
@@ -45,20 +41,19 @@ def extractLoopTime(dataRow):
 
 #=====================================================================
 def findNormalizingValue(data, numDofs, nThr, N):
-  # we want to assess whether using multiple forcing at same time
-  # and using multiple threads is more convenient than using f=1
-
+  # we want to assess when computing multiple forcing at same time
+  # becomes more convenient than using f=1
   # To to this, we want to find a normalization value to use
   # for all cases to highlight speedup.
 
   # The normalizing value is = total time I would need to
-  # complete N forcing samples using ONLY runs with f=1 2-threaded runs.
-  # This means that if I have nThr threads available, the best I can do
-  # with the constraing of using f=1 is to schedule/run nThr/2 parallel runs
-  # each of which using two threads.
-  # in this sceario, how many sets of runs do I need to do?
-  #   I need: N/(nThr/2)  because we do nThr/2 runs with f=1 in parallel
-  # at same time so each set allows me to complete nThr samples.
+  # complete N forcing samples using ONLY individual 2-threaded runs with f=1.
+  # This means that if I have nThr threads available, the best I can do with the
+  # constraint of using f=1 is to do nThr/2 runs going in parallel, each of which uses two threads.
+  # in this sceario, how many sets of runs do I need to do to obtain a total of N samples?
+  #    one set comprises nThr/2 runs, each with f=1, so each set yields nThr/2 forcing samples.
+  #   so to do N samples, I need: N/(nThr/2)
+
   setsOfRuns = float(2.*N/nThr)
 
   for i in range(data.shape[0]):
@@ -70,8 +65,9 @@ def findNormalizingValue(data, numDofs, nThr, N):
     if thisNumDofs==numDofs and thisValF==1 and thisNumThr==2:
       loopTime = extractLoopTime(data[i,:])
 
-      # since we have running in parallel nThr/2 runs each with f=1,
-      # the time to complete one set = time of doing one single run
+      # since we have nThr/2 runs going in parallel each with f=1,
+      # the time to complete the runs in one sets = time to complete one run
+      # so the time to complete all sets is:
       return loopTime * setsOfRuns
   sys.exit("Did not find a normalizing value")
 
@@ -81,12 +77,12 @@ def computeData(dataIn, numDofs, nThr, N):
   # - rows    indexing threads
   # - columns indexing values of f
 
-  # extract from data all unique values of threads and f
-  thCases = targetThreads #extractAllThreadCases(dataIn)
-  fCases  = extractAllFCases(dataIn)
+  thCases = targetThreads
   print(thCases)
+  # extract from data all unique values of f
+  fCases  = extractAllFCases(dataIn)
 
-  # create matrix
+  # create data matrix
   dataOut = np.zeros((len(thCases), len(fCases)))
 
   # find normalizing value for the speedup
@@ -178,9 +174,9 @@ def main(dataFile, fomID, nThr, N):
 if __name__== "__main__":
 #////////////////////////////////////////////
   parser = ArgumentParser()
-  parser.add_argument("-file", "--file",
-                      dest="dataFile",
-                      help="where to get data from\n")
+  # parser.add_argument("-file", "--file",
+  #                     dest="dataFile",
+  #                     help="where to get data from\n")
 
   parser.add_argument("-fom-id", "--fom-id", "-fomid", "--fomid",
                       dest="fomID", default=1, type=int,
@@ -196,11 +192,13 @@ if __name__== "__main__":
 
   args = parser.parse_args()
 
-  # assert that the num of threads available is not smaller than
-  # max value inside the targetThreads list at the top since it would not make sense
+  # assert that the num of threads available is == max value inside
+  # the targetThreads list at the top since it would not make sense
   assert( int(args.nThr) == np.max(targetThreads) )
 
   # we cannot have negative args
   assert( args.numSamp>0 and args.nThr>0 and args.fomID in [0,1,2,3])
-  main(args.dataFile, int(args.fomID), int(args.nThr), int(args.numSamp))
+  dataFile = './fom_scaling_final.txt'
+  main(dataFile, int(args.fomID), int(args.nThr), int(args.numSamp))
+
 #////////////////////////////////////////////

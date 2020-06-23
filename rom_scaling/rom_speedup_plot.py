@@ -193,13 +193,13 @@ def main(dataFile, romSize, nThr, N):
 if __name__== "__main__":
 #////////////////////////////////////////////
   parser = ArgumentParser()
-  parser.add_argument("-file", "--file",
-                      dest="dataFile",
-                      help="where to get data from\n")
+  # parser.add_argument("-file", "--file",
+  #                     dest="dataFile",
+  #                     help="where to get data from\n")
 
   parser.add_argument("-rom-size", "--rom-size", "-romsize", "--romsize",
                       dest="romSize", default=1024, type=int,
-                      help="Rom size to use for calculation\n")
+                      help="Rom size to use, choices: 256, 512, 1024, 2048, 4096\n")
 
   parser.add_argument("-thread-budget", "--thread-budget", "-thrB", "--thrB",
                       dest="nThr", default=36, type=int,
@@ -217,5 +217,6 @@ if __name__== "__main__":
 
   # we cannot have negative args
   assert( args.numSamp>0 and args.nThr>0 and args.romSize>0)
-  main(args.dataFile, int(args.romSize), int(args.nThr), int(args.numSamp))
+  dataFile = './rom_scaling_final.txt'
+  main(dataFile, int(args.romSize), int(args.nThr), int(args.numSamp))
 #////////////////////////////////////////////

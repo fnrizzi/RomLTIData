@@ -11,8 +11,8 @@ import matplotlib.pyplot as plt
 
 np.set_printoptions(edgeitems=10, linewidth=100000)
 
-# for mrsteam
-peakMemBW = 84. #GB
+# peak BW for mrstem (GB) = 21333.33 * 4 at time of doing these runs
+peakMemBW = 85.
 
 myAlpha = .9
 
@@ -50,7 +50,7 @@ def computeMetricValue(lineData, currValueF, metric, stat):
     return lineData[13]
 
 #=====================================================================
-def createDicByNumThreads(data, metric, stat):
+def createDataDic(data, metric, stat):
   # create a dictionary where
   # key = num threads
   # value = array with values for each numOfthread (in increasing order)
@@ -117,7 +117,7 @@ def plotBar(dataDic, meshLabels, nThreads, metric, stat):
     ax.bar(100, 1, width, alpha=myAlpha, color=colors[iF],
            edgecolor='none', zorder=-1, label='f='+str(iF))
 
-  ax.legend(loc="upper right", ncol=5, fontsize=13, frameon=False)
+  ax.legend(loc="upper left", ncol=5, fontsize=13, frameon=False)
 
   # remove the vertical lines of the grid
   ax.xaxis.grid(which="major", color='None', linestyle='-.', linewidth=0, zorder=0)
@@ -140,10 +140,10 @@ def plotBar(dataDic, meshLabels, nThreads, metric, stat):
     ax.tick_params(axis='y', which='minor', labelsize=13)
 
     # plot peak theoretical mem BW
-    ax.plot([min(pos)+width, max(pos)+width*70],
+    ax.plot([min(pos)-0.2, max(pos)+width*70],
             [peakMemBW, peakMemBW], '--k', linewidth=1.2, zorder=7)
-    ax.text((min(pos)+width+max(pos)+width*70)*0.5,
-            peakMemBW+12, 'Theoretical peak memory BW', fontsize=15)
+    ax.text((min(pos)+width+max(pos)+width*75)*0.5,
+            peakMemBW+12, 'Machine\'s theoretical peak', fontsize=15)
 
   elif metric=='cpu':
     ax.set_yscale('log')
@@ -155,6 +155,7 @@ def plotBar(dataDic, meshLabels, nThreads, metric, stat):
 
   elif metric =="itertime":
     ax.set_yscale('log')
+    ax.set_ylim([1e-1, 1e4])
     ax.tick_params(axis='y', which='major', labelsize=15)
     ax.tick_params(axis='y', which='minor', labelsize=13)
     if stat == 'ave': pref = 'Average'
@@ -228,7 +229,7 @@ def plotLines(dataDic, meshLabels, nThreads, metric, stat):
 #=====================================================================
 def main(dataFile, metric, stat):
   data = np.loadtxt(dataFile)
-  dataDic = createDicByNumThreads(data, metric, stat)
+  dataDic = createDataDic(data, metric, stat)
   print(dataDic)
   pp.pprint(dataDic)
 
@@ -238,14 +239,13 @@ def main(dataFile, metric, stat):
   #   plotLines(dataDic, meshLabelsPlot, nThreads, metric, stat)
   #   plt.show()
 
-
 #////////////////////////////////////////////
 if __name__== "__main__":
 #////////////////////////////////////////////
   parser = ArgumentParser()
-  parser.add_argument("-file", "--file",
-                      dest="dataFile",
-                      help="where to get data from\n")
+  # parser.add_argument("-file", "--file",
+  #                     dest="dataFile",
+  #                     help="where to get data from\n")
 
   parser.add_argument("-metric", "--metric",
                       dest="metric", default="mem",
@@ -258,5 +258,6 @@ if __name__== "__main__":
   args = parser.parse_args()
 
   assert(args.metric in ['mem', 'cpu', 'itertime'])
-  main(args.dataFile, args.metric, args.stat)
+  main('./fom_scaling_final.txt', args.metric, args.stat)
+
 #////////////////////////////////////////////

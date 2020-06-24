@@ -281,4 +281,4 @@ if __name__== "__main__":
   args = parser.parse_args()
   assert(args.metric in ['mem', 'cpu', 'itertime'])
 
-  main('./rom_scaling_final.txt', args.metric, args.stat)
+  main('./data/rom_scaling_final.txt', args.metric, args.stat)

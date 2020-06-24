@@ -232,6 +232,6 @@ if __name__== "__main__":
 
   # we cannot have negative args
   assert( args.numSamp>0 and args.nThr>0 and args.romSize>0)
-  dataFile = './rom_scaling_final.txt'
+  dataFile = './data/rom_scaling_final.txt'
   main(dataFile, int(args.romSize), int(args.nThr), int(args.numSamp))
 #////////////////////////////////////////////

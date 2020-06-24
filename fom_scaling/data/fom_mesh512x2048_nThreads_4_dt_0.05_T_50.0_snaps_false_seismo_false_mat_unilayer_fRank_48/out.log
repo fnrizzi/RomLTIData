@@ -1,0 +1,77 @@
+*** Parsing input ***
+
+meshDir = /home/fnrizzi/waveRuns/fomScalingFinal/meshes/mesh512x2048 
+checkDispersion = true 
+timeStep = 0.05 
+finalT = 50 
+numSteps = 1000 
+includeMatPropInJacobian true 
+exploitForcingSparsity true 
+
+enableSnapshotMatrix = false 
+enableSeimogram = false 
+
+matModelType = unilayer 
+rho(c0,c1,c2) = 2500 0 0
+vs(c0,c1,c2)  = 5000 0 0
+
+signal  type= gaussianDeriv depth[km]= 640 angle[deg]= 0 period[sec]= 60 delay[sec]= 210 
+
+enableSampling = true 
+numParams_ = 1 
+paramName_ = signalPeriod 
+values = 60 60.4255 60.8511 61.2766 61.7021 62.1277 62.5532 62.9787 63.4043 63.8298 64.2553 64.6809 65.1064 65.5319 65.9574 66.383 66.8085 67.234 67.6596 68.0851 68.5106 68.9362 69.3617 69.7872 70.2128 70.6383 71.0638 71.4894 71.9149 72.3404 72.766 73.1915 73.617 74.0426 74.4681 74.8936 75.3191 75.7447 76.1702 76.5957 77.0213 77.4468 77.8723 78.2979 78.7234 79.1489 79.5745 80 
+enableRankTwoF_ = true 
+forcingSize_ = 48 
+
+*** Reading meshfile info ***
+
+thetaLeft (deg) = 0
+thetaRight (deg) = 180
+CMB radius (km) = 3480
+Earth surf radius (km) = 6371
+dth [rad] = 0.0015347301678504119
+drr [km] = 5.6575342465753433
+numGptVp = 1048576
+numGptSp = 2094592
+nth = 2048
+nr = 512
+
+*** Compute FOM Jacobians: with mat prop ***
+Reading graph for vp ...Done
+Reading Vp stencil coeffs for vp...Done
+Reading graph for sp ...Done
+minMaxVs = 5000 5000
+jacVp:  nnz = 4189184 nrows = 1048576 ncols = 2094592
+jacSp:  nnz = 4189184 nrows = 2094592 ncols = 1048576
+Doing FOM with sampling of forcing period
+Total number of samples 48
+Target Source coords (depth [km], r [km], th [deg], th [rad]) = 640 5731 0 0
+Source angle cannot be on left edge, mapping to: 0.0015347301678504119
+Source mapped to GID = 815105 with depth (km) = 639.30136986301375 with angle (rad) = 0.0015347301678504119 angle (deg) = 0.087933561309233021
+centerFreq = 0.051136425758767819
+minPeriod  = 19.555531798749946
+Numerical dispersion criterion along r: OK! 
+drr = 5657.5342465753429, ratio = 30000
+Numerical dispersion criterion along theta: OK! 
+maxArc = 9777.7658993749737, ratio = 30000
+CFL: OK! 
+cfl = 0.066197826838132051
+
+loopTime = 179.5074346940
+dataCollectionTime = 0.0017718030
+flops = 955195536.0000000000
+memMB = 7058.1992187500
+flops/bytes = 0.1290620202
+aveBandwidth(GB/s) =    38.40 
+minBandwidth(GB/s) =    37.13 
+maxBandwidth(GB/s) =    40.86 
+aveGFlop =  5.3215 
+minGFlop =  5.1461 
+maxGFlop =  5.6625 
+totTime(se) = 179.4974 
+aveTime(ms) = 179.4974 
+maxTime(ms) = 185.6144 
+minTime(ms) = 168.6882 
+
+finalProcessTime = 0.0000009620

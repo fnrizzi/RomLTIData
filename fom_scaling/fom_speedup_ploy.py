@@ -212,7 +212,7 @@ if __name__== "__main__":
 
   # we cannot have negative args
   assert( args.numSamp>0 and args.nThr>0 and args.fomID in [0,1,2,3])
-  dataFile = './fom_scaling_final.txt'
+  dataFile = './data/fom_scaling_final.txt'
   main(dataFile, int(args.fomID), int(args.nThr), int(args.numSamp))
 
 #////////////////////////////////////////////

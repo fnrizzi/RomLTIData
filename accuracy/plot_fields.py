@@ -112,12 +112,37 @@ if __name__== "__main__":
   th, r = th.reshape((nr,nth)), r.reshape((nr,nth))
 
   Tvals = [65, 51.78003645, 31]
-  dirs = ['fom_mesh512x2048_nThreads_36_dt_0.1_T_2000.0_snaps_true_seismo_true_mat_prem_fRank_1_test_13',
-          'fom_mesh512x2048_nThreads_36_dt_0.1_T_2000.0_snaps_true_seismo_true_mat_prem_fRank_1_test_0',
-          'fom_mesh512x2048_nThreads_36_dt_0.1_T_2000.0_snaps_true_seismo_true_mat_prem_fRank_1_test_10']
 
-  for T,d in zip(Tvals, dirs):
-    print(T)
+  fomFiles = ['./data/fom_mesh512x2048_nThreads_36_dt_0.1_T_2000.0_snaps_true_seismo_true_mat_prem_fRank_1_test_13/finalFomState_vp_0',
+              './data/fom_mesh512x2048_nThreads_36_dt_0.1_T_2000.0_snaps_true_seismo_true_mat_prem_fRank_1_test_0/finalFomState_vp_0',
+              './data/fom_mesh512x2048_nThreads_36_dt_0.1_T_2000.0_snaps_true_seismo_true_mat_prem_fRank_1_test_10/finalFomState_vp_0']
+
+  romFiles = ['./data/rom_mesh512x2048_nThreads_18_dt_0.1_T_2000.0_snaps_true_mat_prem_fRank_14_nPod_415_415/finalFomState_vp_13',
+              './data/rom_mesh512x2048_nThreads_18_dt_0.1_T_2000.0_snaps_true_mat_prem_fRank_14_nPod_415_415/finalFomState_vp_0',
+              './data/rom_mesh512x2048_nThreads_18_dt_0.1_T_2000.0_snaps_true_mat_prem_fRank_14_nPod_415_415/finalFomState_vp_10']
+
+  interpFiles = ['./data/interpolation_n2/linear_test13.txt',
+                 './data/interpolation_n2/linear_test0.txt',
+                 './data/interpolation_n2/linear_test10.txt']
+
+  cm = plt.cm.get_cmap('PuOr') #BrBG_r')
+  for T,fom,rom,interp in zip(Tvals[0:1], fomFiles[0:1], romFiles[0:1], interpFiles[0:1]):
+    print(T,fom,rom)
+    fomState = np.loadtxt(fom, skiprows=1)
+    romState = np.loadtxt(rom, skiprows=1)
+    computeErrors(fomState, romState, "vp")
+    error = fomState-romState
+
+
+    fig1 = plt.figure(0)
+    ax1 = fig1.add_subplot(111, projection='polar')
+    h1=ax1.pcolormesh(th, r, fomState.reshape((nr,nth)), cmap=cm, shading = "flat",
+                      vmin=-8e-10, vmax=8e-10)
+    ax1.set_rlabel_position(260)
+    fig1.colorbar(h1)
+    plt.show()
+
+
 
 
 

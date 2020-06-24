@@ -23,11 +23,11 @@ meshLabelsPlot = [r'0.78M', r'3M', r'12M', r'50M']
 nThreads    = [2, 8, 36]
 
 fSizes      = [1,4,8,32,48]
-colors   = {1:  '#00818a',
+colors   = {1:  '#003f5c',
             4:  '#ffa600',
             8:  '#ef5675',
             32: '#7a5195',
-            48: '#003f5c'}
+            48: '#00818a'}
 
 #=====================================================================
 def computeMetricValue(lineData, currValueF, metric, stat):
@@ -196,7 +196,7 @@ def plotLines(dataDic, meshLabels, nThreads, metric, stat):
     # v is a dic with key=nThreads, values=array with times for all meshes
     thisF = k
 
-    if (thisF in [1,4,36]):
+    if (thisF in [1,8,48]):
       # create vector with times for all meshes
       for iM, M in enumerate(meshSet):
         thisData = np.array([v1[M] for k1,v1 in v.items()])
@@ -206,7 +206,7 @@ def plotLines(dataDic, meshLabels, nThreads, metric, stat):
   # hack for legend
   for iM, M in enumerate(meshSet):
     plt.plot(100, 100, '-', marker=mk[iM], color='k', linewidth=0, markersize=7, label=meshLabelsPlot[M])
-  for iF in [1,4,36]:
+  for iF in [1,8,48]:
     plt.plot(100, 100, '-', marker='*', color=colors[iF], linewidth=1.2, markersize=1, label='f='+str(iF))
 
 
@@ -235,9 +235,9 @@ def main(dataFile, metric, stat):
 
   plotBar(dataDic, meshLabelsPlot, nThreads, metric, stat)
   plt.show()
-  # if (metric=="itertime"):
-  #   plotLines(dataDic, meshLabelsPlot, nThreads, metric, stat)
-  #   plt.show()
+  if (metric=="itertime"):
+    plotLines(dataDic, meshLabelsPlot, nThreads, metric, stat)
+    plt.show()
 
 #////////////////////////////////////////////
 if __name__== "__main__":

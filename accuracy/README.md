@@ -3,9 +3,8 @@ This test is for testing ROM accuracy:
 
 - we consider a 1d parameter, the forcing period T in range (35, 65) (seconds)
 - the ROM pod are computed using only data from T=35, and T=65 
-- we then randomly sample the range and check how accurate the ROM is 
-- we also take two samples outside of the range to check how well ROM 
-does with extrapolation 
+- we randomly sample the range and check how accurate the ROM is 
+- we also take two samples outside of the range to check how well ROM does with extrapolation 
 
 - sampling for the FOM is done using 2 seconds 
 - ricker wavelet for simulatin the source signal

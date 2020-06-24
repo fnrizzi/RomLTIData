@@ -5,6 +5,7 @@ import re, sys, os, time, yaml, copy
 import numpy as np
 from argparse import ArgumentParser
 import shutil, subprocess
+import matplotlib.pyplot as plt
 
 from find_train_points import *
 
@@ -20,7 +21,7 @@ def extractErrors(logFilePath, dof, kind):
     reg = re.compile(r'vp_err_abs_rel_ltwo_norms = .+')
   elif dof == 'vp' and kind == 'linf':
     reg = re.compile(r'vp_err_abs_rel_linf_norms = .+')
-  elif dof == 'sp' and kind == 'l2':
+  if dof == 'sp' and kind == 'l2':
     reg = re.compile(r'sp_err_abs_rel_ltwo_norms = .+')
   elif dof == 'sp' and kind == 'linf':
     reg = re.compile(r'sp_err_abs_rel_linf_norms = .+')
@@ -116,29 +117,105 @@ def parseRomErrors(scenario, workDir, dofName):
       r+=1
   return data
 
+#=========================================
+def findTrainPoints(workDir, scenario):
+  # get all fom train dirs
+  fomDirsFullPath = [workDir+'/'+d for d in os.listdir(workDir) if 'fom' in d and 'train' in d]
+  # sort based on the test ID
+  def func(elem): return int(elem.split('_')[-1])
+  fomDirsFullPath = sorted(fomDirsFullPath,key=func)
+
+  data = np.zeros(len(fomDirsFullPath))
+  for i, idir in enumerate(fomDirsFullPath):
+    ifile = idir + '/input.yaml'
+    inputs = yaml.safe_load(open(ifile))
+    if scenario==2:
+      data[i] = inputs['source']['signal']['period']
+  return data
+
+
+#=========================================
+def doPlot(trainVals, M, dof, scenario, normKind):
+  romSizes = [170, 311, 369, 415, 436] # np.unique(M[:,1])
+  print(romSizes)
+
+  mk = {170:'s', 311:'D', 369:'p', 415:'>', 436:'o'}
+
+  # find all unique test points
+  testPts = np.unique(M[:,0])
+  print(testPts)
+
+  # col indices where to find the errors
+  absL2, relL2 = 2, 3
+  absLInf, relLInf = 4, 5
+
+  if normKind==-1:
+    targetCol = relLInf
+    normStr = 'linf'
+    ylabnrm = '\ell_{\infty}'
+  if normKind==2:
+    targetCol = relL2
+    normStr = 'l2'
+    ylabnrm = '\ell_{2}'
+
+  # extract data from M for a given rom size
+  fig = plt.figure(0)
+  ax = plt.gca()
+  for romS in romSizes:
+    D = M[ M[:,1] == romS]
+    plt.plot(testPts, D[:, targetCol], '-', marker=mk[romS],
+             #markerfacecolor='none',
+             markersize=7, linewidth=1.5, label='p='+str(int(romS)))
+
+  for x in trainVals:
+    ax.annotate('POD train pts', xy=(x, 15),
+                xytext=(trainVals[0], 45), size=16,
+                arrowprops=dict(facecolor='black', shrink=10, headwidth=7, width=0.7, linewidth=0.5),
+                horizontalalignment='center')
+    plt.plot([x, x], [0,15], '--k', linewidth=1.5)
+
+  ax.set_xlim(28, 72)
+  ax.set_ylim(1e-4, 300)
+  ax.legend(loc="upper right", ncol=2, fontsize=12,
+            frameon=False, labelspacing=0.1, handletextpad=0.01)
+
+  ax.set_yscale('log')
+  ax.set_xlabel('Forcing period (sec)', fontsize=16)
+  if dof=='vp':  ylabDof = 'velocity'
+  else: ylabDof = 'stresses'
+
+  ax.set_ylabel(r'E$_{'+ylabnrm+'}$ for ' + ylabDof, fontsize=15)
+
+  ax.set_xticks(np.linspace(30, 70, 9))
+  plt.xticks(fontsize=14)
+  plt.yticks(fontsize=14)
+  ax.set_yticks([10e-5, 10e-4, 10e-3, 10e-2, 10e-1, 10e0, 10e1, 10e2])
+  plt.grid()
+
+  fileName = 'rom_acc_sce_'+str(scenario)+'_errors_'+dof+'_'+normStr+'.pdf'
+  fig.savefig(fileName, format="pdf", bbox_inches='tight', dpi=300)
+  plt.show()
+
 ###############################
 if __name__== "__main__":
 ###############################
   parser = ArgumentParser()
-  # parser.add_argument("-working-dir", "--working-dir", "-wdir", "--wdir",
-  #                     dest="workDir", default="empty",
-  #                     help="Target dir where to work. Must be set.")
-
   parser.add_argument("-scenario", "--scenario",
                       dest="scenario", default=0, type=int,
                       help="Choices: 1 (uncertain velocity), 2 (uncertain forcing period, fixed delay). Must set.")
 
-  #------------------------------
-  # parse all args
+  parser.add_argument("-norm", "--norm",
+                      dest="normKind", default=2, type=int,
+                      help="Choices: -1 (linf-norm), 2 (l2-norm).")
   #------------------------------
   args = parser.parse_args()
-  #assert(args.workDir != "empty")
   assert(args.scenario in [1,2])
-  workDir  = '.' #args.workDir
+  assert(args.normKind in [-1,2])
   scenario = args.scenario
+  nrm = args.normKind
 
   # find the values used for pod training
-  trainVals = findTrainPoints(workDir, scenario)
+  trainVals = findTrainPoints('.', scenario)
   print(trainVals)
 
   # # data is an array where:
@@ -146,7 +223,7 @@ if __name__== "__main__":
   # # col1   : rom size
   # # col2,3 : abs-l2 and rel-l2
   # # col4,5 : abs-linf and rel-linf
-  dataVp = parseRomErrors(scenario, workDir, 'vp')
-  dataSp = parseRomErrors(scenario, workDir, 'sp')
-  np.savetxt('errors_table_vp.txt', dataVp)
-  np.savetxt('errors_table_sp.txt', dataSp)
+  dataVp = np.loadtxt('errors_table_vp.txt');
+  doPlot(trainVals, dataVp, 'vp', scenario, nrm)
+  dataSp = np.loadtxt('errors_table_sp.txt');
+  doPlot(trainVals, dataSp, 'sp', scenario, nrm)

@@ -1,0 +1,80 @@
+*** Parsing input ***
+
+meshDir = /home/fnrizzi/romScaling/june12/meshes/mesh300x1200 
+checkDispersion = true 
+timeStep = 0.1 
+finalT = 400 
+numSteps = 4000 
+includeMatPropInJacobian true 
+exploitForcingSparsity true 
+
+enableSnapshotMatrix = false 
+enableSeimogram = false 
+
+matModelType = prem 
+
+signal  type= gaussianDeriv depth[km]= 640 angle[deg]= 0 period[sec]= 55 delay[sec]= 202.876 
+You did not set the basisfiles so I am using dummy basis
+vpRomSize_ = 64 
+spRomSize_ = 64 
+vpBasisFileName_ = empty 
+spBasisFileName_ = empty
+---------------------------------------------------
+
+enableSampling = true 
+numParams_ = 1 
+paramName_ = signalPeriod 
+values = 65.8169 63.7381 63.555 66.748 67.6253 62.7945 60.6867 64.2024 
+enableRankTwoF_ = true 
+forcingSize_ = 8 
+
+*** Reading meshfile info ***
+
+thetaLeft (deg) = 0
+thetaRight (deg) = 180
+CMB radius (km) = 3480
+Earth surf radius (km) = 6371
+dth [rad] = 0.0026201773591240977
+drr [km] = 9.6688963210702337
+numGptVp = 360000
+numGptSp = 718500
+nth = 1200
+nr = 300
+
+*** Compute FOM Jacobians: with mat prop ***
+Reading graph for vp ...Done
+Reading Vp stencil coeffs for vp...Done
+Reading graph for sp ...Done
+jacVp:  nnz = 1437000 nrows = 360000 ncols = 718500
+jacSp:  nnz = 1437000 nrows = 718500 ncols = 360000
+The computation of the rom jacobians is disabled
+romJac time: 0.0000420030
+Target Source coords (depth [km], r [km], th [deg], th [rad]) = 640.0000000000 5731.0000000000 0.0000000000 0.0000000000
+Source angle cannot be on left edge, mapping to: 0.00262017735912410
+Source mapped to GID = 279601 with depth (km) = 638.14715719063485722 with angle (rad) = 0.00262017735912410 angle (deg) = 0.15012510425354461
+centerFreq = 0.01916953965327214
+minPeriod  = 52.16609360931133210
+Numerical dispersion criterion along r: OK! 
+drr = 9668.89632107023317076, ratio = 19419.74287977449785103
+Numerical dispersion criterion along theta: OK! 
+maxArc = 16693.14995497962445370, ratio = 19419.74287977449785103
+CFL: OK! 
+cfl = 0.11269344961025346
+ROM-KOKKOS-B step = 2000
+ROM-KOKKOS-B step = 4000
+
+loopTime = 0.3802757620
+dataCollectionTime = 0.0064298750
+flops = 133632.0000000000
+memMB = 0.0977783203
+flops/bytes = 1.3033707865
+aveBandwidth(GB/s) =     1.06 
+minBandwidth(GB/s) =     0.18 
+maxBandwidth(GB/s) =     1.17 
+aveGFlop =  1.4799 
+minGFlop =  0.2504 
+maxGFlop =  1.6428 
+totTime(se) =  0.3612 
+aveTime(ms) =  0.0903 
+maxTime(ms) =  0.5336 
+minTime(ms) =  0.0813 

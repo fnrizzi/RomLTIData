@@ -1,0 +1,80 @@
+*** Parsing input ***
+
+meshDir = /home/fnrizzi/romScaling/june12/meshes/mesh300x1200 
+checkDispersion = true 
+timeStep = 0.1 
+finalT = 400 
+numSteps = 4000 
+includeMatPropInJacobian true 
+exploitForcingSparsity true 
+
+enableSnapshotMatrix = false 
+enableSeimogram = false 
+
+matModelType = prem 
+
+signal  type= gaussianDeriv depth[km]= 640 angle[deg]= 0 period[sec]= 55 delay[sec]= 209.605 
+You did not set the basisfiles so I am using dummy basis
+vpRomSize_ = 4096 
+spRomSize_ = 4096 
+vpBasisFileName_ = empty 
+spBasisFileName_ = empty
+---------------------------------------------------
+
+enableSampling = true 
+numParams_ = 1 
+paramName_ = signalPeriod 
+values = 60.4814 63.3151 65.2259 69.1016 68.0833 60.9513 61.0135 62.2045 68.0734 69.8685 63.3702 63.9343 68.0353 61.7473 66.8796 67.5154 61.3077 69.1241 62.4556 65.1092 68.8508 67.7466 64.4307 61.3234 61.9119 62.7523 62.9072 68.386 62.4633 69.3479 61.633 60.3187 67.4368 64.03 63.0709 60.6888 61.4726 64.7499 66.483 64.4257 69.2222 63.7765 65.9281 60.3372 67.9442 69.1829 60.9936 61.5871 69.2774 66.3643 61.9488 62.7423 67.265 63.5965 64.3546 61.6537 62.5202 65.7329 65.7051 65.2202 63.2971 66.6425 68.4253 62.9516 68.1681 63.9259 66.825 68.9554 61.473 66.2576 63.6137 68.9155 65.316 68.9955 60.6354 65.708 65.1487 60.0811 60.2283 66.5462 61.7885 64.1959 61.2661 65.1568 64.0984 68.3471 62.6353 65.1779 67.5736 61.4678 67.0784 65.7945 62.2206 64.1648 61.4157 68.6065 62.6439 62.9548 63.9456 68.382 60.7417 63.9 64.9217 66.0734 64.2592 63.7485 63.6311 64.4147 69.4147 62.7701 63.4195 63.3597 67.3764 62.1662 67.853 60.2368 65.6748 64.0865 64.9081 64.7642 66.9968 63.5696 62.3609 61.9612 68.6508 64.1773 68.5618 62.2298 
+enableRankTwoF_ = true 
+forcingSize_ = 128 
+
+*** Reading meshfile info ***
+
+thetaLeft (deg) = 0
+thetaRight (deg) = 180
+CMB radius (km) = 3480
+Earth surf radius (km) = 6371
+dth [rad] = 0.0026201773591240977
+drr [km] = 9.6688963210702337
+numGptVp = 360000
+numGptSp = 718500
+nth = 1200
+nr = 300
+
+*** Compute FOM Jacobians: with mat prop ***
+Reading graph for vp ...Done
+Reading Vp stencil coeffs for vp...Done
+Reading graph for sp ...Done
+jacVp:  nnz = 1437000 nrows = 360000 ncols = 718500
+jacSp:  nnz = 1437000 nrows = 718500 ncols = 360000
+The computation of the rom jacobians is disabled
+romJac time: 0.0202441630
+Target Source coords (depth [km], r [km], th [deg], th [rad]) = 640.0000000000 5731.0000000000 0.0000000000 0.0000000000
+Source angle cannot be on left edge, mapping to: 0.00262017735912410
+Source mapped to GID = 279601 with depth (km) = 638.14715719063485722 with angle (rad) = 0.00262017735912410 angle (deg) = 0.15012510425354461
+centerFreq = 0.01916953965327214
+minPeriod  = 52.16609360931133210
+Numerical dispersion criterion along r: OK! 
+drr = 9668.89632107023317076, ratio = 19225.96549523696376127
+Numerical dispersion criterion along theta: OK! 
+maxArc = 16693.14995497962445370, ratio = 19225.96549523696376127
+CFL: OK! 
+cfl = 0.11269344961025346
+ROM-KOKKOS-B step = 2000
+ROM-KOKKOS-B step = 4000
+
+loopTime = 64.8834206140
+dataCollectionTime = 0.0085915220
+flops = 8592556032.0000000000
+memMB = 292.0019531250
+flops/bytes = 28.0631684559
+aveBandwidth(GB/s) =    17.59 
+minBandwidth(GB/s) =     4.13 
+maxBandwidth(GB/s) =    18.73 
+aveGFlop = 529.9545 
+minGFlop = 124.3676 
+maxGFlop = 564.3410 
+totTime(se) = 64.8551 
+aveTime(ms) = 16.2138 
+maxTime(ms) = 69.0900 
+minTime(ms) = 15.2258 

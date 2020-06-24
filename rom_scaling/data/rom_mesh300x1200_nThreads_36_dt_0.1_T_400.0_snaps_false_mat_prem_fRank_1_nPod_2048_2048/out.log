@@ -1,0 +1,75 @@
+*** Parsing input ***
+
+meshDir = /home/fnrizzi/romScaling/june12/meshes/mesh300x1200 
+checkDispersion = true 
+timeStep = 0.1 
+finalT = 400 
+numSteps = 4000 
+includeMatPropInJacobian true 
+exploitForcingSparsity true 
+
+enableSnapshotMatrix = false 
+enableSeimogram = false 
+
+matModelType = prem 
+
+signal  type= gaussianDeriv depth[km]= 640 angle[deg]= 0 period[sec]= 55 delay[sec]= 170 
+You did not set the basisfiles so I am using dummy basis
+vpRomSize_ = 2048 
+spRomSize_ = 2048 
+vpBasisFileName_ = empty 
+spBasisFileName_ = empty
+---------------------------------------------------
+
+enableSampling = false 
+
+*** Reading meshfile info ***
+
+thetaLeft (deg) = 0
+thetaRight (deg) = 180
+CMB radius (km) = 3480
+Earth surf radius (km) = 6371
+dth [rad] = 0.0026201773591240977
+drr [km] = 9.6688963210702337
+numGptVp = 360000
+numGptSp = 718500
+nth = 1200
+nr = 300
+
+*** Compute FOM Jacobians: with mat prop ***
+Reading graph for vp ...Done
+Reading Vp stencil coeffs for vp...Done
+Reading graph for sp ...Done
+jacVp:  nnz = 1437000 nrows = 360000 ncols = 718500
+jacSp:  nnz = 1437000 nrows = 718500 ncols = 360000
+The computation of the rom jacobians is disabled
+romJac time: 0.0041566140
+Target Source coords (depth [km], r [km], th [deg], th [rad]) = 640.0000000000 5731.0000000000 0.0000000000 0.0000000000
+Source angle cannot be on left edge, mapping to: 0.00262017735912410
+Source mapped to GID = 279601 with depth (km) = 638.14715719063485722 with angle (rad) = 0.00262017735912410 angle (deg) = 0.15012510425354461
+centerFreq = 0.01916953965327214
+minPeriod  = 52.16609360931133210
+Numerical dispersion criterion along r: OK! 
+drr = 9668.89632107023317076, ratio = 17600.00000000000000000
+Numerical dispersion criterion along theta: OK! 
+maxArc = 16693.14995497962445370, ratio = 17600.00000000000000000
+CFL: OK! 
+cfl = 0.11269344961025346
+ROM-KOKKOS step = 2000
+ROM-KOKKOS step = 4000
+
+loopTime = 2.2817656990
+dataCollectionTime = 0.0065221350
+flops = 16785408.0000000000
+memMB = 64.1406250000
+flops/bytes = 0.2495736906
+aveBandwidth(GB/s) =   110.76 
+minBandwidth(GB/s) =    27.01 
+maxBandwidth(GB/s) =   136.94 
+aveGFlop = 29.6800 
+minGFlop =  7.2371 
+maxGFlop = 36.6975 
+totTime(se) =  2.2622 
+aveTime(ms) =  0.5655 
+maxTime(ms) =  2.3194 
+minTime(ms) =  0.4574 

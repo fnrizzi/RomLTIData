@@ -1,0 +1,44 @@
+general:
+  meshDir: /home/fnrizzi/romScaling/june12/meshes/mesh300x1200
+  dt: 0.1
+  finalTime: 400.0
+  checkNumericalDispersion: true
+  checkCfl: true
+  includeMatPropInJacobian: true
+  exploitForcingSparsity: true
+source:
+  signal:
+    kind: gaussDer
+    depth: 640.0
+    angle: 0.0
+    period: 55.0
+    delay: 209.5206347697581
+material:
+  kind: prem
+sampling:
+  params:
+  - signalPeriod
+  values:
+  - 69.22997060684018
+  - 69.45898170027887
+  - 64.57274448387645
+  - 65.68945391995798
+  - 69.84021158991936
+  - 63.305373043476
+  - 66.21604712616812
+  - 65.70393540532622
+  - 65.50341021593884
+  - 66.63979190178293
+  - 61.229173035333304
+  - 69.31672529100412
+  - 64.09253370111313
+  - 64.2962395215398
+  - 63.537066475749675
+  - 63.99225762324815
+  forcingSize: 16
+rom:
+  velocity:
+    numModes: 2048
+  stress:
+    numModes: 2048
+  disableCompRomJacs: true

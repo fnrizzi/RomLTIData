@@ -1,0 +1,80 @@
+*** Parsing input ***
+
+meshDir = /home/fnrizzi/romScaling/june12/meshes/mesh300x1200 
+checkDispersion = true 
+timeStep = 0.1 
+finalT = 400 
+numSteps = 4000 
+includeMatPropInJacobian true 
+exploitForcingSparsity true 
+
+enableSnapshotMatrix = false 
+enableSeimogram = false 
+
+matModelType = prem 
+
+signal  type= gaussianDeriv depth[km]= 640 angle[deg]= 0 period[sec]= 55 delay[sec]= 209.49 
+You did not set the basisfiles so I am using dummy basis
+vpRomSize_ = 64 
+spRomSize_ = 64 
+vpBasisFileName_ = empty 
+spBasisFileName_ = empty
+---------------------------------------------------
+
+enableSampling = true 
+numParams_ = 1 
+paramName_ = signalPeriod 
+values = 61.7932 61.5274 66.4981 64.6437 67.2896 68.3501 69.8301 68.9981 65.5222 68.2779 64.6348 67.4845 67.568 61.8947 64.6514 64.4094 61.1364 67.314 67.9104 68.7133 64.6648 61.9116 60.9232 69.6056 65.7952 65.3844 66.3536 61.9357 67.7887 67.4929 67.274 60.0721 61.4303 65.4441 68.0425 61.3434 69.4332 68.5125 61.9901 65.6333 63.4844 67.5888 64.8571 64.7842 68.9238 64.1779 64.4362 67.9142 69.5355 67.3145 62.6017 65.0517 63.5586 69.3799 62.263 60.4898 67.0081 68.1503 63.2445 61.767 61.7408 69.2792 62.2645 68.7015 
+enableRankTwoF_ = true 
+forcingSize_ = 64 
+
+*** Reading meshfile info ***
+
+thetaLeft (deg) = 0
+thetaRight (deg) = 180
+CMB radius (km) = 3480
+Earth surf radius (km) = 6371
+dth [rad] = 0.0026201773591240977
+drr [km] = 9.6688963210702337
+numGptVp = 360000
+numGptSp = 718500
+nth = 1200
+nr = 300
+
+*** Compute FOM Jacobians: with mat prop ***
+Reading graph for vp ...Done
+Reading Vp stencil coeffs for vp...Done
+Reading graph for sp ...Done
+jacVp:  nnz = 1437000 nrows = 360000 ncols = 718500
+jacSp:  nnz = 1437000 nrows = 718500 ncols = 360000
+The computation of the rom jacobians is disabled
+romJac time: 0.0001797480
+Target Source coords (depth [km], r [km], th [deg], th [rad]) = 640.0000000000 5731.0000000000 0.0000000000 0.0000000000
+Source angle cannot be on left edge, mapping to: 0.00262017735912410
+Source mapped to GID = 279601 with depth (km) = 638.14715719063485722 with angle (rad) = 0.00262017735912410 angle (deg) = 0.15012510425354461
+centerFreq = 0.01916953965327214
+minPeriod  = 52.16609360931133210
+Numerical dispersion criterion along r: OK! 
+drr = 9668.89632107023317076, ratio = 19223.08467979495253530
+Numerical dispersion criterion along theta: OK! 
+maxArc = 16693.14995497962445370, ratio = 19223.08467979495253530
+CFL: OK! 
+cfl = 0.11269344961025346
+ROM-KOKKOS-B step = 2000
+ROM-KOKKOS-B step = 4000
+
+loopTime = 1.2580939240
+dataCollectionTime = 0.0084912580
+flops = 1069056.0000000000
+memMB = 0.3447265625
+flops/bytes = 2.9575070822
+aveBandwidth(GB/s) =     1.09 
+minBandwidth(GB/s) =     0.10 
+maxBandwidth(GB/s) =     1.20 
+aveGFlop =  3.4689 
+minGFlop =  0.3310 
+maxGFlop =  3.7984 
+totTime(se) =  1.2327 
+aveTime(ms) =  0.3082 
+maxTime(ms) =  3.2301 
+minTime(ms) =  0.2814 

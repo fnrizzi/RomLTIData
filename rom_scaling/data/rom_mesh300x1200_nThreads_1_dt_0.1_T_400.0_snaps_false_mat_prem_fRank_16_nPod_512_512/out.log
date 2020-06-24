@@ -1,0 +1,80 @@
+*** Parsing input ***
+
+meshDir = /home/fnrizzi/romScaling/june12/meshes/mesh300x1200 
+checkDispersion = true 
+timeStep = 0.1 
+finalT = 400 
+numSteps = 4000 
+includeMatPropInJacobian true 
+exploitForcingSparsity true 
+
+enableSnapshotMatrix = false 
+enableSeimogram = false 
+
+matModelType = prem 
+
+signal  type= gaussianDeriv depth[km]= 640 angle[deg]= 0 period[sec]= 55 delay[sec]= 209.521 
+You did not set the basisfiles so I am using dummy basis
+vpRomSize_ = 512 
+spRomSize_ = 512 
+vpBasisFileName_ = empty 
+spBasisFileName_ = empty
+---------------------------------------------------
+
+enableSampling = true 
+numParams_ = 1 
+paramName_ = signalPeriod 
+values = 69.23 69.459 64.5727 65.6895 69.8402 63.3054 66.216 65.7039 65.5034 66.6398 61.2292 69.3167 64.0925 64.2962 63.5371 63.9923 
+enableRankTwoF_ = true 
+forcingSize_ = 16 
+
+*** Reading meshfile info ***
+
+thetaLeft (deg) = 0
+thetaRight (deg) = 180
+CMB radius (km) = 3480
+Earth surf radius (km) = 6371
+dth [rad] = 0.0026201773591240977
+drr [km] = 9.6688963210702337
+numGptVp = 360000
+numGptSp = 718500
+nth = 1200
+nr = 300
+
+*** Compute FOM Jacobians: with mat prop ***
+Reading graph for vp ...Done
+Reading Vp stencil coeffs for vp...Done
+Reading graph for sp ...Done
+jacVp:  nnz = 1437000 nrows = 360000 ncols = 718500
+jacSp:  nnz = 1437000 nrows = 718500 ncols = 360000
+The computation of the rom jacobians is disabled
+romJac time: 0.0014398870
+Target Source coords (depth [km], r [km], th [deg], th [rad]) = 640.0000000000 5731.0000000000 0.0000000000 0.0000000000
+Source angle cannot be on left edge, mapping to: 0.00262017735912410
+Source mapped to GID = 279601 with depth (km) = 638.14715719063485722 with angle (rad) = 0.00262017735912410 angle (deg) = 0.15012510425354461
+centerFreq = 0.01916953965327214
+minPeriod  = 52.16609360931133210
+Numerical dispersion criterion along r: OK! 
+drr = 9668.89632107023317076, ratio = 19593.33537130665717996
+Numerical dispersion criterion along theta: OK! 
+maxArc = 16693.14995497962445370, ratio = 19593.33537130665717996
+CFL: OK! 
+cfl = 0.11269344961025346
+ROM-KOKKOS-B step = 2000
+ROM-KOKKOS-B step = 4000
+
+loopTime = 3.1993730240
+dataCollectionTime = 0.0057086070
+flops = 16818176.0000000000
+memMB = 4.5627441406
+flops/bytes = 3.5152228584
+aveBandwidth(GB/s) =     5.60 
+minBandwidth(GB/s) =     1.95 
+maxBandwidth(GB/s) =     5.65 
+aveGFlop = 21.1412 
+minGFlop =  7.3683 
+maxGFlop = 21.3328 
+totTime(se) =  3.1821 
+aveTime(ms) =  0.7955 
+maxTime(ms) =  2.2825 
+minTime(ms) =  0.7884 

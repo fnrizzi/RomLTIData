@@ -30,7 +30,7 @@ def findTrainPoints(workDir, scenario):
 
 #=========================================
 def doPlot(trainVals, M, dof, scenario, normKind):
-  romSizes = [311, 369, 415, 436] # np.unique(M[:,1])
+  romSizes = [311, 369, 415, 436]
   print(romSizes)
 
   mk = {311:'D', 369:'p', 415:'>', 436:'o'}
@@ -94,11 +94,11 @@ def doPlot(trainVals, M, dof, scenario, normKind):
   ax.set_xticks(np.linspace(30, 70, 9))
   plt.xticks(fontsize=14)
   plt.yticks(fontsize=14)
-  #ax.set_yticks([10e-5, 10e-4, 10e-3, 10e-2, 10e-1])
+  ax.set_yticks(np.linspace(0, 1, 11))
   plt.grid()
 
   fileName = 'rom_acc_sce_'+str(scenario)+'_errors_'+dof+'_'+normStr+'.pdf'
-  fig.savefig(fileName, format="pdf", bbox_inches='tight', dpi=300)
+  fig.savefig('./plots/'+fileName, format="pdf", bbox_inches='tight', dpi=300)
   plt.show()
 
 ###############################
@@ -121,10 +121,9 @@ if __name__== "__main__":
   nrm = args.normKind
 
   # find the values used for pod training
-  trainVals = findTrainPoints('.', scenario)
-  print(trainVals)
+  trainVals = findTrainPoints('./data', scenario)
+  print("trainValues = {}".format(trainVals))
 
-  dataVp = np.loadtxt('rom_errors_table_vp.txt');
-  doPlot(trainVals, dataVp, 'vp', scenario, nrm)
-  dataSp = np.loadtxt('rom_errors_table_sp.txt');
-  doPlot(trainVals, dataSp, 'sp', scenario, nrm)
+  for dof in ['vp', 'sp']:
+    data = np.loadtxt('./parsed_data/rom_errors_table_'+dof+'.txt')
+    doPlot(trainVals, data, dof, scenario, nrm)

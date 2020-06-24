@@ -76,6 +76,7 @@ def parseRomErrors(scenario, workDir, dofName):
 
   # get all rom dirs
   romDirsFullPath = [workDir+'/'+d for d in os.listdir(workDir) if 'rom' in d]
+  print(romDirsFullPath)
   # sort based on the rom size (which is at end of dir name)
   def func(elem): return int(elem.split('_')[-1])
   romDirsFullPath = sorted(romDirsFullPath,key=func)
@@ -134,7 +135,7 @@ if __name__== "__main__":
   args = parser.parse_args()
   #assert(args.workDir != "empty")
   assert(args.scenario in [1,2])
-  workDir  = '.' #args.workDir
+  workDir  = './data'
   scenario = args.scenario
 
   # # data is an array where:
@@ -144,5 +145,5 @@ if __name__== "__main__":
   # # col4,5 : abs-linf and rel-linf
   dataVp = parseRomErrors(scenario, workDir, 'vp')
   dataSp = parseRomErrors(scenario, workDir, 'sp')
-  np.savetxt('rom_errors_table_vp.txt', dataVp)
-  np.savetxt('rom_errors_table_sp.txt', dataSp)
+  np.savetxt('./parsed_data/rom_errors_table_vp.txt', dataVp)
+  np.savetxt('./parsed_data/rom_errors_table_sp.txt', dataSp)

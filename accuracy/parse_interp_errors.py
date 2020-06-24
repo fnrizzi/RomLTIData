@@ -6,8 +6,6 @@ import numpy as np
 from argparse import ArgumentParser
 import shutil, subprocess
 
-from find_train_points import *
-
 np.set_printoptions(linewidth=100)
 
 #=========================================
@@ -103,7 +101,7 @@ if __name__== "__main__":
   args = parser.parse_args()
   assert(args.n == 2)
   assert(args.scenario in [1,2])
-  workDir  = '.'
+  workDir  = './data'
   scenario = args.scenario
 
   # data is an array where:
@@ -114,4 +112,4 @@ if __name__== "__main__":
   for dof in ['vp', 'sp']:
     for kind in ['nn', 'linear']:
       data = parseErrors(scenario, workDir, dof, kind, args.n)
-      np.savetxt('interp_n'+str(args.n)+'_errors_table_'+dof+'_'+kind+'.txt', data)
+      np.savetxt('./parsed_data/interp_n'+str(args.n)+'_errors_table_'+dof+'_'+kind+'.txt', data)

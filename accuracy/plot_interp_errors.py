@@ -59,7 +59,7 @@ def doPlot(trainVals, dataDic, dof, scenario, normKind):
 
   ax.set_xlim(28, 72)
   ax.set_ylim(0., 1)
-  ax.legend(loc="upper left", ncol=1, fontsize=12,
+  ax.legend(loc="upper right", ncol=1, fontsize=12,
             frameon=False, labelspacing=0.1, handletextpad=0.01)
 
   #ax.set_yscale('log')
@@ -71,11 +71,11 @@ def doPlot(trainVals, dataDic, dof, scenario, normKind):
   ax.set_xticks(np.linspace(30, 70, 9))
   plt.xticks(fontsize=14)
   plt.yticks(fontsize=14)
-  #ax.set_yticks([10e-5, 10e-4, 10e-3, 10e-2, 10e-1, 10e0, 10e1, 10e2])
+  ax.set_yticks(np.linspace(0, 1, 11))
   plt.grid()
 
   fileName = 'interp_acc_sce_'+str(scenario)+'_errors_'+dof+'_'+normStr+'.pdf'
-  fig.savefig(fileName, format="pdf", bbox_inches='tight', dpi=300)
+  fig.savefig('./plots/'+fileName, format="pdf", bbox_inches='tight', dpi=300)
   plt.show()
 
 ###############################
@@ -86,13 +86,13 @@ if __name__== "__main__":
                       dest="scenario", default=0, type=int,
                       help="Choices: 1 (uncertain velocity), 2 (uncertain forcing period, fixed delay). Must set.")
 
-  parser.add_argument("-norm", "--norm",
-                      dest="normKind", default=2, type=int,
-                      help="Choices: -1 (linf-norm), 2 (l2-norm).")
-
   parser.add_argument("-n", "--n",
                       dest="n", default=-1, type=int,
                       help="number of train points for interpolation.")
+
+  parser.add_argument("-norm", "--norm",
+                      dest="normKind", default=2, type=int,
+                      help="Choices: -1 (linf-norm), 2 (l2-norm).")
 
   #------------------------------
   args = parser.parse_args()
@@ -104,7 +104,7 @@ if __name__== "__main__":
   trainVals = [35., 65.]
 
   for dof in ['vp', 'sp']:
-    dataNN  = np.loadtxt('interp_n'+str(args.n)+'_errors_table_'+dof+'_nn.txt');
-    dataLin = np.loadtxt('interp_n'+str(args.n)+'_errors_table_'+dof+'_linear.txt');
+    dataNN  = np.loadtxt('./parsed_data/interp_n'+str(args.n)+'_errors_table_'+dof+'_nn.txt');
+    dataLin = np.loadtxt('./parsed_data/interp_n'+str(args.n)+'_errors_table_'+dof+'_linear.txt');
     dataDic = {'Nearest neighbors': dataNN, 'Linear': dataLin}
     doPlot(trainVals, dataDic, dof, scenario, nrm)

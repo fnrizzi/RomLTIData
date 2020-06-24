@@ -137,10 +137,6 @@ if __name__== "__main__":
   workDir  = '.' #args.workDir
   scenario = args.scenario
 
-  # find the values used for pod training
-  trainVals = findTrainPoints(workDir, scenario)
-  print(trainVals)
-
   # # data is an array where:
   # # col0   : testValue
   # # col1   : rom size
@@ -148,5 +144,5 @@ if __name__== "__main__":
   # # col4,5 : abs-linf and rel-linf
   dataVp = parseRomErrors(scenario, workDir, 'vp')
   dataSp = parseRomErrors(scenario, workDir, 'sp')
-  np.savetxt('errors_table_vp.txt', dataVp)
-  np.savetxt('errors_table_sp.txt', dataSp)
+  np.savetxt('rom_errors_table_vp.txt', dataVp)
+  np.savetxt('rom_errors_table_sp.txt', dataSp)

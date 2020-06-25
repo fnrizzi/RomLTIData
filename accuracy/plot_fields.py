@@ -8,60 +8,32 @@ from matplotlib.colors import LogNorm
 import matplotlib.pyplot as plt
 from argparse import ArgumentParser
 from numpy import linalg as la
+from matplotlib.patches import Circle, PathPatch
 
-# we divide by 1000 to use kilometers
-rLim=[2500000./1000, 7000000./1000.]
-earthRad=6371000./1000
-modelThickness=2891000./1000
-# the cmb has a radius = earthRad - modelThickness
-cmbRad=earthRad-modelThickness
+# radius of the earth
+earthRadius = 6371. #km
+# thickness of the mantle
+mantleThickness = 2891. # km
+# the radius of the core-mantle boundary
+cmbRadius = earthRadius - mantleThickness
+
+transition=5701.
+
+def plotTransitionBD(ax):
+  cmbTh = np.linspace(0, 2*np.pi, 100)
+  ax.plot(cmbTh, transition*np.ones(100), c='k', linestyle='--', linewidth=0.25, zorder=2)
 
 def plotCMB(ax):
   # trace the CMB
   cmbTh = np.linspace(0, 2*np.pi, 100)
-  cmbRa = cmbRad*np.ones(100)
-  ax.plot(cmbTh, cmbRa, c='b', linestyle='--')
+  cmbRa = cmbRadius*np.ones(100)
+  ax.plot(cmbTh, cmbRa, c='k', linestyle='-', linewidth=0.5, zorder=2)
 
 def plotEarthSurf(ax):
   # trace the earth surface
   surfTh = np.linspace(0, 2*np.pi, 100)
-  surfRa = earthRad*np.ones(100)
-  ax.plot(surfTh, surfRa, c='b')
-
-#=========================================
-def str2bool(v):
-  if isinstance(v, bool):
-    return v
-  if v.lower() in ('yes', 'true', 't', 'y', '1'):
-    return True
-  elif v.lower() in ('no', 'false', 'f', 'n', '0'):
-    return False
-  else:
-    raise argparse.ArgumentTypeError('Boolean value expected.')
-
-#=========================================
-def loadStates(fomFile, approxFile, dofName):
-  # load states
-  if not os.path.exists(fomFile):
-    print("fom final state {} does not exist".format(fomFile))
-    sys.exit(1)
-
-  if not os.path.exists(approxFile):
-    print("approx final state {} does not exist".format(approxFile))
-    sys.exit(1)
-
-  print("reading fom    state {}".format(fomFile))
-  print("reading approx state {}".format(approxFile))
-
-  # load data (skip first row because it contains the size)
-  fomState              = np.loadtxt(fomFile, skiprows=1)
-  fomStateReconstructed = np.loadtxt(approxFile, skiprows=1)
-  fomNRows = fomState.shape[0]
-  approxNRows = fomStateReconstructed.shape[0]
-  # if things are correct, this should be a single vector and approx/fom match sizes
-  assert( fomNRows == approxNRows )
-
-  return [fomState, fomStateReconstructed]
+  surfRa = earthRadius*np.ones(100)
+  ax.plot(surfTh, surfRa, c='k', linewidth=0.5)
 
 #=========================================
 def computeErrors(fomState, fomStateReconstructed, dofName):
@@ -76,114 +48,86 @@ def computeErrors(fomState, fomStateReconstructed, dofName):
   print(" {}_err_abs_rel_linf_norms = {} {}".format(dofName, errLinfNorm[0], errLinfNorm[1]))
 
 
-def extractMeshSizeTheta(logFilePath, dof):
-  reg = re.compile(r'nth = \d+')
-  file1 = open(logFilePath, 'r')
-  strings = re.search(reg, file1.read())
-  file1.close()
-  assert(strings)
-  return int(strings.group().split()[2])
+#=========================================
+def doPlot(th, r, z, figID, cm, bd, fileName, label, Tvalue=-1):
+  fig1 = plt.figure(figID)
+  ax1 = fig1.add_subplot(111, projection='polar')
 
-def extractMeshSizeRadius(logFilePath, dof):
-  reg = re.compile(r'nr = \d+')
-  file1 = open(logFilePath, 'r')
-  strings = re.search(reg, file1.read())
-  file1.close()
-  assert(strings)
-  return int(strings.group().split()[2])
+  h1=ax1.pcolormesh(th, r, z, cmap=cm, shading = "flat", vmin=bd[0],vmax=bd[1], zorder=1)
+
+  ax1.set_ylim([cmbRadius, earthRadius])
+  ax1.set_yticks([]) #[3480, 5701, 6371])
+  #plt.yticks(fontsize=13)
+
+
+  ax1.set_thetamin(-90)
+  ax1.set_thetamax(90)
+  ax1.set_xticks(np.pi/180. * np.linspace(-90, 90., 7, endpoint=True))
+  ax1.set_xticklabels([r'$\pi$', r'$5\pi/6$', r'$4\pi/6$', r'$\pi/2$', r'$2\pi/6$', r'$\pi/6$', r'$0$'],fontsize=11)
+
+  #ax1.grid(linewidth=0.1)
+  ax1.set_rorigin(-1)
+  plotEarthSurf(ax1)
+  plotCMB(ax1)
+  plotTransitionBD(ax1)
+  fig1.colorbar(h1)
+
+  if label=='fom':
+    plt.text(-5, 0, 'T='+str(Tvalue), horizontalalignment='center', rotation=90,
+             verticalalignment='center', fontsize=16)
+    plt.text(0, 1400, 'FOM', horizontalalignment='center', rotation=90,
+             verticalalignment='center', fontsize=16)
+  elif label=='rom':
+    plt.text(0, 1400, 'ROM', horizontalalignment='center', rotation=90,
+             verticalalignment='center', fontsize=16)
+  elif label=='err':
+    plt.text(0, 1400, 'Error', horizontalalignment='center', rotation=90,
+             verticalalignment='center', fontsize=16)
+
+  plt.tight_layout()
+  fig1.savefig(fileName, format="png",bbox_inches='tight', dpi=300)
+
 
 ###############################
 if __name__== "__main__":
 ###############################
   # plot final velocity data for:
-  # T=65 (reproductive)
-  #   dir = fom_mesh512x2048_nThreads_36_dt_0.1_T_2000.0_snaps_true_seismo_true_mat_prem_fRank_1_test_13
-
   # T=51.78003645 (middle of the sampling range)
-  #   dir = fom_mesh512x2048_nThreads_36_dt_0.1_T_2000.0_snaps_true_seismo_true_mat_prem_fRank_1_test_0
+  # T=69 (extrapolation)
 
-  # T=31 (extrapolation)
-  #   dir = fom_mesh512x2048_nThreads_36_dt_0.1_T_2000.0_snaps_true_seismo_true_mat_prem_fRank_1_test_10
-
-  # load coordinates (which are the same for every case)
+  #load coordinates (which are the same for every case)
   nr, nth = 512, 2048
   cc = np.loadtxt("./data/coords_vp.txt")
-  th, r = -cc[:,0]+np.pi/2., cc[:, 1]
+  th, r = -cc[:,0]+np.pi/2., cc[:, 1]/1000. #m to km
   th, r = th.reshape((nr,nth)), r.reshape((nr,nth))
 
-  Tvals = [65, 51.78003645, 31]
+  Tprint = ['51.78', '69']
+  Tvals  = [51.78003645, 69]
+  fomFiles = ['./data/fom_mesh512x2048_nThreads_36_dt_0.1_T_2000.0_snaps_true_seismo_true_mat_prem_fRank_1_test_0/finalFomState_vp_0',
+              './data/fom_mesh512x2048_nThreads_36_dt_0.1_T_2000.0_snaps_true_seismo_true_mat_prem_fRank_1_test_11/finalFomState_vp_0']
 
-  fomFiles = ['./data/fom_mesh512x2048_nThreads_36_dt_0.1_T_2000.0_snaps_true_seismo_true_mat_prem_fRank_1_test_13/finalFomState_vp_0',
-              './data/fom_mesh512x2048_nThreads_36_dt_0.1_T_2000.0_snaps_true_seismo_true_mat_prem_fRank_1_test_0/finalFomState_vp_0',
-              './data/fom_mesh512x2048_nThreads_36_dt_0.1_T_2000.0_snaps_true_seismo_true_mat_prem_fRank_1_test_10/finalFomState_vp_0']
+  romFiles = ['./data/rom_mesh512x2048_nThreads_18_dt_0.1_T_2000.0_snaps_true_mat_prem_fRank_14_nPod_436_436/finalFomState_vp_0',
+              './data/rom_mesh512x2048_nThreads_18_dt_0.1_T_2000.0_snaps_true_mat_prem_fRank_14_nPod_436_436/finalFomState_vp_11']
 
-  romFiles = ['./data/rom_mesh512x2048_nThreads_18_dt_0.1_T_2000.0_snaps_true_mat_prem_fRank_14_nPod_415_415/finalFomState_vp_13',
-              './data/rom_mesh512x2048_nThreads_18_dt_0.1_T_2000.0_snaps_true_mat_prem_fRank_14_nPod_415_415/finalFomState_vp_0',
-              './data/rom_mesh512x2048_nThreads_18_dt_0.1_T_2000.0_snaps_true_mat_prem_fRank_14_nPod_415_415/finalFomState_vp_10']
-
-  interpFiles = ['./data/interpolation_n2/linear_test13.txt',
-                 './data/interpolation_n2/linear_test0.txt',
-                 './data/interpolation_n2/linear_test10.txt']
-
-  cm = plt.cm.get_cmap('PuOr') #BrBG_r')
-  for T,fom,rom,interp in zip(Tvals[0:1], fomFiles[0:1], romFiles[0:1], interpFiles[0:1]):
+  cm1 = plt.cm.get_cmap('PuOr')
+  cm2 = plt.cm.get_cmap('BrBG_r')
+  cm3 = plt.cm.get_cmap('PiYG')
+  for T,fom,rom in zip(Tprint[1:], fomFiles[1:], romFiles[1:]):
     print(T,fom,rom)
+
+    # fom
     fomState = np.loadtxt(fom, skiprows=1)
+    fileName = 'fom_T_'+str(T)+'.png'
+    doPlot(th, r, fomState.reshape((nr, nth)), 0, cm1, [-3e-10, 3e-10], fileName, 'fom', T)
+
+    # rom
     romState = np.loadtxt(rom, skiprows=1)
-    computeErrors(fomState, romState, "vp")
+    fileName = 'rom_436_T_'+str(T)+'.png'
+    doPlot(th, r, romState.reshape((nr, nth)), 1, cm1, [-3e-10, 3e-10], fileName, 'rom')
+
+    # computeErrors(fomState, romState, "vp")
     error = fomState-romState
+    fileName = 'error_T_'+str(T)+'.png'
+    doPlot(th, r, error.reshape((nr, nth)), 2, cm1, [-3e-10, 3e-10], fileName, 'err')
 
-
-    fig1 = plt.figure(0)
-    ax1 = fig1.add_subplot(111, projection='polar')
-    h1=ax1.pcolormesh(th, r, fomState.reshape((nr,nth)), cmap=cm, shading = "flat",
-                      vmin=-8e-10, vmax=8e-10)
-    ax1.set_rlabel_position(260)
-    fig1.colorbar(h1)
     plt.show()
-
-
-
-
-
-  # [fomState, fomStateReconstructed] = loadStates(args.fomState, args.approxState, "vp")
-  # computeErrors(fomState, fomStateReconstructed, "vp")
-  # error = fomState-fomStateReconstructed
-
-  # # should find from log file inside fom dir the mesh size
-
-  # cc = np.loadtxt("./coords_vp.txt")
-
-  # cm = plt.cm.get_cmap('PuOr') #BrBG_r')
-
-  # fig1 = plt.figure(1)
-  # ax1 = fig1.add_subplot(111, projection='polar')
-  # h1=ax1.pcolormesh(th, r, fomState.reshape((nr,nth)),
-  #                   cmap=cm, shading = "flat",
-  #                   vmin=-8e-10, vmax=8e-10)
-  # ax1.set_rlabel_position(260)
-  # fig1.colorbar(h1)
-
-  # fig2 = plt.figure(2)
-  # ax2 = fig2.add_subplot(111, projection='polar')
-  # h2=ax2.pcolormesh(th, r, fomStateReconstructed.reshape((nr,nth)),
-  #                   cmap=cm, shading = "flat",
-  #                   vmin=-8e-10, vmax=8e-10)
-  # ax2.set_rlabel_position(260)
-  # fig2.colorbar(h2)
-
-  # fig3 = plt.figure(3)
-  # ax3 = fig3.add_subplot(111, projection='polar')
-  # h3=ax3.pcolormesh(th, r, error.reshape((nr,nth)),
-  #                   cmap="binary", shading = "flat",
-  #                   vmin=-8e-10, vmax=8e-10)
-  # ax3.set_rlabel_position(260)
-  # fig3.colorbar(h3)
-
-  # plt.show()
-
-
-  # # com = plt.cm.get_cmap('PuOr') #BrBG_r')
-  # # ax.pcolormesh(th, r, z, cmap=com, shading = "flat",
-  # #               alpha=1, vmin=-8e-10, vmax=8e-10)
-  # # #fig.savefig("snap.png", format="png", bbox_inches='tight', dpi=300)

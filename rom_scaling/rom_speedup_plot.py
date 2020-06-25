@@ -138,7 +138,7 @@ def do2dPlot(dataMatrix, thCases, fCases, romSize, nThr, N):
   ax = sea.heatmap(dataMatrix, annot=True, center=8, annot_kws={"size": 9},
                    fmt="3.2f", linecolor='white', vmin=0, vmax=27,
                    linewidths=.25, mask=mask, cmap=cm,
-                   cbar_kws={'label': 's(f,n)'})
+                   cbar_kws={'label': r'$\hat{s}$(f,n)'})
 
   ax.figure.axes[-1].yaxis.label.set_size(15)
 

@@ -37,7 +37,7 @@ def createRowAndColMappers(thCases, fCases):
 
 #=====================================================================
 def extractLoopTime(dataRow):
-  # the loop time is stored in col 14
+  # the loop time is stored in col
   return dataRow[13]
 
 #=====================================================================

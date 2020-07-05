@@ -23,8 +23,12 @@ def findTrainPoints(workDir, scenario):
   for i, idir in enumerate(fomDirsFullPath):
     ifile = idir + '/input.yaml'
     inputs = yaml.safe_load(open(ifile))
+
+    if scenario==1:
+      data[i] = inputs['material']['layer2']['velocity'][0]
     if scenario==2:
       data[i] = inputs['source']['signal']['period']
+
   return data
 
 
@@ -105,6 +109,10 @@ def doPlot(trainVals, M, dof, scenario, normKind):
 if __name__== "__main__":
 ###############################
   parser = ArgumentParser()
+  parser.add_argument("-wdir", "--wdir",
+                      dest="workDir", default="empty",
+                      help="Target dir such that I can find workDir/parsed_data. Must be set.")
+
   parser.add_argument("-scenario", "--scenario",
                       dest="scenario", default=0, type=int,
                       help="Choices: 1 (uncertain velocity), 2 (uncertain forcing period, fixed delay). Must set.")
@@ -115,15 +123,20 @@ if __name__== "__main__":
 
   #------------------------------
   args = parser.parse_args()
+  assert(args.workDir != "empty")
   assert(args.scenario in [1,2])
   assert(args.normKind in [-1,2])
+  workDir  = args.workDir
   scenario = args.scenario
   nrm = args.normKind
 
+  parsedDataDir = workDir+'/parsed_data'
+  dataDir       = workDir+'/data'
+
   # find the values used for pod training
-  trainVals = findTrainPoints('./data', scenario)
+  trainVals = findTrainPoints(dataDir, scenario)
   print("trainValues = {}".format(trainVals))
 
-  for dof in ['vp', 'sp']:
-    data = np.loadtxt('./parsed_data/rom_errors_table_'+dof+'.txt')
-    doPlot(trainVals, data, dof, scenario, nrm)
+  # for dof in ['vp', 'sp']:
+  #   data = np.loadtxt('./parsed_data/rom_errors_table_'+dof+'.txt')
+  #   doPlot(trainVals, data, dof, scenario, nrm)

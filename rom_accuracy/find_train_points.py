@@ -17,6 +17,8 @@ def findTrainPoints(workDir, scenario):
   for i, idir in enumerate(fomDirsFullPath):
     ifile = idir + '/input.yaml'
     inputs = yaml.safe_load(open(ifile))
-    if scenario==2:
+    if scenario==1:
       data[i] = inputs['source']['signal']['period']
+    if scenario==2:
+      data[i] = inputs['material']['layer2']['velocity'][0]
   return data

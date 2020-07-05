@@ -177,7 +177,7 @@ def plotBar(dataDic, meshLabels, nThreads, metric, stat):
 
   plt.tight_layout()
   fileName = "fom_"+metric+"_"+stat+".png"
-  fig.savefig(fileName, format="png",bbox_inches='tight', dpi=300)
+  fig.savefig('./plots/'+fileName, format="png",bbox_inches='tight', dpi=300)
   plt.show()
 
 

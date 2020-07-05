@@ -203,7 +203,7 @@ def plotBar(dataDic, nThreads, metric, stat):
 
   plt.tight_layout()
   filename = "rom_"+metric+"_"+stat+".png"
-  fig.savefig(filename, format="png", bbox_inches='tight', dpi=300)
+  fig.savefig('./plots/'+filename, format="png", bbox_inches='tight', dpi=300)
 
 #=====================================================================
 def plotLines(dataDic, nThreads, metric, stat):
@@ -248,7 +248,7 @@ def plotLines(dataDic, nThreads, metric, stat):
   ax.tick_params(axis='both', which='major', labelsize=12)
   ax.tick_params(axis='both', which='minor', labelsize=10)
   plt.tight_layout()
-  fig.savefig("rom_"+metric+"_"+stat+"_line.png", format="png", bbox_inches='tight', dpi=300)
+  fig.savefig('./plots/'+"rom_"+metric+"_"+stat+"_line.png", format="png", bbox_inches='tight', dpi=300)
 
 
 #=====================================================================

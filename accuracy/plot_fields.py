@@ -85,7 +85,7 @@ def doPlot(th, r, z, figID, cm, bd, fileName, label, Tvalue=-1):
              verticalalignment='center', fontsize=16)
 
   plt.tight_layout()
-  fig1.savefig(fileName, format="png",bbox_inches='tight', dpi=300)
+  fig1.savefig('./plots/'+fileName, format="png",bbox_inches='tight', dpi=300)
 
 
 ###############################

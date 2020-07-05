@@ -172,7 +172,7 @@ def do2dPlot(dataMatrix, thCases, fCases, romSize, nThr, N):
 
   plt.tight_layout()
   fileName = 'rom_speedup_romSize_'+str(romSize)+'_nth_'+str(nThr)+'_N_'+str(N)+'.png'
-  fig.savefig(fileName, format="png",
+  fig.savefig('./plots/'+fileName, format="png",
               bbox_inches='tight', dpi=300)
 
 #=====================================================================

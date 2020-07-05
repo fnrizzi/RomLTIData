@@ -1,0 +1,65 @@
+general:
+  meshDir: /home/fnrizzi/waveRuns/romAccuracyScenario2/train2/meshes/mesh512x2048
+  dt: 0.1
+  finalTime: 2000
+  checkNumericalDispersion: true
+  checkCfl: true
+  includeMatPropInJacobian: true
+  exploitForcingSparsity: true
+io:
+  snapshotMatrix:
+    binary: true
+    velocity:
+      freq: 5000
+      fileName: snaps_vp
+    stress:
+      freq: 5000
+      fileName: snaps_sp
+  seismogram:
+    binary: true
+    freq: 20
+    receivers:
+    - 5
+    - 10
+    - 15
+    - 20
+    - 25
+    - 30
+    - 35
+    - 40
+    - 45
+    - 50
+    - 55
+    - 60
+    - 65
+    - 70
+    - 75
+    - 80
+    - 85
+    - 90
+    - 95
+    - 100
+    - 105
+    - 110
+    - 115
+    - 120
+    - 125
+    - 130
+    - 135
+    - 140
+    - 145
+    - 150
+    - 155
+    - 160
+    - 165
+    - 170
+    - 175
+source:
+  signal:
+    kind: ricker
+    depth: 150.0
+    angle: 0.0
+    period: 40.0888881205036
+    delay: 90.0
+material:
+  kind: prem

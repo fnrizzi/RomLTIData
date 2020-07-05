@@ -1,0 +1,294 @@
+shwaveRepoDir = /home/fnrizzi/ROM/gitrepos/shwave/codes/mycode/python_scripts
+
+Training dirs:
+/home/fnrizzi/waveRuns/romAccuracyScenario2/train2/fom_mesh512x2048_nThreads_36_dt_0.1_T_2000_snaps_true_seismo_true_mat_prem_fRank_1_train_0
+/home/fnrizzi/waveRuns/romAccuracyScenario2/train2/fom_mesh512x2048_nThreads_36_dt_0.1_T_2000_snaps_true_seismo_true_mat_prem_fRank_1_train_1
+/home/fnrizzi/waveRuns/romAccuracyScenario2/train2/fom_mesh512x2048_nThreads_36_dt_0.1_T_2000_snaps_true_seismo_true_mat_prem_fRank_1_train_2
+
+Test dirs:
+/home/fnrizzi/waveRuns/romAccuracyScenario2/train2/fom_mesh512x2048_nThreads_36_dt_0.1_T_2000_snaps_true_seismo_true_mat_prem_fRank_1_test_0
+/home/fnrizzi/waveRuns/romAccuracyScenario2/train2/fom_mesh512x2048_nThreads_36_dt_0.1_T_2000_snaps_true_seismo_true_mat_prem_fRank_1_test_1
+/home/fnrizzi/waveRuns/romAccuracyScenario2/train2/fom_mesh512x2048_nThreads_36_dt_0.1_T_2000_snaps_true_seismo_true_mat_prem_fRank_1_test_2
+/home/fnrizzi/waveRuns/romAccuracyScenario2/train2/fom_mesh512x2048_nThreads_36_dt_0.1_T_2000_snaps_true_seismo_true_mat_prem_fRank_1_test_3
+/home/fnrizzi/waveRuns/romAccuracyScenario2/train2/fom_mesh512x2048_nThreads_36_dt_0.1_T_2000_snaps_true_seismo_true_mat_prem_fRank_1_test_4
+/home/fnrizzi/waveRuns/romAccuracyScenario2/train2/fom_mesh512x2048_nThreads_36_dt_0.1_T_2000_snaps_true_seismo_true_mat_prem_fRank_1_test_5
+/home/fnrizzi/waveRuns/romAccuracyScenario2/train2/fom_mesh512x2048_nThreads_36_dt_0.1_T_2000_snaps_true_seismo_true_mat_prem_fRank_1_test_6
+/home/fnrizzi/waveRuns/romAccuracyScenario2/train2/fom_mesh512x2048_nThreads_36_dt_0.1_T_2000_snaps_true_seismo_true_mat_prem_fRank_1_test_7
+/home/fnrizzi/waveRuns/romAccuracyScenario2/train2/fom_mesh512x2048_nThreads_36_dt_0.1_T_2000_snaps_true_seismo_true_mat_prem_fRank_1_test_8
+/home/fnrizzi/waveRuns/romAccuracyScenario2/train2/fom_mesh512x2048_nThreads_36_dt_0.1_T_2000_snaps_true_seismo_true_mat_prem_fRank_1_test_9
+/home/fnrizzi/waveRuns/romAccuracyScenario2/train2/fom_mesh512x2048_nThreads_36_dt_0.1_T_2000_snaps_true_seismo_true_mat_prem_fRank_1_test_10
+/home/fnrizzi/waveRuns/romAccuracyScenario2/train2/fom_mesh512x2048_nThreads_36_dt_0.1_T_2000_snaps_true_seismo_true_mat_prem_fRank_1_test_11
+/home/fnrizzi/waveRuns/romAccuracyScenario2/train2/fom_mesh512x2048_nThreads_36_dt_0.1_T_2000_snaps_true_seismo_true_mat_prem_fRank_1_test_12
+/home/fnrizzi/waveRuns/romAccuracyScenario2/train2/fom_mesh512x2048_nThreads_36_dt_0.1_T_2000_snaps_true_seismo_true_mat_prem_fRank_1_test_13
+
+Training points [35.         65.         45.10421777]
+
+Test points [51.78003645 58.80395329 58.83554562 64.08890905 46.17785622 40.08888812
+ 45.55167583 43.35243551 40.70883774 63.25453819 31.         69.
+ 35.         65.        ]
+Reading /home/fnrizzi/waveRuns/romAccuracyScenario2/train2/fom_mesh512x2048_nThreads_36_dt_0.1_T_2000_snaps_true_seismo_true_mat_prem_fRank_1_train_0/state_timestep_20000_vp
+Reading /home/fnrizzi/waveRuns/romAccuracyScenario2/train2/fom_mesh512x2048_nThreads_36_dt_0.1_T_2000_snaps_true_seismo_true_mat_prem_fRank_1_train_1/state_timestep_20000_vp
+Reading /home/fnrizzi/waveRuns/romAccuracyScenario2/train2/fom_mesh512x2048_nThreads_36_dt_0.1_T_2000_snaps_true_seismo_true_mat_prem_fRank_1_train_2/state_timestep_20000_vp
+1048576
+
+Interpolating
+25.0 % done
+50.0 % done
+75.0 % done
+99.99990463256836 % done
+
+Saving interpolation results in /home/fnrizzi/waveRuns/romAccuracyScenario2/train2/interpolation_n3
+
+Reading test data
+Reading /home/fnrizzi/waveRuns/romAccuracyScenario2/train2/fom_mesh512x2048_nThreads_36_dt_0.1_T_2000_snaps_true_seismo_true_mat_prem_fRank_1_test_0/state_timestep_20000_vp
+Reading /home/fnrizzi/waveRuns/romAccuracyScenario2/train2/fom_mesh512x2048_nThreads_36_dt_0.1_T_2000_snaps_true_seismo_true_mat_prem_fRank_1_test_1/state_timestep_20000_vp
+Reading /home/fnrizzi/waveRuns/romAccuracyScenario2/train2/fom_mesh512x2048_nThreads_36_dt_0.1_T_2000_snaps_true_seismo_true_mat_prem_fRank_1_test_2/state_timestep_20000_vp
+Reading /home/fnrizzi/waveRuns/romAccuracyScenario2/train2/fom_mesh512x2048_nThreads_36_dt_0.1_T_2000_snaps_true_seismo_true_mat_prem_fRank_1_test_3/state_timestep_20000_vp
+Reading /home/fnrizzi/waveRuns/romAccuracyScenario2/train2/fom_mesh512x2048_nThreads_36_dt_0.1_T_2000_snaps_true_seismo_true_mat_prem_fRank_1_test_4/state_timestep_20000_vp
+Reading /home/fnrizzi/waveRuns/romAccuracyScenario2/train2/fom_mesh512x2048_nThreads_36_dt_0.1_T_2000_snaps_true_seismo_true_mat_prem_fRank_1_test_5/state_timestep_20000_vp
+Reading /home/fnrizzi/waveRuns/romAccuracyScenario2/train2/fom_mesh512x2048_nThreads_36_dt_0.1_T_2000_snaps_true_seismo_true_mat_prem_fRank_1_test_6/state_timestep_20000_vp
+Reading /home/fnrizzi/waveRuns/romAccuracyScenario2/train2/fom_mesh512x2048_nThreads_36_dt_0.1_T_2000_snaps_true_seismo_true_mat_prem_fRank_1_test_7/state_timestep_20000_vp
+Reading /home/fnrizzi/waveRuns/romAccuracyScenario2/train2/fom_mesh512x2048_nThreads_36_dt_0.1_T_2000_snaps_true_seismo_true_mat_prem_fRank_1_test_8/state_timestep_20000_vp
+Reading /home/fnrizzi/waveRuns/romAccuracyScenario2/train2/fom_mesh512x2048_nThreads_36_dt_0.1_T_2000_snaps_true_seismo_true_mat_prem_fRank_1_test_9/state_timestep_20000_vp
+Reading /home/fnrizzi/waveRuns/romAccuracyScenario2/train2/fom_mesh512x2048_nThreads_36_dt_0.1_T_2000_snaps_true_seismo_true_mat_prem_fRank_1_test_10/state_timestep_20000_vp
+Reading /home/fnrizzi/waveRuns/romAccuracyScenario2/train2/fom_mesh512x2048_nThreads_36_dt_0.1_T_2000_snaps_true_seismo_true_mat_prem_fRank_1_test_11/state_timestep_20000_vp
+Reading /home/fnrizzi/waveRuns/romAccuracyScenario2/train2/fom_mesh512x2048_nThreads_36_dt_0.1_T_2000_snaps_true_seismo_true_mat_prem_fRank_1_test_12/state_timestep_20000_vp
+Reading /home/fnrizzi/waveRuns/romAccuracyScenario2/train2/fom_mesh512x2048_nThreads_36_dt_0.1_T_2000_snaps_true_seismo_true_mat_prem_fRank_1_test_13/state_timestep_20000_vp
+
+
+nn_test0_vp_fom_minmax = -6.211123254338066e-08 5.62863979675722e-08
+nn_test0_vp_rom_minmax = -8.825884954666109e-08 8.447728275773274e-08
+nn_test0_vp_err_minmax = -2.909396015509996e-08 2.703952042321985e-08
+nn_test0_vp_err_abs_rel_ltwo_norms = 6.124298918467785e-07 0.3923682238776565
+nn_test0_vp_err_abs_rel_linf_norms = 2.909396015509996e-08 0.4684170473477518
+linear_test0_vp_fom_minmax = -6.211123254338066e-08 5.62863979675722e-08
+linear_test0_vp_rom_minmax = -6.741062986019027e-08 6.368856178625662e-08
+linear_test0_vp_err_minmax = -9.411397812469078e-09 1.0499720242226817e-08
+linear_test0_vp_err_abs_rel_ltwo_norms = 2.4140660539382337e-07 0.15466305980767914
+linear_test0_vp_err_abs_rel_linf_norms = 1.0499720242226817e-08 0.1690470437033019
+quadratic_test0_vp_fom_minmax = -6.211123254338066e-08 5.62863979675722e-08
+quadratic_test0_vp_rom_minmax = -6.749252168196138e-08 5.937055868744208e-08
+quadratic_test0_vp_err_minmax = -9.11509843888237e-09 8.17059811964913e-09
+quadratic_test0_vp_err_abs_rel_ltwo_norms = 2.1773216494419167e-07 0.1394954491567553
+quadratic_test0_vp_err_abs_rel_linf_norms = 9.11509843888237e-09 0.14675442855712234
+
+
+nn_test1_vp_fom_minmax = -4.797190215602297e-08 3.7522259867295666e-08
+nn_test1_vp_rom_minmax = -3.959188791929077e-08 2.947016804189463e-08
+nn_test1_vp_err_minmax = -1.3999585340293974e-08 1.2084818875954927e-08
+nn_test1_vp_err_abs_rel_ltwo_norms = 3.096516271357694e-07 0.2402516633916636
+nn_test1_vp_err_abs_rel_linf_norms = 1.3999585340293974e-08 0.291828856290959
+linear_test1_vp_fom_minmax = -4.797190215602297e-08 3.7522259867295666e-08
+linear_test1_vp_rom_minmax = -4.833098520445068e-08 4.3357105071120936e-08
+linear_test1_vp_err_minmax = -7.65831727592664e-09 8.660766771834435e-09
+linear_test1_vp_err_abs_rel_ltwo_norms = 1.9846674611923797e-07 0.15398583990702347
+linear_test1_vp_err_abs_rel_linf_norms = 8.660766771834435e-09 0.18053832311394094
+quadratic_test1_vp_fom_minmax = -4.797190215602297e-08 3.7522259867295666e-08
+quadratic_test1_vp_rom_minmax = -5.1770331587087816e-08 4.207359696695096e-08
+quadratic_test1_vp_err_minmax = -1.0507311728923195e-08 9.920102109770978e-09
+quadratic_test1_vp_err_abs_rel_ltwo_norms = 2.5006503041592863e-07 0.19401977657676525
+quadratic_test1_vp_err_abs_rel_linf_norms = 1.0507311728923195e-08 0.2190305419774559
+
+
+nn_test2_vp_fom_minmax = -4.792533511328501e-08 3.748258399512784e-08
+nn_test2_vp_rom_minmax = -3.959188791929077e-08 2.947016804189463e-08
+nn_test2_vp_err_minmax = -1.3915815908338321e-08 1.2020082477403318e-08
+nn_test2_vp_err_abs_rel_ltwo_norms = 3.0788249233664177e-07 0.23907356373706565
+nn_test2_vp_err_abs_rel_linf_norms = 1.3915815908338321e-08 0.2903644987655146
+linear_test2_vp_fom_minmax = -4.792533511328501e-08 3.748258399512784e-08
+linear_test2_vp_rom_minmax = -4.828642639341177e-08 4.3268645807998934e-08
+linear_test2_vp_err_minmax = -7.634489448119096e-09 8.630511413489016e-09
+linear_test2_vp_err_abs_rel_ltwo_norms = 1.977727144424949e-07 0.15357231680462502
+linear_test2_vp_err_abs_rel_linf_norms = 8.630511413489016e-09 0.18008244268064844
+quadratic_test2_vp_fom_minmax = -4.792533511328501e-08 3.748258399512784e-08
+quadratic_test2_vp_rom_minmax = -5.171609672149253e-08 4.199442393134543e-08
+quadratic_test2_vp_err_minmax = -1.0483352677423002e-08 9.900519314706564e-09
+quadratic_test2_vp_err_abs_rel_ltwo_norms = 2.495079654520903e-07 0.19374521113137264
+quadratic_test2_vp_err_abs_rel_linf_norms = 1.0483352677423002e-08 0.2187434402418397
+
+
+nn_test3_vp_fom_minmax = -4.0715528577268895e-08 3.066340105088159e-08
+nn_test3_vp_rom_minmax = -3.959188791929077e-08 2.947016804189463e-08
+nn_test3_vp_err_minmax = -1.7724104975644703e-09 1.6619536081762043e-09
+nn_test3_vp_err_abs_rel_ltwo_norms = 4.1107978749038944e-08 0.03636420804180566
+nn_test3_vp_err_abs_rel_linf_norms = 1.7724104975644703e-09 0.04353156054945559
+linear_test3_vp_fom_minmax = -4.0715528577268895e-08 3.066340105088159e-08
+linear_test3_vp_rom_minmax = -4.0876918977790664e-08 3.0363367346655116e-08
+linear_test3_vp_err_minmax = -1.4688597073559763e-09 1.565436269457166e-09
+linear_test3_vp_err_abs_rel_ltwo_norms = 3.6070140705996465e-08 0.03190772547435754
+linear_test3_vp_err_abs_rel_linf_norms = 1.565436269457166e-09 0.03844813819588074
+quadratic_test3_vp_fom_minmax = -4.0715528577268895e-08 3.066340105088159e-08
+quadratic_test3_vp_rom_minmax = -4.155561632426149e-08 3.124937964399876e-08
+quadratic_test3_vp_err_minmax = -2.285472786734285e-09 2.2615152511104064e-09
+quadratic_test3_vp_err_abs_rel_ltwo_norms = 5.514517234069481e-08 0.0487815402391959
+quadratic_test3_vp_err_abs_rel_linf_norms = 2.285472786734285e-09 0.0561327057905431
+
+
+nn_test4_vp_fom_minmax = -8.389318122707831e-08 7.931851793649922e-08
+nn_test4_vp_rom_minmax = -8.825884954666109e-08 8.447728275773274e-08
+nn_test4_vp_err_minmax = -5.187329033946785e-09 5.044994918646745e-09
+nn_test4_vp_err_abs_rel_ltwo_norms = 1.1457257205640403e-07 0.06188168156523342
+nn_test4_vp_err_abs_rel_linf_norms = 5.187329033946785e-09 0.06183254655591084
+linear_test4_vp_fom_minmax = -8.389318122707831e-08 7.931851793649922e-08
+linear_test4_vp_rom_minmax = -8.490593490480817e-08 8.113295903316744e-08
+linear_test4_vp_err_minmax = -2.5115846340508547e-09 2.9545024570262343e-09
+linear_test4_vp_err_abs_rel_ltwo_norms = 6.27769737346687e-08 0.033906410832475094
+linear_test4_vp_err_abs_rel_linf_norms = 2.9545024570262343e-09 0.035217432618619135
+quadratic_test4_vp_fom_minmax = -8.389318122707831e-08 7.931851793649922e-08
+quadratic_test4_vp_rom_minmax = -8.489975992376086e-08 8.010187945196183e-08
+quadratic_test4_vp_err_minmax = -1.5440642774433334e-09 1.31023196193594e-09
+quadratic_test4_vp_err_abs_rel_ltwo_norms = 3.836875719622081e-08 0.02072331250189108
+quadratic_test4_vp_err_abs_rel_linf_norms = 1.5440642774433334e-09 0.018405122500527536
+
+
+nn_test5_vp_fom_minmax = -1.0764616464143212e-07 1.0947607022853834e-07
+nn_test5_vp_rom_minmax = -8.825884954666109e-08 8.447728275773274e-08
+nn_test5_vp_err_minmax = -2.722813239561959e-08 2.5318903674710204e-08
+nn_test5_vp_err_abs_rel_ltwo_norms = 6.355462344785675e-07 0.27815426379933006
+nn_test5_vp_err_abs_rel_linf_norms = 2.722813239561959e-08 0.2487130962846868
+linear_test5_vp_fom_minmax = -1.0764616464143212e-07 1.0947607022853834e-07
+linear_test5_vp_rom_minmax = -1.0410954796394856e-07 1.07776652407719e-07
+linear_test5_vp_err_minmax = -8.043351936112055e-09 7.941768367393928e-09
+linear_test5_vp_err_abs_rel_ltwo_norms = 2.0007118906433294e-07 0.08756350251576041
+linear_test5_vp_err_abs_rel_linf_norms = 8.043351936112055e-09 0.07347132500573907
+quadratic_test5_vp_fom_minmax = -1.0764616464143212e-07 1.0947607022853834e-07
+quadratic_test5_vp_rom_minmax = -1.040511546775891e-07 1.0647442320024759e-07
+quadratic_test5_vp_err_minmax = -4.216544313756635e-09 4.5483026728607245e-09
+quadratic_test5_vp_err_abs_rel_ltwo_norms = 1.267372744754636e-07 0.0554680546673037
+quadratic_test5_vp_err_abs_rel_linf_norms = 4.5483026728607245e-09 0.041546090057542714
+
+
+nn_test6_vp_fom_minmax = -8.643974753651675e-08 8.230998906129439e-08
+nn_test6_vp_rom_minmax = -8.825884954666109e-08 8.447728275773274e-08
+nn_test6_vp_err_minmax = -2.1802004302249295e-09 2.133388814035556e-09
+nn_test6_vp_err_abs_rel_ltwo_norms = 4.8583998918477966e-08 0.025713159803792487
+nn_test6_vp_err_abs_rel_linf_norms = 2.1802004302249295e-09 0.025222198032263998
+linear_test6_vp_fom_minmax = -8.643974753651675e-08 8.230998906129439e-08
+linear_test6_vp_rom_minmax = -8.686146231068677e-08 8.308347594042257e-08
+linear_test6_vp_err_minmax = -1.1122165792666566e-09 1.2997706081788903e-09
+linear_test6_vp_err_abs_rel_ltwo_norms = 2.7421519001240984e-08 0.014512883168072708
+linear_test6_vp_err_abs_rel_linf_norms = 1.2997706081788903e-09 0.015036723789941635
+quadratic_test6_vp_fom_minmax = -8.643974753651675e-08 8.230998906129439e-08
+quadratic_test6_vp_rom_minmax = -8.685880315967188e-08 8.263945898007957e-08
+quadratic_test6_vp_err_minmax = -6.332304637270536e-10 5.412930356417074e-10
+quadratic_test6_vp_err_abs_rel_ltwo_norms = 1.5854990530365573e-08 0.008391279315623662
+quadratic_test6_vp_err_abs_rel_linf_norms = 6.332304637270536e-10 0.007325686177641176
+
+
+nn_test7_vp_fom_minmax = -9.530837765569947e-08 9.31448076279754e-08
+nn_test7_vp_rom_minmax = -8.825884954666109e-08 8.447728275773274e-08
+nn_test7_vp_err_minmax = -8.788285599945417e-09 8.738290846801828e-09
+nn_test7_vp_err_abs_rel_ltwo_norms = 2.022586791965752e-07 0.09945255855730474
+nn_test7_vp_err_abs_rel_linf_norms = 8.788285599945417e-09 0.09220895178483687
+linear_test7_vp_fom_minmax = -9.530837765569947e-08 9.31448076279754e-08
+linear_test7_vp_rom_minmax = -9.37456292181116e-08 9.26154162865719e-08
+linear_test7_vp_err_minmax = -4.452585466380808e-09 4.183714600717107e-09
+linear_test7_vp_err_abs_rel_ltwo_norms = 1.0404072950496062e-07 0.05115783799507776
+linear_test7_vp_err_abs_rel_linf_norms = 4.452585466380808e-09 0.04671767137266492
+quadratic_test7_vp_fom_minmax = -9.530837765569947e-08 9.31448076279754e-08
+quadratic_test7_vp_rom_minmax = -9.37411582482493e-08 9.186886731777539e-08
+quadratic_test7_vp_err_minmax = -1.9733560404489565e-09 2.2382903233586324e-09
+quadratic_test7_vp_err_abs_rel_ltwo_norms = 5.794348045883261e-08 0.028491372564266555
+quadratic_test7_vp_err_abs_rel_linf_norms = 2.2382903233586324e-09 0.023484717486687616
+
+
+nn_test8_vp_fom_minmax = -1.0545110907453144e-07 1.0641232331090344e-07
+nn_test8_vp_rom_minmax = -8.825884954666109e-08 8.447728275773274e-08
+nn_test8_vp_err_minmax = -2.3554903023402852e-08 2.219753744060817e-08
+nn_test8_vp_err_abs_rel_ltwo_norms = 5.471269050063016e-07 0.24499133675785092
+nn_test8_vp_err_abs_rel_linf_norms = 2.3554903023402852e-08 0.22135503004274057
+linear_test8_vp_fom_minmax = -1.0545110907453144e-07 1.0641232331090344e-07
+linear_test8_vp_rom_minmax = -1.0213447314411591e-07 1.0489659540211841e-07
+linear_test8_vp_err_minmax = -7.871373138764512e-09 7.69814978782703e-09
+linear_test8_vp_err_abs_rel_ltwo_norms = 1.9307038152186878e-07 0.0864526500608595
+linear_test8_vp_err_abs_rel_linf_norms = 7.871373138764512e-09 0.07397050354559809
+quadratic_test8_vp_fom_minmax = -1.0545110907453144e-07 1.0641232331090344e-07
+quadratic_test8_vp_rom_minmax = -1.0207706352555837e-07 1.0361630297919787e-07
+quadratic_test8_vp_err_minmax = -4.003602589207015e-09 4.361848934471233e-09
+quadratic_test8_vp_err_abs_rel_ltwo_norms = 1.1953934210356263e-07 0.05352707561834956
+quadratic_test8_vp_err_abs_rel_linf_norms = 4.361848934471233e-09 0.04099007331817461
+
+
+nn_test9_vp_fom_minmax = -4.178010993194785e-08 3.1759270330385817e-08
+nn_test9_vp_rom_minmax = -3.959188791929077e-08 2.947016804189463e-08
+nn_test9_vp_err_minmax = -3.473028817873884e-09 3.2264783643051305e-09
+nn_test9_vp_err_abs_rel_ltwo_norms = 8.002356841959548e-08 0.06938279562208804
+nn_test9_vp_err_abs_rel_linf_norms = 3.473028817873884e-09 0.08312636858856552
+linear_test9_vp_fom_minmax = -4.178010993194785e-08 3.1759270330385817e-08
+linear_test9_vp_rom_minmax = -4.2053741618738074e-08 3.118135315156452e-08
+linear_test9_vp_err_minmax = -2.7189429053823346e-09 2.9232771322111076e-09
+linear_test9_vp_err_abs_rel_ltwo_norms = 6.725235357098222e-08 0.05830977542082783
+linear_test9_vp_err_abs_rel_linf_norms = 2.9232771322111076e-09 0.06996815319472809
+quadratic_test9_vp_fom_minmax = -4.178010993194785e-08 3.1759270330385817e-08
+quadratic_test9_vp_rom_minmax = -4.3321021999766386e-08 3.280416856153646e-08
+quadratic_test9_vp_err_minmax = -4.153854300696291e-09 4.082239482048803e-09
+quadratic_test9_vp_err_abs_rel_ltwo_norms = 9.995676641705357e-08 0.08666546659097711
+quadratic_test9_vp_err_abs_rel_linf_norms = 4.153854300696291e-09 0.09942181357258656
+
+
+nn_test10_vp_fom_minmax = -1.240122250486767e-07 1.404439212047895e-07
+nn_test10_vp_rom_minmax = -1.203220505688684e-07 1.3162000284543027e-07
+nn_test10_vp_err_minmax = -3.919063003468653e-08 4.2303078445698344e-08
+nn_test10_vp_err_abs_rel_ltwo_norms = 9.662248787081403e-07 0.2875546128810359
+nn_test10_vp_err_abs_rel_linf_norms = 4.2303078445698344e-08 0.3012097503601722
+linear_test10_vp_fom_minmax = -1.240122250486767e-07 1.404439212047895e-07
+linear_test10_vp_rom_minmax = -1.3312562792033785e-07 1.5041383241611201e-07
+linear_test10_vp_err_minmax = -1.8135549749868332e-08 1.7995105672040262e-08
+linear_test10_vp_err_abs_rel_ltwo_norms = 5.814435802135377e-07 0.17304127362567234
+linear_test10_vp_err_abs_rel_linf_norms = 1.8135549749868332e-08 0.12913018658474956
+quadratic_test10_vp_fom_minmax = -1.240122250486767e-07 1.404439212047895e-07
+quadratic_test10_vp_rom_minmax = -1.3340783341133445e-07 1.5339264895413923e-07
+quadratic_test10_vp_err_minmax = -1.4180953141206065e-08 1.4504676020639141e-08
+quadratic_test10_vp_err_abs_rel_ltwo_norms = 4.815277715975663e-07 0.1433056993298878
+quadratic_test10_vp_err_abs_rel_linf_norms = 1.4504676020639141e-08 0.10327735010680188
+
+
+nn_test11_vp_fom_minmax = -3.53420896070475e-08 2.7250806865745653e-08
+nn_test11_vp_rom_minmax = -3.959188791929077e-08 2.947016804189463e-08
+nn_test11_vp_err_minmax = -6.654093925183199e-09 6.791944469898745e-09
+nn_test11_vp_err_abs_rel_ltwo_norms = 1.6446320658411536e-07 0.16300893881047743
+nn_test11_vp_err_abs_rel_linf_norms = 6.791944469898745e-09 0.19217721830868698
+linear_test11_vp_fom_minmax = -3.53420896070475e-08 2.7250806865745653e-08
+linear_test11_vp_rom_minmax = -3.3950163323166567e-08 2.988352636205586e-08
+linear_test11_vp_err_minmax = -7.798511869513756e-09 7.593661666976725e-09
+linear_test11_vp_err_abs_rel_ltwo_norms = 1.7989568482387454e-07 0.17830495518598388
+linear_test11_vp_err_abs_rel_linf_norms = 7.798511869513756e-09 0.2206579168414159
+quadratic_test11_vp_fom_minmax = -3.53420896070475e-08 2.7250806865745653e-08
+quadratic_test11_vp_rom_minmax = -3.975425606169525e-08 2.91858311190391e-08
+quadratic_test11_vp_err_minmax = -1.3380676434806303e-08 1.3038871381007977e-08
+quadratic_test11_vp_err_abs_rel_ltwo_norms = 3.203149501669706e-07 0.31748256157916804
+quadratic_test11_vp_err_abs_rel_linf_norms = 1.3380676434806303e-08 0.37860456423431416
+
+
+nn_test12_vp_fom_minmax = -1.203220505688684e-07 1.3162000284543027e-07
+nn_test12_vp_rom_minmax = -1.203220505688684e-07 1.3162000284543027e-07
+nn_test12_vp_err_minmax = 0.0 0.0
+nn_test12_vp_err_abs_rel_ltwo_norms = 0.0 0.0
+nn_test12_vp_err_abs_rel_linf_norms = 0.0 0.0
+linear_test12_vp_fom_minmax = -1.203220505688684e-07 1.3162000284543027e-07
+linear_test12_vp_rom_minmax = -1.203220505688684e-07 1.3162000284543027e-07
+linear_test12_vp_err_minmax = 0.0 0.0
+linear_test12_vp_err_abs_rel_ltwo_norms = 0.0 0.0
+linear_test12_vp_err_abs_rel_linf_norms = 0.0 0.0
+quadratic_test12_vp_fom_minmax = -1.203220505688684e-07 1.3162000284543027e-07
+quadratic_test12_vp_rom_minmax = -1.203220505688684e-07 1.3162000284543027e-07
+quadratic_test12_vp_err_minmax = 0.0 0.0
+quadratic_test12_vp_err_abs_rel_ltwo_norms = 0.0 0.0
+quadratic_test12_vp_err_abs_rel_linf_norms = 0.0 0.0
+
+
+nn_test13_vp_fom_minmax = -3.959188791929077e-08 2.947016804189463e-08
+nn_test13_vp_rom_minmax = -3.959188791929077e-08 2.947016804189463e-08
+nn_test13_vp_err_minmax = 0.0 0.0
+nn_test13_vp_err_abs_rel_ltwo_norms = 0.0 0.0
+nn_test13_vp_err_abs_rel_linf_norms = 0.0 0.0
+linear_test13_vp_fom_minmax = -3.959188791929077e-08 2.947016804189463e-08
+linear_test13_vp_rom_minmax = -3.959188791929077e-08 2.947016804189463e-08
+linear_test13_vp_err_minmax = -9.926167350636332e-24 9.926167350636332e-24
+linear_test13_vp_err_abs_rel_ltwo_norms = 9.594863376638552e-23 8.673434398928189e-17
+linear_test13_vp_err_abs_rel_linf_norms = 9.926167350636332e-24 2.507121501978162e-16
+quadratic_test13_vp_fom_minmax = -3.959188791929077e-08 2.947016804189463e-08
+quadratic_test13_vp_rom_minmax = -3.959188791929077e-08 2.947016804189463e-08
+quadratic_test13_vp_err_minmax = 0.0 0.0
+quadratic_test13_vp_err_abs_rel_ltwo_norms = 0.0 0.0
+quadratic_test13_vp_err_abs_rel_linf_norms = 0.0 0.0

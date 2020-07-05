@@ -1,0 +1,7 @@
+reading fom    state /home/fnrizzi/waveRuns/romAccuracyScenario1/train3/fom_mesh256x1024_nThreads_36_dt_0.1_T_2000_snaps_true_seismo_true_mat_bilayer_fRank_1_test_0/state_timestep_20000_vp
+reading approx state /home/fnrizzi/waveRuns/romAccuracyScenario1/train3/rom_mesh256x1024_nThreads_18_dt_0.1_T_2000_snaps_true_mat_bilayer_fRank_1_nPod_2133_2133_test_0/fomReconstructedState_timestep_20000_vp
+ vp_fom_minmax    = -2.9149490631310344e-10 3.672894543694797e-10
+ vp_approx_minmax = -2.92636454842354e-10 3.65950946453849e-10
+ vp_err_minmax    = -7.882281204594109e-12 7.755773682835691e-12
+ vp_err_abs_rel_ltwo_norms = 1.6744918608537068e-10 0.012061781030022716
+ vp_err_abs_rel_linf_norms = 7.882281204594109e-12 0.02146067933838586

@@ -1,0 +1,106 @@
+*** Parsing input ***
+
+meshDir = /home/fnrizzi/waveRuns/romAccuracyScenario1/train3/meshes/mesh256x1024 
+checkDispersion = true 
+timeStep = 0.1 
+finalT = 2000 
+numSteps = 20000 
+includeMatPropInJacobian true 
+exploitForcingSparsity true 
+
+enableSnapshotMatrix = true 
+mode = binary 
+vpSnapshotsFileName_ = snaps_vp 
+spSnapshotsFileName_ = snaps_sp 
+vpSnapshotsFreq_ = 5000 
+spSnapshotsFreq_ = 5000 
+enableSeimogram = false 
+
+matModelType = bilayer 
+
+Layer 1 
+rho(c0,c1,c2) = 4500 0 0
+vs(c0,c1,c2)  = 6000 0 0
+Layer 2 
+Starting depth [km] 700
+rho(c0,c1,c2) = 4500 0 0
+vs(c0,c1,c2)  = 6033.93 0 0
+
+signal  type= gaussianDeriv depth[km]= 700 angle[deg]= 0 period[sec]= 45 delay[sec]= 140 
+vpRomSize_ = 104 
+spRomSize_ = 104 
+vpBasisFileName_ = /home/fnrizzi/waveRuns/romAccuracyScenario1/train3/pod/lsv_vp 
+spBasisFileName_ = /home/fnrizzi/waveRuns/romAccuracyScenario1/train3/pod/lsv_sp
+---------------------------------------------------
+
+enableSampling = false 
+
+*** Reading meshfile info ***
+
+thetaLeft (deg) = 0
+thetaRight (deg) = 180
+CMB radius (km) = 3480
+Earth surf radius (km) = 6371
+dth [rad] = 0.0030709605606938349
+drr [km] = 11.337254901960785
+numGptVp = 262144
+numGptSp = 523008
+nth = 1024
+nr = 256
+
+*** Constructing observer ***
+Observer: Vp snaps [GB] = 3.0994415283203125e-06
+Observer: Sp snaps [GB] = 3.0994415283203125e-06
+Loading basis... 6291456000 bytes read
+12552192000 bytes read
+Done
+
+*** Compute FOM Jacobians: with mat prop ***
+Reading graph for vp ...Done
+Reading Vp stencil coeffs for vp...Done
+Reading graph for sp ...Done
+minMaxVs = 6000 6033.9259208033573
+jacVp:  nnz = 1046016 nrows = 262144 ncols = 523008
+jacSp:  nnz = 1046016 nrows = 523008 ncols = 262144
+romJac time: 0.7499225850
+Target Source coords (depth [km], r [km], th [deg], th [rad]) = 700.0000000000 5671.0000000000 0.0000000000 0.0000000000
+Source angle cannot be on left edge, mapping to: 0.00307096056069383
+Source mapped to GID = 197633 with depth (km) = 702.90980392156916423 with angle (rad) = 0.00307096056069383 angle (deg) = 0.17595307917888561
+centerFreq = 0.03066686676182871
+minPeriod  = 32.60848288696737285
+Numerical dispersion criterion along r: OK! 
+drr = 11337.25490196078499139, ratio = 26999.99999999999636202
+Numerical dispersion criterion along theta: OK! 
+maxArc = 19565.08973218042228837, ratio = 26999.99999999999636202
+CFL: OK! 
+cfl = 0.07984753048840737
+ROM-KOKKOS step = 2000
+ROM-KOKKOS step = 4000
+ROM-KOKKOS step = 6000
+ROM-KOKKOS step = 8000
+ROM-KOKKOS step = 10000
+ROM-KOKKOS step = 12000
+ROM-KOKKOS step = 14000
+ROM-KOKKOS step = 16000
+ROM-KOKKOS step = 18000
+ROM-KOKKOS step = 20000
+
+loopTime = 1.0583704000
+dataCollectionTime = 0.0281868160
+flops = 43680.0000000000
+memMB = 0.1721801758
+flops/bytes = 0.2419354839
+aveBandwidth(GB/s) =     3.44 
+minBandwidth(GB/s) =     1.65 
+maxBandwidth(GB/s) =     4.71 
+aveGFlop =  0.8940 
+minGFlop =  0.4274 
+maxGFlop =  1.2229 
+totTime(se) =  0.9772 
+aveTime(ms) =  0.0489 
+maxTime(ms) =  0.1022 
+minTime(ms) =  0.0357 
+Writing snapshots vp... Done
+Writing snapshots sp... Done
+
+finalProcessTime = 0.0003356970

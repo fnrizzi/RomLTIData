@@ -1,0 +1,167 @@
+*** Parsing input ***
+
+meshDir = /home/fnrizzi/waveRuns/romAccuracyScenario2/train2/meshes/mesh512x2048 
+checkDispersion = true 
+timeStep = 0.1 
+finalT = 2000 
+numSteps = 20000 
+includeMatPropInJacobian true 
+exploitForcingSparsity true 
+
+enableSnapshotMatrix = true 
+mode = binary 
+vpSnapshotsFileName_ = snaps_vp 
+spSnapshotsFileName_ = snaps_sp 
+vpSnapshotsFreq_ = 5000 
+spSnapshotsFreq_ = 5000 
+enableSeimogram = true 
+mode = binary 
+Freq_ = 20 
+Locations: 5 10 15 20 25 30 35 40 45 50 55 60 65 70 75 80 85 90 95 100 105 110 115 120 125 130 135 140 145 150 155 160 165 170 175 
+matModelType = prem 
+
+signal  type= ricker depth[km]= 150 angle[deg]= 0 period[sec]= 40.0889 delay[sec]= 90 
+
+enableSampling = false 
+
+*** Reading meshfile info ***
+
+thetaLeft (deg) = 0
+thetaRight (deg) = 180
+CMB radius (km) = 3480
+Earth surf radius (km) = 6371
+dth [rad] = 0.0015347301678504119
+drr [km] = 5.6575342465753433
+numGptVp = 1048576
+numGptSp = 2094592
+nth = 2048
+nr = 512
+
+*** Constructing observer ***
+Observer: Vp snaps [GB] = 0.03125
+Observer: Sp snaps [GB] = 0.0624237060546875
+
+*** Compute FOM Jacobians: with mat prop ***
+Reading graph for vp ...Done
+Reading Vp stencil coeffs for vp...Done
+Reading graph for sp ...Done
+minMaxVs = 3200 7265.9705493409283
+jacVp:  nnz = 4189184 nrows = 1048576 ncols = 2094592
+jacSp:  nnz = 4189184 nrows = 2094592 ncols = 1048576
+
+*** Constructing seismogram ***
+Target coords (r [m], th [deg], th [rad]) = 6371000 5 0.087266462599716474
+Point mapped to GID = 1046585 with depth (km) = 0, angle (rad) = 0.087479619567473479, angle (deg) = 5.0122129946262826
+Target coords (r [m], th [deg], th [rad]) = 6371000 10 0.17453292519943295
+Point mapped to GID = 1046642 with depth (km) = 0, angle (rad) = 0.17495923913494696, angle (deg) = 10.024425989252565
+Target coords (r [m], th [deg], th [rad]) = 6371000 15 0.26179938779914941
+Point mapped to GID = 1046699 with depth (km) = 0, angle (rad) = 0.26243885870242045, angle (deg) = 15.036638983878849
+Target coords (r [m], th [deg], th [rad]) = 6371000 20 0.3490658503988659
+Point mapped to GID = 1046755 with depth (km) = 0, angle (rad) = 0.34838374810204353, angle (deg) = 19.960918417195899
+Target coords (r [m], th [deg], th [rad]) = 6371000 25 0.43633231299858238
+Point mapped to GID = 1046812 with depth (km) = 0, angle (rad) = 0.435863367669517, angle (deg) = 24.97313141182218
+Target coords (r [m], th [deg], th [rad]) = 6371000 30 0.52359877559829882
+Point mapped to GID = 1046869 with depth (km) = 0, angle (rad) = 0.52334298723699046, angle (deg) = 29.985344406448462
+Target coords (r [m], th [deg], th [rad]) = 6371000 35 0.6108652381980153
+Point mapped to GID = 1046926 with depth (km) = 0, angle (rad) = 0.61082260680446399, angle (deg) = 34.997557401074744
+Target coords (r [m], th [deg], th [rad]) = 6371000 40 0.69813170079773179
+Point mapped to GID = 1046983 with depth (km) = 0, angle (rad) = 0.6983022263719374, angle (deg) = 40.009770395701025
+Target coords (r [m], th [deg], th [rad]) = 6371000 45 0.78539816339744828
+Point mapped to GID = 1047040 with depth (km) = 0, angle (rad) = 0.78578184593941092, angle (deg) = 45.021983390327307
+Target coords (r [m], th [deg], th [rad]) = 6371000 50 0.87266462599716477
+Point mapped to GID = 1047097 with depth (km) = 0, angle (rad) = 0.87326146550688444, angle (deg) = 50.034196384953596
+Target coords (r [m], th [deg], th [rad]) = 6371000 55 0.95993108859688125
+Point mapped to GID = 1047153 with depth (km) = 0, angle (rad) = 0.95920635490650752, angle (deg) = 54.958475818270642
+Target coords (r [m], th [deg], th [rad]) = 6371000 60 1.0471975511965976
+Point mapped to GID = 1047210 with depth (km) = 0, angle (rad) = 1.0466859744739809, angle (deg) = 59.970688812896924
+Target coords (r [m], th [deg], th [rad]) = 6371000 65 1.1344640137963142
+Point mapped to GID = 1047267 with depth (km) = 0, angle (rad) = 1.1341655940414543, angle (deg) = 64.982901807523206
+Target coords (r [m], th [deg], th [rad]) = 6371000 70 1.2217304763960306
+Point mapped to GID = 1047324 with depth (km) = 0, angle (rad) = 1.221645213608928, angle (deg) = 69.995114802149487
+Target coords (r [m], th [deg], th [rad]) = 6371000 75 1.3089969389957472
+Point mapped to GID = 1047381 with depth (km) = 0, angle (rad) = 1.3091248331764014, angle (deg) = 75.007327796775769
+Target coords (r [m], th [deg], th [rad]) = 6371000 80 1.3962634015954636
+Point mapped to GID = 1047438 with depth (km) = 0, angle (rad) = 1.3966044527438748, angle (deg) = 80.019540791402051
+Target coords (r [m], th [deg], th [rad]) = 6371000 85 1.4835298641951802
+Point mapped to GID = 1047495 with depth (km) = 0, angle (rad) = 1.4840840723113484, angle (deg) = 85.031753786028347
+Target coords (r [m], th [deg], th [rad]) = 6371000 90 1.5707963267948966
+Point mapped to GID = 1047552 with depth (km) = 0, angle (rad) = 1.5715636918788218, angle (deg) = 90.043966780654614
+Target coords (r [m], th [deg], th [rad]) = 6371000 95 1.6580627893946132
+Point mapped to GID = 1047608 with depth (km) = 0, angle (rad) = 1.6575085812784449, angle (deg) = 94.968246213971668
+Target coords (r [m], th [deg], th [rad]) = 6371000 100 1.7453292519943295
+Point mapped to GID = 1047665 with depth (km) = 0, angle (rad) = 1.7449882008459183, angle (deg) = 99.980459208597949
+Target coords (r [m], th [deg], th [rad]) = 6371000 105 1.8325957145940461
+Point mapped to GID = 1047722 with depth (km) = 0, angle (rad) = 1.832467820413392, angle (deg) = 104.99267220322425
+Target coords (r [m], th [deg], th [rad]) = 6371000 110 1.9198621771937625
+Point mapped to GID = 1047779 with depth (km) = 0, angle (rad) = 1.9199474399808654, angle (deg) = 110.00488519785051
+Target coords (r [m], th [deg], th [rad]) = 6371000 115 2.0071286397934789
+Point mapped to GID = 1047836 with depth (km) = 0, angle (rad) = 2.007427059548339, angle (deg) = 115.01709819247681
+Target coords (r [m], th [deg], th [rad]) = 6371000 120 2.0943951023931953
+Point mapped to GID = 1047893 with depth (km) = 0, angle (rad) = 2.0949066791158124, angle (deg) = 120.02931118710309
+Target coords (r [m], th [deg], th [rad]) = 6371000 125 2.1816615649929121
+Point mapped to GID = 1047950 with depth (km) = 0, angle (rad) = 2.1823862986832858, angle (deg) = 125.04152418172937
+Target coords (r [m], th [deg], th [rad]) = 6371000 130 2.2689280275926285
+Point mapped to GID = 1048006 with depth (km) = 0, angle (rad) = 2.2683311880829087, angle (deg) = 129.96580361504641
+Target coords (r [m], th [deg], th [rad]) = 6371000 135 2.3561944901923448
+Point mapped to GID = 1048063 with depth (km) = 0, angle (rad) = 2.3558108076503825, angle (deg) = 134.97801660967272
+Target coords (r [m], th [deg], th [rad]) = 6371000 140 2.4434609527920612
+Point mapped to GID = 1048120 with depth (km) = 0, angle (rad) = 2.4432904272178559, angle (deg) = 139.99022960429897
+Target coords (r [m], th [deg], th [rad]) = 6371000 145 2.530727415391778
+Point mapped to GID = 1048177 with depth (km) = 0, angle (rad) = 2.5307700467853294, angle (deg) = 145.00244259892526
+Target coords (r [m], th [deg], th [rad]) = 6371000 150 2.6179938779914944
+Point mapped to GID = 1048234 with depth (km) = 0, angle (rad) = 2.6182496663528028, angle (deg) = 150.01465559355154
+Target coords (r [m], th [deg], th [rad]) = 6371000 155 2.7052603405912108
+Point mapped to GID = 1048291 with depth (km) = 0, angle (rad) = 2.7057292859202762, angle (deg) = 155.02686858817782
+Target coords (r [m], th [deg], th [rad]) = 6371000 160 2.7925268031909272
+Point mapped to GID = 1048348 with depth (km) = 0, angle (rad) = 2.7932089054877496, angle (deg) = 160.0390815828041
+Target coords (r [m], th [deg], th [rad]) = 6371000 165 2.8797932657906435
+Point mapped to GID = 1048404 with depth (km) = 0, angle (rad) = 2.8791537948873729, angle (deg) = 164.96336101612115
+Target coords (r [m], th [deg], th [rad]) = 6371000 170 2.9670597283903604
+Point mapped to GID = 1048461 with depth (km) = 0, angle (rad) = 2.9666334144548463, angle (deg) = 169.97557401074744
+Target coords (r [m], th [deg], th [rad]) = 6371000 175 3.0543261909900767
+Point mapped to GID = 1048518 with depth (km) = 0, angle (rad) = 3.0541130340223197, angle (deg) = 174.98778700537372
+Done Mapping receivers to grid 
+Seismogram [GB] = 0.00026077032089233398
+
+Target Source coords (depth [km], r [km], th [deg], th [rad]) = 150 6221 0 0
+Source angle cannot be on left edge, mapping to: 0.0015347301678504119
+Source mapped to GID = 991233 with depth (km) = 152.75342465753388 with angle (rad) = 0.0015347301678504119 angle (deg) = 0.087933561309233021
+centerFreq = 0.032727312485611407
+minPeriod  = 30.555518435546791
+Numerical dispersion criterion along r: OK! 
+drr = 5657.5342465753429, ratio = 12828.44419856115
+Numerical dispersion criterion along theta: OK! 
+maxArc = 9777.7658993749737, ratio = 12828.44419856115
+CFL: OK! 
+cfl = 0.19239658409449523
+FOM-KOKKOS step = 2000
+FOM-KOKKOS step = 4000
+FOM-KOKKOS step = 6000
+FOM-KOKKOS step = 8000
+FOM-KOKKOS step = 10000
+FOM-KOKKOS step = 12000
+FOM-KOKKOS step = 14000
+FOM-KOKKOS step = 16000
+FOM-KOKKOS step = 18000
+FOM-KOKKOS step = 20000
+
+loopTime = 58.0652545800
+dataCollectionTime = 0.0552074330
+flops = 19899907.0000000000
+memMB = 295.7070312500
+flops/bytes = 0.0641784882
+aveBandwidth(GB/s) =    99.71 
+minBandwidth(GB/s) =    64.26 
+maxBandwidth(GB/s) =   102.82 
+aveGFlop =  6.8715 
+minGFlop =  4.4285 
+maxGFlop =  7.0856 
+totTime(se) = 57.9205 
+aveTime(ms) =  2.8960 
+maxTime(ms) =  4.4936 
+minTime(ms) =  2.8085 
+Writing snapshots vp... Done
+Writing snapshots sp... Done
+Writing seismogram ... Done
+
+finalProcessTime = 0.0442415360

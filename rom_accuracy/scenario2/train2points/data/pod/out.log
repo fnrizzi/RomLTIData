@@ -1,0 +1,45 @@
+Directories Passed: 
+/home/fnrizzi/waveRuns/romAccuracyScenario2/train2/fom_mesh512x2048_nThreads_36_dt_0.1_T_2000_snaps_true_seismo_true_mat_prem_fRank_1_train_0
+/home/fnrizzi/waveRuns/romAccuracyScenario2/train2/fom_mesh512x2048_nThreads_36_dt_0.1_T_2000_snaps_true_seismo_true_mat_prem_fRank_1_train_1
+
+Reading snapshots: /home/fnrizzi/waveRuns/romAccuracyScenario2/train2/fom_mesh512x2048_nThreads_36_dt_0.1_T_2000_snaps_true_seismo_true_mat_prem_fRank_1_train_0/snaps_vp_0
+Using Binary 
+8388608000 bytes read
+Current snapshots size: 1048576 1000
+
+Reading snapshots: /home/fnrizzi/waveRuns/romAccuracyScenario2/train2/fom_mesh512x2048_nThreads_36_dt_0.1_T_2000_snaps_true_seismo_true_mat_prem_fRank_1_train_1/snaps_vp_0
+Using Binary 
+8388608000 bytes read
+Current snapshots size: 1048576 1000
+Final snapshot matrix size: 1048576 2000
+svd:read:vp: 17.5454666100
+Computing SVD method 0
+MinMax(A) -0.0000490143 0.0000472822
+svd_matrix_vp_rank = 1002
+Printing sing values
+
+Printing left-sing vectors to file
+Done with SVD
+----------------
+svd:timevp: 4245.3679911530
+
+Reading snapshots: /home/fnrizzi/waveRuns/romAccuracyScenario2/train2/fom_mesh512x2048_nThreads_36_dt_0.1_T_2000_snaps_true_seismo_true_mat_prem_fRank_1_train_0/snaps_sp_0
+Using Binary 
+16756736000 bytes read
+Current snapshots size: 2094592 1000
+
+Reading snapshots: /home/fnrizzi/waveRuns/romAccuracyScenario2/train2/fom_mesh512x2048_nThreads_36_dt_0.1_T_2000_snaps_true_seismo_true_mat_prem_fRank_1_train_1/snaps_sp_0
+Using Binary 
+16756736000 bytes read
+Current snapshots size: 2094592 1000
+Final snapshot matrix size: 2094592 2000
+svd:read:sp: 59.8634339580
+Computing SVD method 0
+MinMax(A) -2157.8234488890 1675.4826246154
+svd_matrix_sp_rank = 1001
+Printing sing values
+
+Printing left-sing vectors to file
+Done with SVD
+----------------
+svd:timesp: 10045.7667896550

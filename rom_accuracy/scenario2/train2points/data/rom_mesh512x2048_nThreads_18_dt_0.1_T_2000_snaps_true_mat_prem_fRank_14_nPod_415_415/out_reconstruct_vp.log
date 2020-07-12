@@ -1,0 +1,16 @@
+POD modes = /home/fnrizzi/waveRuns/romAccuracyScenario2/train2/pod/lsv_vp binary
+ROM snaps = ./snaps_vp_0 binary
+ROM size = 415
+Size of f = 14
+Target time steps = 20000 
+Sampling freq = 5000
+Output format = ascii
+Kokkos::OpenMP::initialize WARNING: OMP_PROC_BIND environment variable not set
+  In general, for best performance with OpenMP 4.0 or better set OMP_PROC_BIND=spread and OMP_PLACES=threads
+  For best performance with OpenMP 3.1 set OMP_PROC_BIND=true
+  For unit testing set OMP_PROC_BIND=false
+16777216000 bytes read
+POD modes size = 1048576 415
+185920 bytes read
+ROM snap size: 415 4 14
+success

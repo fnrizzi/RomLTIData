@@ -34,10 +34,16 @@ def findTrainPoints(workDir, scenario):
 
 #=========================================
 def doPlot(trainVals, M, dof, scenario, normKind):
-  romSizes = [311, 369, 415, 436]
+  if scenario==1:
+    # romSizes = [28 117 222 1117 1914 2227 2329 2385]
+    romSizes = [222, 1914, 2329, 2385]
+    mk = {222:'D', 1914:'p', 2329:'>', 2385:'o'}
+  elif scenario==2:
+    # 170, 275, 311, 342, 369, 393, 415, 436
+    romSizes = [311, 369, 415, 436]
+    mk = {311:'D', 369:'p', 415:'>', 436:'o'}
   print(romSizes)
 
-  mk = {311:'D', 369:'p', 415:'>', 436:'o'}
 
   # # find all unique test points (unique sorts by default, so fix that)
   # testPts = M[:,0]
@@ -75,16 +81,14 @@ def doPlot(trainVals, M, dof, scenario, normKind):
              #markerfacecolor='none',
              markersize=7, linewidth=1.5, label='p='+str(int(romS)))
 
-  for x in trainVals:
-    ax.annotate('Train pts for \nPOD basis', xy=(x, 0.0),
-                xytext=(50, 0.5), size=16,
-                arrowprops=dict(facecolor='black', shrink=10,
-                                headwidth=7, width=0.7, linewidth=0.5),
-                horizontalalignment='center')
-    #plt.plot([x, x], [0,15], '--k', linewidth=1.5)
+  # for x in trainVals:
+  #   ax.annotate('Train pts for \nPOD basis', xy=(x, 0.0),
+  #               xytext=(50, 0.5), size=16,
+  #               arrowprops=dict(facecolor='black', shrink=10,
+  #                               headwidth=7, width=0.7, linewidth=0.5),
+  #               horizontalalignment='center')
 
-  ax.set_xlim(28, 72)
-  ax.set_ylim(0, 1.)
+  # ax.set_ylim(0, 1.)
   ax.legend(loc="upper right", ncol=1, fontsize=13,
             frameon=False, labelspacing=0.2, handletextpad=0.01)
 
@@ -92,17 +96,21 @@ def doPlot(trainVals, M, dof, scenario, normKind):
   ax.set_xlabel('Forcing period (sec)', fontsize=16)
   if dof=='vp':  ylabDof = 'velocity'
   else: ylabDof = 'stresses'
-
   ax.set_ylabel(r'E$_{'+ylabnrm+'}$ for ' + ylabDof, fontsize=15)
 
-  ax.set_xticks(np.linspace(30, 70, 9))
+  if scenario==1:
+    ax.set_xlim(5900, 6400)
+    # ax.set_xticks(np.linspace(30, 70, 9))
+  elif scenario==2:
+    ax.set_xlim(28, 72)
+    ax.set_xticks(np.linspace(30, 70, 9))
   plt.xticks(fontsize=14)
   plt.yticks(fontsize=14)
   ax.set_yticks(np.linspace(0, 1, 11))
   plt.grid()
 
-  fileName = 'rom_acc_sce_'+str(scenario)+'_errors_'+dof+'_'+normStr+'.pdf'
-  fig.savefig('./plots/'+fileName, format="pdf", bbox_inches='tight', dpi=300)
+  # fileName = 'rom_acc_sce_'+str(scenario)+'_errors_'+dof+'_'+normStr+'.pdf'
+  # fig.savefig('./plots/'+fileName, format="pdf", bbox_inches='tight', dpi=300)
   plt.show()
 
 ###############################
@@ -137,6 +145,6 @@ if __name__== "__main__":
   trainVals = findTrainPoints(dataDir, scenario)
   print("trainValues = {}".format(trainVals))
 
-  # for dof in ['vp', 'sp']:
-  #   data = np.loadtxt('./parsed_data/rom_errors_table_'+dof+'.txt')
-  #   doPlot(trainVals, data, dof, scenario, nrm)
+  for dof in ['vp']:#, 'sp']:
+    data = np.loadtxt(parsedDataDir+'/rom_errors_table_'+dof+'.txt')
+    doPlot(trainVals, data, dof, scenario, nrm)

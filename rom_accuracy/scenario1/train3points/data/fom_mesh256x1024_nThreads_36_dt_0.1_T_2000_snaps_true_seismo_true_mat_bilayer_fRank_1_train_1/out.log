@@ -1,6 +1,6 @@
 *** Parsing input ***
 
-meshDir = /home/fnrizzi/waveRuns/romAccuracyScenario1/train3/meshes/mesh256x1024 
+meshDir = /home/fnrizzi/waveRuns/romAccuracyScenario1/train3_v2//meshes/mesh256x1024 
 checkDispersion = true 
 timeStep = 0.1 
 finalT = 2000 
@@ -26,7 +26,7 @@ vs(c0,c1,c2)  = 6000 0 0
 Layer 2 
 Starting depth [km] 700
 rho(c0,c1,c2) = 4500 0 0
-vs(c0,c1,c2)  = 6200 0 0
+vs(c0,c1,c2)  = 6300 0 0
 
 signal  type= gaussianDeriv depth[km]= 700 angle[deg]= 0 period[sec]= 45 delay[sec]= 140 
 
@@ -53,7 +53,7 @@ Observer: Sp snaps [GB] = 3.8967132568359375
 Reading graph for vp ...Done
 Reading Vp stencil coeffs for vp...Done
 Reading graph for sp ...Done
-minMaxVs = 6000 6200
+minMaxVs = 6000 6300
 jacVp:  nnz = 1046016 nrows = 262144 ncols = 523008
 jacSp:  nnz = 1046016 nrows = 523008 ncols = 262144
 
@@ -141,7 +141,7 @@ drr = 11337.254901960785, ratio = 26999.999999999996
 Numerical dispersion criterion along theta: OK! 
 maxArc = 19565.089732180422, ratio = 26999.999999999996
 CFL: OK! 
-cfl = 0.082045204983592857
+cfl = 0.08336851474139273
 FOM-KOKKOS step = 2000
 FOM-KOKKOS step = 4000
 FOM-KOKKOS step = 6000
@@ -153,23 +153,23 @@ FOM-KOKKOS step = 16000
 FOM-KOKKOS step = 18000
 FOM-KOKKOS step = 20000
 
-loopTime = 6.9158382450
-dataCollectionTime = 0.8642228300
+loopTime = 7.3697892720
+dataCollectionTime = 1.4849435610
 flops = 4969219.0000000000
 memMB = 97.8535156250
 flops/bytes = 0.0484297013
-aveBandwidth(GB/s) =   320.59 
-minBandwidth(GB/s) =    14.53 
-maxBandwidth(GB/s) =   403.73 
-aveGFlop = 16.6709 
-minGFlop =  0.7556 
-maxGFlop = 20.9944 
-totTime(se) =  5.9616 
-aveTime(ms) =  0.2981 
-maxTime(ms) =  6.5766 
-minTime(ms) =  0.2367 
+aveBandwidth(GB/s) =   329.94 
+minBandwidth(GB/s) =     6.17 
+maxBandwidth(GB/s) =   410.51 
+aveGFlop = 17.1574 
+minGFlop =  0.3209 
+maxGFlop = 21.3467 
+totTime(se) =  5.7925 
+aveTime(ms) =  0.2896 
+maxTime(ms) = 15.4864 
+minTime(ms) =  0.2328 
 Writing snapshots vp... Done
 Writing snapshots sp... Done
 Writing seismogram ... Done
 
-finalProcessTime = 2.8960838830
+finalProcessTime = 37.2603109160

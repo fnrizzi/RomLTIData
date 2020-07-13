@@ -1,5 +1,5 @@
 general:
-  meshDir: /home/fnrizzi/waveRuns/romAccuracyScenario1/train3/meshes/mesh256x1024
+  meshDir: /home/fnrizzi/waveRuns/romAccuracyScenario1/train3_v2//meshes/mesh256x1024
   dt: 0.1
   finalTime: 2000
   checkNumericalDispersion: true
@@ -76,5 +76,5 @@ material:
     - 4500.0
     - 0.0
     velocity:
-    - 6250.0
+    - 6350.0
     - 0.0

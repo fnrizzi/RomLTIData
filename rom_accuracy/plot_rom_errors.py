@@ -23,33 +23,21 @@ def findTrainPoints(workDir, scenario):
   for i, idir in enumerate(fomDirsFullPath):
     ifile = idir + '/input.yaml'
     inputs = yaml.safe_load(open(ifile))
-
-    if scenario==1:
-      data[i] = inputs['material']['layer2']['velocity'][0]
-    if scenario==2:
-      data[i] = inputs['source']['signal']['period']
-
+    if scenario==1: data[i] = inputs['material']['layer2']['velocity'][0]
+    if scenario==2: data[i] = inputs['source']['signal']['period']
   return data
 
-
 #=========================================
-def doPlot(trainVals, M, dof, scenario, normKind):
+def doPlot(trainVals, M, dof, scenario, normKind, workDir):
   if scenario==1:
-    # romSizes = [28 117 222 1117 1914 2227 2329 2385]
-    romSizes = [222, 1914, 2329, 2385]
-    mk = {222:'D', 1914:'p', 2329:'>', 2385:'o'}
+    # 28 117 222 1117 1914 2227 2329 2385
+    romSizes = [117, 222, 1117, 2329, 2385]
+    mk = {117:'D', 222:'p', 1117:'>', 2329:'v', 2385:'o'}
   elif scenario==2:
     # 170, 275, 311, 342, 369, 393, 415, 436
     romSizes = [311, 369, 415, 436]
     mk = {311:'D', 369:'p', 415:'>', 436:'o'}
   print(romSizes)
-
-
-  # # find all unique test points (unique sorts by default, so fix that)
-  # testPts = M[:,0]
-  # indexes = np.unique(testPts, return_index=True)[1]
-  # testPts = [testPts[index] for index in sorted(indexes)]
-  # print(testPts)
 
   # col indices where to find the errors
   # for ROM, the data is an array where:
@@ -57,7 +45,7 @@ def doPlot(trainVals, M, dof, scenario, normKind):
   #             col1   : rom size
   #             col2,3 : abs-l2 and rel-l2
   #             col4,5 : abs-linf and rel-linf
-  absL2, relL2 = 2, 3
+  absL2,   relL2   = 2, 3
   absLInf, relLInf = 4, 5
 
   if normKind==-1:
@@ -69,7 +57,7 @@ def doPlot(trainVals, M, dof, scenario, normKind):
     normStr = 'l2'
     ylabnrm = '\ell_{2}'
 
-  # extract data from M for a given rom size
+  # extract data for a given rom size
   fig = plt.figure(0)
   ax = plt.gca()
   for romS in romSizes:
@@ -81,27 +69,25 @@ def doPlot(trainVals, M, dof, scenario, normKind):
              #markerfacecolor='none',
              markersize=7, linewidth=1.5, label='p='+str(int(romS)))
 
-  # for x in trainVals:
-  #   ax.annotate('Train pts for \nPOD basis', xy=(x, 0.0),
-  #               xytext=(50, 0.5), size=16,
-  #               arrowprops=dict(facecolor='black', shrink=10,
-  #                               headwidth=7, width=0.7, linewidth=0.5),
-  #               horizontalalignment='center')
+  for x in trainVals:
+    midTrain = 0.5*(trainVals[0]+trainVals[1])
+    ax.annotate('Train pts for \nPOD basis', xy=(x, 0.0), xytext=(midTrain, 0.5), size=16,
+                arrowprops=dict(facecolor='black', shrink=10,
+                                headwidth=7, width=0.7, linewidth=0.5),
+                horizontalalignment='center')
 
-  # ax.set_ylim(0, 1.)
-  ax.legend(loc="upper right", ncol=1, fontsize=13,
-            frameon=False, labelspacing=0.2, handletextpad=0.01)
+  ax.legend(loc="upper right", ncol=1, fontsize=13, frameon=False, labelspacing=0.2, handletextpad=0.01)
 
-  #ax.set_yscale('log')
-  ax.set_xlabel('Forcing period (sec)', fontsize=16)
   if dof=='vp':  ylabDof = 'velocity'
   else: ylabDof = 'stresses'
   ax.set_ylabel(r'E$_{'+ylabnrm+'}$ for ' + ylabDof, fontsize=15)
 
   if scenario==1:
+    ax.set_xlabel('Shear velocity (km/s)', fontsize=16)
     ax.set_xlim(5900, 6400)
     # ax.set_xticks(np.linspace(30, 70, 9))
   elif scenario==2:
+    ax.set_xlabel('Forcing period (sec)', fontsize=16)
     ax.set_xlim(28, 72)
     ax.set_xticks(np.linspace(30, 70, 9))
   plt.xticks(fontsize=14)
@@ -109,8 +95,10 @@ def doPlot(trainVals, M, dof, scenario, normKind):
   ax.set_yticks(np.linspace(0, 1, 11))
   plt.grid()
 
-  # fileName = 'rom_acc_sce_'+str(scenario)+'_errors_'+dof+'_'+normStr+'.pdf'
-  # fig.savefig('./plots/'+fileName, format="pdf", bbox_inches='tight', dpi=300)
+  fileName = 'rom_acc_sce_'+str(scenario)+'_errors_'+dof+'_'+normStr+'.pdf'
+  plotDir = workDir+'/plots'
+  if not os.path.exists(plotDir): os.system('mkdir -p ' + plotDir)
+  fig.savefig(plotDir+'/'+fileName, format="pdf", bbox_inches='tight', dpi=300)
   plt.show()
 
 ###############################
@@ -147,4 +135,4 @@ if __name__== "__main__":
 
   for dof in ['vp']:#, 'sp']:
     data = np.loadtxt(parsedDataDir+'/rom_errors_table_'+dof+'.txt')
-    doPlot(trainVals, data, dof, scenario, nrm)
+    doPlot(trainVals, data, dof, scenario, nrm, workDir)

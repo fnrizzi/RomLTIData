@@ -6,6 +6,8 @@ import numpy as np
 from argparse import ArgumentParser
 import shutil, subprocess
 
+from find_train_points import *
+
 np.set_printoptions(linewidth=100)
 
 #=========================================
@@ -30,6 +32,8 @@ def extractParamValue(scenario, tdir):
   # the input file
   ifile = tdir + '/input.yaml'
   inputs = yaml.safe_load(open(ifile))
+  if scenario==1:
+    return inputs['material']['layer2']['velocity'][0]
   if scenario==2:
     return inputs['source']['signal']['period']
 
@@ -42,8 +46,6 @@ def extractSamplingValues(tdir):
 
 #=========================================
 def parseErrors(scenario, workDir, dofName, kind, numInterpPts):
-  assert(scenario==2)
-
   interpDataDir = workDir+'/interpolation_n'+str(numInterpPts)
 
   # get all fom test dirs
@@ -87,29 +89,36 @@ def parseErrors(scenario, workDir, dofName, kind, numInterpPts):
 if __name__== "__main__":
 ###############################
   parser = ArgumentParser()
+  parser.add_argument("-wdir", "--wdir",
+                      dest="workDir", default="empty",
+                      help="Target dir with the data.")
+
   parser.add_argument("-scenario", "--scenario",
                       dest="scenario", default=0, type=int,
-                      help="Choices: 1 (uncertain velocity), 2 (uncertain forcing period, fixed delay). Must set.")
-
-  parser.add_argument("-n", "--n",
-                      dest="n", default=-1, type=int,
-                      help="number of train points for interpolation.")
+                      help="Choices: 1 (uncertain velocity), 2 (uncertain forcing period, fixed delay).")
 
   #------------------------------
   # parse all args
   #------------------------------
   args = parser.parse_args()
-  assert(args.n == 2)
+  assert(args.workDir != "empty")
   assert(args.scenario in [1,2])
-  workDir  = './data'
+  workDir  = args.workDir
   scenario = args.scenario
 
-  # data is an array where:
-  # col0   : testValue
-  # col1   : numInterpPts
-  # col2,3 : abs-l2 and rel-l2
-  # col4,5 : abs-linf and rel-linf
+  parsedDataDir = workDir+'/parsed_data'
+  if not os.path.exists(parsedDataDir):
+    os.system('mkdir -p ' + parsedDataDir)
+
+  dataDir       = workDir+'/data'
+
+  # find the values used for training
+  trainVals = findTrainPoints(dataDir, scenario)
+  print("trainValues = {}".format(trainVals))
+  n = len(trainVals)
+
+  interpolants = ['nn', 'linear'] if n == 2 else ['nn', 'linear', 'quadratic']
   for dof in ['vp', 'sp']:
-    for kind in ['nn', 'linear']:
-      data = parseErrors(scenario, workDir, dof, kind, args.n)
-      np.savetxt('./parsed_data/interp_n'+str(args.n)+'_errors_table_'+dof+'_'+kind+'.txt', data)
+    for kind in interpolants:
+      data = parseErrors(scenario, dataDir, dof, kind, n)
+      np.savetxt(parsedDataDir+'/interp_n'+str(n)+'_errors_table_'+dof+'_'+kind+'.txt', data)

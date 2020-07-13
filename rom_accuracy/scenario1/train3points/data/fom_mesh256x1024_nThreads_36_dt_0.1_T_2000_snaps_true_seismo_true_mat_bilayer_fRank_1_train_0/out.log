@@ -1,6 +1,6 @@
 *** Parsing input ***
 
-meshDir = /home/fnrizzi/waveRuns/romAccuracyScenario1/train3/meshes/mesh256x1024 
+meshDir = /home/fnrizzi/waveRuns/romAccuracyScenario1/train3_v2//meshes/mesh256x1024 
 checkDispersion = true 
 timeStep = 0.1 
 finalT = 2000 
@@ -153,23 +153,23 @@ FOM-KOKKOS step = 16000
 FOM-KOKKOS step = 18000
 FOM-KOKKOS step = 20000
 
-loopTime = 6.7428663420
-dataCollectionTime = 0.7804384080
+loopTime = 7.5015709940
+dataCollectionTime = 1.2103359860
 flops = 4969219.0000000000
 memMB = 97.8535156250
 flops/bytes = 0.0484297013
-aveBandwidth(GB/s) =   325.38 
-minBandwidth(GB/s) =    18.90 
-maxBandwidth(GB/s) =   408.41 
-aveGFlop = 16.9199 
-minGFlop =  0.9828 
-maxGFlop = 21.2378 
-totTime(se) =  5.8738 
-aveTime(ms) =  0.2937 
-maxTime(ms) =  5.0561 
-minTime(ms) =  0.2340 
+aveBandwidth(GB/s) =   308.44 
+minBandwidth(GB/s) =     9.10 
+maxBandwidth(GB/s) =   386.31 
+aveGFlop = 16.0391 
+minGFlop =  0.4730 
+maxGFlop = 20.0885 
+totTime(se) =  6.1964 
+aveTime(ms) =  0.3098 
+maxTime(ms) = 10.5067 
+minTime(ms) =  0.2474 
 Writing snapshots vp... Done
 Writing snapshots sp... Done
 Writing seismogram ... Done
 
-finalProcessTime = 2.8504893590
+finalProcessTime = 35.9825635760

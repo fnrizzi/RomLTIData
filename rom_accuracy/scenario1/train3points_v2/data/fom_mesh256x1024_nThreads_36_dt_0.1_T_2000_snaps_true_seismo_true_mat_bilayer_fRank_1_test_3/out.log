@@ -153,23 +153,23 @@ FOM-KOKKOS step = 16000
 FOM-KOKKOS step = 18000
 FOM-KOKKOS step = 20000
 
-loopTime = 5.6215366820
-dataCollectionTime = 0.0610213490
+loopTime = 5.8119354480
+dataCollectionTime = 0.0569152620
 flops = 4969219.0000000000
 memMB = 97.8535156250
 flops/bytes = 0.0484297013
-aveBandwidth(GB/s) =   349.19 
-minBandwidth(GB/s) =    25.12 
-maxBandwidth(GB/s) =   415.45 
-aveGFlop = 18.1581 
-minGFlop =  1.3063 
-maxGFlop = 21.6038 
-totTime(se) =  5.4733 
-aveTime(ms) =  0.2737 
-maxTime(ms) =  3.8040 
-minTime(ms) =  0.2300 
+aveBandwidth(GB/s) =   337.39 
+minBandwidth(GB/s) =    18.85 
+maxBandwidth(GB/s) =   405.63 
+aveGFlop = 17.5449 
+minGFlop =  0.9804 
+maxGFlop = 21.0932 
+totTime(se) =  5.6646 
+aveTime(ms) =  0.2832 
+maxTime(ms) =  5.0687 
+minTime(ms) =  0.2356 
 Writing snapshots vp... Done
 Writing snapshots sp... Done
 Writing seismogram ... Done
 
-finalProcessTime = 0.0118411990
+finalProcessTime = 0.0171162640

@@ -20,12 +20,13 @@ Test dirs:
 /home/fnrizzi/waveRuns/romAccuracyScenario1/train3_v2//fom_mesh256x1024_nThreads_36_dt_0.1_T_2000_snaps_true_seismo_true_mat_bilayer_fRank_1_test_11
 /home/fnrizzi/waveRuns/romAccuracyScenario1/train3_v2//fom_mesh256x1024_nThreads_36_dt_0.1_T_2000_snaps_true_seismo_true_mat_bilayer_fRank_1_test_12
 /home/fnrizzi/waveRuns/romAccuracyScenario1/train3_v2//fom_mesh256x1024_nThreads_36_dt_0.1_T_2000_snaps_true_seismo_true_mat_bilayer_fRank_1_test_13
+/home/fnrizzi/waveRuns/romAccuracyScenario1/train3_v2//fom_mesh256x1024_nThreads_36_dt_0.1_T_2000_snaps_true_seismo_true_mat_bilayer_fRank_1_test_14
 
 Training points [6000. 6300. 6150.]
 
 Test points [6167.80036453 6238.03953287 6238.3554562  6290.88909048 6111.7785622
  6050.88888121 6105.51675827 6083.52435514 6057.08837738 6282.54538195
- 5950.         6350.         6000.         6300.        ]
+ 5950.         6350.         6000.         6300.         6150.        ]
 Reading /home/fnrizzi/waveRuns/romAccuracyScenario1/train3_v2//fom_mesh256x1024_nThreads_36_dt_0.1_T_2000_snaps_true_seismo_true_mat_bilayer_fRank_1_train_0/state_timestep_20000_sp
 Reading /home/fnrizzi/waveRuns/romAccuracyScenario1/train3_v2//fom_mesh256x1024_nThreads_36_dt_0.1_T_2000_snaps_true_seismo_true_mat_bilayer_fRank_1_train_1/state_timestep_20000_sp
 Reading /home/fnrizzi/waveRuns/romAccuracyScenario1/train3_v2//fom_mesh256x1024_nThreads_36_dt_0.1_T_2000_snaps_true_seismo_true_mat_bilayer_fRank_1_train_2/state_timestep_20000_sp
@@ -54,6 +55,7 @@ Reading /home/fnrizzi/waveRuns/romAccuracyScenario1/train3_v2//fom_mesh256x1024_
 Reading /home/fnrizzi/waveRuns/romAccuracyScenario1/train3_v2//fom_mesh256x1024_nThreads_36_dt_0.1_T_2000_snaps_true_seismo_true_mat_bilayer_fRank_1_test_11/state_timestep_20000_sp
 Reading /home/fnrizzi/waveRuns/romAccuracyScenario1/train3_v2//fom_mesh256x1024_nThreads_36_dt_0.1_T_2000_snaps_true_seismo_true_mat_bilayer_fRank_1_test_12/state_timestep_20000_sp
 Reading /home/fnrizzi/waveRuns/romAccuracyScenario1/train3_v2//fom_mesh256x1024_nThreads_36_dt_0.1_T_2000_snaps_true_seismo_true_mat_bilayer_fRank_1_test_13/state_timestep_20000_sp
+Reading /home/fnrizzi/waveRuns/romAccuracyScenario1/train3_v2//fom_mesh256x1024_nThreads_36_dt_0.1_T_2000_snaps_true_seismo_true_mat_bilayer_fRank_1_test_14/state_timestep_20000_sp
 
 
 nn_test0_sp_fom_minmax = -0.009213783202542989 0.006689449546627719
@@ -292,3 +294,20 @@ quadratic_test13_sp_rom_minmax = -0.007890712083200184 0.00563839536579213
 quadratic_test13_sp_err_minmax = 0.0 0.0
 quadratic_test13_sp_err_abs_rel_ltwo_norms = 0.0 0.0
 quadratic_test13_sp_err_abs_rel_linf_norms = 0.0 0.0
+
+
+nn_test14_sp_fom_minmax = -0.009317773022010752 0.006890094461210206
+nn_test14_sp_rom_minmax = -0.009317773022010752 0.006890094461210206
+nn_test14_sp_err_minmax = 0.0 0.0
+nn_test14_sp_err_abs_rel_ltwo_norms = 0.0 0.0
+nn_test14_sp_err_abs_rel_linf_norms = 0.0 0.0
+linear_test14_sp_fom_minmax = -0.009317773022010752 0.006890094461210206
+linear_test14_sp_rom_minmax = -0.009317773022010752 0.006890094461210206
+linear_test14_sp_err_minmax = -2.6020852139652106e-18 2.6020852139652106e-18
+linear_test14_sp_err_abs_rel_ltwo_norms = 3.5926296381629195e-17 9.502882266765681e-17
+linear_test14_sp_err_abs_rel_linf_norms = 2.6020852139652106e-18 2.792604206840496e-16
+quadratic_test14_sp_fom_minmax = -0.009317773022010752 0.006890094461210206
+quadratic_test14_sp_rom_minmax = -0.009317773022010752 0.006890094461210206
+quadratic_test14_sp_err_minmax = -1.734723475976807e-18 1.734723475976807e-18
+quadratic_test14_sp_err_abs_rel_ltwo_norms = 2.9155008319703734e-17 7.711805542259863e-17
+quadratic_test14_sp_err_abs_rel_linf_norms = 1.734723475976807e-18 1.861736137893664e-16

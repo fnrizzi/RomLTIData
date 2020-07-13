@@ -62,7 +62,7 @@ Reading graph for sp ...Done
 minMaxVs = 5950 6000
 jacVp:  nnz = 1046016 nrows = 262144 ncols = 523008
 jacSp:  nnz = 1046016 nrows = 523008 ncols = 262144
-romJac time: 31.3758074050
+romJac time: 31.8568908740
 Target Source coords (depth [km], r [km], th [deg], th [rad]) = 700.0000000000 5671.0000000000 0.0000000000 0.0000000000
 Source angle cannot be on left edge, mapping to: 0.00307096056069383
 Source mapped to GID = 197633 with depth (km) = 702.90980392156916423 with angle (rad) = 0.00307096056069383 angle (deg) = 0.17595307917888561
@@ -85,22 +85,22 @@ ROM-KOKKOS step = 16000
 ROM-KOKKOS step = 18000
 ROM-KOKKOS step = 20000
 
-loopTime = 5.0988838070
-dataCollectionTime = 0.0296677370
+loopTime = 5.2855512330
+dataCollectionTime = 0.0292146560
 flops = 4995224.0000000000
 memMB = 19.1149215698
 flops/bytes = 0.2492197949
-aveBandwidth(GB/s) =    74.51 
-minBandwidth(GB/s) =    21.20 
-maxBandwidth(GB/s) =    94.31 
-aveGFlop = 19.9389 
-minGFlop =  5.6722 
-maxGFlop = 25.2362 
-totTime(se) =  5.0105 
-aveTime(ms) =  0.2505 
-maxTime(ms) =  0.8806 
-minTime(ms) =  0.1979 
+aveBandwidth(GB/s) =    71.82 
+minBandwidth(GB/s) =    18.29 
+maxBandwidth(GB/s) =    97.32 
+aveGFlop = 19.2195 
+minGFlop =  4.8945 
+maxGFlop = 26.0436 
+totTime(se) =  5.1981 
+aveTime(ms) =  0.2599 
+maxTime(ms) =  1.0206 
+minTime(ms) =  0.1918 
 Writing snapshots vp... Done
 Writing snapshots sp... Done
 
-finalProcessTime = 0.0003193940
+finalProcessTime = 0.0002655810

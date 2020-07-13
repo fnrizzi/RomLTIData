@@ -21,12 +21,13 @@ Test dirs:
 /home/fnrizzi/waveRuns/romAccuracyScenario1/train3_v2//fom_mesh256x1024_nThreads_36_dt_0.1_T_2000_snaps_true_seismo_true_mat_bilayer_fRank_1_test_11
 /home/fnrizzi/waveRuns/romAccuracyScenario1/train3_v2//fom_mesh256x1024_nThreads_36_dt_0.1_T_2000_snaps_true_seismo_true_mat_bilayer_fRank_1_test_12
 /home/fnrizzi/waveRuns/romAccuracyScenario1/train3_v2//fom_mesh256x1024_nThreads_36_dt_0.1_T_2000_snaps_true_seismo_true_mat_bilayer_fRank_1_test_13
+/home/fnrizzi/waveRuns/romAccuracyScenario1/train3_v2//fom_mesh256x1024_nThreads_36_dt_0.1_T_2000_snaps_true_seismo_true_mat_bilayer_fRank_1_test_14
 
 Training points [6000.         6300.         6150.         6101.04217773]
 
 Test points [6167.80036453 6238.03953287 6238.3554562  6290.88909048 6111.7785622
  6050.88888121 6105.51675827 6083.52435514 6057.08837738 6282.54538195
- 5950.         6350.         6000.         6300.        ]
+ 5950.         6350.         6000.         6300.         6150.        ]
 Reading /home/fnrizzi/waveRuns/romAccuracyScenario1/train3_v2//fom_mesh256x1024_nThreads_36_dt_0.1_T_2000_snaps_true_seismo_true_mat_bilayer_fRank_1_train_0/state_timestep_20000_vp
 Reading /home/fnrizzi/waveRuns/romAccuracyScenario1/train3_v2//fom_mesh256x1024_nThreads_36_dt_0.1_T_2000_snaps_true_seismo_true_mat_bilayer_fRank_1_train_1/state_timestep_20000_vp
 Reading /home/fnrizzi/waveRuns/romAccuracyScenario1/train3_v2//fom_mesh256x1024_nThreads_36_dt_0.1_T_2000_snaps_true_seismo_true_mat_bilayer_fRank_1_train_2/state_timestep_20000_vp
@@ -56,6 +57,7 @@ Reading /home/fnrizzi/waveRuns/romAccuracyScenario1/train3_v2//fom_mesh256x1024_
 Reading /home/fnrizzi/waveRuns/romAccuracyScenario1/train3_v2//fom_mesh256x1024_nThreads_36_dt_0.1_T_2000_snaps_true_seismo_true_mat_bilayer_fRank_1_test_11/state_timestep_20000_vp
 Reading /home/fnrizzi/waveRuns/romAccuracyScenario1/train3_v2//fom_mesh256x1024_nThreads_36_dt_0.1_T_2000_snaps_true_seismo_true_mat_bilayer_fRank_1_test_12/state_timestep_20000_vp
 Reading /home/fnrizzi/waveRuns/romAccuracyScenario1/train3_v2//fom_mesh256x1024_nThreads_36_dt_0.1_T_2000_snaps_true_seismo_true_mat_bilayer_fRank_1_test_13/state_timestep_20000_vp
+Reading /home/fnrizzi/waveRuns/romAccuracyScenario1/train3_v2//fom_mesh256x1024_nThreads_36_dt_0.1_T_2000_snaps_true_seismo_true_mat_bilayer_fRank_1_test_14/state_timestep_20000_vp
 
 
 nn_test0_vp_fom_minmax = -2.6376469243093067e-10 3.5174279155615993e-10
@@ -434,3 +436,30 @@ rbf_test13_vp_rom_minmax = -2.1753833977711004e-10 3.298167094353532e-10
 rbf_test13_vp_err_minmax = -3.101927297073854e-25 3.0373038117181485e-25
 rbf_test13_vp_err_abs_rel_ltwo_norms = 6.311634373151077e-24 4.75485985566957e-16
 rbf_test13_vp_err_abs_rel_linf_norms = 3.101927297073854e-25 9.405003471122975e-16
+
+
+nn_test14_vp_fom_minmax = -2.7194373141975074e-10 3.5796086798660353e-10
+nn_test14_vp_rom_minmax = -2.7194373141975074e-10 3.5796086798660353e-10
+nn_test14_vp_err_minmax = 0.0 0.0
+nn_test14_vp_err_abs_rel_ltwo_norms = 0.0 0.0
+nn_test14_vp_err_abs_rel_linf_norms = 0.0 0.0
+linear_test14_vp_fom_minmax = -2.7194373141975074e-10 3.5796086798660353e-10
+linear_test14_vp_rom_minmax = -2.7194373141975074e-10 3.5796086798660353e-10
+linear_test14_vp_err_minmax = -2.5849394142282115e-26 2.5849394142282115e-26
+linear_test14_vp_err_abs_rel_ltwo_norms = 4.59636802487413e-25 3.339535752281144e-17
+linear_test14_vp_err_abs_rel_linf_norms = 2.5849394142282115e-26 7.221290496828695e-17
+quadratic_test14_vp_fom_minmax = -2.7194373141975074e-10 3.5796086798660353e-10
+quadratic_test14_vp_rom_minmax = -2.7194373141975074e-10 3.5796086798660353e-10
+quadratic_test14_vp_err_minmax = -1.0339757656912846e-25 1.0339757656912846e-25
+quadratic_test14_vp_err_abs_rel_ltwo_norms = 1.576655326403464e-24 1.1455342137650201e-16
+quadratic_test14_vp_err_abs_rel_linf_norms = 1.0339757656912846e-25 2.888516198731478e-16
+cubicSpline_test14_vp_fom_minmax = -2.7194373141975074e-10 3.5796086798660353e-10
+cubicSpline_test14_vp_rom_minmax = -2.7194373141975074e-10 3.5796086798660353e-10
+cubicSpline_test14_vp_err_minmax = -1.0339757656912846e-25 1.0339757656912846e-25
+cubicSpline_test14_vp_err_abs_rel_ltwo_norms = 1.8429581203029236e-24 1.3390190905953422e-16
+cubicSpline_test14_vp_err_abs_rel_linf_norms = 1.0339757656912846e-25 2.888516198731478e-16
+rbf_test14_vp_fom_minmax = -2.7194373141975074e-10 3.5796086798660353e-10
+rbf_test14_vp_rom_minmax = -2.7194373141975085e-10 3.579608679866035e-10
+rbf_test14_vp_err_minmax = -2.8434333556510326e-25 3.0373038117181485e-25
+rbf_test14_vp_err_abs_rel_ltwo_norms = 6.489757002346822e-24 4.715195871102514e-16
+rbf_test14_vp_err_abs_rel_linf_norms = 3.0373038117181485e-25 8.485016333773718e-16

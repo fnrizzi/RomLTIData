@@ -71,7 +71,7 @@ def doPlot(trainVals, M, dof, scenario, normKind, workDir):
 
   for x in trainVals:
     midTrain = 0.5*(trainVals[0]+trainVals[1])
-    ax.annotate('Train pts for \nPOD basis', xy=(x, 0.0), xytext=(midTrain, 0.5), size=16,
+    ax.annotate('Train points', xy=(x, 0.0), xytext=(midTrain, 0.5), size=16,
                 arrowprops=dict(facecolor='black', shrink=10,
                                 headwidth=7, width=0.7, linewidth=0.5),
                 horizontalalignment='center')
@@ -133,6 +133,6 @@ if __name__== "__main__":
   trainVals = findTrainPoints(dataDir, scenario)
   print("trainValues = {}".format(trainVals))
 
-  for dof in ['vp']:#, 'sp']:
+  for dof in ['vp', 'sp']:
     data = np.loadtxt(parsedDataDir+'/rom_errors_table_'+dof+'.txt')
     doPlot(trainVals, data, dof, scenario, nrm, workDir)

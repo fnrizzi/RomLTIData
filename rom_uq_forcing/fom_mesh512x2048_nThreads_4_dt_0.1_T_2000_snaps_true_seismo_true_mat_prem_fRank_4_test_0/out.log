@@ -17,7 +17,7 @@ spSnapshotsFreq_ = 10000
 enableSeimogram = true 
 mode = ascii 
 Freq_ = 10 
-Locations: 5 10 15 20 25 30 35 40 45 50 55 60 65 70 75 80 85 90 95 100 105 110 115 120 125 130 135 140 145 150 155 160 165 170 175 
+Locations: 10 30 60 90 120 150 
 matModelType = prem 
 Period for signal should be positive. 
 
@@ -26,7 +26,7 @@ signal  type= ricker depth[km]= 150 angle[deg]= 0 period[sec]= -1 delay[sec]= 90
 enableSampling = true 
 numParams_ = 1 
 paramName_ = signalPeriod 
-values = 31.9878 49.5492 49.2676 45.8431 32.6131 58.6577 51.88 51.4272 
+values = 31.9878 49.5492 49.2676 45.8431 32.6131 58.6577 51.88 51.4272 68.942 34.0864 62.2451 32.675 40.1403 61.7049 43.5947 52.5775 42.2338 57.5754 54.5606 67.1215 54.1412 46.0642 54.8965 64.3764 43.2798 63.7963 43.0997 36.2018 61.6783 49.4406 39.01 59.4028 34.1365 43.0407 62.1178 39.8334 58.1079 55.689 49.7952 36.3385 48.9065 46.1767 38.4992 51.2787 35.1745 63.32 32.7407 59.4865 67.7319 47.7992 32.1939 53.3205 39.9657 43.2449 61.9637 58.7679 39.1477 43.5511 65.4319 56.0062 36.4449 63.1864 33.8625 42.7608 45.2513 51.3184 39.2535 66.4248 62.8807 60.3174 63.7817 65.0834 35.3531 42.9519 51.8532 34.379 53.5939 32.803 38.1061 64.1901 31.2296 34.7434 54.4377 50.1885 66.1813 37.911 32.7799 56.2098 36.6521 63.3701 64.451 61.0273 37.9656 44.9121 37.1388 64.0913 56.1004 44.5143 52.7741 47.9037 50.6542 60.5363 62.4637 54.3377 55.2124 50.0444 36.6194 32.974 55.259 61.7472 33.6204 65.772 64.2381 62.9277 64.1121 31.9116 37.7066 35.942 65.9123 64.7197 63.4289 49.001 35.8857 34.791 37.983 43.5699 44.7599 35.9307 33.6961 57.8321 44.603 51.2336 35.7975 43.5499 50.712 35.456 64.5138 43.063 38.8879 57.6344 40.6165 50.3383 66.8611 46.5569 45.8499 44.3354 51.011 35.038 32.0325 44.2967 59.4296 54.0043 52.0344 62.1324 58.5976 39.4986 51.1082 46.5277 51.2046 59.9688 37.1067 38.1919 33.5524 59.3614 65.3609 50.1869 66.0184 33.1203 60.0489 36.4238 32.3384 44.9478 44.7423 46.643 67.9169 46.1544 53.8752 46.3512 66.2859 59.4561 42.9654 43.2587 65.8186 58.9238 53.5024 43.2565 57.3142 39.6103 67.3532 56.0245 68.5463 58.7381 33.8326 68.7474 67.0269 54.0331 32.2205 60.1085 66.5605 55.1314 63.0251 65.6702 39.3377 39.3371 41.7075 48.7773 35.2256 50.9743 33.6365 65.5129 58.6578 50.8401 47.2176 38.0835 38.3988 51.8451 58.2162 58.5438 66.3959 42.8817 56.8047 62.4704 46.3981 60.0506 67.8187 39.5592 61.486 66.2726 56.1492 40.1214 63.6956 63.3859 31.9998 62.6095 46.9035 33.8675 41.4563 41.8794 68.6767 60.3382 59.4021 40.8363 54.42 35.1747 48.2644 35.6176 42.1699 51.5717 62.5293 46.4848 43.9847 32.1332 43.1378 55.7941 32.113 45.1434 46.0483 50.1031 53.2131 35.0066 63.7422 35.991 57.7969 44.6033 44.1373 54.9162 56.6344 34.7533 38.5593 45.2439 59.2304 40.6715 64.3975 32.9209 47.1108 57.8299 64.4109 55.5901 34.3699 49.05 47.5608 66.2673 33.1136 61.9732 59.7055 55.4648 68.8683 37.8566 32.4938 47.9017 60.7397 56.1407 61.8473 54.9273 50.7401 56.0492 56.8014 54.5283 56.8503 61.7362 31.9929 61.4135 36.9089 45.4424 52.0674 49.0066 43.7227 67.5413 50.734 41.3519 43.3203 66.3496 34.1798 46.8259 38.0283 56.8474 54.3995 61.4376 66.5196 59.5866 51.0199 53.3443 43.029 33.9411 51.466 38.2893 34.5023 37.5135 55.0556 50.4282 35.508 33.8469 52.7251 64.5659 54.2576 53.0845 48.3249 45.3188 35.3093 49.969 64.8791 34.567 61.7862 33.1719 31.8464 59.3775 63.659 36.6821 52.8876 43.7151 45.873 64.3373 62.1889 36.3083 48.569 52.7839 39.1376 53.0752 62.6951 37.4511 43.7515 32.4968 47.4005 56.2219 31.1257 58.1931 32.4008 43.1172 51.5342 43.1796 51.1057 36.1788 63.5399 46.9509 50.4744 37.241 55.7708 59.6033 44.6104 54.9545 65.5244 65.3711 63.2176 37.2776 36.8626 40.9126 58.5102 43.4454 42.22 61.8384 52.2844 63.1 62.7456 31.5238 36.1179 58.413 54.368 35.9855 47.9232 58.3124 52.5304 58.6946 57.5565 35.6391 37.9554 34.0312 46.9189 57.8474 52.9756 62.2341 37.2108 55.0637 63.458 48.0144 53.7204 53.2959 57.9572 43.1838 35.8169 58.7763 50.5693 59.5422 51.6152 44.4256 42.156 57.4471 63.5925 34.2656 47.4148 49.5327 67.3645 59.3985 44.8362 33.7055 51.3283 48.9499 52.9159 41.4855 49.2947 67.9271 37.4784 46.3916 39.8081 54.3071 55.013 47.3607 59.5812 38.2389 50.2768 54.3653 59.0179 31.6052 37.3824 41.8094 46.7411 43.3703 62.7725 31.9595 31.8136 63.8274 65.599 54.0434 67.6085 48.202 56.3248 64.463 38.7268 39.0883 64.4021 43.2819 32.0972 47.0148 57.6549 50.1448 56.4546 39.6571 31.0719 49.7166 56.438 32.4057 33.0452 46.9166 32.8891 44.746 50.4412 31.961 62.1368 50.5266 66.8232 65.2427 42.4902 38.0673 44.8225 36.5549 32.0892 39.1121 44.3189 67.9178 54.7159 35.4469 47.1557 58.437 64.7349 46.7562 36.9598 39.0604 63.7108 48.6812 47.8906 56.5713 48.7424 39.2118 
 enableRankTwoF_ = true 
 forcingSize_ = 4 
 
@@ -56,81 +56,23 @@ jacVp:  nnz = 4189184 nrows = 1048576 ncols = 2094592
 jacSp:  nnz = 4189184 nrows = 2094592 ncols = 1048576
 
 *** Constructing seismogram ***
-Target coords (r [m], th [deg], th [rad]) = 6371000 5 0.087266462599716474
-Point mapped to GID = 1046585 with depth (km) = 0, angle (rad) = 0.087479619567473479, angle (deg) = 5.0122129946262826
 Target coords (r [m], th [deg], th [rad]) = 6371000 10 0.17453292519943295
 Point mapped to GID = 1046642 with depth (km) = 0, angle (rad) = 0.17495923913494696, angle (deg) = 10.024425989252565
-Target coords (r [m], th [deg], th [rad]) = 6371000 15 0.26179938779914941
-Point mapped to GID = 1046699 with depth (km) = 0, angle (rad) = 0.26243885870242045, angle (deg) = 15.036638983878849
-Target coords (r [m], th [deg], th [rad]) = 6371000 20 0.3490658503988659
-Point mapped to GID = 1046755 with depth (km) = 0, angle (rad) = 0.34838374810204353, angle (deg) = 19.960918417195899
-Target coords (r [m], th [deg], th [rad]) = 6371000 25 0.43633231299858238
-Point mapped to GID = 1046812 with depth (km) = 0, angle (rad) = 0.435863367669517, angle (deg) = 24.97313141182218
 Target coords (r [m], th [deg], th [rad]) = 6371000 30 0.52359877559829882
 Point mapped to GID = 1046869 with depth (km) = 0, angle (rad) = 0.52334298723699046, angle (deg) = 29.985344406448462
-Target coords (r [m], th [deg], th [rad]) = 6371000 35 0.6108652381980153
-Point mapped to GID = 1046926 with depth (km) = 0, angle (rad) = 0.61082260680446399, angle (deg) = 34.997557401074744
-Target coords (r [m], th [deg], th [rad]) = 6371000 40 0.69813170079773179
-Point mapped to GID = 1046983 with depth (km) = 0, angle (rad) = 0.6983022263719374, angle (deg) = 40.009770395701025
-Target coords (r [m], th [deg], th [rad]) = 6371000 45 0.78539816339744828
-Point mapped to GID = 1047040 with depth (km) = 0, angle (rad) = 0.78578184593941092, angle (deg) = 45.021983390327307
-Target coords (r [m], th [deg], th [rad]) = 6371000 50 0.87266462599716477
-Point mapped to GID = 1047097 with depth (km) = 0, angle (rad) = 0.87326146550688444, angle (deg) = 50.034196384953596
-Target coords (r [m], th [deg], th [rad]) = 6371000 55 0.95993108859688125
-Point mapped to GID = 1047153 with depth (km) = 0, angle (rad) = 0.95920635490650752, angle (deg) = 54.958475818270642
 Target coords (r [m], th [deg], th [rad]) = 6371000 60 1.0471975511965976
 Point mapped to GID = 1047210 with depth (km) = 0, angle (rad) = 1.0466859744739809, angle (deg) = 59.970688812896924
-Target coords (r [m], th [deg], th [rad]) = 6371000 65 1.1344640137963142
-Point mapped to GID = 1047267 with depth (km) = 0, angle (rad) = 1.1341655940414543, angle (deg) = 64.982901807523206
-Target coords (r [m], th [deg], th [rad]) = 6371000 70 1.2217304763960306
-Point mapped to GID = 1047324 with depth (km) = 0, angle (rad) = 1.221645213608928, angle (deg) = 69.995114802149487
-Target coords (r [m], th [deg], th [rad]) = 6371000 75 1.3089969389957472
-Point mapped to GID = 1047381 with depth (km) = 0, angle (rad) = 1.3091248331764014, angle (deg) = 75.007327796775769
-Target coords (r [m], th [deg], th [rad]) = 6371000 80 1.3962634015954636
-Point mapped to GID = 1047438 with depth (km) = 0, angle (rad) = 1.3966044527438748, angle (deg) = 80.019540791402051
-Target coords (r [m], th [deg], th [rad]) = 6371000 85 1.4835298641951802
-Point mapped to GID = 1047495 with depth (km) = 0, angle (rad) = 1.4840840723113484, angle (deg) = 85.031753786028347
 Target coords (r [m], th [deg], th [rad]) = 6371000 90 1.5707963267948966
 Point mapped to GID = 1047552 with depth (km) = 0, angle (rad) = 1.5715636918788218, angle (deg) = 90.043966780654614
-Target coords (r [m], th [deg], th [rad]) = 6371000 95 1.6580627893946132
-Point mapped to GID = 1047608 with depth (km) = 0, angle (rad) = 1.6575085812784449, angle (deg) = 94.968246213971668
-Target coords (r [m], th [deg], th [rad]) = 6371000 100 1.7453292519943295
-Point mapped to GID = 1047665 with depth (km) = 0, angle (rad) = 1.7449882008459183, angle (deg) = 99.980459208597949
-Target coords (r [m], th [deg], th [rad]) = 6371000 105 1.8325957145940461
-Point mapped to GID = 1047722 with depth (km) = 0, angle (rad) = 1.832467820413392, angle (deg) = 104.99267220322425
-Target coords (r [m], th [deg], th [rad]) = 6371000 110 1.9198621771937625
-Point mapped to GID = 1047779 with depth (km) = 0, angle (rad) = 1.9199474399808654, angle (deg) = 110.00488519785051
-Target coords (r [m], th [deg], th [rad]) = 6371000 115 2.0071286397934789
-Point mapped to GID = 1047836 with depth (km) = 0, angle (rad) = 2.007427059548339, angle (deg) = 115.01709819247681
 Target coords (r [m], th [deg], th [rad]) = 6371000 120 2.0943951023931953
 Point mapped to GID = 1047893 with depth (km) = 0, angle (rad) = 2.0949066791158124, angle (deg) = 120.02931118710309
-Target coords (r [m], th [deg], th [rad]) = 6371000 125 2.1816615649929121
-Point mapped to GID = 1047950 with depth (km) = 0, angle (rad) = 2.1823862986832858, angle (deg) = 125.04152418172937
-Target coords (r [m], th [deg], th [rad]) = 6371000 130 2.2689280275926285
-Point mapped to GID = 1048006 with depth (km) = 0, angle (rad) = 2.2683311880829087, angle (deg) = 129.96580361504641
-Target coords (r [m], th [deg], th [rad]) = 6371000 135 2.3561944901923448
-Point mapped to GID = 1048063 with depth (km) = 0, angle (rad) = 2.3558108076503825, angle (deg) = 134.97801660967272
-Target coords (r [m], th [deg], th [rad]) = 6371000 140 2.4434609527920612
-Point mapped to GID = 1048120 with depth (km) = 0, angle (rad) = 2.4432904272178559, angle (deg) = 139.99022960429897
-Target coords (r [m], th [deg], th [rad]) = 6371000 145 2.530727415391778
-Point mapped to GID = 1048177 with depth (km) = 0, angle (rad) = 2.5307700467853294, angle (deg) = 145.00244259892526
 Target coords (r [m], th [deg], th [rad]) = 6371000 150 2.6179938779914944
 Point mapped to GID = 1048234 with depth (km) = 0, angle (rad) = 2.6182496663528028, angle (deg) = 150.01465559355154
-Target coords (r [m], th [deg], th [rad]) = 6371000 155 2.7052603405912108
-Point mapped to GID = 1048291 with depth (km) = 0, angle (rad) = 2.7057292859202762, angle (deg) = 155.02686858817782
-Target coords (r [m], th [deg], th [rad]) = 6371000 160 2.7925268031909272
-Point mapped to GID = 1048348 with depth (km) = 0, angle (rad) = 2.7932089054877496, angle (deg) = 160.0390815828041
-Target coords (r [m], th [deg], th [rad]) = 6371000 165 2.8797932657906435
-Point mapped to GID = 1048404 with depth (km) = 0, angle (rad) = 2.8791537948873729, angle (deg) = 164.96336101612115
-Target coords (r [m], th [deg], th [rad]) = 6371000 170 2.9670597283903604
-Point mapped to GID = 1048461 with depth (km) = 0, angle (rad) = 2.9666334144548463, angle (deg) = 169.97557401074744
-Target coords (r [m], th [deg], th [rad]) = 6371000 175 3.0543261909900767
-Point mapped to GID = 1048518 with depth (km) = 0, angle (rad) = 3.0541130340223197, angle (deg) = 174.98778700537372
 Done Mapping receivers to grid 
-Seismogram [GB] = 0.0020861625671386719
+Seismogram [GB] = 0.00035762786865234375
 
 Doing FOM with sampling of forcing period
-Total number of samples 8
+Total number of samples 512
 Target Source coords (depth [km], r [km], th [deg], th [rad]) = 150 6221 0 0
 Source angle cannot be on left edge, mapping to: 0.0015347301678504119
 Source mapped to GID = 991233 with depth (km) = 152.75342465753388 with angle (rad) = 0.0015347301678504119 angle (deg) = 0.087933561309233021
@@ -153,26 +95,26 @@ FOM-KOKKOS step = 16000
 FOM-KOKKOS step = 18000
 FOM-KOKKOS step = 20000
 
-loopTime = 458.6883416600
-dataCollectionTime = 0.0795207120
+loopTime = 455.5483743980
+dataCollectionTime = 0.0764269040
 flops = 79599628.0000000000
 memMB = 727.3554687500
 flops/bytes = 0.1043672923
-aveBandwidth(GB/s) =    30.98 
-minBandwidth(GB/s) =    25.81 
-maxBandwidth(GB/s) =    35.06 
-aveGFlop =  3.4723 
-minGFlop =  2.8919 
-maxGFlop =  3.9290 
-totTime(se) = 458.4873 
-aveTime(ms) = 22.9244 
-maxTime(ms) = 27.5247 
-minTime(ms) = 20.2597 
+aveBandwidth(GB/s) =    31.20 
+minBandwidth(GB/s) =    26.40 
+maxBandwidth(GB/s) =    35.11 
+aveGFlop =  3.4962 
+minGFlop =  2.9589 
+maxGFlop =  3.9344 
+totTime(se) = 455.3489 
+aveTime(ms) = 22.7674 
+maxTime(ms) = 26.9018 
+minTime(ms) = 20.2317 
 Writing snapshots vp... Done
 Writing snapshots sp... Done
 Writing seismogram ... Done
 
-finalProcessTime = 0.2235651780
+finalProcessTime = 0.1112620870
 centerFreq = 0.0327273125
 minPeriod  = 30.5555184355
 Numerical dispersion criterion along r: OK! 
@@ -192,23 +134,4937 @@ FOM-KOKKOS step = 16000
 FOM-KOKKOS step = 18000
 FOM-KOKKOS step = 20000
 
-loopTime = 459.3339351900
-dataCollectionTime = 0.0842456060
+loopTime = 456.0338776830
+dataCollectionTime = 0.0790647890
 flops = 79599628.0000000000
 memMB = 727.3554687500
 flops/bytes = 0.1043672923
-aveBandwidth(GB/s) =    30.94 
-minBandwidth(GB/s) =    24.26 
-maxBandwidth(GB/s) =    34.54 
-aveGFlop =  3.4674 
-minGFlop =  2.7186 
-maxGFlop =  3.8707 
-totTime(se) = 459.1278 
-aveTime(ms) = 22.9564 
-maxTime(ms) = 29.2795 
-minTime(ms) = 20.5646 
+aveBandwidth(GB/s) =    31.17 
+minBandwidth(GB/s) =    22.47 
+maxBandwidth(GB/s) =    34.72 
+aveGFlop =  3.4925 
+minGFlop =  2.5185 
+maxGFlop =  3.8907 
+totTime(se) = 455.8334 
+aveTime(ms) = 22.7917 
+maxTime(ms) = 31.6062 
+minTime(ms) = 20.4592 
 Writing snapshots vp... Done
 Writing snapshots sp... Done
 Writing seismogram ... Done
 
-finalProcessTime = 0.2235706590
+finalProcessTime = 0.1096236690
+centerFreq = 0.0327273125
+minPeriod  = 30.5555184355
+Numerical dispersion criterion along r: OK! 
+drr = 5657.5342465753, ratio = 10455.9984440813
+Numerical dispersion criterion along theta: OK! 
+maxArc = 9777.7658993750, ratio = 10455.9984440813
+CFL: OK! 
+cfl = 0.1923965841
+FOM-KOKKOS step = 2000
+FOM-KOKKOS step = 4000
+FOM-KOKKOS step = 6000
+FOM-KOKKOS step = 8000
+FOM-KOKKOS step = 10000
+FOM-KOKKOS step = 12000
+FOM-KOKKOS step = 14000
+FOM-KOKKOS step = 16000
+FOM-KOKKOS step = 18000
+FOM-KOKKOS step = 20000
+
+loopTime = 459.3543214550
+dataCollectionTime = 0.0755344580
+flops = 79599628.0000000000
+memMB = 727.3554687500
+flops/bytes = 0.1043672923
+aveBandwidth(GB/s) =    30.94 
+minBandwidth(GB/s) =    21.86 
+maxBandwidth(GB/s) =    34.56 
+aveGFlop =  3.4671 
+minGFlop =  2.4492 
+maxGFlop =  3.8730 
+totTime(se) = 459.1676 
+aveTime(ms) = 22.9584 
+maxTime(ms) = 32.5002 
+minTime(ms) = 20.5526 
+Writing snapshots vp... Done
+Writing snapshots sp... Done
+Writing seismogram ... Done
+
+finalProcessTime = 0.1100942860
+centerFreq = 0.0327273125
+minPeriod  = 30.5555184355
+Numerical dispersion criterion along r: OK! 
+drr = 5657.5342465753, ratio = 12844.8821286908
+Numerical dispersion criterion along theta: OK! 
+maxArc = 9777.7658993750, ratio = 12844.8821286908
+CFL: OK! 
+cfl = 0.1923965841
+FOM-KOKKOS step = 2000
+FOM-KOKKOS step = 4000
+FOM-KOKKOS step = 6000
+FOM-KOKKOS step = 8000
+FOM-KOKKOS step = 10000
+FOM-KOKKOS step = 12000
+FOM-KOKKOS step = 14000
+FOM-KOKKOS step = 16000
+FOM-KOKKOS step = 18000
+FOM-KOKKOS step = 20000
+
+loopTime = 458.0488044650
+dataCollectionTime = 0.0752919160
+flops = 79599628.0000000000
+memMB = 727.3554687500
+flops/bytes = 0.1043672923
+aveBandwidth(GB/s) =    31.03 
+minBandwidth(GB/s) =    21.99 
+maxBandwidth(GB/s) =    34.58 
+aveGFlop =  3.4770 
+minGFlop =  2.4646 
+maxGFlop =  3.8747 
+totTime(se) = 457.8629 
+aveTime(ms) = 22.8931 
+maxTime(ms) = 32.2974 
+minTime(ms) = 20.5434 
+Writing snapshots vp... Done
+Writing snapshots sp... Done
+Writing seismogram ... Done
+
+finalProcessTime = 0.1092140460
+centerFreq = 0.0327273125
+minPeriod  = 30.5555184355
+Numerical dispersion criterion along r: OK! 
+drr = 5657.5342465753, ratio = 13514.8139232046
+Numerical dispersion criterion along theta: OK! 
+maxArc = 9777.7658993750, ratio = 13514.8139232046
+CFL: OK! 
+cfl = 0.1923965841
+FOM-KOKKOS step = 2000
+FOM-KOKKOS step = 4000
+FOM-KOKKOS step = 6000
+FOM-KOKKOS step = 8000
+FOM-KOKKOS step = 10000
+FOM-KOKKOS step = 12000
+FOM-KOKKOS step = 14000
+FOM-KOKKOS step = 16000
+FOM-KOKKOS step = 18000
+FOM-KOKKOS step = 20000
+
+loopTime = 457.9975834310
+dataCollectionTime = 0.0754149850
+flops = 79599628.0000000000
+memMB = 727.3554687500
+flops/bytes = 0.1043672923
+aveBandwidth(GB/s) =    31.03 
+minBandwidth(GB/s) =    21.87 
+maxBandwidth(GB/s) =    34.31 
+aveGFlop =  3.4774 
+minGFlop =  2.4508 
+maxGFlop =  3.8453 
+totTime(se) = 457.8114 
+aveTime(ms) = 22.8906 
+maxTime(ms) = 32.4795 
+minTime(ms) = 20.7004 
+Writing snapshots vp... Done
+Writing snapshots sp... Done
+Writing seismogram ... Done
+
+finalProcessTime = 0.1088358170
+centerFreq = 0.0327273125
+minPeriod  = 30.5555184355
+Numerical dispersion criterion along r: OK! 
+drr = 5657.5342465753, ratio = 14740.5304237431
+Numerical dispersion criterion along theta: OK! 
+maxArc = 9777.7658993750, ratio = 14740.5304237431
+CFL: OK! 
+cfl = 0.1923965841
+FOM-KOKKOS step = 2000
+FOM-KOKKOS step = 4000
+FOM-KOKKOS step = 6000
+FOM-KOKKOS step = 8000
+FOM-KOKKOS step = 10000
+FOM-KOKKOS step = 12000
+FOM-KOKKOS step = 14000
+FOM-KOKKOS step = 16000
+FOM-KOKKOS step = 18000
+FOM-KOKKOS step = 20000
+
+loopTime = 456.1137240780
+dataCollectionTime = 0.0744075570
+flops = 79599628.0000000000
+memMB = 727.3554687500
+flops/bytes = 0.1043672923
+aveBandwidth(GB/s) =    31.16 
+minBandwidth(GB/s) =    24.31 
+maxBandwidth(GB/s) =    34.54 
+aveGFlop =  3.4918 
+minGFlop =  2.7238 
+maxGFlop =  3.8712 
+totTime(se) = 455.9285 
+aveTime(ms) = 22.7964 
+maxTime(ms) = 29.2238 
+minTime(ms) = 20.5621 
+Writing snapshots vp... Done
+Writing snapshots sp... Done
+Writing seismogram ... Done
+
+finalProcessTime = 0.1087282850
+centerFreq = 0.0327273125
+minPeriod  = 30.5555184355
+Numerical dispersion criterion along r: OK! 
+drr = 5657.5342465753, ratio = 11584.5737322001
+Numerical dispersion criterion along theta: OK! 
+maxArc = 9777.7658993750, ratio = 11584.5737322001
+CFL: OK! 
+cfl = 0.1923965841
+FOM-KOKKOS step = 2000
+FOM-KOKKOS step = 4000
+FOM-KOKKOS step = 6000
+FOM-KOKKOS step = 8000
+FOM-KOKKOS step = 10000
+FOM-KOKKOS step = 12000
+FOM-KOKKOS step = 14000
+FOM-KOKKOS step = 16000
+FOM-KOKKOS step = 18000
+FOM-KOKKOS step = 20000
+
+loopTime = 457.8035591960
+dataCollectionTime = 0.0749412780
+flops = 79599628.0000000000
+memMB = 727.3554687500
+flops/bytes = 0.1043672923
+aveBandwidth(GB/s) =    31.04 
+minBandwidth(GB/s) =    22.96 
+maxBandwidth(GB/s) =    34.55 
+aveGFlop =  3.4789 
+minGFlop =  2.5733 
+maxGFlop =  3.8723 
+totTime(se) = 457.6183 
+aveTime(ms) = 22.8809 
+maxTime(ms) = 30.9328 
+minTime(ms) = 20.5561 
+Writing snapshots vp... Done
+Writing snapshots sp... Done
+Writing seismogram ... Done
+
+finalProcessTime = 0.1088025520
+centerFreq = 0.0327273125
+minPeriod  = 30.5555184355
+Numerical dispersion criterion along r: OK! 
+drr = 5657.5342465753, ratio = 12483.2004296429
+Numerical dispersion criterion along theta: OK! 
+maxArc = 9777.7658993750, ratio = 12483.2004296429
+CFL: OK! 
+cfl = 0.1923965841
+FOM-KOKKOS step = 2000
+FOM-KOKKOS step = 4000
+FOM-KOKKOS step = 6000
+FOM-KOKKOS step = 8000
+FOM-KOKKOS step = 10000
+FOM-KOKKOS step = 12000
+FOM-KOKKOS step = 14000
+FOM-KOKKOS step = 16000
+FOM-KOKKOS step = 18000
+FOM-KOKKOS step = 20000
+
+loopTime = 458.8934795820
+dataCollectionTime = 0.0750461800
+flops = 79599628.0000000000
+memMB = 727.3554687500
+flops/bytes = 0.1043672923
+aveBandwidth(GB/s) =    30.97 
+minBandwidth(GB/s) =    23.09 
+maxBandwidth(GB/s) =    34.43 
+aveGFlop =  3.4706 
+minGFlop =  2.5872 
+maxGFlop =  3.8588 
+totTime(se) = 458.7084 
+aveTime(ms) = 22.9354 
+maxTime(ms) = 30.7663 
+minTime(ms) = 20.6279 
+Writing snapshots vp... Done
+Writing snapshots sp... Done
+Writing seismogram ... Done
+
+finalProcessTime = 0.1090879210
+centerFreq = 0.0327273125
+minPeriod  = 30.5555184355
+Numerical dispersion criterion along r: OK! 
+drr = 5657.5342465753, ratio = 10923.6650445845
+Numerical dispersion criterion along theta: OK! 
+maxArc = 9777.7658993750, ratio = 10923.6650445845
+CFL: OK! 
+cfl = 0.1923965841
+FOM-KOKKOS step = 2000
+FOM-KOKKOS step = 4000
+FOM-KOKKOS step = 6000
+FOM-KOKKOS step = 8000
+FOM-KOKKOS step = 10000
+FOM-KOKKOS step = 12000
+FOM-KOKKOS step = 14000
+FOM-KOKKOS step = 16000
+FOM-KOKKOS step = 18000
+FOM-KOKKOS step = 20000
+
+loopTime = 458.3416463600
+dataCollectionTime = 0.0750271560
+flops = 79599628.0000000000
+memMB = 727.3554687500
+flops/bytes = 0.1043672923
+aveBandwidth(GB/s) =    31.01 
+minBandwidth(GB/s) =    23.31 
+maxBandwidth(GB/s) =    34.64 
+aveGFlop =  3.4748 
+minGFlop =  2.6120 
+maxGFlop =  3.8817 
+totTime(se) = 458.1560 
+aveTime(ms) = 22.9078 
+maxTime(ms) = 30.4748 
+minTime(ms) = 20.5065 
+Writing snapshots vp... Done
+Writing snapshots sp... Done
+Writing seismogram ... Done
+
+finalProcessTime = 0.1089623360
+centerFreq = 0.0327273125
+minPeriod  = 30.5555184355
+Numerical dispersion criterion along r: OK! 
+drr = 5657.5342465753, ratio = 11628.3057705388
+Numerical dispersion criterion along theta: OK! 
+maxArc = 9777.7658993750, ratio = 11628.3057705388
+CFL: OK! 
+cfl = 0.1923965841
+FOM-KOKKOS step = 2000
+FOM-KOKKOS step = 4000
+FOM-KOKKOS step = 6000
+FOM-KOKKOS step = 8000
+FOM-KOKKOS step = 10000
+FOM-KOKKOS step = 12000
+FOM-KOKKOS step = 14000
+FOM-KOKKOS step = 16000
+FOM-KOKKOS step = 18000
+FOM-KOKKOS step = 20000
+
+loopTime = 457.1554206220
+dataCollectionTime = 0.0752450460
+flops = 79599628.0000000000
+memMB = 727.3554687500
+flops/bytes = 0.1043672923
+aveBandwidth(GB/s) =    31.09 
+minBandwidth(GB/s) =    22.40 
+maxBandwidth(GB/s) =    34.59 
+aveGFlop =  3.4838 
+minGFlop =  2.5108 
+maxGFlop =  3.8765 
+totTime(se) = 456.9690 
+aveTime(ms) = 22.8484 
+maxTime(ms) = 31.7032 
+minTime(ms) = 20.5338 
+Writing snapshots vp... Done
+Writing snapshots sp... Done
+Writing seismogram ... Done
+
+finalProcessTime = 0.1078312520
+centerFreq = 0.0327273125
+minPeriod  = 30.5555184355
+Numerical dispersion criterion along r: OK! 
+drr = 5657.5342465753, ratio = 12319.7422283095
+Numerical dispersion criterion along theta: OK! 
+maxArc = 9777.7658993750, ratio = 12319.7422283095
+CFL: OK! 
+cfl = 0.1923965841
+FOM-KOKKOS step = 2000
+FOM-KOKKOS step = 4000
+FOM-KOKKOS step = 6000
+FOM-KOKKOS step = 8000
+FOM-KOKKOS step = 10000
+FOM-KOKKOS step = 12000
+FOM-KOKKOS step = 14000
+FOM-KOKKOS step = 16000
+FOM-KOKKOS step = 18000
+FOM-KOKKOS step = 20000
+
+loopTime = 456.8438206200
+dataCollectionTime = 0.0749488360
+flops = 79599628.0000000000
+memMB = 727.3554687500
+flops/bytes = 0.1043672923
+aveBandwidth(GB/s) =    31.11 
+minBandwidth(GB/s) =    21.67 
+maxBandwidth(GB/s) =    34.60 
+aveGFlop =  3.4862 
+minGFlop =  2.4290 
+maxGFlop =  3.8772 
+totTime(se) = 456.6581 
+aveTime(ms) = 22.8329 
+maxTime(ms) = 32.7710 
+minTime(ms) = 20.5300 
+Writing snapshots vp... Done
+Writing snapshots sp... Done
+Writing seismogram ... Done
+
+finalProcessTime = 0.1092977460
+centerFreq = 0.0327273125
+minPeriod  = 30.5555184355
+Numerical dispersion criterion along r: OK! 
+drr = 5657.5342465753, ratio = 10477.0314180283
+Numerical dispersion criterion along theta: OK! 
+maxArc = 9777.7658993750, ratio = 10477.0314180283
+CFL: OK! 
+cfl = 0.1923965841
+FOM-KOKKOS step = 2000
+FOM-KOKKOS step = 4000
+FOM-KOKKOS step = 6000
+FOM-KOKKOS step = 8000
+FOM-KOKKOS step = 10000
+FOM-KOKKOS step = 12000
+FOM-KOKKOS step = 14000
+FOM-KOKKOS step = 16000
+FOM-KOKKOS step = 18000
+FOM-KOKKOS step = 20000
+
+loopTime = 457.3292568330
+dataCollectionTime = 0.0751088440
+flops = 79599628.0000000000
+memMB = 727.3554687500
+flops/bytes = 0.1043672923
+aveBandwidth(GB/s) =    31.08 
+minBandwidth(GB/s) =    21.48 
+maxBandwidth(GB/s) =    34.61 
+aveGFlop =  3.4825 
+minGFlop =  2.4069 
+maxGFlop =  3.8786 
+totTime(se) = 457.1435 
+aveTime(ms) = 22.8572 
+maxTime(ms) = 33.0720 
+minTime(ms) = 20.5229 
+Writing snapshots vp... Done
+Writing snapshots sp... Done
+Writing seismogram ... Done
+
+finalProcessTime = 0.1090974270
+centerFreq = 0.0327273125
+minPeriod  = 30.5555184355
+Numerical dispersion criterion along r: OK! 
+drr = 5657.5342465753, ratio = 10302.0400181969
+Numerical dispersion criterion along theta: OK! 
+maxArc = 9777.7658993750, ratio = 10302.0400181969
+CFL: OK! 
+cfl = 0.1923965841
+FOM-KOKKOS step = 2000
+FOM-KOKKOS step = 4000
+FOM-KOKKOS step = 6000
+FOM-KOKKOS step = 8000
+FOM-KOKKOS step = 10000
+FOM-KOKKOS step = 12000
+FOM-KOKKOS step = 14000
+FOM-KOKKOS step = 16000
+FOM-KOKKOS step = 18000
+FOM-KOKKOS step = 20000
+
+loopTime = 458.1343628240
+dataCollectionTime = 0.0735567540
+flops = 79599628.0000000000
+memMB = 727.3554687500
+flops/bytes = 0.1043672923
+aveBandwidth(GB/s) =    31.02 
+minBandwidth(GB/s) =    22.12 
+maxBandwidth(GB/s) =    34.55 
+aveGFlop =  3.4763 
+minGFlop =  2.4789 
+maxGFlop =  3.8721 
+totTime(se) = 457.9499 
+aveTime(ms) = 22.8975 
+maxTime(ms) = 32.1104 
+minTime(ms) = 20.5573 
+Writing snapshots vp... Done
+Writing snapshots sp... Done
+Writing seismogram ... Done
+
+finalProcessTime = 0.1088866040
+centerFreq = 0.0327273125
+minPeriod  = 30.5555184355
+Numerical dispersion criterion along r: OK! 
+drr = 5657.5342465753, ratio = 12789.0351463320
+Numerical dispersion criterion along theta: OK! 
+maxArc = 9777.7658993750, ratio = 12789.0351463320
+CFL: OK! 
+cfl = 0.1923965841
+FOM-KOKKOS step = 2000
+FOM-KOKKOS step = 4000
+FOM-KOKKOS step = 6000
+FOM-KOKKOS step = 8000
+FOM-KOKKOS step = 10000
+FOM-KOKKOS step = 12000
+FOM-KOKKOS step = 14000
+FOM-KOKKOS step = 16000
+FOM-KOKKOS step = 18000
+FOM-KOKKOS step = 20000
+
+loopTime = 456.5443354760
+dataCollectionTime = 0.0742405740
+flops = 79599628.0000000000
+memMB = 727.3554687500
+flops/bytes = 0.1043672923
+aveBandwidth(GB/s) =    31.13 
+minBandwidth(GB/s) =    23.37 
+maxBandwidth(GB/s) =    34.58 
+aveGFlop =  3.4884 
+minGFlop =  2.6184 
+maxGFlop =  3.8751 
+totTime(se) = 456.3613 
+aveTime(ms) = 22.8181 
+maxTime(ms) = 30.3999 
+minTime(ms) = 20.5412 
+Writing snapshots vp... Done
+Writing snapshots sp... Done
+Writing seismogram ... Done
+
+finalProcessTime = 0.1081063410
+centerFreq = 0.0327273125
+minPeriod  = 30.5555184355
+Numerical dispersion criterion along r: OK! 
+drr = 5657.5342465753, ratio = 12527.2706169010
+Numerical dispersion criterion along theta: OK! 
+maxArc = 9777.7658993750, ratio = 12527.2706169010
+CFL: OK! 
+cfl = 0.1923965841
+FOM-KOKKOS step = 2000
+FOM-KOKKOS step = 4000
+FOM-KOKKOS step = 6000
+FOM-KOKKOS step = 8000
+FOM-KOKKOS step = 10000
+FOM-KOKKOS step = 12000
+FOM-KOKKOS step = 14000
+FOM-KOKKOS step = 16000
+FOM-KOKKOS step = 18000
+FOM-KOKKOS step = 20000
+
+loopTime = 457.1514131100
+dataCollectionTime = 0.0741789000
+flops = 79599628.0000000000
+memMB = 727.3554687500
+flops/bytes = 0.1043672923
+aveBandwidth(GB/s) =    31.09 
+minBandwidth(GB/s) =    22.12 
+maxBandwidth(GB/s) =    34.56 
+aveGFlop =  3.4838 
+minGFlop =  2.4789 
+maxGFlop =  3.8732 
+totTime(se) = 456.9675 
+aveTime(ms) = 22.8484 
+maxTime(ms) = 32.1103 
+minTime(ms) = 20.5513 
+Writing snapshots vp... Done
+Writing snapshots sp... Done
+Writing seismogram ... Done
+
+finalProcessTime = 0.1091386330
+centerFreq = 0.0327273125
+minPeriod  = 30.5555184355
+Numerical dispersion criterion along r: OK! 
+drr = 5657.5342465753, ratio = 10836.0077658310
+Numerical dispersion criterion along theta: OK! 
+maxArc = 9777.7658993750, ratio = 10836.0077658310
+CFL: OK! 
+cfl = 0.1923965841
+FOM-KOKKOS step = 2000
+FOM-KOKKOS step = 4000
+FOM-KOKKOS step = 6000
+FOM-KOKKOS step = 8000
+FOM-KOKKOS step = 10000
+FOM-KOKKOS step = 12000
+FOM-KOKKOS step = 14000
+FOM-KOKKOS step = 16000
+FOM-KOKKOS step = 18000
+FOM-KOKKOS step = 20000
+
+loopTime = 458.1210116940
+dataCollectionTime = 0.0747507980
+flops = 79599628.0000000000
+memMB = 727.3554687500
+flops/bytes = 0.1043672923
+aveBandwidth(GB/s) =    31.02 
+minBandwidth(GB/s) =    24.00 
+maxBandwidth(GB/s) =    34.69 
+aveGFlop =  3.4764 
+minGFlop =  2.6891 
+maxGFlop =  3.8869 
+totTime(se) = 457.9363 
+aveTime(ms) = 22.8968 
+maxTime(ms) = 29.6009 
+minTime(ms) = 20.4788 
+Writing snapshots vp... Done
+Writing snapshots sp... Done
+Writing seismogram ... Done
+
+finalProcessTime = 0.1086355460
+centerFreq = 0.0327273125
+minPeriod  = 30.5555184355
+Numerical dispersion criterion along r: OK! 
+drr = 5657.5342465753, ratio = 12561.1239309860
+Numerical dispersion criterion along theta: OK! 
+maxArc = 9777.7658993750, ratio = 12561.1239309860
+CFL: OK! 
+cfl = 0.1923965841
+FOM-KOKKOS step = 2000
+FOM-KOKKOS step = 4000
+FOM-KOKKOS step = 6000
+FOM-KOKKOS step = 8000
+FOM-KOKKOS step = 10000
+FOM-KOKKOS step = 12000
+FOM-KOKKOS step = 14000
+FOM-KOKKOS step = 16000
+FOM-KOKKOS step = 18000
+FOM-KOKKOS step = 20000
+
+loopTime = 456.4327224220
+dataCollectionTime = 0.0748276370
+flops = 79599628.0000000000
+memMB = 727.3554687500
+flops/bytes = 0.1043672923
+aveBandwidth(GB/s) =    31.14 
+minBandwidth(GB/s) =    23.43 
+maxBandwidth(GB/s) =    34.66 
+aveGFlop =  3.4893 
+minGFlop =  2.6253 
+maxGFlop =  3.8839 
+totTime(se) = 456.2487 
+aveTime(ms) = 22.8124 
+maxTime(ms) = 30.3202 
+minTime(ms) = 20.4949 
+Writing snapshots vp... Done
+Writing snapshots sp... Done
+Writing seismogram ... Done
+
+finalProcessTime = 0.1082532680
+centerFreq = 0.0327273125
+minPeriod  = 30.5555184355
+Numerical dispersion criterion along r: OK! 
+drr = 5657.5342465753, ratio = 19301.5570406164
+Numerical dispersion criterion along theta: OK! 
+maxArc = 9777.7658993750, ratio = 19301.5570406164
+CFL: OK! 
+cfl = 0.1923965841
+FOM-KOKKOS step = 2000
+FOM-KOKKOS step = 4000
+FOM-KOKKOS step = 6000
+FOM-KOKKOS step = 8000
+FOM-KOKKOS step = 10000
+FOM-KOKKOS step = 12000
+FOM-KOKKOS step = 14000
+FOM-KOKKOS step = 16000
+FOM-KOKKOS step = 18000
+FOM-KOKKOS step = 20000
+
+loopTime = 455.9406420830
+dataCollectionTime = 0.0746710850
+flops = 79599628.0000000000
+memMB = 727.3554687500
+flops/bytes = 0.1043672923
+aveBandwidth(GB/s) =    31.17 
+minBandwidth(GB/s) =    24.51 
+maxBandwidth(GB/s) =    34.56 
+aveGFlop =  3.4931 
+minGFlop =  2.7471 
+maxGFlop =  3.8724 
+totTime(se) = 455.7556 
+aveTime(ms) = 22.7878 
+maxTime(ms) = 28.9759 
+minTime(ms) = 20.5559 
+Writing snapshots vp... Done
+Writing snapshots sp... Done
+Writing seismogram ... Done
+
+finalProcessTime = 0.1082675030
+centerFreq = 0.0327273125
+minPeriod  = 30.5555184355
+Numerical dispersion criterion along r: OK! 
+drr = 5657.5342465753, ratio = 11001.2887382676
+Numerical dispersion criterion along theta: OK! 
+maxArc = 9777.7658993750, ratio = 11001.2887382676
+CFL: OK! 
+cfl = 0.1923965841
+FOM-KOKKOS step = 2000
+FOM-KOKKOS step = 4000
+FOM-KOKKOS step = 6000
+FOM-KOKKOS step = 8000
+FOM-KOKKOS step = 10000
+FOM-KOKKOS step = 12000
+FOM-KOKKOS step = 14000
+FOM-KOKKOS step = 16000
+FOM-KOKKOS step = 18000
+FOM-KOKKOS step = 20000
+
+loopTime = 457.4402522780
+dataCollectionTime = 0.0736727380
+flops = 79599628.0000000000
+memMB = 727.3554687500
+flops/bytes = 0.1043672923
+aveBandwidth(GB/s) =    31.07 
+minBandwidth(GB/s) =    21.44 
+maxBandwidth(GB/s) =    34.43 
+aveGFlop =  3.4816 
+minGFlop =  2.4021 
+maxGFlop =  3.8587 
+totTime(se) = 457.2565 
+aveTime(ms) = 22.8628 
+maxTime(ms) = 33.1373 
+minTime(ms) = 20.6285 
+Writing snapshots vp... Done
+Writing snapshots sp... Done
+Writing seismogram ... Done
+
+finalProcessTime = 0.1085147220
+centerFreq = 0.0327273125
+minPeriod  = 30.5555184355
+Numerical dispersion criterion along r: OK! 
+drr = 5657.5342465753, ratio = 10496.9699620531
+Numerical dispersion criterion along theta: OK! 
+maxArc = 9777.7658993750, ratio = 10496.9699620531
+CFL: OK! 
+cfl = 0.1923965841
+FOM-KOKKOS step = 2000
+FOM-KOKKOS step = 4000
+FOM-KOKKOS step = 6000
+FOM-KOKKOS step = 8000
+FOM-KOKKOS step = 10000
+FOM-KOKKOS step = 12000
+FOM-KOKKOS step = 14000
+FOM-KOKKOS step = 16000
+FOM-KOKKOS step = 18000
+FOM-KOKKOS step = 20000
+
+loopTime = 457.9842424380
+dataCollectionTime = 0.0737102290
+flops = 79599628.0000000000
+memMB = 727.3554687500
+flops/bytes = 0.1043672923
+aveBandwidth(GB/s) =    31.03 
+minBandwidth(GB/s) =    22.51 
+maxBandwidth(GB/s) =    34.61 
+aveGFlop =  3.4775 
+minGFlop =  2.5230 
+maxGFlop =  3.8780 
+totTime(se) = 457.8004 
+aveTime(ms) = 22.8900 
+maxTime(ms) = 31.5493 
+minTime(ms) = 20.5261 
+Writing snapshots vp... Done
+Writing snapshots sp... Done
+Writing seismogram ... Done
+
+finalProcessTime = 0.1083729310
+centerFreq = 0.0327273125
+minPeriod  = 30.5555184355
+Numerical dispersion criterion along r: OK! 
+drr = 5657.5342465753, ratio = 9993.4783889620
+Numerical dispersion criterion along theta: OK! 
+maxArc = 9777.7658993750, ratio = 9993.4783889620
+CFL: OK! 
+cfl = 0.1923965841
+FOM-KOKKOS step = 2000
+FOM-KOKKOS step = 4000
+FOM-KOKKOS step = 6000
+FOM-KOKKOS step = 8000
+FOM-KOKKOS step = 10000
+FOM-KOKKOS step = 12000
+FOM-KOKKOS step = 14000
+FOM-KOKKOS step = 16000
+FOM-KOKKOS step = 18000
+FOM-KOKKOS step = 20000
+
+loopTime = 458.8379983940
+dataCollectionTime = 0.0753596230
+flops = 79599628.0000000000
+memMB = 727.3554687500
+flops/bytes = 0.1043672923
+aveBandwidth(GB/s) =    30.97 
+minBandwidth(GB/s) =    24.12 
+maxBandwidth(GB/s) =    34.59 
+aveGFlop =  3.4710 
+minGFlop =  2.7027 
+maxGFlop =  3.8759 
+totTime(se) = 458.6532 
+aveTime(ms) = 22.9327 
+maxTime(ms) = 29.4523 
+minTime(ms) = 20.5369 
+Writing snapshots vp... Done
+Writing snapshots sp... Done
+Writing seismogram ... Done
+
+finalProcessTime = 0.1087314080
+centerFreq = 0.0327273125
+minPeriod  = 30.5555184355
+Numerical dispersion criterion along r: OK! 
+drr = 5657.5342465753, ratio = 10489.5776129017
+Numerical dispersion criterion along theta: OK! 
+maxArc = 9777.7658993750, ratio = 10489.5776129017
+CFL: OK! 
+cfl = 0.1923965841
+FOM-KOKKOS step = 2000
+FOM-KOKKOS step = 4000
+FOM-KOKKOS step = 6000
+FOM-KOKKOS step = 8000
+FOM-KOKKOS step = 10000
+FOM-KOKKOS step = 12000
+FOM-KOKKOS step = 14000
+FOM-KOKKOS step = 16000
+FOM-KOKKOS step = 18000
+FOM-KOKKOS step = 20000
+
+loopTime = 455.8931929920
+dataCollectionTime = 0.0744429640
+flops = 79599628.0000000000
+memMB = 727.3554687500
+flops/bytes = 0.1043672923
+aveBandwidth(GB/s) =    31.17 
+minBandwidth(GB/s) =    22.57 
+maxBandwidth(GB/s) =    34.60 
+aveGFlop =  3.4934 
+minGFlop =  2.5290 
+maxGFlop =  3.8776 
+totTime(se) = 455.7097 
+aveTime(ms) = 22.7855 
+maxTime(ms) = 31.4753 
+minTime(ms) = 20.5279 
+Writing snapshots vp... Done
+Writing snapshots sp... Done
+Writing seismogram ... Done
+
+finalProcessTime = 0.1092983290
+centerFreq = 0.0327273125
+minPeriod  = 30.5555184355
+Numerical dispersion criterion along r: OK! 
+drr = 5657.5342465753, ratio = 11728.6670850268
+Numerical dispersion criterion along theta: OK! 
+maxArc = 9777.7658993750, ratio = 11728.6670850268
+CFL: OK! 
+cfl = 0.1923965841
+FOM-KOKKOS step = 2000
+FOM-KOKKOS step = 4000
+FOM-KOKKOS step = 6000
+FOM-KOKKOS step = 8000
+FOM-KOKKOS step = 10000
+FOM-KOKKOS step = 12000
+FOM-KOKKOS step = 14000
+FOM-KOKKOS step = 16000
+FOM-KOKKOS step = 18000
+FOM-KOKKOS step = 20000
+
+loopTime = 456.2415696510
+dataCollectionTime = 0.0740934770
+flops = 79599628.0000000000
+memMB = 727.3554687500
+flops/bytes = 0.1043672923
+aveBandwidth(GB/s) =    31.15 
+minBandwidth(GB/s) =    23.46 
+maxBandwidth(GB/s) =    34.65 
+aveGFlop =  3.4908 
+minGFlop =  2.6294 
+maxGFlop =  3.8833 
+totTime(se) = 456.0579 
+aveTime(ms) = 22.8029 
+maxTime(ms) = 30.2730 
+minTime(ms) = 20.4979 
+Writing snapshots vp... Done
+Writing snapshots sp... Done
+Writing seismogram ... Done
+
+finalProcessTime = 0.1085421740
+centerFreq = 0.0327273125
+minPeriod  = 30.5555184355
+Numerical dispersion criterion along r: OK! 
+drr = 5657.5342465753, ratio = 11884.4085605553
+Numerical dispersion criterion along theta: OK! 
+maxArc = 9777.7658993750, ratio = 11884.4085605553
+CFL: OK! 
+cfl = 0.1923965841
+FOM-KOKKOS step = 2000
+FOM-KOKKOS step = 4000
+FOM-KOKKOS step = 6000
+FOM-KOKKOS step = 8000
+FOM-KOKKOS step = 10000
+FOM-KOKKOS step = 12000
+FOM-KOKKOS step = 14000
+FOM-KOKKOS step = 16000
+FOM-KOKKOS step = 18000
+FOM-KOKKOS step = 20000
+
+loopTime = 455.8462986600
+dataCollectionTime = 0.0737436010
+flops = 79599628.0000000000
+memMB = 727.3554687500
+flops/bytes = 0.1043672923
+aveBandwidth(GB/s) =    31.18 
+minBandwidth(GB/s) =    21.83 
+maxBandwidth(GB/s) =    34.92 
+aveGFlop =  3.4938 
+minGFlop =  2.4464 
+maxGFlop =  3.9132 
+totTime(se) = 455.6631 
+aveTime(ms) = 22.7832 
+maxTime(ms) = 32.5369 
+minTime(ms) = 20.3411 
+Writing snapshots vp... Done
+Writing snapshots sp... Done
+Writing seismogram ... Done
+
+finalProcessTime = 0.1085787900
+centerFreq = 0.0327273125
+minPeriod  = 30.5555184355
+Numerical dispersion criterion along r: OK! 
+drr = 5657.5342465753, ratio = 14244.5860095170
+Numerical dispersion criterion along theta: OK! 
+maxArc = 9777.7658993750, ratio = 14244.5860095170
+CFL: OK! 
+cfl = 0.1923965841
+FOM-KOKKOS step = 2000
+FOM-KOKKOS step = 4000
+FOM-KOKKOS step = 6000
+FOM-KOKKOS step = 8000
+FOM-KOKKOS step = 10000
+FOM-KOKKOS step = 12000
+FOM-KOKKOS step = 14000
+FOM-KOKKOS step = 16000
+FOM-KOKKOS step = 18000
+FOM-KOKKOS step = 20000
+
+loopTime = 455.9646081190
+dataCollectionTime = 0.0735826500
+flops = 79599628.0000000000
+memMB = 727.3554687500
+flops/bytes = 0.1043672923
+aveBandwidth(GB/s) =    31.17 
+minBandwidth(GB/s) =    21.71 
+maxBandwidth(GB/s) =    34.75 
+aveGFlop =  3.4929 
+minGFlop =  2.4332 
+maxGFlop =  3.8946 
+totTime(se) = 455.7815 
+aveTime(ms) = 22.7891 
+maxTime(ms) = 32.7134 
+minTime(ms) = 20.4384 
+Writing snapshots vp... Done
+Writing snapshots sp... Done
+Writing seismogram ... Done
+
+finalProcessTime = 0.1087982650
+centerFreq = 0.0327273125
+minPeriod  = 30.5555184355
+Numerical dispersion criterion along r: OK! 
+drr = 5657.5342465753, ratio = 16209.3365084020
+Numerical dispersion criterion along theta: OK! 
+maxArc = 9777.7658993750, ratio = 16209.3365084020
+CFL: OK! 
+cfl = 0.1923965841
+FOM-KOKKOS step = 2000
+FOM-KOKKOS step = 4000
+FOM-KOKKOS step = 6000
+FOM-KOKKOS step = 8000
+FOM-KOKKOS step = 10000
+FOM-KOKKOS step = 12000
+FOM-KOKKOS step = 14000
+FOM-KOKKOS step = 16000
+FOM-KOKKOS step = 18000
+FOM-KOKKOS step = 20000
+
+loopTime = 455.7779341260
+dataCollectionTime = 0.0738680790
+flops = 79599628.0000000000
+memMB = 727.3554687500
+flops/bytes = 0.1043672923
+aveBandwidth(GB/s) =    31.18 
+minBandwidth(GB/s) =    24.02 
+maxBandwidth(GB/s) =    34.72 
+aveGFlop =  3.4943 
+minGFlop =  2.6918 
+maxGFlop =  3.8905 
+totTime(se) = 455.5946 
+aveTime(ms) = 22.7797 
+maxTime(ms) = 29.5708 
+minTime(ms) = 20.4602 
+Writing snapshots vp... Done
+Writing snapshots sp... Done
+Writing seismogram ... Done
+
+finalProcessTime = 0.1082626850
+centerFreq = 0.0327273125
+minPeriod  = 30.5555184355
+Numerical dispersion criterion along r: OK! 
+drr = 5657.5342465753, ratio = 10551.6920542331
+Numerical dispersion criterion along theta: OK! 
+maxArc = 9777.7658993750, ratio = 10551.6920542331
+CFL: OK! 
+cfl = 0.1923965841
+FOM-KOKKOS step = 2000
+FOM-KOKKOS step = 4000
+FOM-KOKKOS step = 6000
+FOM-KOKKOS step = 8000
+FOM-KOKKOS step = 10000
+FOM-KOKKOS step = 12000
+FOM-KOKKOS step = 14000
+FOM-KOKKOS step = 16000
+FOM-KOKKOS step = 18000
+FOM-KOKKOS step = 20000
+
+loopTime = 457.3180514390
+dataCollectionTime = 0.0741042950
+flops = 79599628.0000000000
+memMB = 727.3554687500
+flops/bytes = 0.1043672923
+aveBandwidth(GB/s) =    31.08 
+minBandwidth(GB/s) =    21.60 
+maxBandwidth(GB/s) =    34.62 
+aveGFlop =  3.4825 
+minGFlop =  2.4206 
+maxGFlop =  3.8792 
+totTime(se) = 457.1348 
+aveTime(ms) = 22.8567 
+maxTime(ms) = 32.8842 
+minTime(ms) = 20.5194 
+Writing snapshots vp... Done
+Writing snapshots sp... Done
+Writing seismogram ... Done
+
+finalProcessTime = 0.1085153870
+centerFreq = 0.0327273125
+minPeriod  = 30.5555184355
+Numerical dispersion criterion along r: OK! 
+drr = 5657.5342465753, ratio = 10758.5400292024
+Numerical dispersion criterion along theta: OK! 
+maxArc = 9777.7658993750, ratio = 10758.5400292024
+CFL: OK! 
+cfl = 0.1923965841
+FOM-KOKKOS step = 2000
+FOM-KOKKOS step = 4000
+FOM-KOKKOS step = 6000
+FOM-KOKKOS step = 8000
+FOM-KOKKOS step = 10000
+FOM-KOKKOS step = 12000
+FOM-KOKKOS step = 14000
+FOM-KOKKOS step = 16000
+FOM-KOKKOS step = 18000
+FOM-KOKKOS step = 20000
+
+loopTime = 457.1668899830
+dataCollectionTime = 0.0739824290
+flops = 79599628.0000000000
+memMB = 727.3554687500
+flops/bytes = 0.1043672923
+aveBandwidth(GB/s) =    31.09 
+minBandwidth(GB/s) =    21.90 
+maxBandwidth(GB/s) =    34.51 
+aveGFlop =  3.4837 
+minGFlop =  2.4540 
+maxGFlop =  3.8672 
+totTime(se) = 456.9841 
+aveTime(ms) = 22.8492 
+maxTime(ms) = 32.4371 
+minTime(ms) = 20.5832 
+Writing snapshots vp... Done
+Writing snapshots sp... Done
+Writing seismogram ... Done
+
+finalProcessTime = 0.1083503190
+centerFreq = 0.0327273125
+minPeriod  = 30.5555184355
+Numerical dispersion criterion along r: OK! 
+drr = 5657.5342465753, ratio = 10211.7077891499
+Numerical dispersion criterion along theta: OK! 
+maxArc = 9777.7658993750, ratio = 10211.7077891499
+CFL: OK! 
+cfl = 0.1923965841
+FOM-KOKKOS step = 2000
+FOM-KOKKOS step = 4000
+FOM-KOKKOS step = 6000
+FOM-KOKKOS step = 8000
+FOM-KOKKOS step = 10000
+FOM-KOKKOS step = 12000
+FOM-KOKKOS step = 14000
+FOM-KOKKOS step = 16000
+FOM-KOKKOS step = 18000
+FOM-KOKKOS step = 20000
+
+loopTime = 456.6901144190
+dataCollectionTime = 0.0740098570
+flops = 79599628.0000000000
+memMB = 727.3554687500
+flops/bytes = 0.1043672923
+aveBandwidth(GB/s) =    31.12 
+minBandwidth(GB/s) =    22.53 
+maxBandwidth(GB/s) =    34.62 
+aveGFlop =  3.4873 
+minGFlop =  2.5246 
+maxGFlop =  3.8796 
+totTime(se) = 456.5079 
+aveTime(ms) = 22.8254 
+maxTime(ms) = 31.5291 
+minTime(ms) = 20.5174 
+Writing snapshots vp... Done
+Writing snapshots sp... Done
+Writing seismogram ... Done
+
+finalProcessTime = 0.1090461970
+centerFreq = 0.0327273125
+minPeriod  = 30.5555184355
+Numerical dispersion criterion along r: OK! 
+drr = 5657.5342465753, ratio = 11501.4292987306
+Numerical dispersion criterion along theta: OK! 
+maxArc = 9777.7658993750, ratio = 11501.4292987306
+CFL: OK! 
+cfl = 0.1923965841
+FOM-KOKKOS step = 2000
+FOM-KOKKOS step = 4000
+FOM-KOKKOS step = 6000
+FOM-KOKKOS step = 8000
+FOM-KOKKOS step = 10000
+FOM-KOKKOS step = 12000
+FOM-KOKKOS step = 14000
+FOM-KOKKOS step = 16000
+FOM-KOKKOS step = 18000
+FOM-KOKKOS step = 20000
+
+loopTime = 456.8725869330
+dataCollectionTime = 0.0738190250
+flops = 79599628.0000000000
+memMB = 727.3554687500
+flops/bytes = 0.1043672923
+aveBandwidth(GB/s) =    31.11 
+minBandwidth(GB/s) =    21.91 
+maxBandwidth(GB/s) =    34.65 
+aveGFlop =  3.4859 
+minGFlop =  2.4554 
+maxGFlop =  3.8832 
+totTime(se) = 456.6904 
+aveTime(ms) = 22.8345 
+maxTime(ms) = 32.4182 
+minTime(ms) = 20.4985 
+Writing snapshots vp... Done
+Writing snapshots sp... Done
+Writing seismogram ... Done
+
+finalProcessTime = 0.1084508850
+centerFreq = 0.0327273125
+minPeriod  = 30.5555184355
+Numerical dispersion criterion along r: OK! 
+drr = 5657.5342465753, ratio = 11133.1055901335
+Numerical dispersion criterion along theta: OK! 
+maxArc = 9777.7658993750, ratio = 11133.1055901335
+CFL: OK! 
+cfl = 0.1923965841
+FOM-KOKKOS step = 2000
+FOM-KOKKOS step = 4000
+FOM-KOKKOS step = 6000
+FOM-KOKKOS step = 8000
+FOM-KOKKOS step = 10000
+FOM-KOKKOS step = 12000
+FOM-KOKKOS step = 14000
+FOM-KOKKOS step = 16000
+FOM-KOKKOS step = 18000
+FOM-KOKKOS step = 20000
+
+loopTime = 457.2054132510
+dataCollectionTime = 0.0740414410
+flops = 79599628.0000000000
+memMB = 727.3554687500
+flops/bytes = 0.1043672923
+aveBandwidth(GB/s) =    31.08 
+minBandwidth(GB/s) =    22.24 
+maxBandwidth(GB/s) =    34.70 
+aveGFlop =  3.4834 
+minGFlop =  2.4921 
+maxGFlop =  3.8887 
+totTime(se) = 457.0227 
+aveTime(ms) = 22.8511 
+maxTime(ms) = 31.9410 
+minTime(ms) = 20.4697 
+Writing snapshots vp... Done
+Writing snapshots sp... Done
+Writing seismogram ... Done
+
+finalProcessTime = 0.1085840930
+centerFreq = 0.0327273125
+minPeriod  = 30.5555184355
+Numerical dispersion criterion along r: OK! 
+drr = 5657.5342465753, ratio = 11497.8185247779
+Numerical dispersion criterion along theta: OK! 
+maxArc = 9777.7658993750, ratio = 11497.8185247779
+CFL: OK! 
+cfl = 0.1923965841
+FOM-KOKKOS step = 2000
+FOM-KOKKOS step = 4000
+FOM-KOKKOS step = 6000
+FOM-KOKKOS step = 8000
+FOM-KOKKOS step = 10000
+FOM-KOKKOS step = 12000
+FOM-KOKKOS step = 14000
+FOM-KOKKOS step = 16000
+FOM-KOKKOS step = 18000
+FOM-KOKKOS step = 20000
+
+loopTime = 456.8747838550
+dataCollectionTime = 0.0740643470
+flops = 79599628.0000000000
+memMB = 727.3554687500
+flops/bytes = 0.1043672923
+aveBandwidth(GB/s) =    31.11 
+minBandwidth(GB/s) =    22.04 
+maxBandwidth(GB/s) =    34.61 
+aveGFlop =  3.4859 
+minGFlop =  2.4700 
+maxGFlop =  3.8786 
+totTime(se) = 456.6909 
+aveTime(ms) = 22.8345 
+maxTime(ms) = 32.2262 
+minTime(ms) = 20.5227 
+Writing snapshots vp... Done
+Writing snapshots sp... Done
+Writing seismogram ... Done
+
+finalProcessTime = 0.1092665960
+centerFreq = 0.0327273125
+minPeriod  = 30.5555184355
+Numerical dispersion criterion along r: OK! 
+drr = 5657.5342465753, ratio = 10782.7666984238
+Numerical dispersion criterion along theta: OK! 
+maxArc = 9777.7658993750, ratio = 10782.7666984238
+CFL: OK! 
+cfl = 0.1923965841
+FOM-KOKKOS step = 2000
+FOM-KOKKOS step = 4000
+FOM-KOKKOS step = 6000
+FOM-KOKKOS step = 8000
+FOM-KOKKOS step = 10000
+FOM-KOKKOS step = 12000
+FOM-KOKKOS step = 14000
+FOM-KOKKOS step = 16000
+FOM-KOKKOS step = 18000
+FOM-KOKKOS step = 20000
+
+loopTime = 456.6806380000
+dataCollectionTime = 0.0738809250
+flops = 79599628.0000000000
+memMB = 727.3554687500
+flops/bytes = 0.1043672923
+aveBandwidth(GB/s) =    31.12 
+minBandwidth(GB/s) =    23.30 
+maxBandwidth(GB/s) =    34.67 
+aveGFlop =  3.4874 
+minGFlop =  2.6116 
+maxGFlop =  3.8858 
+totTime(se) = 456.4984 
+aveTime(ms) = 22.8249 
+maxTime(ms) = 30.4793 
+minTime(ms) = 20.4848 
+Writing snapshots vp... Done
+Writing snapshots sp... Done
+Writing seismogram ... Done
+
+finalProcessTime = 0.1089434570
+centerFreq = 0.0327273125
+minPeriod  = 30.5555184355
+Numerical dispersion criterion along r: OK! 
+drr = 5657.5342465753, ratio = 11345.9129368296
+Numerical dispersion criterion along theta: OK! 
+maxArc = 9777.7658993750, ratio = 11345.9129368296
+CFL: OK! 
+cfl = 0.1923965841
+FOM-KOKKOS step = 2000
+FOM-KOKKOS step = 4000
+FOM-KOKKOS step = 6000
+FOM-KOKKOS step = 8000
+FOM-KOKKOS step = 10000
+FOM-KOKKOS step = 12000
+FOM-KOKKOS step = 14000
+FOM-KOKKOS step = 16000
+FOM-KOKKOS step = 18000
+FOM-KOKKOS step = 20000
+
+loopTime = 458.2117941820
+dataCollectionTime = 0.0749703610
+flops = 79599628.0000000000
+memMB = 727.3554687500
+flops/bytes = 0.1043672923
+aveBandwidth(GB/s) =    31.02 
+minBandwidth(GB/s) =    24.42 
+maxBandwidth(GB/s) =    34.65 
+aveGFlop =  3.4758 
+minGFlop =  2.7366 
+maxGFlop =  3.8828 
+totTime(se) = 458.0273 
+aveTime(ms) = 22.9014 
+maxTime(ms) = 29.0866 
+minTime(ms) = 20.5007 
+Writing snapshots vp... Done
+Writing snapshots sp... Done
+Writing seismogram ... Done
+
+finalProcessTime = 0.1085188240
+centerFreq = 0.0327273125
+minPeriod  = 30.5555184355
+Numerical dispersion criterion along r: OK! 
+drr = 5657.5342465753, ratio = 12444.1328508422
+Numerical dispersion criterion along theta: OK! 
+maxArc = 9777.7658993750, ratio = 12444.1328508422
+CFL: OK! 
+cfl = 0.1923965841
+FOM-KOKKOS step = 2000
+FOM-KOKKOS step = 4000
+FOM-KOKKOS step = 6000
+FOM-KOKKOS step = 8000
+FOM-KOKKOS step = 10000
+FOM-KOKKOS step = 12000
+FOM-KOKKOS step = 14000
+FOM-KOKKOS step = 16000
+FOM-KOKKOS step = 18000
+FOM-KOKKOS step = 20000
+
+loopTime = 456.9043739350
+dataCollectionTime = 0.0748522780
+flops = 79599628.0000000000
+memMB = 727.3554687500
+flops/bytes = 0.1043672923
+aveBandwidth(GB/s) =    31.10 
+minBandwidth(GB/s) =    22.48 
+maxBandwidth(GB/s) =    34.44 
+aveGFlop =  3.4857 
+minGFlop =  2.5190 
+maxGFlop =  3.8595 
+totTime(se) = 456.7204 
+aveTime(ms) = 22.8360 
+maxTime(ms) = 31.5993 
+minTime(ms) = 20.6241 
+Writing snapshots vp... Done
+Writing snapshots sp... Done
+Writing seismogram ... Done
+
+finalProcessTime = 0.1085269910
+centerFreq = 0.0327273125
+minPeriod  = 30.5555184355
+Numerical dispersion criterion along r: OK! 
+drr = 5657.5342465753, ratio = 12997.2896083083
+Numerical dispersion criterion along theta: OK! 
+maxArc = 9777.7658993750, ratio = 12997.2896083083
+CFL: OK! 
+cfl = 0.1923965841
+FOM-KOKKOS step = 2000
+FOM-KOKKOS step = 4000
+FOM-KOKKOS step = 6000
+FOM-KOKKOS step = 8000
+FOM-KOKKOS step = 10000
+FOM-KOKKOS step = 12000
+FOM-KOKKOS step = 14000
+FOM-KOKKOS step = 16000
+FOM-KOKKOS step = 18000
+FOM-KOKKOS step = 20000
+
+loopTime = 456.9225499370
+dataCollectionTime = 0.0740711660
+flops = 79599628.0000000000
+memMB = 727.3554687500
+flops/bytes = 0.1043672923
+aveBandwidth(GB/s) =    31.10 
+minBandwidth(GB/s) =    24.28 
+maxBandwidth(GB/s) =    34.50 
+aveGFlop =  3.4856 
+minGFlop =  2.7206 
+maxGFlop =  3.8661 
+totTime(se) = 456.7400 
+aveTime(ms) = 22.8370 
+maxTime(ms) = 29.2576 
+minTime(ms) = 20.5894 
+Writing snapshots vp... Done
+Writing snapshots sp... Done
+Writing seismogram ... Done
+
+finalProcessTime = 0.1081551460
+centerFreq = 0.0327273125
+minPeriod  = 30.5555184355
+Numerical dispersion criterion along r: OK! 
+drr = 5657.5342465753, ratio = 11212.1659439018
+Numerical dispersion criterion along theta: OK! 
+maxArc = 9777.7658993750, ratio = 11212.1659439018
+CFL: OK! 
+cfl = 0.1923965841
+FOM-KOKKOS step = 2000
+FOM-KOKKOS step = 4000
+FOM-KOKKOS step = 6000
+FOM-KOKKOS step = 8000
+FOM-KOKKOS step = 10000
+FOM-KOKKOS step = 12000
+FOM-KOKKOS step = 14000
+FOM-KOKKOS step = 16000
+FOM-KOKKOS step = 18000
+FOM-KOKKOS step = 20000
+
+loopTime = 456.5974104410
+dataCollectionTime = 0.0741236110
+flops = 79599628.0000000000
+memMB = 727.3554687500
+flops/bytes = 0.1043672923
+aveBandwidth(GB/s) =    31.13 
+minBandwidth(GB/s) =    22.71 
+maxBandwidth(GB/s) =    34.65 
+aveGFlop =  3.4880 
+minGFlop =  2.5450 
+maxGFlop =  3.8825 
+totTime(se) = 456.4150 
+aveTime(ms) = 22.8208 
+maxTime(ms) = 31.2772 
+minTime(ms) = 20.5020 
+Writing snapshots vp... Done
+Writing snapshots sp... Done
+Writing seismogram ... Done
+
+finalProcessTime = 0.1088422770
+centerFreq = 0.0327273125
+minPeriod  = 30.5555184355
+Numerical dispersion criterion along r: OK! 
+drr = 5657.5342465753, ratio = 10250.3953579141
+Numerical dispersion criterion along theta: OK! 
+maxArc = 9777.7658993750, ratio = 10250.3953579141
+CFL: OK! 
+cfl = 0.1923965841
+FOM-KOKKOS step = 2000
+FOM-KOKKOS step = 4000
+FOM-KOKKOS step = 6000
+FOM-KOKKOS step = 8000
+FOM-KOKKOS step = 10000
+FOM-KOKKOS step = 12000
+FOM-KOKKOS step = 14000
+FOM-KOKKOS step = 16000
+FOM-KOKKOS step = 18000
+FOM-KOKKOS step = 20000
+
+loopTime = 457.1448770340
+dataCollectionTime = 0.0747356290
+flops = 79599628.0000000000
+memMB = 727.3554687500
+flops/bytes = 0.1043672923
+aveBandwidth(GB/s) =    31.09 
+minBandwidth(GB/s) =    23.98 
+maxBandwidth(GB/s) =    34.53 
+aveGFlop =  3.4839 
+minGFlop =  2.6869 
+maxGFlop =  3.8696 
+totTime(se) = 456.9613 
+aveTime(ms) = 22.8481 
+maxTime(ms) = 29.6256 
+minTime(ms) = 20.5708 
+Writing snapshots vp... Done
+Writing snapshots sp... Done
+Writing seismogram ... Done
+
+finalProcessTime = 0.1088327940
+centerFreq = 0.0327273125
+minPeriod  = 30.5555184355
+Numerical dispersion criterion along r: OK! 
+drr = 5657.5342465753, ratio = 12639.5617329678
+Numerical dispersion criterion along theta: OK! 
+maxArc = 9777.7658993750, ratio = 12639.5617329678
+CFL: OK! 
+cfl = 0.1923965841
+FOM-KOKKOS step = 2000
+FOM-KOKKOS step = 4000
+FOM-KOKKOS step = 6000
+FOM-KOKKOS step = 8000
+FOM-KOKKOS step = 10000
+FOM-KOKKOS step = 12000
+FOM-KOKKOS step = 14000
+FOM-KOKKOS step = 16000
+FOM-KOKKOS step = 18000
+FOM-KOKKOS step = 20000
+
+loopTime = 456.0319237000
+dataCollectionTime = 0.0746550990
+flops = 79599628.0000000000
+memMB = 727.3554687500
+flops/bytes = 0.1043672923
+aveBandwidth(GB/s) =    31.16 
+minBandwidth(GB/s) =    21.86 
+maxBandwidth(GB/s) =    34.63 
+aveGFlop =  3.4924 
+minGFlop =  2.4498 
+maxGFlop =  3.8804 
+totTime(se) = 455.8485 
+aveTime(ms) = 22.7924 
+maxTime(ms) = 32.4924 
+minTime(ms) = 20.5131 
+Writing snapshots vp... Done
+Writing snapshots sp... Done
+Writing seismogram ... Done
+
+finalProcessTime = 0.1088574450
+centerFreq = 0.0327273125
+minPeriod  = 30.5555184355
+Numerical dispersion criterion along r: OK! 
+drr = 5657.5342465753, ratio = 14888.8736756450
+Numerical dispersion criterion along theta: OK! 
+maxArc = 9777.7658993750, ratio = 14888.8736756450
+CFL: OK! 
+cfl = 0.1923965841
+FOM-KOKKOS step = 2000
+FOM-KOKKOS step = 4000
+FOM-KOKKOS step = 6000
+FOM-KOKKOS step = 8000
+FOM-KOKKOS step = 10000
+FOM-KOKKOS step = 12000
+FOM-KOKKOS step = 14000
+FOM-KOKKOS step = 16000
+FOM-KOKKOS step = 18000
+FOM-KOKKOS step = 20000
+
+loopTime = 455.4869500270
+dataCollectionTime = 0.0748787480
+flops = 79599628.0000000000
+memMB = 727.3554687500
+flops/bytes = 0.1043672923
+aveBandwidth(GB/s) =    31.20 
+minBandwidth(GB/s) =    22.66 
+maxBandwidth(GB/s) =    34.64 
+aveGFlop =  3.4966 
+minGFlop =  2.5392 
+maxGFlop =  3.8816 
+totTime(se) = 455.3032 
+aveTime(ms) = 22.7652 
+maxTime(ms) = 31.3487 
+minTime(ms) = 20.5067 
+Writing snapshots vp... Done
+Writing snapshots sp... Done
+Writing seismogram ... Done
+
+finalProcessTime = 0.1083414420
+centerFreq = 0.0327273125
+minPeriod  = 30.5555184355
+Numerical dispersion criterion along r: OK! 
+drr = 5657.5342465753, ratio = 10736.7609522792
+Numerical dispersion criterion along theta: OK! 
+maxArc = 9777.7658993750, ratio = 10736.7609522792
+CFL: OK! 
+cfl = 0.1923965841
+FOM-KOKKOS step = 2000
+FOM-KOKKOS step = 4000
+FOM-KOKKOS step = 6000
+FOM-KOKKOS step = 8000
+FOM-KOKKOS step = 10000
+FOM-KOKKOS step = 12000
+FOM-KOKKOS step = 14000
+FOM-KOKKOS step = 16000
+FOM-KOKKOS step = 18000
+FOM-KOKKOS step = 20000
+
+loopTime = 456.6736430050
+dataCollectionTime = 0.0748268150
+flops = 79599628.0000000000
+memMB = 727.3554687500
+flops/bytes = 0.1043672923
+aveBandwidth(GB/s) =    31.12 
+minBandwidth(GB/s) =    21.03 
+maxBandwidth(GB/s) =    34.73 
+aveGFlop =  3.4875 
+minGFlop =  2.3563 
+maxGFlop =  3.8920 
+totTime(se) = 456.4899 
+aveTime(ms) = 22.8245 
+maxTime(ms) = 33.7821 
+minTime(ms) = 20.4522 
+Writing snapshots vp... Done
+Writing snapshots sp... Done
+Writing seismogram ... Done
+
+finalProcessTime = 0.1084417090
+centerFreq = 0.0327273125
+minPeriod  = 30.5555184355
+Numerical dispersion criterion along r: OK! 
+drr = 5657.5342465753, ratio = 10598.4914761801
+Numerical dispersion criterion along theta: OK! 
+maxArc = 9777.7658993750, ratio = 10598.4914761801
+CFL: OK! 
+cfl = 0.1923965841
+FOM-KOKKOS step = 2000
+FOM-KOKKOS step = 4000
+FOM-KOKKOS step = 6000
+FOM-KOKKOS step = 8000
+FOM-KOKKOS step = 10000
+FOM-KOKKOS step = 12000
+FOM-KOKKOS step = 14000
+FOM-KOKKOS step = 16000
+FOM-KOKKOS step = 18000
+FOM-KOKKOS step = 20000
+
+loopTime = 457.4141753330
+dataCollectionTime = 0.0747588510
+flops = 79599628.0000000000
+memMB = 727.3554687500
+flops/bytes = 0.1043672923
+aveBandwidth(GB/s) =    31.07 
+minBandwidth(GB/s) =    21.78 
+maxBandwidth(GB/s) =    34.64 
+aveGFlop =  3.4818 
+minGFlop =  2.4403 
+maxGFlop =  3.8816 
+totTime(se) = 457.2298 
+aveTime(ms) = 22.8615 
+maxTime(ms) = 32.6183 
+minTime(ms) = 20.5071 
+Writing snapshots vp... Done
+Writing snapshots sp... Done
+Writing seismogram ... Done
+
+finalProcessTime = 0.1086658780
+centerFreq = 0.0327273125
+minPeriod  = 30.5555184355
+Numerical dispersion criterion along r: OK! 
+drr = 5657.5342465753, ratio = 10348.3019793916
+Numerical dispersion criterion along theta: OK! 
+maxArc = 9777.7658993750, ratio = 10348.3019793916
+CFL: OK! 
+cfl = 0.1923965841
+FOM-KOKKOS step = 2000
+FOM-KOKKOS step = 4000
+FOM-KOKKOS step = 6000
+FOM-KOKKOS step = 8000
+FOM-KOKKOS step = 10000
+FOM-KOKKOS step = 12000
+FOM-KOKKOS step = 14000
+FOM-KOKKOS step = 16000
+FOM-KOKKOS step = 18000
+FOM-KOKKOS step = 20000
+
+loopTime = 458.2803645850
+dataCollectionTime = 0.0745560150
+flops = 79599628.0000000000
+memMB = 727.3554687500
+flops/bytes = 0.1043672923
+aveBandwidth(GB/s) =    31.01 
+minBandwidth(GB/s) =    21.89 
+maxBandwidth(GB/s) =    34.47 
+aveGFlop =  3.4752 
+minGFlop =  2.4526 
+maxGFlop =  3.8624 
+totTime(se) = 458.0962 
+aveTime(ms) = 22.9048 
+maxTime(ms) = 32.4548 
+minTime(ms) = 20.6086 
+Writing snapshots vp... Done
+Writing snapshots sp... Done
+Writing seismogram ... Done
+
+finalProcessTime = 0.1089633190
+centerFreq = 0.0327273125
+minPeriod  = 30.5555184355
+Numerical dispersion criterion along r: OK! 
+drr = 5657.5342465753, ratio = 14317.5216721050
+Numerical dispersion criterion along theta: OK! 
+maxArc = 9777.7658993750, ratio = 14317.5216721050
+CFL: OK! 
+cfl = 0.1923965841
+FOM-KOKKOS step = 2000
+FOM-KOKKOS step = 4000
+FOM-KOKKOS step = 6000
+FOM-KOKKOS step = 8000
+FOM-KOKKOS step = 10000
+FOM-KOKKOS step = 12000
+FOM-KOKKOS step = 14000
+FOM-KOKKOS step = 16000
+FOM-KOKKOS step = 18000
+FOM-KOKKOS step = 20000
+
+loopTime = 455.0157861470
+dataCollectionTime = 0.0752521430
+flops = 79599628.0000000000
+memMB = 727.3554687500
+flops/bytes = 0.1043672923
+aveBandwidth(GB/s) =    31.23 
+minBandwidth(GB/s) =    27.57 
+maxBandwidth(GB/s) =    34.83 
+aveGFlop =  3.5002 
+minGFlop =  3.0894 
+maxGFlop =  3.9035 
+totTime(se) = 454.8319 
+aveTime(ms) = 22.7416 
+maxTime(ms) = 25.7651 
+minTime(ms) = 20.3917 
+Writing snapshots vp... Done
+Writing snapshots sp... Done
+Writing seismogram ... Done
+
+finalProcessTime = 0.1084082310
+centerFreq = 0.0327273125
+minPeriod  = 30.5555184355
+Numerical dispersion criterion along r: OK! 
+drr = 5657.5342465753, ratio = 14832.3815558666
+Numerical dispersion criterion along theta: OK! 
+maxArc = 9777.7658993750, ratio = 14832.3815558666
+CFL: OK! 
+cfl = 0.1923965841
+FOM-KOKKOS step = 2000
+FOM-KOKKOS step = 4000
+FOM-KOKKOS step = 6000
+FOM-KOKKOS step = 8000
+FOM-KOKKOS step = 10000
+FOM-KOKKOS step = 12000
+FOM-KOKKOS step = 14000
+FOM-KOKKOS step = 16000
+FOM-KOKKOS step = 18000
+FOM-KOKKOS step = 20000
+
+loopTime = 455.2988006510
+dataCollectionTime = 0.0751150880
+flops = 79599628.0000000000
+memMB = 727.3554687500
+flops/bytes = 0.1043672923
+aveBandwidth(GB/s) =    31.21 
+minBandwidth(GB/s) =    23.97 
+maxBandwidth(GB/s) =    34.86 
+aveGFlop =  3.4980 
+minGFlop =  2.6867 
+maxGFlop =  3.9062 
+totTime(se) = 455.1156 
+aveTime(ms) = 22.7558 
+maxTime(ms) = 29.6275 
+minTime(ms) = 20.3778 
+Writing snapshots vp... Done
+Writing snapshots sp... Done
+Writing seismogram ... Done
+
+finalProcessTime = 0.1080726930
+centerFreq = 0.0327273125
+minPeriod  = 30.5555184355
+Numerical dispersion criterion along r: OK! 
+drr = 5657.5342465753, ratio = 13748.9175667846
+Numerical dispersion criterion along theta: OK! 
+maxArc = 9777.7658993750, ratio = 13748.9175667846
+CFL: OK! 
+cfl = 0.1923965841
+FOM-KOKKOS step = 2000
+FOM-KOKKOS step = 4000
+FOM-KOKKOS step = 6000
+FOM-KOKKOS step = 8000
+FOM-KOKKOS step = 10000
+FOM-KOKKOS step = 12000
+FOM-KOKKOS step = 14000
+FOM-KOKKOS step = 16000
+FOM-KOKKOS step = 18000
+FOM-KOKKOS step = 20000
+
+loopTime = 456.8312951580
+dataCollectionTime = 0.0750231190
+flops = 79599628.0000000000
+memMB = 727.3554687500
+flops/bytes = 0.1043672923
+aveBandwidth(GB/s) =    31.11 
+minBandwidth(GB/s) =    24.27 
+maxBandwidth(GB/s) =    34.59 
+aveGFlop =  3.4863 
+minGFlop =  2.7199 
+maxGFlop =  3.8766 
+totTime(se) = 456.6463 
+aveTime(ms) = 22.8323 
+maxTime(ms) = 29.2660 
+minTime(ms) = 20.5334 
+Writing snapshots vp... Done
+Writing snapshots sp... Done
+Writing seismogram ... Done
+
+finalProcessTime = 0.1091358880
+centerFreq = 0.0327273125
+minPeriod  = 30.5555184355
+Numerical dispersion criterion along r: OK! 
+drr = 5657.5342465753, ratio = 12675.2936768053
+Numerical dispersion criterion along theta: OK! 
+maxArc = 9777.7658993750, ratio = 12675.2936768053
+CFL: OK! 
+cfl = 0.1923965841
+FOM-KOKKOS step = 2000
+FOM-KOKKOS step = 4000
+FOM-KOKKOS step = 6000
+FOM-KOKKOS step = 8000
+FOM-KOKKOS step = 10000
+FOM-KOKKOS step = 12000
+FOM-KOKKOS step = 14000
+FOM-KOKKOS step = 16000
+FOM-KOKKOS step = 18000
+FOM-KOKKOS step = 20000
+
+loopTime = 456.0591567490
+dataCollectionTime = 0.0751039410
+flops = 79599628.0000000000
+memMB = 727.3554687500
+flops/bytes = 0.1043672923
+aveBandwidth(GB/s) =    31.16 
+minBandwidth(GB/s) =    23.10 
+maxBandwidth(GB/s) =    34.68 
+aveGFlop =  3.4922 
+minGFlop =  2.5883 
+maxGFlop =  3.8861 
+totTime(se) = 455.8755 
+aveTime(ms) = 22.7938 
+maxTime(ms) = 30.7537 
+minTime(ms) = 20.4830 
+Writing snapshots vp... Done
+Writing snapshots sp... Done
+Writing seismogram ... Done
+
+finalProcessTime = 0.1089775170
+centerFreq = 0.0327273125
+minPeriod  = 30.5555184355
+Numerical dispersion criterion along r: OK! 
+drr = 5657.5342465753, ratio = 17927.8520296929
+Numerical dispersion criterion along theta: OK! 
+maxArc = 9777.7658993750, ratio = 17927.8520296929
+CFL: OK! 
+cfl = 0.1923965841
+FOM-KOKKOS step = 2000
+FOM-KOKKOS step = 4000
+FOM-KOKKOS step = 6000
+FOM-KOKKOS step = 8000
+FOM-KOKKOS step = 10000
+FOM-KOKKOS step = 12000
+FOM-KOKKOS step = 14000
+FOM-KOKKOS step = 16000
+FOM-KOKKOS step = 18000
+FOM-KOKKOS step = 20000
+
+loopTime = 454.5638291570
+dataCollectionTime = 0.0747816350
+flops = 79599628.0000000000
+memMB = 727.3554687500
+flops/bytes = 0.1043672923
+aveBandwidth(GB/s) =    31.26 
+minBandwidth(GB/s) =    21.74 
+maxBandwidth(GB/s) =    34.73 
+aveGFlop =  3.5037 
+minGFlop =  2.4362 
+maxGFlop =  3.8918 
+totTime(se) = 454.3807 
+aveTime(ms) = 22.7190 
+maxTime(ms) = 32.6731 
+minTime(ms) = 20.4533 
+Writing snapshots vp... Done
+Writing snapshots sp... Done
+Writing seismogram ... Done
+
+finalProcessTime = 0.1078379910
+centerFreq = 0.0327273125
+minPeriod  = 30.5555184355
+Numerical dispersion criterion along r: OK! 
+drr = 5657.5342465753, ratio = 10826.4169374137
+Numerical dispersion criterion along theta: OK! 
+maxArc = 9777.7658993750, ratio = 10826.4169374137
+CFL: OK! 
+cfl = 0.1923965841
+FOM-KOKKOS step = 2000
+FOM-KOKKOS step = 4000
+FOM-KOKKOS step = 6000
+FOM-KOKKOS step = 8000
+FOM-KOKKOS step = 10000
+FOM-KOKKOS step = 12000
+FOM-KOKKOS step = 14000
+FOM-KOKKOS step = 16000
+FOM-KOKKOS step = 18000
+FOM-KOKKOS step = 20000
+
+loopTime = 456.6081376940
+dataCollectionTime = 0.0747971880
+flops = 79599628.0000000000
+memMB = 727.3554687500
+flops/bytes = 0.1043672923
+aveBandwidth(GB/s) =    31.12 
+minBandwidth(GB/s) =    21.74 
+maxBandwidth(GB/s) =    34.71 
+aveGFlop =  3.4880 
+minGFlop =  2.4368 
+maxGFlop =  3.8902 
+totTime(se) = 456.4238 
+aveTime(ms) = 22.8212 
+maxTime(ms) = 32.6659 
+minTime(ms) = 20.4614 
+Writing snapshots vp... Done
+Writing snapshots sp... Done
+Writing seismogram ... Done
+
+finalProcessTime = 0.1087976690
+centerFreq = 0.0327273125
+minPeriod  = 30.5555184355
+Numerical dispersion criterion along r: OK! 
+drr = 5657.5342465753, ratio = 10310.5488607986
+Numerical dispersion criterion along theta: OK! 
+maxArc = 9777.7658993750, ratio = 10310.5488607986
+CFL: OK! 
+cfl = 0.1923965841
+FOM-KOKKOS step = 2000
+FOM-KOKKOS step = 4000
+FOM-KOKKOS step = 6000
+FOM-KOKKOS step = 8000
+FOM-KOKKOS step = 10000
+FOM-KOKKOS step = 12000
+FOM-KOKKOS step = 14000
+FOM-KOKKOS step = 16000
+FOM-KOKKOS step = 18000
+FOM-KOKKOS step = 20000
+
+loopTime = 455.7505243690
+dataCollectionTime = 0.0745069580
+flops = 79599628.0000000000
+memMB = 727.3554687500
+flops/bytes = 0.1043672923
+aveBandwidth(GB/s) =    31.18 
+minBandwidth(GB/s) =    22.84 
+maxBandwidth(GB/s) =    34.63 
+aveGFlop =  3.4945 
+minGFlop =  2.5598 
+maxGFlop =  3.8805 
+totTime(se) = 455.5679 
+aveTime(ms) = 22.7784 
+maxTime(ms) = 31.0965 
+minTime(ms) = 20.5125 
+Writing snapshots vp... Done
+Writing snapshots sp... Done
+Writing seismogram ... Done
+
+finalProcessTime = 0.1083213380
+centerFreq = 0.0327273125
+minPeriod  = 30.5555184355
+Numerical dispersion criterion along r: OK! 
+drr = 5657.5342465753, ratio = 12587.8672117915
+Numerical dispersion criterion along theta: OK! 
+maxArc = 9777.7658993750, ratio = 12587.8672117915
+CFL: OK! 
+cfl = 0.1923965841
+FOM-KOKKOS step = 2000
+FOM-KOKKOS step = 4000
+FOM-KOKKOS step = 6000
+FOM-KOKKOS step = 8000
+FOM-KOKKOS step = 10000
+FOM-KOKKOS step = 12000
+FOM-KOKKOS step = 14000
+FOM-KOKKOS step = 16000
+FOM-KOKKOS step = 18000
+FOM-KOKKOS step = 20000
+
+loopTime = 456.4173354520
+dataCollectionTime = 0.0742550290
+flops = 79599628.0000000000
+memMB = 727.3554687500
+flops/bytes = 0.1043672923
+aveBandwidth(GB/s) =    31.14 
+minBandwidth(GB/s) =    23.93 
+maxBandwidth(GB/s) =    34.65 
+aveGFlop =  3.4894 
+minGFlop =  2.6811 
+maxGFlop =  3.8826 
+totTime(se) = 456.2351 
+aveTime(ms) = 22.8118 
+maxTime(ms) = 29.6889 
+minTime(ms) = 20.5017 
+Writing snapshots vp... Done
+Writing snapshots sp... Done
+Writing seismogram ... Done
+
+finalProcessTime = 0.1097888380
+centerFreq = 0.0327273125
+minPeriod  = 30.5555184355
+Numerical dispersion criterion along r: OK! 
+drr = 5657.5342465753, ratio = 11272.1864972011
+Numerical dispersion criterion along theta: OK! 
+maxArc = 9777.7658993750, ratio = 11272.1864972011
+CFL: OK! 
+cfl = 0.1923965841
+FOM-KOKKOS step = 2000
+FOM-KOKKOS step = 4000
+FOM-KOKKOS step = 6000
+FOM-KOKKOS step = 8000
+FOM-KOKKOS step = 10000
+FOM-KOKKOS step = 12000
+FOM-KOKKOS step = 14000
+FOM-KOKKOS step = 16000
+FOM-KOKKOS step = 18000
+FOM-KOKKOS step = 20000
+
+loopTime = 456.5479155690
+dataCollectionTime = 0.0743309620
+flops = 79599628.0000000000
+memMB = 727.3554687500
+flops/bytes = 0.1043672923
+aveBandwidth(GB/s) =    31.13 
+minBandwidth(GB/s) =    23.12 
+maxBandwidth(GB/s) =    34.66 
+aveGFlop =  3.4884 
+minGFlop =  2.5910 
+maxGFlop =  3.8847 
+totTime(se) = 456.3646 
+aveTime(ms) = 22.8182 
+maxTime(ms) = 30.7217 
+minTime(ms) = 20.4908 
+Writing snapshots vp... Done
+Writing snapshots sp... Done
+Writing seismogram ... Done
+
+finalProcessTime = 0.1086183860
+centerFreq = 0.0327273125
+minPeriod  = 30.5555184355
+Numerical dispersion criterion along r: OK! 
+drr = 5657.5342465753, ratio = 10763.6686321250
+Numerical dispersion criterion along theta: OK! 
+maxArc = 9777.7658993750, ratio = 10763.6686321250
+CFL: OK! 
+cfl = 0.1923965841
+FOM-KOKKOS step = 2000
+FOM-KOKKOS step = 4000
+FOM-KOKKOS step = 6000
+FOM-KOKKOS step = 8000
+FOM-KOKKOS step = 10000
+FOM-KOKKOS step = 12000
+FOM-KOKKOS step = 14000
+FOM-KOKKOS step = 16000
+FOM-KOKKOS step = 18000
+FOM-KOKKOS step = 20000
+
+loopTime = 456.5872025800
+dataCollectionTime = 0.0745658300
+flops = 79599628.0000000000
+memMB = 727.3554687500
+flops/bytes = 0.1043672923
+aveBandwidth(GB/s) =    31.13 
+minBandwidth(GB/s) =    23.59 
+maxBandwidth(GB/s) =    34.67 
+aveGFlop =  3.4881 
+minGFlop =  2.6438 
+maxGFlop =  3.8854 
+totTime(se) = 456.4039 
+aveTime(ms) = 22.8202 
+maxTime(ms) = 30.1075 
+minTime(ms) = 20.4870 
+Writing snapshots vp... Done
+Writing snapshots sp... Done
+Writing seismogram ... Done
+
+finalProcessTime = 0.1095764680
+centerFreq = 0.0327273125
+minPeriod  = 30.5555184355
+Numerical dispersion criterion along r: OK! 
+drr = 5657.5342465753, ratio = 12186.7287915825
+Numerical dispersion criterion along theta: OK! 
+maxArc = 9777.7658993750, ratio = 12186.7287915825
+CFL: OK! 
+cfl = 0.1923965841
+FOM-KOKKOS step = 2000
+FOM-KOKKOS step = 4000
+FOM-KOKKOS step = 6000
+FOM-KOKKOS step = 8000
+FOM-KOKKOS step = 10000
+FOM-KOKKOS step = 12000
+FOM-KOKKOS step = 14000
+FOM-KOKKOS step = 16000
+FOM-KOKKOS step = 18000
+FOM-KOKKOS step = 20000
+
+loopTime = 455.9480710460
+dataCollectionTime = 0.0746648480
+flops = 79599628.0000000000
+memMB = 727.3554687500
+flops/bytes = 0.1043672923
+aveBandwidth(GB/s) =    31.17 
+minBandwidth(GB/s) =    22.90 
+maxBandwidth(GB/s) =    34.76 
+aveGFlop =  3.4930 
+minGFlop =  2.5667 
+maxGFlop =  3.8953 
+totTime(se) = 455.7654 
+aveTime(ms) = 22.7883 
+maxTime(ms) = 31.0122 
+minTime(ms) = 20.4348 
+Writing snapshots vp... Done
+Writing snapshots sp... Done
+Writing seismogram ... Done
+
+finalProcessTime = 0.1082223690
+centerFreq = 0.0327273125
+minPeriod  = 30.5555184355
+Numerical dispersion criterion along r: OK! 
+drr = 5657.5342465753, ratio = 13722.1370682574
+Numerical dispersion criterion along theta: OK! 
+maxArc = 9777.7658993750, ratio = 13722.1370682574
+CFL: OK! 
+cfl = 0.1923965841
+FOM-KOKKOS step = 2000
+FOM-KOKKOS step = 4000
+FOM-KOKKOS step = 6000
+FOM-KOKKOS step = 8000
+FOM-KOKKOS step = 10000
+FOM-KOKKOS step = 12000
+FOM-KOKKOS step = 14000
+FOM-KOKKOS step = 16000
+FOM-KOKKOS step = 18000
+FOM-KOKKOS step = 20000
+
+loopTime = 455.1241330430
+dataCollectionTime = 0.0740851100
+flops = 79599628.0000000000
+memMB = 727.3554687500
+flops/bytes = 0.1043672923
+aveBandwidth(GB/s) =    31.23 
+minBandwidth(GB/s) =    23.96 
+maxBandwidth(GB/s) =    34.72 
+aveGFlop =  3.4993 
+minGFlop =  2.6848 
+maxGFlop =  3.8910 
+totTime(se) = 454.9419 
+aveTime(ms) = 22.7471 
+maxTime(ms) = 29.6486 
+minTime(ms) = 20.4572 
+Writing snapshots vp... Done
+Writing snapshots sp... Done
+Writing seismogram ... Done
+
+finalProcessTime = 0.1095906050
+centerFreq = 0.0327273125
+minPeriod  = 30.5555184355
+Numerical dispersion criterion along r: OK! 
+drr = 5657.5342465753, ratio = 14847.4031988672
+Numerical dispersion criterion along theta: OK! 
+maxArc = 9777.7658993750, ratio = 14847.4031988672
+CFL: OK! 
+cfl = 0.1923965841
+FOM-KOKKOS step = 2000
+FOM-KOKKOS step = 4000
+FOM-KOKKOS step = 6000
+FOM-KOKKOS step = 8000
+FOM-KOKKOS step = 10000
+FOM-KOKKOS step = 12000
+FOM-KOKKOS step = 14000
+FOM-KOKKOS step = 16000
+FOM-KOKKOS step = 18000
+FOM-KOKKOS step = 20000
+
+loopTime = 455.0797442470
+dataCollectionTime = 0.0744373970
+flops = 79599628.0000000000
+memMB = 727.3554687500
+flops/bytes = 0.1043672923
+aveBandwidth(GB/s) =    31.23 
+minBandwidth(GB/s) =    27.98 
+maxBandwidth(GB/s) =    34.67 
+aveGFlop =  3.4997 
+minGFlop =  3.1351 
+maxGFlop =  3.8856 
+totTime(se) = 454.8956 
+aveTime(ms) = 22.7448 
+maxTime(ms) = 25.3897 
+minTime(ms) = 20.4857 
+Writing snapshots vp... Done
+Writing snapshots sp... Done
+Writing seismogram ... Done
+
+finalProcessTime = 0.1089390660
+centerFreq = 0.0327273125
+minPeriod  = 30.5555184355
+Numerical dispersion criterion along r: OK! 
+drr = 5657.5342465753, ratio = 12658.9521817229
+Numerical dispersion criterion along theta: OK! 
+maxArc = 9777.7658993750, ratio = 12658.9521817229
+CFL: OK! 
+cfl = 0.1923965841
+FOM-KOKKOS step = 2000
+FOM-KOKKOS step = 4000
+FOM-KOKKOS step = 6000
+FOM-KOKKOS step = 8000
+FOM-KOKKOS step = 10000
+FOM-KOKKOS step = 12000
+FOM-KOKKOS step = 14000
+FOM-KOKKOS step = 16000
+FOM-KOKKOS step = 18000
+FOM-KOKKOS step = 20000
+
+loopTime = 454.9702823900
+dataCollectionTime = 0.0742705190
+flops = 79599628.0000000000
+memMB = 727.3554687500
+flops/bytes = 0.1043672923
+aveBandwidth(GB/s) =    31.24 
+minBandwidth(GB/s) =    23.53 
+maxBandwidth(GB/s) =    34.62 
+aveGFlop =  3.5005 
+minGFlop =  2.6374 
+maxGFlop =  3.8793 
+totTime(se) = 454.7873 
+aveTime(ms) = 22.7394 
+maxTime(ms) = 30.1810 
+minTime(ms) = 20.5191 
+Writing snapshots vp... Done
+Writing snapshots sp... Done
+Writing seismogram ... Done
+
+finalProcessTime = 0.1087076610
+centerFreq = 0.0327273125
+minPeriod  = 30.5555184355
+Numerical dispersion criterion along r: OK! 
+drr = 5657.5342465753, ratio = 12838.8369064817
+Numerical dispersion criterion along theta: OK! 
+maxArc = 9777.7658993750, ratio = 12838.8369064817
+CFL: OK! 
+cfl = 0.1923965841
+FOM-KOKKOS step = 2000
+FOM-KOKKOS step = 4000
+FOM-KOKKOS step = 6000
+FOM-KOKKOS step = 8000
+FOM-KOKKOS step = 10000
+FOM-KOKKOS step = 12000
+FOM-KOKKOS step = 14000
+FOM-KOKKOS step = 16000
+FOM-KOKKOS step = 18000
+FOM-KOKKOS step = 20000
+
+loopTime = 456.5559057710
+dataCollectionTime = 0.0744126510
+flops = 79599628.0000000000
+memMB = 727.3554687500
+flops/bytes = 0.1043672923
+aveBandwidth(GB/s) =    31.13 
+minBandwidth(GB/s) =    23.39 
+maxBandwidth(GB/s) =    34.64 
+aveGFlop =  3.4884 
+minGFlop =  2.6212 
+maxGFlop =  3.8824 
+totTime(se) = 456.3730 
+aveTime(ms) = 22.8186 
+maxTime(ms) = 30.3672 
+minTime(ms) = 20.5027 
+Writing snapshots vp... Done
+Writing snapshots sp... Done
+Writing seismogram ... Done
+
+finalProcessTime = 0.1085089330
+centerFreq = 0.0327273125
+minPeriod  = 30.5555184355
+Numerical dispersion criterion along r: OK! 
+drr = 5657.5342465753, ratio = 10239.9341239221
+Numerical dispersion criterion along theta: OK! 
+maxArc = 9777.7658993750, ratio = 10239.9341239221
+CFL: OK! 
+cfl = 0.1923965841
+FOM-KOKKOS step = 2000
+FOM-KOKKOS step = 4000
+FOM-KOKKOS step = 6000
+FOM-KOKKOS step = 8000
+FOM-KOKKOS step = 10000
+FOM-KOKKOS step = 12000
+FOM-KOKKOS step = 14000
+FOM-KOKKOS step = 16000
+FOM-KOKKOS step = 18000
+FOM-KOKKOS step = 20000
+
+loopTime = 458.2461619480
+dataCollectionTime = 0.0750710200
+flops = 79599628.0000000000
+memMB = 727.3554687500
+flops/bytes = 0.1043672923
+aveBandwidth(GB/s) =    31.01 
+minBandwidth(GB/s) =    22.94 
+maxBandwidth(GB/s) =    34.58 
+aveGFlop =  3.4755 
+minGFlop =  2.5709 
+maxGFlop =  3.8750 
+totTime(se) = 458.0617 
+aveTime(ms) = 22.9031 
+maxTime(ms) = 30.9618 
+minTime(ms) = 20.5420 
+Writing snapshots vp... Done
+Writing snapshots sp... Done
+Writing seismogram ... Done
+
+finalProcessTime = 0.1094145180
+centerFreq = 0.0327273125
+minPeriod  = 30.5555184355
+Numerical dispersion criterion along r: OK! 
+drr = 5657.5342465753, ratio = 13266.0085160230
+Numerical dispersion criterion along theta: OK! 
+maxArc = 9777.7658993750, ratio = 13266.0085160230
+CFL: OK! 
+cfl = 0.1923965841
+FOM-KOKKOS step = 2000
+FOM-KOKKOS step = 4000
+FOM-KOKKOS step = 6000
+FOM-KOKKOS step = 8000
+FOM-KOKKOS step = 10000
+FOM-KOKKOS step = 12000
+FOM-KOKKOS step = 14000
+FOM-KOKKOS step = 16000
+FOM-KOKKOS step = 18000
+FOM-KOKKOS step = 20000
+
+loopTime = 455.7875909370
+dataCollectionTime = 0.0745675990
+flops = 79599628.0000000000
+memMB = 727.3554687500
+flops/bytes = 0.1043672923
+aveBandwidth(GB/s) =    31.18 
+minBandwidth(GB/s) =    22.14 
+maxBandwidth(GB/s) =    34.55 
+aveGFlop =  3.4942 
+minGFlop =  2.4810 
+maxGFlop =  3.8717 
+totTime(se) = 455.6049 
+aveTime(ms) = 22.7802 
+maxTime(ms) = 32.0836 
+minTime(ms) = 20.5591 
+Writing snapshots vp... Done
+Writing snapshots sp... Done
+Writing seismogram ... Done
+
+finalProcessTime = 0.1088901880
+centerFreq = 0.0327273125
+minPeriod  = 30.5555184355
+Numerical dispersion criterion along r: OK! 
+drr = 5657.5342465753, ratio = 11255.8884701977
+Numerical dispersion criterion along theta: OK! 
+maxArc = 9777.7658993750, ratio = 11255.8884701977
+CFL: OK! 
+cfl = 0.1923965841
+FOM-KOKKOS step = 2000
+FOM-KOKKOS step = 4000
+FOM-KOKKOS step = 6000
+FOM-KOKKOS step = 8000
+FOM-KOKKOS step = 10000
+FOM-KOKKOS step = 12000
+FOM-KOKKOS step = 14000
+FOM-KOKKOS step = 16000
+FOM-KOKKOS step = 18000
+FOM-KOKKOS step = 20000
+
+loopTime = 458.0080297040
+dataCollectionTime = 0.0745830620
+flops = 79599628.0000000000
+memMB = 727.3554687500
+flops/bytes = 0.1043672923
+aveBandwidth(GB/s) =    31.03 
+minBandwidth(GB/s) =    24.23 
+maxBandwidth(GB/s) =    34.47 
+aveGFlop =  3.4773 
+minGFlop =  2.7148 
+maxGFlop =  3.8627 
+totTime(se) = 457.8226 
+aveTime(ms) = 22.8911 
+maxTime(ms) = 29.3210 
+minTime(ms) = 20.6075 
+Writing snapshots vp... Done
+Writing snapshots sp... Done
+Writing seismogram ... Done
+
+finalProcessTime = 0.1089454360
+centerFreq = 0.0327273125
+minPeriod  = 30.5555184355
+Numerical dispersion criterion along r: OK! 
+drr = 5657.5342465753, ratio = 11397.6194907063
+Numerical dispersion criterion along theta: OK! 
+maxArc = 9777.7658993750, ratio = 11397.6194907063
+CFL: OK! 
+cfl = 0.1923965841
+FOM-KOKKOS step = 2000
+FOM-KOKKOS step = 4000
+FOM-KOKKOS step = 6000
+FOM-KOKKOS step = 8000
+FOM-KOKKOS step = 10000
+FOM-KOKKOS step = 12000
+FOM-KOKKOS step = 14000
+FOM-KOKKOS step = 16000
+FOM-KOKKOS step = 18000
+FOM-KOKKOS step = 20000
+
+loopTime = 457.0994690810
+dataCollectionTime = 0.0746391280
+flops = 79599628.0000000000
+memMB = 727.3554687500
+flops/bytes = 0.1043672923
+aveBandwidth(GB/s) =    31.09 
+minBandwidth(GB/s) =    22.17 
+maxBandwidth(GB/s) =    34.55 
+aveGFlop =  3.4842 
+minGFlop =  2.4840 
+maxGFlop =  3.8722 
+totTime(se) = 456.9143 
+aveTime(ms) = 22.8457 
+maxTime(ms) = 32.0448 
+minTime(ms) = 20.5565 
+Writing snapshots vp... Done
+Writing snapshots sp... Done
+Writing seismogram ... Done
+
+finalProcessTime = 0.1091171650
+centerFreq = 0.0327273125
+minPeriod  = 30.5555184355
+Numerical dispersion criterion along r: OK! 
+drr = 5657.5342465753, ratio = 10282.6173200920
+Numerical dispersion criterion along theta: OK! 
+maxArc = 9777.7658993750, ratio = 10282.6173200920
+CFL: OK! 
+cfl = 0.1923965841
+FOM-KOKKOS step = 2000
+FOM-KOKKOS step = 4000
+FOM-KOKKOS step = 6000
+FOM-KOKKOS step = 8000
+FOM-KOKKOS step = 10000
+FOM-KOKKOS step = 12000
+FOM-KOKKOS step = 14000
+FOM-KOKKOS step = 16000
+FOM-KOKKOS step = 18000
+FOM-KOKKOS step = 20000
+
+loopTime = 457.7921600300
+dataCollectionTime = 0.0745111950
+flops = 79599628.0000000000
+memMB = 727.3554687500
+flops/bytes = 0.1043672923
+aveBandwidth(GB/s) =    31.04 
+minBandwidth(GB/s) =    23.39 
+maxBandwidth(GB/s) =    34.54 
+aveGFlop =  3.4789 
+minGFlop =  2.6208 
+maxGFlop =  3.8712 
+totTime(se) = 457.6079 
+aveTime(ms) = 22.8804 
+maxTime(ms) = 30.3726 
+minTime(ms) = 20.5620 
+Writing snapshots vp... Done
+Writing snapshots sp... Done
+Writing seismogram ... Done
+
+finalProcessTime = 0.1089694790
+centerFreq = 0.0327273125
+minPeriod  = 30.5555184355
+Numerical dispersion criterion along r: OK! 
+drr = 5657.5342465753, ratio = 10276.1524140963
+Numerical dispersion criterion along theta: OK! 
+maxArc = 9777.7658993750, ratio = 10276.1524140963
+CFL: OK! 
+cfl = 0.1923965841
+FOM-KOKKOS step = 2000
+FOM-KOKKOS step = 4000
+FOM-KOKKOS step = 6000
+FOM-KOKKOS step = 8000
+FOM-KOKKOS step = 10000
+FOM-KOKKOS step = 12000
+FOM-KOKKOS step = 14000
+FOM-KOKKOS step = 16000
+FOM-KOKKOS step = 18000
+FOM-KOKKOS step = 20000
+
+loopTime = 458.0036044200
+dataCollectionTime = 0.0746301350
+flops = 79599628.0000000000
+memMB = 727.3554687500
+flops/bytes = 0.1043672923
+aveBandwidth(GB/s) =    31.03 
+minBandwidth(GB/s) =    24.03 
+maxBandwidth(GB/s) =    34.62 
+aveGFlop =  3.4773 
+minGFlop =  2.6927 
+maxGFlop =  3.8792 
+totTime(se) = 457.8183 
+aveTime(ms) = 22.8909 
+maxTime(ms) = 29.5611 
+minTime(ms) = 20.5197 
+Writing snapshots vp... Done
+Writing snapshots sp... Done
+Writing seismogram ... Done
+
+finalProcessTime = 0.1096124340
+centerFreq = 0.0327273125
+minPeriod  = 30.5555184355
+Numerical dispersion criterion along r: OK! 
+drr = 5657.5342465753, ratio = 11202.1074063768
+Numerical dispersion criterion along theta: OK! 
+maxArc = 9777.7658993750, ratio = 11202.1074063768
+CFL: OK! 
+cfl = 0.1923965841
+FOM-KOKKOS step = 2000
+FOM-KOKKOS step = 4000
+FOM-KOKKOS step = 6000
+FOM-KOKKOS step = 8000
+FOM-KOKKOS step = 10000
+FOM-KOKKOS step = 12000
+FOM-KOKKOS step = 14000
+FOM-KOKKOS step = 16000
+FOM-KOKKOS step = 18000
+FOM-KOKKOS step = 20000
+
+loopTime = 455.7671597040
+dataCollectionTime = 0.0751452700
+flops = 79599628.0000000000
+memMB = 727.3554687500
+flops/bytes = 0.1043672923
+aveBandwidth(GB/s) =    31.18 
+minBandwidth(GB/s) =    23.92 
+maxBandwidth(GB/s) =    34.62 
+aveGFlop =  3.4944 
+minGFlop =  2.6803 
+maxGFlop =  3.8794 
+totTime(se) = 455.5835 
+aveTime(ms) = 22.7792 
+maxTime(ms) = 29.6977 
+minTime(ms) = 20.5183 
+Writing snapshots vp... Done
+Writing snapshots sp... Done
+Writing seismogram ... Done
+
+finalProcessTime = 0.1088562960
+centerFreq = 0.0327273125
+minPeriod  = 30.5555184355
+Numerical dispersion criterion along r: OK! 
+drr = 5657.5342465753, ratio = 11517.1133511073
+Numerical dispersion criterion along theta: OK! 
+maxArc = 9777.7658993750, ratio = 11517.1133511073
+CFL: OK! 
+cfl = 0.1923965841
+FOM-KOKKOS step = 2000
+FOM-KOKKOS step = 4000
+FOM-KOKKOS step = 6000
+FOM-KOKKOS step = 8000
+FOM-KOKKOS step = 10000
+FOM-KOKKOS step = 12000
+FOM-KOKKOS step = 14000
+FOM-KOKKOS step = 16000
+FOM-KOKKOS step = 18000
+FOM-KOKKOS step = 20000
+
+loopTime = 457.1035862180
+dataCollectionTime = 0.0747341520
+flops = 79599628.0000000000
+memMB = 727.3554687500
+flops/bytes = 0.1043672923
+aveBandwidth(GB/s) =    31.09 
+minBandwidth(GB/s) =    24.01 
+maxBandwidth(GB/s) =    34.80 
+aveGFlop =  3.4842 
+minGFlop =  2.6911 
+maxGFlop =  3.8996 
+totTime(se) = 456.9209 
+aveTime(ms) = 22.8460 
+maxTime(ms) = 29.5790 
+minTime(ms) = 20.4120 
+Writing snapshots vp... Done
+Writing snapshots sp... Done
+Writing seismogram ... Done
+
+finalProcessTime = 0.1085822530
+centerFreq = 0.0327273125
+minPeriod  = 30.5555184355
+Numerical dispersion criterion along r: OK! 
+drr = 5657.5342465753, ratio = 11121.0696881543
+Numerical dispersion criterion along theta: OK! 
+maxArc = 9777.7658993750, ratio = 11121.0696881543
+CFL: OK! 
+cfl = 0.1923965841
+FOM-KOKKOS step = 2000
+FOM-KOKKOS step = 4000
+FOM-KOKKOS step = 6000
+FOM-KOKKOS step = 8000
+FOM-KOKKOS step = 10000
+FOM-KOKKOS step = 12000
+FOM-KOKKOS step = 14000
+FOM-KOKKOS step = 16000
+FOM-KOKKOS step = 18000
+FOM-KOKKOS step = 20000
+
+loopTime = 458.7876253490
+dataCollectionTime = 0.0748911020
+flops = 79599628.0000000000
+memMB = 727.3554687500
+flops/bytes = 0.1043672923
+aveBandwidth(GB/s) =    30.98 
+minBandwidth(GB/s) =    21.27 
+maxBandwidth(GB/s) =    34.57 
+aveGFlop =  3.4714 
+minGFlop =  2.3837 
+maxGFlop =  3.8736 
+totTime(se) = 458.6021 
+aveTime(ms) = 22.9301 
+maxTime(ms) = 33.3929 
+minTime(ms) = 20.5494 
+Writing snapshots vp... Done
+Writing snapshots sp... Done
+Writing seismogram ... Done
+
+finalProcessTime = 0.1092964170
+centerFreq = 0.0327273125
+minPeriod  = 30.5555184355
+Numerical dispersion criterion along r: OK! 
+drr = 5657.5342465753, ratio = 12338.9894981678
+Numerical dispersion criterion along theta: OK! 
+maxArc = 9777.7658993750, ratio = 12338.9894981678
+CFL: OK! 
+cfl = 0.1923965841
+FOM-KOKKOS step = 2000
+FOM-KOKKOS step = 4000
+FOM-KOKKOS step = 6000
+FOM-KOKKOS step = 8000
+FOM-KOKKOS step = 10000
+FOM-KOKKOS step = 12000
+FOM-KOKKOS step = 14000
+FOM-KOKKOS step = 16000
+FOM-KOKKOS step = 18000
+FOM-KOKKOS step = 20000
+
+loopTime = 456.5869944170
+dataCollectionTime = 0.0751142960
+flops = 79599628.0000000000
+memMB = 727.3554687500
+flops/bytes = 0.1043672923
+aveBandwidth(GB/s) =    31.13 
+minBandwidth(GB/s) =    23.04 
+maxBandwidth(GB/s) =    34.69 
+aveGFlop =  3.4881 
+minGFlop =  2.5822 
+maxGFlop =  3.8879 
+totTime(se) = 456.4021 
+aveTime(ms) = 22.8201 
+maxTime(ms) = 30.8260 
+minTime(ms) = 20.4739 
+Writing snapshots vp... Done
+Writing snapshots sp... Done
+Writing seismogram ... Done
+
+finalProcessTime = 0.1081077480
+centerFreq = 0.0327273125
+minPeriod  = 30.5555184355
+Numerical dispersion criterion along r: OK! 
+drr = 5657.5342465753, ratio = 10534.6720460223
+Numerical dispersion criterion along theta: OK! 
+maxArc = 9777.7658993750, ratio = 10534.6720460223
+CFL: OK! 
+cfl = 0.1923965841
+FOM-KOKKOS step = 2000
+FOM-KOKKOS step = 4000
+FOM-KOKKOS step = 6000
+FOM-KOKKOS step = 8000
+FOM-KOKKOS step = 10000
+FOM-KOKKOS step = 12000
+FOM-KOKKOS step = 14000
+FOM-KOKKOS step = 16000
+FOM-KOKKOS step = 18000
+FOM-KOKKOS step = 20000
+
+loopTime = 456.2415813320
+dataCollectionTime = 0.0749645370
+flops = 79599628.0000000000
+memMB = 727.3554687500
+flops/bytes = 0.1043672923
+aveBandwidth(GB/s) =    31.15 
+minBandwidth(GB/s) =    21.84 
+maxBandwidth(GB/s) =    34.84 
+aveGFlop =  3.4908 
+minGFlop =  2.4473 
+maxGFlop =  3.9038 
+totTime(se) = 456.0578 
+aveTime(ms) = 22.8029 
+maxTime(ms) = 32.5256 
+minTime(ms) = 20.3904 
+Writing snapshots vp... Done
+Writing snapshots sp... Done
+Writing seismogram ... Done
+
+finalProcessTime = 0.1087052920
+centerFreq = 0.0327273125
+minPeriod  = 30.5555184355
+Numerical dispersion criterion along r: OK! 
+drr = 5657.5342465753, ratio = 10998.3722776374
+Numerical dispersion criterion along theta: OK! 
+maxArc = 9777.7658993750, ratio = 10998.3722776374
+CFL: OK! 
+cfl = 0.1923965841
+FOM-KOKKOS step = 2000
+FOM-KOKKOS step = 4000
+FOM-KOKKOS step = 6000
+FOM-KOKKOS step = 8000
+FOM-KOKKOS step = 10000
+FOM-KOKKOS step = 12000
+FOM-KOKKOS step = 14000
+FOM-KOKKOS step = 16000
+FOM-KOKKOS step = 18000
+FOM-KOKKOS step = 20000
+
+loopTime = 456.6001108120
+dataCollectionTime = 0.0750858560
+flops = 79599628.0000000000
+memMB = 727.3554687500
+flops/bytes = 0.1043672923
+aveBandwidth(GB/s) =    31.13 
+minBandwidth(GB/s) =    22.63 
+maxBandwidth(GB/s) =    34.77 
+aveGFlop =  3.4880 
+minGFlop =  2.5361 
+maxGFlop =  3.8961 
+totTime(se) = 456.4214 
+aveTime(ms) = 22.8211 
+maxTime(ms) = 31.3865 
+minTime(ms) = 20.4306 
+Writing snapshots vp... Done
+Writing snapshots sp... Done
+Writing seismogram ... Done
+
+finalProcessTime = 0.1106591630
+centerFreq = 0.0327273125
+minPeriod  = 30.5555184355
+Numerical dispersion criterion along r: OK! 
+drr = 5657.5342465753, ratio = 10596.3588418364
+Numerical dispersion criterion along theta: OK! 
+maxArc = 9777.7658993750, ratio = 10596.3588418364
+CFL: OK! 
+cfl = 0.1923965841
+FOM-KOKKOS step = 2000
+FOM-KOKKOS step = 4000
+FOM-KOKKOS step = 6000
+FOM-KOKKOS step = 8000
+FOM-KOKKOS step = 10000
+FOM-KOKKOS step = 12000
+FOM-KOKKOS step = 14000
+FOM-KOKKOS step = 16000
+FOM-KOKKOS step = 18000
+FOM-KOKKOS step = 20000
+
+loopTime = 458.7758733590
+dataCollectionTime = 0.0749434910
+flops = 79599628.0000000000
+memMB = 727.3554687500
+flops/bytes = 0.1043672923
+aveBandwidth(GB/s) =    30.98 
+minBandwidth(GB/s) =    28.17 
+maxBandwidth(GB/s) =    34.53 
+aveGFlop =  3.4714 
+minGFlop =  3.1569 
+maxGFlop =  3.8697 
+totTime(se) = 458.5974 
+aveTime(ms) = 22.9299 
+maxTime(ms) = 25.2144 
+minTime(ms) = 20.5699 
+Writing snapshots vp... Done
+Writing snapshots sp... Done
+Writing seismogram ... Done
+
+finalProcessTime = 0.1092087760
+centerFreq = 0.0327273125
+minPeriod  = 30.5555184355
+Numerical dispersion criterion along r: OK! 
+drr = 5657.5342465753, ratio = 12114.1263742055
+Numerical dispersion criterion along theta: OK! 
+maxArc = 9777.7658993750, ratio = 12114.1263742055
+CFL: OK! 
+cfl = 0.1923965841
+FOM-KOKKOS step = 2000
+FOM-KOKKOS step = 4000
+FOM-KOKKOS step = 6000
+FOM-KOKKOS step = 8000
+FOM-KOKKOS step = 10000
+FOM-KOKKOS step = 12000
+FOM-KOKKOS step = 14000
+FOM-KOKKOS step = 16000
+FOM-KOKKOS step = 18000
+FOM-KOKKOS step = 20000
+
+loopTime = 457.5630649490
+dataCollectionTime = 0.0747917690
+flops = 79599628.0000000000
+memMB = 727.3554687500
+flops/bytes = 0.1043672923
+aveBandwidth(GB/s) =    31.06 
+minBandwidth(GB/s) =    28.49 
+maxBandwidth(GB/s) =    34.66 
+aveGFlop =  3.4806 
+minGFlop =  3.1930 
+maxGFlop =  3.8845 
+totTime(se) = 457.3854 
+aveTime(ms) = 22.8693 
+maxTime(ms) = 24.9296 
+minTime(ms) = 20.4918 
+Writing snapshots vp... Done
+Writing snapshots sp... Done
+Writing seismogram ... Done
+
+finalProcessTime = 0.1081453740
+centerFreq = 0.0327273125
+minPeriod  = 30.5555184355
+Numerical dispersion criterion along r: OK! 
+drr = 5657.5342465753, ratio = 10398.0258939685
+Numerical dispersion criterion along theta: OK! 
+maxArc = 9777.7658993750, ratio = 10398.0258939685
+CFL: OK! 
+cfl = 0.1923965841
+FOM-KOKKOS step = 2000
+FOM-KOKKOS step = 4000
+FOM-KOKKOS step = 6000
+FOM-KOKKOS step = 8000
+FOM-KOKKOS step = 10000
+FOM-KOKKOS step = 12000
+FOM-KOKKOS step = 14000
+FOM-KOKKOS step = 16000
+FOM-KOKKOS step = 18000
+FOM-KOKKOS step = 20000
+
+loopTime = 457.9927236460
+dataCollectionTime = 0.0740787180
+flops = 79599628.0000000000
+memMB = 727.3554687500
+flops/bytes = 0.1043672923
+aveBandwidth(GB/s) =    31.03 
+minBandwidth(GB/s) =    24.02 
+maxBandwidth(GB/s) =    34.59 
+aveGFlop =  3.4773 
+minGFlop =  2.6918 
+maxGFlop =  3.8763 
+totTime(se) = 457.8191 
+aveTime(ms) = 22.8910 
+maxTime(ms) = 29.5708 
+minTime(ms) = 20.5349 
+Writing snapshots vp... Done
+Writing snapshots sp... Done
+Writing seismogram ... Done
+
+finalProcessTime = 0.1081545040
+centerFreq = 0.0327273125
+minPeriod  = 30.5555184355
+Numerical dispersion criterion along r: OK! 
+drr = 5657.5342465753, ratio = 16236.8217365556
+Numerical dispersion criterion along theta: OK! 
+maxArc = 9777.7658993750, ratio = 16236.8217365556
+CFL: OK! 
+cfl = 0.1923965841
+FOM-KOKKOS step = 2000
+FOM-KOKKOS step = 4000
+FOM-KOKKOS step = 6000
+FOM-KOKKOS step = 8000
+FOM-KOKKOS step = 10000
+FOM-KOKKOS step = 12000
+FOM-KOKKOS step = 14000
+FOM-KOKKOS step = 16000
+FOM-KOKKOS step = 18000
+FOM-KOKKOS step = 20000
+
+loopTime = 456.7821496330
+dataCollectionTime = 0.0746233170
+flops = 79599628.0000000000
+memMB = 727.3554687500
+flops/bytes = 0.1043672923
+aveBandwidth(GB/s) =    31.11 
+minBandwidth(GB/s) =    21.54 
+maxBandwidth(GB/s) =    34.53 
+aveGFlop =  3.4866 
+minGFlop =  2.4142 
+maxGFlop =  3.8697 
+totTime(se) = 456.6069 
+aveTime(ms) = 22.8303 
+maxTime(ms) = 32.9712 
+minTime(ms) = 20.5699 
+Writing snapshots vp... Done
+Writing snapshots sp... Done
+Writing seismogram ... Done
+
+finalProcessTime = 0.1092633400
+centerFreq = 0.0327273125
+minPeriod  = 30.5555184355
+Numerical dispersion criterion along r: OK! 
+drr = 5657.5342465753, ratio = 17449.0455082191
+Numerical dispersion criterion along theta: OK! 
+maxArc = 9777.7658993750, ratio = 17449.0455082191
+CFL: OK! 
+cfl = 0.1923965841
+FOM-KOKKOS step = 2000
+FOM-KOKKOS step = 4000
+FOM-KOKKOS step = 6000
+FOM-KOKKOS step = 8000
+FOM-KOKKOS step = 10000
+FOM-KOKKOS step = 12000
+FOM-KOKKOS step = 14000
+FOM-KOKKOS step = 16000
+FOM-KOKKOS step = 18000
+FOM-KOKKOS step = 20000
+
+loopTime = 456.7807913300
+dataCollectionTime = 0.0745376580
+flops = 79599628.0000000000
+memMB = 727.3554687500
+flops/bytes = 0.1043672923
+aveBandwidth(GB/s) =    31.11 
+minBandwidth(GB/s) =    25.48 
+maxBandwidth(GB/s) =    34.56 
+aveGFlop =  3.4866 
+minGFlop =  2.8550 
+maxGFlop =  3.8732 
+totTime(se) = 456.6033 
+aveTime(ms) = 22.8302 
+maxTime(ms) = 27.8811 
+minTime(ms) = 20.5515 
+Writing snapshots vp... Done
+Writing snapshots sp... Done
+Writing seismogram ... Done
+
+finalProcessTime = 0.1089783690
+centerFreq = 0.0327273125
+minPeriod  = 30.5555184355
+Numerical dispersion criterion along r: OK! 
+drr = 5657.5342465753, ratio = 10237.7338037266
+Numerical dispersion criterion along theta: OK! 
+maxArc = 9777.7658993750, ratio = 10237.7338037266
+CFL: OK! 
+cfl = 0.1923965841
+FOM-KOKKOS step = 2000
+FOM-KOKKOS step = 4000
+FOM-KOKKOS step = 6000
+FOM-KOKKOS step = 8000
+FOM-KOKKOS step = 10000
+FOM-KOKKOS step = 12000
+FOM-KOKKOS step = 14000
+FOM-KOKKOS step = 16000
+FOM-KOKKOS step = 18000
+FOM-KOKKOS step = 20000
+
+loopTime = 459.5597537050
+dataCollectionTime = 0.0746862560
+flops = 79599628.0000000000
+memMB = 727.3554687500
+flops/bytes = 0.1043672923
+aveBandwidth(GB/s) =    30.92 
+minBandwidth(GB/s) =    21.51 
+maxBandwidth(GB/s) =    34.58 
+aveGFlop =  3.4655 
+minGFlop =  2.4103 
+maxGFlop =  3.8746 
+totTime(se) = 459.3818 
+aveTime(ms) = 22.9691 
+maxTime(ms) = 33.0244 
+minTime(ms) = 20.5437 
+Writing snapshots vp... Done
+Writing snapshots sp... Done
+Writing seismogram ... Done
+
+finalProcessTime = 0.1084160590
+centerFreq = 0.0327273125
+minPeriod  = 30.5555184355
+Numerical dispersion criterion along r: OK! 
+drr = 5657.5342465753, ratio = 13991.2538027695
+Numerical dispersion criterion along theta: OK! 
+maxArc = 9777.7658993750, ratio = 13991.2538027695
+CFL: OK! 
+cfl = 0.1923965841
+FOM-KOKKOS step = 2000
+FOM-KOKKOS step = 4000
+FOM-KOKKOS step = 6000
+FOM-KOKKOS step = 8000
+FOM-KOKKOS step = 10000
+FOM-KOKKOS step = 12000
+FOM-KOKKOS step = 14000
+FOM-KOKKOS step = 16000
+FOM-KOKKOS step = 18000
+FOM-KOKKOS step = 20000
+
+loopTime = 459.9513522830
+dataCollectionTime = 0.0753472810
+flops = 79599628.0000000000
+memMB = 727.3554687500
+flops/bytes = 0.1043672923
+aveBandwidth(GB/s) =    30.90 
+minBandwidth(GB/s) =     5.81 
+maxBandwidth(GB/s) =    34.52 
+aveGFlop =  3.4626 
+minGFlop =  0.6511 
+maxGFlop =  3.8682 
+totTime(se) = 459.7695 
+aveTime(ms) = 22.9885 
+maxTime(ms) = 122.2623 
+minTime(ms) = 20.5780 
+Writing snapshots vp... Done
+Writing snapshots sp... Done
+Writing seismogram ... Done
+
+finalProcessTime = 0.1092388430
+centerFreq = 0.0327273125
+minPeriod  = 30.5555184355
+Numerical dispersion criterion along r: OK! 
+drr = 5657.5342465753, ratio = 13232.6080585282
+Numerical dispersion criterion along theta: OK! 
+maxArc = 9777.7658993750, ratio = 13232.6080585282
+CFL: OK! 
+cfl = 0.1923965841
+FOM-KOKKOS step = 2000
+FOM-KOKKOS step = 4000
+FOM-KOKKOS step = 6000
+FOM-KOKKOS step = 8000
+FOM-KOKKOS step = 10000
+FOM-KOKKOS step = 12000
+FOM-KOKKOS step = 14000
+FOM-KOKKOS step = 16000
+FOM-KOKKOS step = 18000
+FOM-KOKKOS step = 20000
+
+loopTime = 458.2123687040
+dataCollectionTime = 0.0754633430
+flops = 79599628.0000000000
+memMB = 727.3554687500
+flops/bytes = 0.1043672923
+aveBandwidth(GB/s) =    31.02 
+minBandwidth(GB/s) =    27.75 
+maxBandwidth(GB/s) =    34.50 
+aveGFlop =  3.4757 
+minGFlop =  3.1100 
+maxGFlop =  3.8665 
+totTime(se) = 458.0317 
+aveTime(ms) = 22.9016 
+maxTime(ms) = 25.5946 
+minTime(ms) = 20.5872 
+Writing snapshots vp... Done
+Writing snapshots sp... Done
+Writing seismogram ... Done
+
+finalProcessTime = 0.1085556530
+centerFreq = 0.0327273125
+minPeriod  = 30.5555184355
+Numerical dispersion criterion along r: OK! 
+drr = 5657.5342465753, ratio = 10937.5342763408
+Numerical dispersion criterion along theta: OK! 
+maxArc = 9777.7658993750, ratio = 10937.5342763408
+CFL: OK! 
+cfl = 0.1923965841
+FOM-KOKKOS step = 2000
+FOM-KOKKOS step = 4000
+FOM-KOKKOS step = 6000
+FOM-KOKKOS step = 8000
+FOM-KOKKOS step = 10000
+FOM-KOKKOS step = 12000
+FOM-KOKKOS step = 14000
+FOM-KOKKOS step = 16000
+FOM-KOKKOS step = 18000
+FOM-KOKKOS step = 20000
+
+loopTime = 458.8072345570
+dataCollectionTime = 0.0744489420
+flops = 79599628.0000000000
+memMB = 727.3554687500
+flops/bytes = 0.1043672923
+aveBandwidth(GB/s) =    30.98 
+minBandwidth(GB/s) =    26.82 
+maxBandwidth(GB/s) =    34.69 
+aveGFlop =  3.4712 
+minGFlop =  3.0059 
+maxGFlop =  3.8871 
+totTime(se) = 458.6318 
+aveTime(ms) = 22.9316 
+maxTime(ms) = 26.4812 
+minTime(ms) = 20.4778 
+Writing snapshots vp... Done
+Writing snapshots sp... Done
+Writing seismogram ... Done
+
+finalProcessTime = 0.1093218080
+centerFreq = 0.0327273125
+minPeriod  = 30.5555184355
+Numerical dispersion criterion along r: OK! 
+drr = 5657.5342465753, ratio = 17407.8508985195
+Numerical dispersion criterion along theta: OK! 
+maxArc = 9777.7658993750, ratio = 17407.8508985195
+CFL: OK! 
+cfl = 0.1923965841
+FOM-KOKKOS step = 2000
+FOM-KOKKOS step = 4000
+FOM-KOKKOS step = 6000
+FOM-KOKKOS step = 8000
+FOM-KOKKOS step = 10000
+FOM-KOKKOS step = 12000
+FOM-KOKKOS step = 14000
+FOM-KOKKOS step = 16000
+FOM-KOKKOS step = 18000
+FOM-KOKKOS step = 20000
+
+loopTime = 455.9355704370
+dataCollectionTime = 0.0746548680
+flops = 79599628.0000000000
+memMB = 727.3554687500
+flops/bytes = 0.1043672923
+aveBandwidth(GB/s) =    31.17 
+minBandwidth(GB/s) =    22.88 
+maxBandwidth(GB/s) =    34.68 
+aveGFlop =  3.4931 
+minGFlop =  2.5637 
+maxGFlop =  3.8861 
+totTime(se) = 455.7582 
+aveTime(ms) = 22.7879 
+maxTime(ms) = 31.0490 
+minTime(ms) = 20.4830 
+Writing snapshots vp... Done
+Writing snapshots sp... Done
+Writing seismogram ... Done
+
+finalProcessTime = 0.1080556400
+centerFreq = 0.0327273125
+minPeriod  = 30.5555184355
+Numerical dispersion criterion along r: OK! 
+drr = 5657.5342465753, ratio = 10861.1471705940
+Numerical dispersion criterion along theta: OK! 
+maxArc = 9777.7658993750, ratio = 10861.1471705940
+CFL: OK! 
+cfl = 0.1923965841
+FOM-KOKKOS step = 2000
+FOM-KOKKOS step = 4000
+FOM-KOKKOS step = 6000
+FOM-KOKKOS step = 8000
+FOM-KOKKOS step = 10000
+FOM-KOKKOS step = 12000
+FOM-KOKKOS step = 14000
+FOM-KOKKOS step = 16000
+FOM-KOKKOS step = 18000
+FOM-KOKKOS step = 20000
+
+loopTime = 456.4430551570
+dataCollectionTime = 0.0756411110
+flops = 79599628.0000000000
+memMB = 727.3554687500
+flops/bytes = 0.1043672923
+aveBandwidth(GB/s) =    31.14 
+minBandwidth(GB/s) =    27.18 
+maxBandwidth(GB/s) =    34.82 
+aveGFlop =  3.4892 
+minGFlop =  3.0458 
+maxGFlop =  3.9017 
+totTime(se) = 456.2622 
+aveTime(ms) = 22.8131 
+maxTime(ms) = 26.1339 
+minTime(ms) = 20.4011 
+Writing snapshots vp... Done
+Writing snapshots sp... Done
+Writing seismogram ... Done
+
+finalProcessTime = 0.1083077720
+centerFreq = 0.0327273125
+minPeriod  = 30.5555184355
+Numerical dispersion criterion along r: OK! 
+drr = 5657.5342465753, ratio = 11040.7346951785
+Numerical dispersion criterion along theta: OK! 
+maxArc = 9777.7658993750, ratio = 11040.7346951785
+CFL: OK! 
+cfl = 0.1923965841
+FOM-KOKKOS step = 2000
+FOM-KOKKOS step = 4000
+FOM-KOKKOS step = 6000
+FOM-KOKKOS step = 8000
+FOM-KOKKOS step = 10000
+FOM-KOKKOS step = 12000
+FOM-KOKKOS step = 14000
+FOM-KOKKOS step = 16000
+FOM-KOKKOS step = 18000
+FOM-KOKKOS step = 20000
+
+loopTime = 457.8694052310
+dataCollectionTime = 0.0743121530
+flops = 79599628.0000000000
+memMB = 727.3554687500
+flops/bytes = 0.1043672923
+aveBandwidth(GB/s) =    31.04 
+minBandwidth(GB/s) =    26.61 
+maxBandwidth(GB/s) =    34.66 
+aveGFlop =  3.4783 
+minGFlop =  2.9822 
+maxGFlop =  3.8838 
+totTime(se) = 457.6885 
+aveTime(ms) = 22.8844 
+maxTime(ms) = 26.6918 
+minTime(ms) = 20.4952 
+Writing snapshots vp... Done
+Writing snapshots sp... Done
+Writing seismogram ... Done
+
+finalProcessTime = 0.1076330770
+centerFreq = 0.0327273125
+minPeriod  = 30.5555184355
+Numerical dispersion criterion along r: OK! 
+drr = 5657.5342465753, ratio = 10831.0141503938
+Numerical dispersion criterion along theta: OK! 
+maxArc = 9777.7658993750, ratio = 10831.0141503938
+CFL: OK! 
+cfl = 0.1923965841
+FOM-KOKKOS step = 2000
+FOM-KOKKOS step = 4000
+FOM-KOKKOS step = 6000
+FOM-KOKKOS step = 8000
+FOM-KOKKOS step = 10000
+FOM-KOKKOS step = 12000
+FOM-KOKKOS step = 14000
+FOM-KOKKOS step = 16000
+FOM-KOKKOS step = 18000
+FOM-KOKKOS step = 20000
+
+loopTime = 457.4867526930
+dataCollectionTime = 0.0749935370
+flops = 79599628.0000000000
+memMB = 727.3554687500
+flops/bytes = 0.1043672923
+aveBandwidth(GB/s) =    31.07 
+minBandwidth(GB/s) =    21.70 
+maxBandwidth(GB/s) =    34.56 
+aveGFlop =  3.4813 
+minGFlop =  2.4322 
+maxGFlop =  3.8728 
+totTime(se) = 457.3007 
+aveTime(ms) = 22.8650 
+maxTime(ms) = 32.7269 
+minTime(ms) = 20.5534 
+Writing snapshots vp... Done
+Writing snapshots sp... Done
+Writing seismogram ... Done
+
+finalProcessTime = 0.1087693850
+centerFreq = 0.0327273125
+minPeriod  = 30.5555184355
+Numerical dispersion criterion along r: OK! 
+drr = 5657.5342465753, ratio = 16872.0431327455
+Numerical dispersion criterion along theta: OK! 
+maxArc = 9777.7658993750, ratio = 16872.0431327455
+CFL: OK! 
+cfl = 0.1923965841
+FOM-KOKKOS step = 2000
+FOM-KOKKOS step = 4000
+FOM-KOKKOS step = 6000
+FOM-KOKKOS step = 8000
+FOM-KOKKOS step = 10000
+FOM-KOKKOS step = 12000
+FOM-KOKKOS step = 14000
+FOM-KOKKOS step = 16000
+FOM-KOKKOS step = 18000
+FOM-KOKKOS step = 20000
+
+loopTime = 455.7276809790
+dataCollectionTime = 0.0747505030
+flops = 79599628.0000000000
+memMB = 727.3554687500
+flops/bytes = 0.1043672923
+aveBandwidth(GB/s) =    31.19 
+minBandwidth(GB/s) =    23.52 
+maxBandwidth(GB/s) =    34.62 
+aveGFlop =  3.4947 
+minGFlop =  2.6353 
+maxGFlop =  3.8795 
+totTime(se) = 455.5426 
+aveTime(ms) = 22.7771 
+maxTime(ms) = 30.2052 
+minTime(ms) = 20.5181 
+Writing snapshots vp... Done
+Writing snapshots sp... Done
+Writing seismogram ... Done
+
+finalProcessTime = 0.1086751710
+centerFreq = 0.0327273125
+minPeriod  = 30.5555184355
+Numerical dispersion criterion along r: OK! 
+drr = 5657.5342465753, ratio = 11298.9722251907
+Numerical dispersion criterion along theta: OK! 
+maxArc = 9777.7658993750, ratio = 11298.9722251907
+CFL: OK! 
+cfl = 0.1923965841
+FOM-KOKKOS step = 2000
+FOM-KOKKOS step = 4000
+FOM-KOKKOS step = 6000
+FOM-KOKKOS step = 8000
+FOM-KOKKOS step = 10000
+FOM-KOKKOS step = 12000
+FOM-KOKKOS step = 14000
+FOM-KOKKOS step = 16000
+FOM-KOKKOS step = 18000
+FOM-KOKKOS step = 20000
+
+loopTime = 456.0385586920
+dataCollectionTime = 0.0745989040
+flops = 79599628.0000000000
+memMB = 727.3554687500
+flops/bytes = 0.1043672923
+aveBandwidth(GB/s) =    31.16 
+minBandwidth(GB/s) =    23.96 
+maxBandwidth(GB/s) =    34.59 
+aveGFlop =  3.4923 
+minGFlop =  2.6854 
+maxGFlop =  3.8764 
+totTime(se) = 455.8539 
+aveTime(ms) = 22.7927 
+maxTime(ms) = 29.6421 
+minTime(ms) = 20.5347 
+Writing snapshots vp... Done
+Writing snapshots sp... Done
+Writing seismogram ... Done
+
+finalProcessTime = 0.1088205120
+centerFreq = 0.0327273125
+minPeriod  = 30.5555184355
+Numerical dispersion criterion along r: OK! 
+drr = 5657.5342465753, ratio = 10614.9969902508
+Numerical dispersion criterion along theta: OK! 
+maxArc = 9777.7658993750, ratio = 10614.9969902508
+CFL: OK! 
+cfl = 0.1923965841
+FOM-KOKKOS step = 2000
+FOM-KOKKOS step = 4000
+FOM-KOKKOS step = 6000
+FOM-KOKKOS step = 8000
+FOM-KOKKOS step = 10000
+FOM-KOKKOS step = 12000
+FOM-KOKKOS step = 14000
+FOM-KOKKOS step = 16000
+FOM-KOKKOS step = 18000
+FOM-KOKKOS step = 20000
+
+loopTime = 457.6578962460
+dataCollectionTime = 0.0749678180
+flops = 79599628.0000000000
+memMB = 727.3554687500
+flops/bytes = 0.1043672923
+aveBandwidth(GB/s) =    31.05 
+minBandwidth(GB/s) =    22.77 
+maxBandwidth(GB/s) =    34.62 
+aveGFlop =  3.4800 
+minGFlop =  2.5516 
+maxGFlop =  3.8796 
+totTime(se) = 457.4736 
+aveTime(ms) = 22.8737 
+maxTime(ms) = 31.1958 
+minTime(ms) = 20.5175 
+Writing snapshots vp... Done
+Writing snapshots sp... Done
+Writing seismogram ... Done
+
+finalProcessTime = 0.1090322390
+centerFreq = 0.0327273125
+minPeriod  = 30.5555184355
+Numerical dispersion criterion along r: OK! 
+drr = 5657.5342465753, ratio = 10190.8578139290
+Numerical dispersion criterion along theta: OK! 
+maxArc = 9777.7658993750, ratio = 10190.8578139290
+CFL: OK! 
+cfl = 0.1923965841
+FOM-KOKKOS step = 2000
+FOM-KOKKOS step = 4000
+FOM-KOKKOS step = 6000
+FOM-KOKKOS step = 8000
+FOM-KOKKOS step = 10000
+FOM-KOKKOS step = 12000
+FOM-KOKKOS step = 14000
+FOM-KOKKOS step = 16000
+FOM-KOKKOS step = 18000
+FOM-KOKKOS step = 20000
+
+loopTime = 458.3343976050
+dataCollectionTime = 0.0748847840
+flops = 79599628.0000000000
+memMB = 727.3554687500
+flops/bytes = 0.1043672923
+aveBandwidth(GB/s) =    31.01 
+minBandwidth(GB/s) =    21.43 
+maxBandwidth(GB/s) =    34.59 
+aveGFlop =  3.4748 
+minGFlop =  2.4012 
+maxGFlop =  3.8767 
+totTime(se) = 458.1493 
+aveTime(ms) = 22.9075 
+maxTime(ms) = 33.1502 
+minTime(ms) = 20.5331 
+Writing snapshots vp... Done
+Writing snapshots sp... Done
+Writing seismogram ... Done
+
+finalProcessTime = 0.1080227270
+centerFreq = 0.0327273125
+minPeriod  = 30.5555184355
+Numerical dispersion criterion along r: OK! 
+drr = 5657.5342465753, ratio = 13988.8304152928
+Numerical dispersion criterion along theta: OK! 
+maxArc = 9777.7658993750, ratio = 13988.8304152928
+CFL: OK! 
+cfl = 0.1923965841
+FOM-KOKKOS step = 2000
+FOM-KOKKOS step = 4000
+FOM-KOKKOS step = 6000
+FOM-KOKKOS step = 8000
+FOM-KOKKOS step = 10000
+FOM-KOKKOS step = 12000
+FOM-KOKKOS step = 14000
+FOM-KOKKOS step = 16000
+FOM-KOKKOS step = 18000
+FOM-KOKKOS step = 20000
+
+loopTime = 457.3048168530
+dataCollectionTime = 0.0737340610
+flops = 79599628.0000000000
+memMB = 727.3554687500
+flops/bytes = 0.1043672923
+aveBandwidth(GB/s) =    31.08 
+minBandwidth(GB/s) =    21.73 
+maxBandwidth(GB/s) =    34.50 
+aveGFlop =  3.4827 
+minGFlop =  2.4355 
+maxGFlop =  3.8666 
+totTime(se) = 457.1207 
+aveTime(ms) = 22.8560 
+maxTime(ms) = 32.6830 
+minTime(ms) = 20.5866 
+Writing snapshots vp... Done
+Writing snapshots sp... Done
+Writing seismogram ... Done
+
+finalProcessTime = 0.1088314030
+centerFreq = 0.0327273125
+minPeriod  = 30.5555184355
+Numerical dispersion criterion along r: OK! 
+drr = 5657.5342465753, ratio = 11618.6533533846
+Numerical dispersion criterion along theta: OK! 
+maxArc = 9777.7658993750, ratio = 11618.6533533846
+CFL: OK! 
+cfl = 0.1923965841
+FOM-KOKKOS step = 2000
+FOM-KOKKOS step = 4000
+FOM-KOKKOS step = 6000
+FOM-KOKKOS step = 8000
+FOM-KOKKOS step = 10000
+FOM-KOKKOS step = 12000
+FOM-KOKKOS step = 14000
+FOM-KOKKOS step = 16000
+FOM-KOKKOS step = 18000
+FOM-KOKKOS step = 20000
+
+loopTime = 456.6325195980
+dataCollectionTime = 0.0746918380
+flops = 79599628.0000000000
+memMB = 727.3554687500
+flops/bytes = 0.1043672923
+aveBandwidth(GB/s) =    31.12 
+minBandwidth(GB/s) =    24.42 
+maxBandwidth(GB/s) =    34.62 
+aveGFlop =  3.4878 
+minGFlop =  2.7366 
+maxGFlop =  3.8802 
+totTime(se) = 456.4470 
+aveTime(ms) = 22.8224 
+maxTime(ms) = 29.0867 
+minTime(ms) = 20.5146 
+Writing snapshots vp... Done
+Writing snapshots sp... Done
+Writing seismogram ... Done
+
+finalProcessTime = 0.1080165040
+centerFreq = 0.0327273125
+minPeriod  = 30.5555184355
+Numerical dispersion criterion along r: OK! 
+drr = 5657.5342465753, ratio = 11984.3623726249
+Numerical dispersion criterion along theta: OK! 
+maxArc = 9777.7658993750, ratio = 11984.3623726249
+CFL: OK! 
+cfl = 0.1923965841
+FOM-KOKKOS step = 2000
+FOM-KOKKOS step = 4000
+FOM-KOKKOS step = 6000
+FOM-KOKKOS step = 8000
+FOM-KOKKOS step = 10000
+FOM-KOKKOS step = 12000
+FOM-KOKKOS step = 14000
+FOM-KOKKOS step = 16000
+FOM-KOKKOS step = 18000
+FOM-KOKKOS step = 20000
+
+loopTime = 457.1618416970
+dataCollectionTime = 0.0752413940
+flops = 79599628.0000000000
+memMB = 727.3554687500
+flops/bytes = 0.1043672923
+aveBandwidth(GB/s) =    31.09 
+minBandwidth(GB/s) =    21.64 
+maxBandwidth(GB/s) =    34.74 
+aveGFlop =  3.4838 
+minGFlop =  2.4254 
+maxGFlop =  3.8934 
+totTime(se) = 456.9760 
+aveTime(ms) = 22.8488 
+maxTime(ms) = 32.8185 
+minTime(ms) = 20.4445 
+Writing snapshots vp... Done
+Writing snapshots sp... Done
+Writing seismogram ... Done
+
+finalProcessTime = 0.1083081280
+centerFreq = 0.0327273125
+minPeriod  = 30.5555184355
+Numerical dispersion criterion along r: OK! 
+drr = 5657.5342465753, ratio = 10398.9748887940
+Numerical dispersion criterion along theta: OK! 
+maxArc = 9777.7658993750, ratio = 10398.9748887940
+CFL: OK! 
+cfl = 0.1923965841
+FOM-KOKKOS step = 2000
+FOM-KOKKOS step = 4000
+FOM-KOKKOS step = 6000
+FOM-KOKKOS step = 8000
+FOM-KOKKOS step = 10000
+FOM-KOKKOS step = 12000
+FOM-KOKKOS step = 14000
+FOM-KOKKOS step = 16000
+FOM-KOKKOS step = 18000
+FOM-KOKKOS step = 20000
+
+loopTime = 457.6224637660
+dataCollectionTime = 0.0748255090
+flops = 79599628.0000000000
+memMB = 727.3554687500
+flops/bytes = 0.1043672923
+aveBandwidth(GB/s) =    31.06 
+minBandwidth(GB/s) =    23.16 
+maxBandwidth(GB/s) =    34.72 
+aveGFlop =  3.4803 
+minGFlop =  2.5952 
+maxGFlop =  3.8910 
+totTime(se) = 457.4361 
+aveTime(ms) = 22.8718 
+maxTime(ms) = 30.6719 
+minTime(ms) = 20.4573 
+Writing snapshots vp... Done
+Writing snapshots sp... Done
+Writing seismogram ... Done
+
+finalProcessTime = 0.1089436960
+centerFreq = 0.0327273125
+minPeriod  = 30.5555184355
+Numerical dispersion criterion along r: OK! 
+drr = 5657.5342465753, ratio = 9960.2085860685
+Numerical dispersion criterion along theta: OK! 
+maxArc = 9777.7658993750, ratio = 9960.2085860685
+CFL: OK! 
+cfl = 0.1923965841
+FOM-KOKKOS step = 2000
+FOM-KOKKOS step = 4000
+FOM-KOKKOS step = 6000
+FOM-KOKKOS step = 8000
+FOM-KOKKOS step = 10000
+FOM-KOKKOS step = 12000
+FOM-KOKKOS step = 14000
+FOM-KOKKOS step = 16000
+FOM-KOKKOS step = 18000
+FOM-KOKKOS step = 20000
+
+loopTime = 459.0325375650
+dataCollectionTime = 0.0752831710
+flops = 79599628.0000000000
+memMB = 727.3554687500
+flops/bytes = 0.1043672923
+aveBandwidth(GB/s) =    30.96 
+minBandwidth(GB/s) =    23.17 
+maxBandwidth(GB/s) =    34.50 
+aveGFlop =  3.4696 
+minGFlop =  2.5961 
+maxGFlop =  3.8656 
+totTime(se) = 458.8457 
+aveTime(ms) = 22.9423 
+maxTime(ms) = 30.6609 
+minTime(ms) = 20.5916 
+Writing snapshots vp... Done
+Writing snapshots sp... Done
+Writing seismogram ... Done
+
+finalProcessTime = 0.1091744850
+centerFreq = 0.0327273125
+minPeriod  = 30.5555184355
+Numerical dispersion criterion along r: OK! 
+drr = 5657.5342465753, ratio = 11577.2115863710
+Numerical dispersion criterion along theta: OK! 
+maxArc = 9777.7658993750, ratio = 11577.2115863710
+CFL: OK! 
+cfl = 0.1923965841
+FOM-KOKKOS step = 2000
+FOM-KOKKOS step = 4000
+FOM-KOKKOS step = 6000
+FOM-KOKKOS step = 8000
+FOM-KOKKOS step = 10000
+FOM-KOKKOS step = 12000
+FOM-KOKKOS step = 14000
+FOM-KOKKOS step = 16000
+FOM-KOKKOS step = 18000
+FOM-KOKKOS step = 20000
+
+loopTime = 456.9130083950
+dataCollectionTime = 0.0753033430
+flops = 79599628.0000000000
+memMB = 727.3554687500
+flops/bytes = 0.1043672923
+aveBandwidth(GB/s) =    31.10 
+minBandwidth(GB/s) =    23.05 
+maxBandwidth(GB/s) =    34.69 
+aveGFlop =  3.4857 
+minGFlop =  2.5835 
+maxGFlop =  3.8873 
+totTime(se) = 456.7264 
+aveTime(ms) = 22.8363 
+maxTime(ms) = 30.8109 
+minTime(ms) = 20.4768 
+Writing snapshots vp... Done
+Writing snapshots sp... Done
+Writing seismogram ... Done
+
+finalProcessTime = 0.1086550890
+centerFreq = 0.0327273125
+minPeriod  = 30.5555184355
+Numerical dispersion criterion along r: OK! 
+drr = 5657.5342465753, ratio = 11917.1353134536
+Numerical dispersion criterion along theta: OK! 
+maxArc = 9777.7658993750, ratio = 11917.1353134536
+CFL: OK! 
+cfl = 0.1923965841
+FOM-KOKKOS step = 2000
+FOM-KOKKOS step = 4000
+FOM-KOKKOS step = 6000
+FOM-KOKKOS step = 8000
+FOM-KOKKOS step = 10000
+FOM-KOKKOS step = 12000
+FOM-KOKKOS step = 14000
+FOM-KOKKOS step = 16000
+FOM-KOKKOS step = 18000
+FOM-KOKKOS step = 20000
+
+loopTime = 456.3825678490
+dataCollectionTime = 0.0752545550
+flops = 79599628.0000000000
+memMB = 727.3554687500
+flops/bytes = 0.1043672923
+aveBandwidth(GB/s) =    31.14 
+minBandwidth(GB/s) =    28.41 
+maxBandwidth(GB/s) =    34.68 
+aveGFlop =  3.4897 
+minGFlop =  3.1834 
+maxGFlop =  3.8860 
+totTime(se) = 456.1967 
+aveTime(ms) = 22.8098 
+maxTime(ms) = 25.0047 
+minTime(ms) = 20.4837 
+Writing snapshots vp... Done
+Writing snapshots sp... Done
+Writing seismogram ... Done
+
+finalProcessTime = 0.1091293220
+centerFreq = 0.0327273125
+minPeriod  = 30.5555184355
+Numerical dispersion criterion along r: OK! 
+drr = 5657.5342465753, ratio = 14275.3271602830
+Numerical dispersion criterion along theta: OK! 
+maxArc = 9777.7658993750, ratio = 14275.3271602830
+CFL: OK! 
+cfl = 0.1923965841
+FOM-KOKKOS step = 2000
+FOM-KOKKOS step = 4000
+FOM-KOKKOS step = 6000
+FOM-KOKKOS step = 8000
+FOM-KOKKOS step = 10000
+FOM-KOKKOS step = 12000
+FOM-KOKKOS step = 14000
+FOM-KOKKOS step = 16000
+FOM-KOKKOS step = 18000
+FOM-KOKKOS step = 20000
+
+loopTime = 456.0843013630
+dataCollectionTime = 0.0753431430
+flops = 79599628.0000000000
+memMB = 727.3554687500
+flops/bytes = 0.1043672923
+aveBandwidth(GB/s) =    31.16 
+minBandwidth(GB/s) =    22.87 
+maxBandwidth(GB/s) =    34.63 
+aveGFlop =  3.4920 
+minGFlop =  2.5628 
+maxGFlop =  3.8813 
+totTime(se) = 455.8969 
+aveTime(ms) = 22.7948 
+maxTime(ms) = 31.0601 
+minTime(ms) = 20.5086 
+Writing snapshots vp... Done
+Writing snapshots sp... Done
+Writing seismogram ... Done
+
+finalProcessTime = 0.1081220290
+centerFreq = 0.0327273125
+minPeriod  = 30.5555184355
+Numerical dispersion criterion along r: OK! 
+drr = 5657.5342465753, ratio = 11928.8347209075
+Numerical dispersion criterion along theta: OK! 
+maxArc = 9777.7658993750, ratio = 11928.8347209075
+CFL: OK! 
+cfl = 0.1923965841
+FOM-KOKKOS step = 2000
+FOM-KOKKOS step = 4000
+FOM-KOKKOS step = 6000
+FOM-KOKKOS step = 8000
+FOM-KOKKOS step = 10000
+FOM-KOKKOS step = 12000
+FOM-KOKKOS step = 14000
+FOM-KOKKOS step = 16000
+FOM-KOKKOS step = 18000
+FOM-KOKKOS step = 20000
+
+loopTime = 456.8166684050
+dataCollectionTime = 0.0754777250
+flops = 79599628.0000000000
+memMB = 727.3554687500
+flops/bytes = 0.1043672923
+aveBandwidth(GB/s) =    31.11 
+minBandwidth(GB/s) =    23.83 
+maxBandwidth(GB/s) =    34.60 
+aveGFlop =  3.4864 
+minGFlop =  2.6701 
+maxGFlop =  3.8771 
+totTime(se) = 456.6298 
+aveTime(ms) = 22.8315 
+maxTime(ms) = 29.8115 
+minTime(ms) = 20.5305 
+Writing snapshots vp... Done
+Writing snapshots sp... Done
+Writing seismogram ... Done
+
+finalProcessTime = 0.1094773080
+centerFreq = 0.0327273125
+minPeriod  = 30.5555184355
+Numerical dispersion criterion along r: OK! 
+drr = 5657.5342465753, ratio = 11796.0193593436
+Numerical dispersion criterion along theta: OK! 
+maxArc = 9777.7658993750, ratio = 11796.0193593436
+CFL: OK! 
+cfl = 0.1923965841
+FOM-KOKKOS step = 2000
+FOM-KOKKOS step = 4000
+FOM-KOKKOS step = 6000
+FOM-KOKKOS step = 8000
+FOM-KOKKOS step = 10000
+FOM-KOKKOS step = 12000
+FOM-KOKKOS step = 14000
+FOM-KOKKOS step = 16000
+FOM-KOKKOS step = 18000
+FOM-KOKKOS step = 20000
+
+loopTime = 456.5482657210
+dataCollectionTime = 0.0747087070
+flops = 79599628.0000000000
+memMB = 727.3554687500
+flops/bytes = 0.1043672923
+aveBandwidth(GB/s) =    31.13 
+minBandwidth(GB/s) =    22.40 
+maxBandwidth(GB/s) =    34.58 
+aveGFlop =  3.4884 
+minGFlop =  2.5107 
+maxGFlop =  3.8752 
+totTime(se) = 456.3625 
+aveTime(ms) = 22.8181 
+maxTime(ms) = 31.7037 
+minTime(ms) = 20.5410 
+Writing snapshots vp... Done
+Writing snapshots sp... Done
+Writing seismogram ... Done
+
+finalProcessTime = 0.1088335330
+centerFreq = 0.0327273125
+minPeriod  = 30.5555184355
+Numerical dispersion criterion along r: OK! 
+drr = 5657.5342465753, ratio = 13510.4045217511
+Numerical dispersion criterion along theta: OK! 
+maxArc = 9777.7658993750, ratio = 13510.4045217511
+CFL: OK! 
+cfl = 0.1923965841
+FOM-KOKKOS step = 2000
+FOM-KOKKOS step = 4000
+FOM-KOKKOS step = 6000
+FOM-KOKKOS step = 8000
+FOM-KOKKOS step = 10000
+FOM-KOKKOS step = 12000
+FOM-KOKKOS step = 14000
+FOM-KOKKOS step = 16000
+FOM-KOKKOS step = 18000
+FOM-KOKKOS step = 20000
+
+loopTime = 456.4790523720
+dataCollectionTime = 0.0744741840
+flops = 79599628.0000000000
+memMB = 727.3554687500
+flops/bytes = 0.1043672923
+aveBandwidth(GB/s) =    31.13 
+minBandwidth(GB/s) =    27.68 
+maxBandwidth(GB/s) =    34.50 
+aveGFlop =  3.4890 
+minGFlop =  3.1023 
+maxGFlop =  3.8659 
+totTime(se) = 456.2942 
+aveTime(ms) = 22.8147 
+maxTime(ms) = 25.6584 
+minTime(ms) = 20.5904 
+Writing snapshots vp... Done
+Writing snapshots sp... Done
+Writing seismogram ... Done
+
+finalProcessTime = 0.1088716410
+centerFreq = 0.0327273125
+minPeriod  = 30.5555184355
+Numerical dispersion criterion along r: OK! 
+drr = 5657.5342465753, ratio = 10087.6152756010
+Numerical dispersion criterion along theta: OK! 
+maxArc = 9777.7658993750, ratio = 10087.6152756010
+CFL: OK! 
+cfl = 0.1923965841
+FOM-KOKKOS step = 2000
+FOM-KOKKOS step = 4000
+FOM-KOKKOS step = 6000
+FOM-KOKKOS step = 8000
+FOM-KOKKOS step = 10000
+FOM-KOKKOS step = 12000
+FOM-KOKKOS step = 14000
+FOM-KOKKOS step = 16000
+FOM-KOKKOS step = 18000
+FOM-KOKKOS step = 20000
+
+loopTime = 458.2217094590
+dataCollectionTime = 0.0749010090
+flops = 79599628.0000000000
+memMB = 727.3554687500
+flops/bytes = 0.1043672923
+aveBandwidth(GB/s) =    31.02 
+minBandwidth(GB/s) =    23.55 
+maxBandwidth(GB/s) =    34.50 
+aveGFlop =  3.4757 
+minGFlop =  2.6396 
+maxGFlop =  3.8663 
+totTime(se) = 458.0368 
+aveTime(ms) = 22.9018 
+maxTime(ms) = 30.1562 
+minTime(ms) = 20.5882 
+Writing snapshots vp... Done
+Writing snapshots sp... Done
+Writing seismogram ... Done
+
+finalProcessTime = 0.1082680240
+centerFreq = 0.0327273125
+minPeriod  = 30.5555184355
+Numerical dispersion criterion along r: OK! 
+drr = 5657.5342465753, ratio = 11515.3471931666
+Numerical dispersion criterion along theta: OK! 
+maxArc = 9777.7658993750, ratio = 11515.3471931666
+CFL: OK! 
+cfl = 0.1923965841
+FOM-KOKKOS step = 2000
+FOM-KOKKOS step = 4000
+FOM-KOKKOS step = 6000
+FOM-KOKKOS step = 8000
+FOM-KOKKOS step = 10000
+FOM-KOKKOS step = 12000
+FOM-KOKKOS step = 14000
+FOM-KOKKOS step = 16000
+FOM-KOKKOS step = 18000
+FOM-KOKKOS step = 20000
+
+loopTime = 456.7395892950
+dataCollectionTime = 0.0746136420
+flops = 79599628.0000000000
+memMB = 727.3554687500
+flops/bytes = 0.1043672923
+aveBandwidth(GB/s) =    31.12 
+minBandwidth(GB/s) =    22.02 
+maxBandwidth(GB/s) =    34.59 
+aveGFlop =  3.4870 
+minGFlop =  2.4671 
+maxGFlop =  3.8764 
+totTime(se) = 456.5544 
+aveTime(ms) = 22.8277 
+maxTime(ms) = 32.2642 
+minTime(ms) = 20.5343 
+Writing snapshots vp... Done
+Writing snapshots sp... Done
+Writing seismogram ... Done
+
+finalProcessTime = 0.1087114810
+centerFreq = 0.0327273125
+minPeriod  = 30.5555184355
+Numerical dispersion criterion along r: OK! 
+drr = 5657.5342465753, ratio = 11404.5096272813
+Numerical dispersion criterion along theta: OK! 
+maxArc = 9777.7658993750, ratio = 11404.5096272813
+CFL: OK! 
+cfl = 0.1923965841
+FOM-KOKKOS step = 2000
+FOM-KOKKOS step = 4000
+FOM-KOKKOS step = 6000
+FOM-KOKKOS step = 8000
+FOM-KOKKOS step = 10000
+FOM-KOKKOS step = 12000
+FOM-KOKKOS step = 14000
+FOM-KOKKOS step = 16000
+FOM-KOKKOS step = 18000
+FOM-KOKKOS step = 20000
+
+loopTime = 456.7529147330
+dataCollectionTime = 0.0746616060
+flops = 79599628.0000000000
+memMB = 727.3554687500
+flops/bytes = 0.1043672923
+aveBandwidth(GB/s) =    31.12 
+minBandwidth(GB/s) =    24.80 
+maxBandwidth(GB/s) =    34.55 
+aveGFlop =  3.4869 
+minGFlop =  2.7797 
+maxGFlop =  3.8719 
+totTime(se) = 456.5680 
+aveTime(ms) = 22.8284 
+maxTime(ms) = 28.6364 
+minTime(ms) = 20.5581 
+Writing snapshots vp... Done
+Writing snapshots sp... Done
+Writing seismogram ... Done
+
+finalProcessTime = 0.1099622730
+centerFreq = 0.0327273125
+minPeriod  = 30.5555184355
+Numerical dispersion criterion along r: OK! 
+drr = 5657.5342465753, ratio = 10889.9772676816
+Numerical dispersion criterion along theta: OK! 
+maxArc = 9777.7658993750, ratio = 10889.9772676816
+CFL: OK! 
+cfl = 0.1923965841
+FOM-KOKKOS step = 2000
+FOM-KOKKOS step = 4000
+FOM-KOKKOS step = 6000
+FOM-KOKKOS step = 8000
+FOM-KOKKOS step = 10000
+FOM-KOKKOS step = 12000
+FOM-KOKKOS step = 14000
+FOM-KOKKOS step = 16000
+FOM-KOKKOS step = 18000
+FOM-KOKKOS step = 20000
+
+loopTime = 458.8092813480
+dataCollectionTime = 0.0752343450
+flops = 79599628.0000000000
+memMB = 727.3554687500
+flops/bytes = 0.1043672923
+aveBandwidth(GB/s) =    30.98 
+minBandwidth(GB/s) =    22.76 
+maxBandwidth(GB/s) =    34.46 
+aveGFlop =  3.4712 
+minGFlop =  2.5510 
+maxGFlop =  3.8615 
+totTime(se) = 458.6232 
+aveTime(ms) = 22.9312 
+maxTime(ms) = 31.2035 
+minTime(ms) = 20.6134 
+Writing snapshots vp... Done
+Writing snapshots sp... Done
+Writing seismogram ... Done
+
+finalProcessTime = 0.1122777650
+centerFreq = 0.0327273125
+minPeriod  = 30.5555184355
+Numerical dispersion criterion along r: OK! 
+drr = 5657.5342465753, ratio = 11907.4666880321
+Numerical dispersion criterion along theta: OK! 
+maxArc = 9777.7658993750, ratio = 11907.4666880321
+CFL: OK! 
+cfl = 0.1923965841
+FOM-KOKKOS step = 2000
+FOM-KOKKOS step = 4000
+FOM-KOKKOS step = 6000
+FOM-KOKKOS step = 8000
+FOM-KOKKOS step = 10000
+FOM-KOKKOS step = 12000
+FOM-KOKKOS step = 14000
+FOM-KOKKOS step = 16000
+FOM-KOKKOS step = 18000
+FOM-KOKKOS step = 20000
+
+loopTime = 455.6139224250
+dataCollectionTime = 0.0746395340
+flops = 79599628.0000000000
+memMB = 727.3554687500
+flops/bytes = 0.1043672923
+aveBandwidth(GB/s) =    31.19 
+minBandwidth(GB/s) =    23.75 
+maxBandwidth(GB/s) =    34.66 
+aveGFlop =  3.4956 
+minGFlop =  2.6616 
+maxGFlop =  3.8842 
+totTime(se) = 455.4293 
+aveTime(ms) = 22.7715 
+maxTime(ms) = 29.9072 
+minTime(ms) = 20.4930 
+Writing snapshots vp... Done
+Writing snapshots sp... Done
+Writing seismogram ... Done
+
+finalProcessTime = 0.1113200680
+centerFreq = 0.0327273125
+minPeriod  = 30.5555184355
+Numerical dispersion criterion along r: OK! 
+drr = 5657.5342465753, ratio = 15364.5923005393
+Numerical dispersion criterion along theta: OK! 
+maxArc = 9777.7658993750, ratio = 15364.5923005393
+CFL: OK! 
+cfl = 0.1923965841
+FOM-KOKKOS step = 2000
+FOM-KOKKOS step = 4000
+FOM-KOKKOS step = 6000
+FOM-KOKKOS step = 8000
+FOM-KOKKOS step = 10000
+FOM-KOKKOS step = 12000
+FOM-KOKKOS step = 14000
+FOM-KOKKOS step = 16000
+FOM-KOKKOS step = 18000
+FOM-KOKKOS step = 20000
+
+loopTime = 455.7942176050
+dataCollectionTime = 0.0748592800
+flops = 79599628.0000000000
+memMB = 727.3554687500
+flops/bytes = 0.1043672923
+aveBandwidth(GB/s) =    31.18 
+minBandwidth(GB/s) =    24.23 
+maxBandwidth(GB/s) =    34.60 
+aveGFlop =  3.4942 
+minGFlop =  2.7156 
+maxGFlop =  3.8775 
+totTime(se) = 455.6084 
+aveTime(ms) = 22.7804 
+maxTime(ms) = 29.3116 
+minTime(ms) = 20.5286 
+Writing snapshots vp... Done
+Writing snapshots sp... Done
+Writing seismogram ... Done
+
+finalProcessTime = 0.1417411540
+centerFreq = 0.0327273125
+minPeriod  = 30.5555184355
+Numerical dispersion criterion along r: OK! 
+drr = 5657.5342465753, ratio = 11461.4048672572
+Numerical dispersion criterion along theta: OK! 
+maxArc = 9777.7658993750, ratio = 11461.4048672572
+CFL: OK! 
+cfl = 0.1923965841
+FOM-KOKKOS step = 2000
+FOM-KOKKOS step = 4000
+FOM-KOKKOS step = 6000
+FOM-KOKKOS step = 8000
+FOM-KOKKOS step = 10000
+FOM-KOKKOS step = 12000
+FOM-KOKKOS step = 14000
+FOM-KOKKOS step = 16000
+FOM-KOKKOS step = 18000
+FOM-KOKKOS step = 20000
+
+loopTime = 456.9429935800
+dataCollectionTime = 0.0748999490
+flops = 79599628.0000000000
+memMB = 727.3554687500
+flops/bytes = 0.1043672923
+aveBandwidth(GB/s) =    31.10 
+minBandwidth(GB/s) =    21.18 
+maxBandwidth(GB/s) =    34.54 
+aveGFlop =  3.4854 
+minGFlop =  2.3731 
+maxGFlop =  3.8709 
+totTime(se) = 456.7575 
+aveTime(ms) = 22.8379 
+maxTime(ms) = 33.5425 
+minTime(ms) = 20.5635 
+Writing snapshots vp... Done
+Writing snapshots sp... Done
+Writing seismogram ... Done
+
+finalProcessTime = 0.1411896580
+centerFreq = 0.0327273125
+minPeriod  = 30.5555184355
+Numerical dispersion criterion along r: OK! 
+drr = 5657.5342465753, ratio = 14216.1864421118
+Numerical dispersion criterion along theta: OK! 
+maxArc = 9777.7658993750, ratio = 14216.1864421118
+CFL: OK! 
+cfl = 0.1923965841
+FOM-KOKKOS step = 2000
+FOM-KOKKOS step = 4000
+FOM-KOKKOS step = 6000
+FOM-KOKKOS step = 8000
+FOM-KOKKOS step = 10000
+FOM-KOKKOS step = 12000
+FOM-KOKKOS step = 14000
+FOM-KOKKOS step = 16000
+FOM-KOKKOS step = 18000
+FOM-KOKKOS step = 20000
+
+loopTime = 456.5249201440
+dataCollectionTime = 0.0745920380
+flops = 79599628.0000000000
+memMB = 727.3554687500
+flops/bytes = 0.1043672923
+aveBandwidth(GB/s) =    31.13 
+minBandwidth(GB/s) =    22.67 
+maxBandwidth(GB/s) =    34.48 
+aveGFlop =  3.4886 
+minGFlop =  2.5410 
+maxGFlop =  3.8637 
+totTime(se) = 456.3409 
+aveTime(ms) = 22.8170 
+maxTime(ms) = 31.3260 
+minTime(ms) = 20.6022 
+Writing snapshots vp... Done
+Writing snapshots sp... Done
+Writing seismogram ... Done
+
+finalProcessTime = 0.1422357110
+centerFreq = 0.0327273125
+minPeriod  = 30.5555184355
+Numerical dispersion criterion along r: OK! 
+drr = 5657.5342465753, ratio = 10965.0042992641
+Numerical dispersion criterion along theta: OK! 
+maxArc = 9777.7658993750, ratio = 10965.0042992641
+CFL: OK! 
+cfl = 0.1923965841
+FOM-KOKKOS step = 2000
+FOM-KOKKOS step = 4000
+FOM-KOKKOS step = 6000
+FOM-KOKKOS step = 8000
+FOM-KOKKOS step = 10000
+FOM-KOKKOS step = 12000
+FOM-KOKKOS step = 14000
+FOM-KOKKOS step = 16000
+FOM-KOKKOS step = 18000
+FOM-KOKKOS step = 20000
+
+loopTime = 457.6723001000
+dataCollectionTime = 0.0748275110
+flops = 79599628.0000000000
+memMB = 727.3554687500
+flops/bytes = 0.1043672923
+aveBandwidth(GB/s) =    31.05 
+minBandwidth(GB/s) =    24.35 
+maxBandwidth(GB/s) =    34.51 
+aveGFlop =  3.4799 
+minGFlop =  2.7283 
+maxGFlop =  3.8671 
+totTime(se) = 457.4870 
+aveTime(ms) = 22.8744 
+maxTime(ms) = 29.1758 
+minTime(ms) = 20.5836 
+Writing snapshots vp... Done
+Writing snapshots sp... Done
+Writing seismogram ... Done
+
+finalProcessTime = 0.1438923120
+centerFreq = 0.0327273125
+minPeriod  = 30.5555184355
+Numerical dispersion criterion along r: OK! 
+drr = 5657.5342465753, ratio = 15172.7266355338
+Numerical dispersion criterion along theta: OK! 
+maxArc = 9777.7658993750, ratio = 15172.7266355338
+CFL: OK! 
+cfl = 0.1923965841
+FOM-KOKKOS step = 2000
+FOM-KOKKOS step = 4000
+FOM-KOKKOS step = 6000
+FOM-KOKKOS step = 8000
+FOM-KOKKOS step = 10000
+FOM-KOKKOS step = 12000
+FOM-KOKKOS step = 14000
+FOM-KOKKOS step = 16000
+FOM-KOKKOS step = 18000
+FOM-KOKKOS step = 20000
+
+loopTime = 456.0694728020
+dataCollectionTime = 0.0743780360
+flops = 79599628.0000000000
+memMB = 727.3554687500
+flops/bytes = 0.1043672923
+aveBandwidth(GB/s) =    31.16 
+minBandwidth(GB/s) =    28.81 
+maxBandwidth(GB/s) =    34.54 
+aveGFlop =  3.4921 
+minGFlop =  3.2290 
+maxGFlop =  3.8709 
+totTime(se) = 455.8847 
+aveTime(ms) = 22.7942 
+maxTime(ms) = 24.6511 
+minTime(ms) = 20.5636 
+Writing snapshots vp... Done
+Writing snapshots sp... Done
+Writing seismogram ... Done
+
+finalProcessTime = 0.1427889860
+centerFreq = 0.0327273125
+minPeriod  = 30.5555184355
+Numerical dispersion criterion along r: OK! 
+drr = 5657.5342465753, ratio = 10785.7562480995
+Numerical dispersion criterion along theta: OK! 
+maxArc = 9777.7658993750, ratio = 10785.7562480995
+CFL: OK! 
+cfl = 0.1923965841
+FOM-KOKKOS step = 2000
+FOM-KOKKOS step = 4000
+FOM-KOKKOS step = 6000
+FOM-KOKKOS step = 8000
+FOM-KOKKOS step = 10000
+FOM-KOKKOS step = 12000
+FOM-KOKKOS step = 14000
+FOM-KOKKOS step = 16000
+FOM-KOKKOS step = 18000
+FOM-KOKKOS step = 20000
+
+loopTime = 456.7256821100
+dataCollectionTime = 0.0742762030
+flops = 79599628.0000000000
+memMB = 727.3554687500
+flops/bytes = 0.1043672923
+aveBandwidth(GB/s) =    31.12 
+minBandwidth(GB/s) =    21.48 
+maxBandwidth(GB/s) =    34.55 
+aveGFlop =  3.4871 
+minGFlop =  2.4074 
+maxGFlop =  3.8722 
+totTime(se) = 456.5418 
+aveTime(ms) = 22.8271 
+maxTime(ms) = 33.0645 
+minTime(ms) = 20.5566 
+Writing snapshots vp... Done
+Writing snapshots sp... Done
+Writing seismogram ... Done
+
+finalProcessTime = 0.1423467500
+centerFreq = 0.0327273125
+minPeriod  = 30.5555184355
+Numerical dispersion criterion along r: OK! 
+drr = 5657.5342465753, ratio = 13275.3486826901
+Numerical dispersion criterion along theta: OK! 
+maxArc = 9777.7658993750, ratio = 13275.3486826901
+CFL: OK! 
+cfl = 0.1923965841
+FOM-KOKKOS step = 2000
+FOM-KOKKOS step = 4000
+FOM-KOKKOS step = 6000
+FOM-KOKKOS step = 8000
+FOM-KOKKOS step = 10000
+FOM-KOKKOS step = 12000
+FOM-KOKKOS step = 14000
+FOM-KOKKOS step = 16000
+FOM-KOKKOS step = 18000
+FOM-KOKKOS step = 20000
+
+loopTime = 456.1110690980
+dataCollectionTime = 0.0740995540
+flops = 79599628.0000000000
+memMB = 727.3554687500
+flops/bytes = 0.1043672923
+aveBandwidth(GB/s) =    31.16 
+minBandwidth(GB/s) =    22.74 
+maxBandwidth(GB/s) =    34.55 
+aveGFlop =  3.4918 
+minGFlop =  2.5486 
+maxGFlop =  3.8714 
+totTime(se) = 455.9296 
+aveTime(ms) = 22.7965 
+maxTime(ms) = 31.2327 
+minTime(ms) = 20.5609 
+Writing snapshots vp... Done
+Writing snapshots sp... Done
+Writing seismogram ... Done
+
+finalProcessTime = 0.1442962510
+centerFreq = 0.0327273125
+minPeriod  = 30.5555184355
+Numerical dispersion criterion along r: OK! 
+drr = 5657.5342465753, ratio = 11993.0727862664
+Numerical dispersion criterion along theta: OK! 
+maxArc = 9777.7658993750, ratio = 11993.0727862664
+CFL: OK! 
+cfl = 0.1923965841
+FOM-KOKKOS step = 2000
+FOM-KOKKOS step = 4000
+FOM-KOKKOS step = 6000
+FOM-KOKKOS step = 8000
+FOM-KOKKOS step = 10000
+FOM-KOKKOS step = 12000
+FOM-KOKKOS step = 14000
+FOM-KOKKOS step = 16000
+FOM-KOKKOS step = 18000
+FOM-KOKKOS step = 20000
+
+loopTime = 456.5866174390
+dataCollectionTime = 0.0738415910
+flops = 79599628.0000000000
+memMB = 727.3554687500
+flops/bytes = 0.1043672923
+aveBandwidth(GB/s) =    31.13 
+minBandwidth(GB/s) =    22.01 
+maxBandwidth(GB/s) =    34.55 
+aveGFlop =  3.4881 
+minGFlop =  2.4670 
+maxGFlop =  3.8718 
+totTime(se) = 456.4057 
+aveTime(ms) = 22.8203 
+maxTime(ms) = 32.2652 
+minTime(ms) = 20.5587 
+Writing snapshots vp... Done
+Writing snapshots sp... Done
+Writing seismogram ... Done
+
+finalProcessTime = 0.1425852880
+centerFreq = 0.0327273125
+minPeriod  = 30.5555184355
+Numerical dispersion criterion along r: OK! 
+drr = 5657.5342465753, ratio = 12236.4567077154
+Numerical dispersion criterion along theta: OK! 
+maxArc = 9777.7658993750, ratio = 12236.4567077154
+CFL: OK! 
+cfl = 0.1923965841
+FOM-KOKKOS step = 2000
+FOM-KOKKOS step = 4000
+FOM-KOKKOS step = 6000
+FOM-KOKKOS step = 8000
+FOM-KOKKOS step = 10000
+FOM-KOKKOS step = 12000
+FOM-KOKKOS step = 14000
+FOM-KOKKOS step = 16000
+FOM-KOKKOS step = 18000
+FOM-KOKKOS step = 20000
+
+loopTime = 456.3120077660
+dataCollectionTime = 0.0740639860
+flops = 79599628.0000000000
+memMB = 727.3554687500
+flops/bytes = 0.1043672923
+aveBandwidth(GB/s) =    31.15 
+minBandwidth(GB/s) =    24.03 
+maxBandwidth(GB/s) =    34.54 
+aveGFlop =  3.4902 
+minGFlop =  2.6928 
+maxGFlop =  3.8706 
+totTime(se) = 456.1296 
+aveTime(ms) = 22.8065 
+maxTime(ms) = 29.5600 
+minTime(ms) = 20.5654 
+Writing snapshots vp... Done
+Writing snapshots sp... Done
+Writing seismogram ... Done
+
+finalProcessTime = 0.1436506860
+centerFreq = 0.0327273125
+minPeriod  = 30.5555184355
+Numerical dispersion criterion along r: OK! 
+drr = 5657.5342465753, ratio = 10113.6647671727
+Numerical dispersion criterion along theta: OK! 
+maxArc = 9777.7658993750, ratio = 10113.6647671727
+CFL: OK! 
+cfl = 0.1923965841
+FOM-KOKKOS step = 2000
+FOM-KOKKOS step = 4000
+FOM-KOKKOS step = 6000
+FOM-KOKKOS step = 8000
+FOM-KOKKOS step = 10000
+FOM-KOKKOS step = 12000
+FOM-KOKKOS step = 14000
+FOM-KOKKOS step = 16000
+FOM-KOKKOS step = 18000
+FOM-KOKKOS step = 20000
+
+loopTime = 456.6176116050
+dataCollectionTime = 0.0736895200
+flops = 79599628.0000000000
+memMB = 727.3554687500
+flops/bytes = 0.1043672923
+aveBandwidth(GB/s) =    31.12 
+minBandwidth(GB/s) =    22.41 
+maxBandwidth(GB/s) =    34.55 
+aveGFlop =  3.4879 
+minGFlop =  2.5113 
+maxGFlop =  3.8714 
+totTime(se) = 456.4348 
+aveTime(ms) = 22.8217 
+maxTime(ms) = 31.6969 
+minTime(ms) = 20.5612 
+Writing snapshots vp... Done
+Writing snapshots sp... Done
+Writing seismogram ... Done
+
+finalProcessTime = 0.2120601910
+centerFreq = 0.0327273125
+minPeriod  = 30.5555184355
+Numerical dispersion criterion along r: OK! 
+drr = 5657.5342465753, ratio = 11962.3527224745
+Numerical dispersion criterion along theta: OK! 
+maxArc = 9777.7658993750, ratio = 11962.3527224745
+CFL: OK! 
+cfl = 0.1923965841
+FOM-KOKKOS step = 2000
+FOM-KOKKOS step = 4000
+FOM-KOKKOS step = 6000
+FOM-KOKKOS step = 8000
+FOM-KOKKOS step = 10000
+FOM-KOKKOS step = 12000
+FOM-KOKKOS step = 14000
+FOM-KOKKOS step = 16000
+FOM-KOKKOS step = 18000
+FOM-KOKKOS step = 20000
+
+loopTime = 456.1033286630
+dataCollectionTime = 0.0737296160
+flops = 79599628.0000000000
+memMB = 727.3554687500
+flops/bytes = 0.1043672923
+aveBandwidth(GB/s) =    31.16 
+minBandwidth(GB/s) =    23.14 
+maxBandwidth(GB/s) =    34.56 
+aveGFlop =  3.4918 
+minGFlop =  2.5936 
+maxGFlop =  3.8735 
+totTime(se) = 455.9217 
+aveTime(ms) = 22.7961 
+maxTime(ms) = 30.6912 
+minTime(ms) = 20.5500 
+Writing snapshots vp... Done
+Writing snapshots sp... Done
+Writing seismogram ... Done
+
+finalProcessTime = 0.1441811090
+centerFreq = 0.0327273125
+minPeriod  = 30.5555184355
+Numerical dispersion criterion along r: OK! 
+drr = 5657.5342465753, ratio = 10180.3551452218
+Numerical dispersion criterion along theta: OK! 
+maxArc = 9777.7658993750, ratio = 10180.3551452218
+CFL: OK! 
+cfl = 0.1923965841
+FOM-KOKKOS step = 2000
+FOM-KOKKOS step = 4000
+FOM-KOKKOS step = 6000
+FOM-KOKKOS step = 8000
+FOM-KOKKOS step = 10000
+FOM-KOKKOS step = 12000
+FOM-KOKKOS step = 14000
+FOM-KOKKOS step = 16000
+FOM-KOKKOS step = 18000
+FOM-KOKKOS step = 20000
+
+loopTime = 457.7738119040
+dataCollectionTime = 0.0746892080
+flops = 79599628.0000000000
+memMB = 727.3554687500
+flops/bytes = 0.1043672923
+aveBandwidth(GB/s) =    31.05 
+minBandwidth(GB/s) =    24.74 
+maxBandwidth(GB/s) =    34.62 
+aveGFlop =  3.4791 
+minGFlop =  2.7725 
+maxGFlop =  3.8802 
+totTime(se) = 457.5885 
+aveTime(ms) = 22.8794 
+maxTime(ms) = 28.7106 
+minTime(ms) = 20.5143 
+Writing snapshots vp... Done
+Writing snapshots sp... Done
+Writing seismogram ... Done
+
+finalProcessTime = 0.1090305890
+centerFreq = 0.0327273125
+minPeriod  = 30.5555184355
+Numerical dispersion criterion along r: OK! 
+drr = 5657.5342465753, ratio = 15424.6338571101
+Numerical dispersion criterion along theta: OK! 
+maxArc = 9777.7658993750, ratio = 15424.6338571101
+CFL: OK! 
+cfl = 0.1923965841
+FOM-KOKKOS step = 2000
+FOM-KOKKOS step = 4000
+FOM-KOKKOS step = 6000
+FOM-KOKKOS step = 8000
+FOM-KOKKOS step = 10000
+FOM-KOKKOS step = 12000
+FOM-KOKKOS step = 14000
+FOM-KOKKOS step = 16000
+FOM-KOKKOS step = 18000
+FOM-KOKKOS step = 20000
+
+loopTime = 456.2885250760
+dataCollectionTime = 0.0747905020
+flops = 79599628.0000000000
+memMB = 727.3554687500
+flops/bytes = 0.1043672923
+aveBandwidth(GB/s) =    31.15 
+minBandwidth(GB/s) =    23.46 
+maxBandwidth(GB/s) =    34.60 
+aveGFlop =  3.4904 
+minGFlop =  2.6294 
+maxGFlop =  3.8772 
+totTime(se) = 456.1026 
+aveTime(ms) = 22.8051 
+maxTime(ms) = 30.2734 
+minTime(ms) = 20.5300 
+Writing snapshots vp... Done
+Writing snapshots sp... Done
+Writing seismogram ... Done
+
+finalProcessTime = 0.1091164530
+centerFreq = 0.0327273125
+minPeriod  = 30.5555184355
+Numerical dispersion criterion along r: OK! 
+drr = 5657.5342465753, ratio = 12392.5850474203
+Numerical dispersion criterion along theta: OK! 
+maxArc = 9777.7658993750, ratio = 12392.5850474203
+CFL: OK! 
+cfl = 0.1923965841
+FOM-KOKKOS step = 2000
+FOM-KOKKOS step = 4000
+FOM-KOKKOS step = 6000
+FOM-KOKKOS step = 8000
+FOM-KOKKOS step = 10000
+FOM-KOKKOS step = 12000
+FOM-KOKKOS step = 14000
+FOM-KOKKOS step = 16000
+FOM-KOKKOS step = 18000
+FOM-KOKKOS step = 20000
+
+loopTime = 456.6996753960
+dataCollectionTime = 0.0747844510
+flops = 79599628.0000000000
+memMB = 727.3554687500
+flops/bytes = 0.1043672923
+aveBandwidth(GB/s) =    31.12 
+minBandwidth(GB/s) =    22.55 
+maxBandwidth(GB/s) =    34.57 
+aveGFlop =  3.4873 
+minGFlop =  2.5265 
+maxGFlop =  3.8741 
+totTime(se) = 456.5138 
+aveTime(ms) = 22.8257 
+maxTime(ms) = 31.5053 
+minTime(ms) = 20.5465 
+Writing snapshots vp... Done
+Writing snapshots sp... Done
+Writing seismogram ... Done
+
+finalProcessTime = 0.1086519960
+centerFreq = 0.0327273125
+minPeriod  = 30.5555184355
+Numerical dispersion criterion along r: OK! 
+drr = 5657.5342465753, ratio = 10271.1110334474
+Numerical dispersion criterion along theta: OK! 
+maxArc = 9777.7658993750, ratio = 10271.1110334474
+CFL: OK! 
+cfl = 0.1923965841
+FOM-KOKKOS step = 2000
+FOM-KOKKOS step = 4000
+FOM-KOKKOS step = 6000
+FOM-KOKKOS step = 8000
+FOM-KOKKOS step = 10000
+FOM-KOKKOS step = 12000
+FOM-KOKKOS step = 14000
+FOM-KOKKOS step = 16000
+FOM-KOKKOS step = 18000
+FOM-KOKKOS step = 20000
+
+loopTime = 457.1574430640
+dataCollectionTime = 0.0745038370
+flops = 79599628.0000000000
+memMB = 727.3554687500
+flops/bytes = 0.1043672923
+aveBandwidth(GB/s) =    31.09 
+minBandwidth(GB/s) =    22.78 
+maxBandwidth(GB/s) =    34.53 
+aveGFlop =  3.4838 
+minGFlop =  2.5523 
+maxGFlop =  3.8699 
+totTime(se) = 456.9707 
+aveTime(ms) = 22.8485 
+maxTime(ms) = 31.1876 
+minTime(ms) = 20.5687 
+Writing snapshots vp... Done
+Writing snapshots sp... Done
+Writing seismogram ... Done
+
+finalProcessTime = 0.1091041640
+centerFreq = 0.0327273125
+minPeriod  = 30.5555184355
+Numerical dispersion criterion along r: OK! 
+drr = 5657.5342465753, ratio = 12690.2776072893
+Numerical dispersion criterion along theta: OK! 
+maxArc = 9777.7658993750, ratio = 12690.2776072893
+CFL: OK! 
+cfl = 0.1923965841
+FOM-KOKKOS step = 2000
+FOM-KOKKOS step = 4000
+FOM-KOKKOS step = 6000
+FOM-KOKKOS step = 8000
+FOM-KOKKOS step = 10000
+FOM-KOKKOS step = 12000
+FOM-KOKKOS step = 14000
+FOM-KOKKOS step = 16000
+FOM-KOKKOS step = 18000
+FOM-KOKKOS step = 20000
+
+loopTime = 457.7032377010
+dataCollectionTime = 0.0748627390
+flops = 79599628.0000000000
+memMB = 727.3554687500
+flops/bytes = 0.1043672923
+aveBandwidth(GB/s) =    31.05 
+minBandwidth(GB/s) =    23.39 
+maxBandwidth(GB/s) =    34.44 
+aveGFlop =  3.4797 
+minGFlop =  2.6215 
+maxGFlop =  3.8599 
+totTime(se) = 457.5149 
+aveTime(ms) = 22.8757 
+maxTime(ms) = 30.3636 
+minTime(ms) = 20.6222 
+Writing snapshots vp... Done
+Writing snapshots sp... Done
+Writing seismogram ... Done
+
+finalProcessTime = 0.1086910940
+centerFreq = 0.0327273125
+minPeriod  = 30.5555184355
+Numerical dispersion criterion along r: OK! 
+drr = 5657.5342465753, ratio = 9942.9981214319
+Numerical dispersion criterion along theta: OK! 
+maxArc = 9777.7658993750, ratio = 9942.9981214319
+CFL: OK! 
+cfl = 0.1923965841
+FOM-KOKKOS step = 2000
+FOM-KOKKOS step = 4000
+FOM-KOKKOS step = 6000
+FOM-KOKKOS step = 8000
+FOM-KOKKOS step = 10000
+FOM-KOKKOS step = 12000
+FOM-KOKKOS step = 14000
+FOM-KOKKOS step = 16000
+FOM-KOKKOS step = 18000
+FOM-KOKKOS step = 20000
+
+loopTime = 458.4337302630
+dataCollectionTime = 0.0754491070
+flops = 79599628.0000000000
+memMB = 727.3554687500
+flops/bytes = 0.1043672923
+aveBandwidth(GB/s) =    31.00 
+minBandwidth(GB/s) =    22.30 
+maxBandwidth(GB/s) =    34.57 
+aveGFlop =  3.4741 
+minGFlop =  2.4985 
+maxGFlop =  3.8737 
+totTime(se) = 458.2465 
+aveTime(ms) = 22.9123 
+maxTime(ms) = 31.8595 
+minTime(ms) = 20.5489 
+Writing snapshots vp... Done
+Writing snapshots sp... Done
+Writing seismogram ... Done
+
+finalProcessTime = 0.1092908890
+centerFreq = 0.0327273125
+minPeriod  = 30.5555184355
+Numerical dispersion criterion along r: OK! 
+drr = 5657.5342465753, ratio = 10524.5276747613
+Numerical dispersion criterion along theta: OK! 
+maxArc = 9777.7658993750, ratio = 10524.5276747613
+CFL: OK! 
+cfl = 0.1923965841
+FOM-KOKKOS step = 2000
+FOM-KOKKOS step = 4000
+FOM-KOKKOS step = 6000
+FOM-KOKKOS step = 8000
+FOM-KOKKOS step = 10000
+FOM-KOKKOS step = 12000
+FOM-KOKKOS step = 14000
+FOM-KOKKOS step = 16000
+FOM-KOKKOS step = 18000
+FOM-KOKKOS step = 20000
+
+loopTime = 458.7453883530
+dataCollectionTime = 0.0750422980
+flops = 79599628.0000000000
+memMB = 727.3554687500
+flops/bytes = 0.1043672923
+aveBandwidth(GB/s) =    30.98 
+minBandwidth(GB/s) =    21.93 
+maxBandwidth(GB/s) =    34.60 
+aveGFlop =  3.4717 
+minGFlop =  2.4575 
+maxGFlop =  3.8779 
+totTime(se) = 458.5581 
+aveTime(ms) = 22.9279 
+maxTime(ms) = 32.3904 
+minTime(ms) = 20.5267 
+Writing snapshots vp... Done
+Writing snapshots sp... Done
+Writing seismogram ... Done
+
+finalProcessTime = 0.1094448430
+centerFreq = 0.0327273125
+minPeriod  = 30.5555184355
+Numerical dispersion criterion along r: OK! 
+drr = 5657.5342465753, ratio = 10227.5235886471
+Numerical dispersion criterion along theta: OK! 
+maxArc = 9777.7658993750, ratio = 10227.5235886471
+CFL: OK! 
+cfl = 0.1923965841
+FOM-KOKKOS step = 2000
+FOM-KOKKOS step = 4000
+FOM-KOKKOS step = 6000
+FOM-KOKKOS step = 8000
+FOM-KOKKOS step = 10000
+FOM-KOKKOS step = 12000
+FOM-KOKKOS step = 14000
+FOM-KOKKOS step = 16000
+FOM-KOKKOS step = 18000
+FOM-KOKKOS step = 20000
+
+loopTime = 456.3524724150
+dataCollectionTime = 0.0746510860
+flops = 79599628.0000000000
+memMB = 727.3554687500
+flops/bytes = 0.1043672923
+aveBandwidth(GB/s) =    31.14 
+minBandwidth(GB/s) =    21.59 
+maxBandwidth(GB/s) =    34.69 
+aveGFlop =  3.4899 
+minGFlop =  2.4190 
+maxGFlop =  3.8872 
+totTime(se) = 456.1664 
+aveTime(ms) = 22.8083 
+maxTime(ms) = 32.9059 
+minTime(ms) = 20.4775 
+Writing snapshots vp... Done
+Writing snapshots sp... Done
+Writing seismogram ... Done
+
+finalProcessTime = 0.1091194970
+centerFreq = 0.0327273125
+minPeriod  = 30.5555184355
+Numerical dispersion criterion along r: OK! 
+drr = 5657.5342465753, ratio = 12181.5493041105
+Numerical dispersion criterion along theta: OK! 
+maxArc = 9777.7658993750, ratio = 12181.5493041105
+CFL: OK! 
+cfl = 0.1923965841
+FOM-KOKKOS step = 2000
+FOM-KOKKOS step = 4000
+FOM-KOKKOS step = 6000
+FOM-KOKKOS step = 8000
+FOM-KOKKOS step = 10000
+FOM-KOKKOS step = 12000
+FOM-KOKKOS step = 14000
+FOM-KOKKOS step = 16000
+FOM-KOKKOS step = 18000
+FOM-KOKKOS step = 20000
+
+loopTime = 455.8502037760
+dataCollectionTime = 0.0750416540
+flops = 79599628.0000000000
+memMB = 727.3554687500
+flops/bytes = 0.1043672923
+aveBandwidth(GB/s) =    31.18 
+minBandwidth(GB/s) =    21.42 
+maxBandwidth(GB/s) =    34.74 
+aveGFlop =  3.4938 
+minGFlop =  2.4001 
+maxGFlop =  3.8933 
+totTime(se) = 455.6640 
+aveTime(ms) = 22.7832 
+maxTime(ms) = 33.1648 
+minTime(ms) = 20.4453 
+Writing snapshots vp... Done
+Writing snapshots sp... Done
+Writing seismogram ... Done
+
+finalProcessTime = 0.1089454040
+centerFreq = 0.0327273125
+minPeriod  = 30.5555184355
+Numerical dispersion criterion along r: OK! 
+drr = 5657.5342465753, ratio = 10268.5571639558
+Numerical dispersion criterion along theta: OK! 
+maxArc = 9777.7658993750, ratio = 10268.5571639558
+CFL: OK! 
+cfl = 0.1923965841
+FOM-KOKKOS step = 2000
+FOM-KOKKOS step = 4000
+FOM-KOKKOS step = 6000
+FOM-KOKKOS step = 8000
+FOM-KOKKOS step = 10000
+FOM-KOKKOS step = 12000
+FOM-KOKKOS step = 14000
+FOM-KOKKOS step = 16000
+FOM-KOKKOS step = 18000
+FOM-KOKKOS step = 20000
+
+loopTime = 456.6171526560
+dataCollectionTime = 0.0746233880
+flops = 79599628.0000000000
+memMB = 727.3554687500
+flops/bytes = 0.1043672923
+aveBandwidth(GB/s) =    31.12 
+minBandwidth(GB/s) =    22.65 
+maxBandwidth(GB/s) =    34.62 
+aveGFlop =  3.4879 
+minGFlop =  2.5381 
+maxGFlop =  3.8802 
+totTime(se) = 456.4322 
+aveTime(ms) = 22.8216 
+maxTime(ms) = 31.3623 
+minTime(ms) = 20.5145 
+Writing snapshots vp... Done
+Writing snapshots sp... Done
+Writing seismogram ... Done
+
+finalProcessTime = 0.1093540960
+centerFreq = 0.0327273125
+minPeriod  = 30.5555184355
+Numerical dispersion criterion along r: OK! 
+drr = 5657.5342465753, ratio = 11343.0170137226
+Numerical dispersion criterion along theta: OK! 
+maxArc = 9777.7658993750, ratio = 11343.0170137226
+CFL: OK! 
+cfl = 0.1923965841
+FOM-KOKKOS step = 2000
+FOM-KOKKOS step = 4000
+FOM-KOKKOS step = 6000
+FOM-KOKKOS step = 8000
+FOM-KOKKOS step = 10000
+FOM-KOKKOS step = 12000
+FOM-KOKKOS step = 14000
+FOM-KOKKOS step = 16000
+FOM-KOKKOS step = 18000
+FOM-KOKKOS step = 20000
+
+loopTime = 457.8528285350
+dataCollectionTime = 0.0751227540
+flops = 79599628.0000000000
+memMB = 727.3554687500
+flops/bytes = 0.1043672923
+aveBandwidth(GB/s) =    31.04 
+minBandwidth(GB/s) =    21.94 
+maxBandwidth(GB/s) =    34.55 
+aveGFlop =  3.4785 
+minGFlop =  2.4591 
+maxGFlop =  3.8715 
+totTime(se) = 457.6658 
+aveTime(ms) = 22.8833 
+maxTime(ms) = 32.3699 
+minTime(ms) = 20.5603 
+Writing snapshots vp... Done
+Writing snapshots sp... Done
+Writing seismogram ... Done
+
+finalProcessTime = 0.1091863240
+centerFreq = 0.0327273125
+minPeriod  = 30.5555184355
+Numerical dispersion criterion along r: OK! 
+drr = 5657.5342465753, ratio = 14961.9788093628
+Numerical dispersion criterion along theta: OK! 
+maxArc = 9777.7658993750, ratio = 14961.9788093628
+CFL: OK! 
+cfl = 0.1923965841
+FOM-KOKKOS step = 2000
+FOM-KOKKOS step = 4000
+FOM-KOKKOS step = 6000
+FOM-KOKKOS step = 8000
+FOM-KOKKOS step = 10000
+FOM-KOKKOS step = 12000
+FOM-KOKKOS step = 14000
+FOM-KOKKOS step = 16000
+FOM-KOKKOS step = 18000
+FOM-KOKKOS step = 20000
+
+loopTime = 455.8532311680
+dataCollectionTime = 0.0749437320
+flops = 79599628.0000000000
+memMB = 727.3554687500
+flops/bytes = 0.1043672923
+aveBandwidth(GB/s) =    31.18 
+minBandwidth(GB/s) =    22.93 
+maxBandwidth(GB/s) =    34.71 
+aveGFlop =  3.4938 
+minGFlop =  2.5693 
+maxGFlop =  3.8899 
+totTime(se) = 455.6679 
+aveTime(ms) = 22.7834 
+maxTime(ms) = 30.9805 
+minTime(ms) = 20.4631 
+Writing snapshots vp... Done
+Writing snapshots sp... Done
+Writing seismogram ... Done
+
+finalProcessTime = 0.1090429930
+centerFreq = 0.0327273125
+minPeriod  = 30.5555184355
+Numerical dispersion criterion along r: OK! 
+drr = 5657.5342465753, ratio = 11827.1351462003
+Numerical dispersion criterion along theta: OK! 
+maxArc = 9777.7658993750, ratio = 11827.1351462003
+CFL: OK! 
+cfl = 0.1923965841
+FOM-KOKKOS step = 2000
+FOM-KOKKOS step = 4000
+FOM-KOKKOS step = 6000
+FOM-KOKKOS step = 8000
+FOM-KOKKOS step = 10000
+FOM-KOKKOS step = 12000
+FOM-KOKKOS step = 14000
+FOM-KOKKOS step = 16000
+FOM-KOKKOS step = 18000
+FOM-KOKKOS step = 20000
+
+loopTime = 456.9536018470
+dataCollectionTime = 0.0744055640
+flops = 79599628.0000000000
+memMB = 727.3554687500
+flops/bytes = 0.1043672923
+aveBandwidth(GB/s) =    31.10 
+minBandwidth(GB/s) =    24.40 
+maxBandwidth(GB/s) =    34.68 
+aveGFlop =  3.4853 
+minGFlop =  2.7344 
+maxGFlop =  3.8867 
+totTime(se) = 456.7697 
+aveTime(ms) = 22.8385 
+maxTime(ms) = 29.1099 
+minTime(ms) = 20.4802 
+Writing snapshots vp... Done
+Writing snapshots sp... Done
+Writing seismogram ... Done
+
+finalProcessTime = 0.1087094500
+centerFreq = 0.0327273125
+minPeriod  = 30.5555184355
+Numerical dispersion criterion along r: OK! 
+drr = 5657.5342465753, ratio = 12547.7874227353
+Numerical dispersion criterion along theta: OK! 
+maxArc = 9777.7658993750, ratio = 12547.7874227353
+CFL: OK! 
+cfl = 0.1923965841
+FOM-KOKKOS step = 2000
+FOM-KOKKOS step = 4000
+FOM-KOKKOS step = 6000
+FOM-KOKKOS step = 8000
+FOM-KOKKOS step = 10000
+FOM-KOKKOS step = 12000
+FOM-KOKKOS step = 14000
+FOM-KOKKOS step = 16000
+FOM-KOKKOS step = 18000
+FOM-KOKKOS step = 20000
+
+loopTime = 456.1207034300
+dataCollectionTime = 0.0753522610
+flops = 79599628.0000000000
+memMB = 727.3554687500
+flops/bytes = 0.1043672923
+aveBandwidth(GB/s) =    31.16 
+minBandwidth(GB/s) =    21.41 
+maxBandwidth(GB/s) =    34.66 
+aveGFlop =  3.4917 
+minGFlop =  2.3997 
+maxGFlop =  3.8838 
+totTime(se) = 455.9345 
+aveTime(ms) = 22.7967 
+maxTime(ms) = 33.1702 
+minTime(ms) = 20.4955 
+Writing snapshots vp... Done
+Writing snapshots sp... Done
+Writing seismogram ... Done
+
+finalProcessTime = 0.1094375110

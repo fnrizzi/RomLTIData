@@ -18,7 +18,7 @@ myAlpha = .9
 
 # num of dofs for each case for plotting
 #785152, 3143168, 12577792, 50321408
-meshLabelsPlot = [r'0.78M', r'3M', r'12M', r'50M']
+meshLabelsPlot = [r'0.78e6', r'3e6', r'12e6', r'50e6']
 
 nThreads = [2, 8, 36]
 #colors = {2:  '#003f5c', 8:  '#ef5675', 36: '#7a5195'}
@@ -107,7 +107,7 @@ def plotBar(dataDic, meshLabels, nThreads, metric, stat):
 
   for nt in nThreads:
     ax.bar(100, 1, width, alpha=myAlpha, color=colors[nt],
-           edgecolor='none', zorder=-1, label='nThr='+str(nt))
+           edgecolor='none', zorder=-1, label='threads='+str(nt))
 
   ax.legend(loc="upper center", ncol=5, fontsize=13, frameon=False)
 
@@ -120,7 +120,7 @@ def plotBar(dataDic, meshLabels, nThreads, metric, stat):
   ax.set_xticklabels(xTlabels, fontsize=15)
   ax.xaxis.set_tick_params(rotation=0)
 
-  ax.set_xlabel(r'Size of f', fontsize=16)
+  ax.set_xlabel(r'M', fontsize=16)
   ax.set_xlim(min(pos)-0.2, max(pos)+width*56)
 
   if metric =="mem":
@@ -162,7 +162,7 @@ def plotBar(dataDic, meshLabels, nThreads, metric, stat):
   ax2.xaxis.set_ticks_position('bottom')
   ax2.xaxis.set_label_position('bottom')
   ax2.spines['bottom'].set_position(('outward', 65))
-  ax2.set_xlabel('Problem Size (degrees of freedom)', fontsize=16)
+  ax2.set_xlabel('FOM total degrees of freedom (N)', fontsize=16)
   ax2.set_xticklabels(meshLabels, fontsize=16)
   ax2.set_xlim(min(pos), max(pos)+width*60)
   ax2.set_axisbelow(True)

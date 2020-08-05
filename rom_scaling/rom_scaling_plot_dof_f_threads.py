@@ -111,7 +111,7 @@ def plotBar(dataDic, nThreads, metric, stat):
 
   for nt in nThreads:
     ax.bar(100, 1, width, alpha=myAlpha, color=colors[nt],
-           edgecolor='none', zorder=-1, label='nThr='+str(nt))
+           edgecolor='none', zorder=-1, label='threads='+str(nt))
 
   ax.legend(loc="upper left", ncol=5, fontsize=13, frameon=False)
 
@@ -124,7 +124,7 @@ def plotBar(dataDic, nThreads, metric, stat):
   ax.set_xticklabels(xTlabels, fontsize=13)
   ax.xaxis.set_tick_params(rotation=35)
 
-  ax.set_xlabel(r'Size of f', fontsize=15)
+  ax.set_xlabel(r'M', fontsize=15)
   ax.set_xlim(min(pos)-0.2, max(pos)+width*84)
 
   if metric =="mem":
@@ -160,7 +160,7 @@ def plotBar(dataDic, nThreads, metric, stat):
   ax2.xaxis.set_ticks_position('bottom')
   ax2.xaxis.set_label_position('bottom')
   ax2.spines['bottom'].set_position(('outward', 65))
-  ax2.set_xlabel('ROM Size', fontsize=16)
+  ax2.set_xlabel('ROM Size (K)', fontsize=16)
   ax2.set_xticklabels([r''+str(m)+'' for m in modes], fontsize=16)
   ax2.set_xlim(min(pos), max(pos)+width*84)
   ax2.set_axisbelow(True)

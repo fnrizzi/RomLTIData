@@ -1,0 +1,52 @@
+general:
+  meshDir: /home/fnrizzi/waveRuns/romAccuracyScenario2/train2//meshes/mesh512x2048
+  dt: 0.1
+  finalTime: 2000
+  checkNumericalDispersion: true
+  checkCfl: true
+  includeMatPropInJacobian: true
+  exploitForcingSparsity: true
+io:
+  snapshotMatrix:
+    binary: true
+    velocity:
+      freq: 5000
+      fileName: snaps_vp
+    stress:
+      freq: 5000
+      fileName: snaps_sp
+source:
+  signal:
+    kind: ricker
+    depth: 150.0
+    angle: 0.0
+    period: -1.0
+    delay: 90.0
+material:
+  kind: prem
+sampling:
+  params:
+  - signalPeriod
+  values:
+  - 51.780036453137285
+  - 58.80395328679208
+  - 58.83554562015023
+  - 64.08890904785909
+  - 46.177856219666836
+  - 40.0888881205036
+  - 45.551675827196746
+  - 43.35243551384558
+  - 40.70883773794897
+  - 63.25453819483597
+  - 31.0
+  - 69.0
+  - 35.0
+  - 65.0
+  forcingSize: 14
+rom:
+  velocity:
+    numModes: 275
+    modesFile: /home/fnrizzi/waveRuns/romAccuracyScenario2/train2/pod/lsv_vp
+  stress:
+    numModes: 232
+    modesFile: /home/fnrizzi/waveRuns/romAccuracyScenario2/train2/pod/lsv_sp

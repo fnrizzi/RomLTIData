@@ -64,19 +64,19 @@ Running: ('./computeThinSVD', '/home/fnrizzi/waveRuns/romAccuracyScenario2/train
 
  b'target 0.99\nNvp: 170 Nsp: 63\nnumBasis: 170\n'
 
- b'target 0.9998999999999999\nNvp: 275 Nsp: 232\nnumBasis: 275\n'
+ b'target 0.9999\nNvp: 275 Nsp: 232\nnumBasis: 275\n'
 
- b'target 0.9999899999999999\nNvp: 311 Nsp: 276\nnumBasis: 311\n'
+ b'target 0.99999\nNvp: 311 Nsp: 276\nnumBasis: 311\n'
 
  b'target 0.999999\nNvp: 342 Nsp: 313\nnumBasis: 342\n'
 
- b'target 0.9999998999999999\nNvp: 369 Nsp: 343\nnumBasis: 369\n'
+ b'target 0.9999999\nNvp: 369 Nsp: 343\nnumBasis: 369\n'
 
- b'target 0.9999999900000001\nNvp: 393 Nsp: 370\nnumBasis: 393\n'
+ b'target 0.99999999\nNvp: 393 Nsp: 370\nnumBasis: 393\n'
 
  b'target 0.999999999\nNvp: 415 Nsp: 394\nnumBasis: 415\n'
 
- b'target 0.9999999999000001\nNvp: 436 Nsp: 417\nnumBasis: 436\n'
+ b'target 0.9999999999\nNvp: 436 Nsp: 417\nnumBasis: 436\n'
 List of modes [170, 275, 311, 342, 369, 393, 415, 436]
 
 Doing rom test runs

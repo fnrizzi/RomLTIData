@@ -135,10 +135,11 @@ def do2dPlot(dataMatrix, thCases, fCases, romSize, nThr, N):
   mask[dataMatrix==0] = True
   cm = plt.cm.get_cmap('PuBuGn')#.reversed()
 
+  thislabel = r'$s($'+str(romSize)+r'$, n, M)$'
   ax = sea.heatmap(dataMatrix, annot=True, center=8, annot_kws={"size": 9},
                    fmt="3.2f", linecolor='white', vmin=0, vmax=27,
                    linewidths=.25, mask=mask, cmap=cm,
-                   cbar_kws={'label': r'$\hat{s}$(f,n)'})
+                   cbar_kws={'label': thislabel})
 
   ax.figure.axes[-1].yaxis.label.set_size(15)
 
@@ -148,13 +149,13 @@ def do2dPlot(dataMatrix, thCases, fCases, romSize, nThr, N):
   ax.set_xticks(np.arange(1, nC+1, 1)-0.5)
   xlab = [str(int(p)) for p in fCases]
   ax.set_xticklabels(xlab, fontsize=11)
-  ax.set_xlabel('Size of f', fontsize=16)
+  ax.set_xlabel(r'$M$', fontsize=16)
 
   ax.set_yticks(np.arange(1, nR+1, 1)-0.5)
   #ylab = [str(int(p)) for p in thCases[::-1]]
   ylab = [str(int(p)) for p in thCases]
   ax.set_yticklabels(ylab, fontsize=12)
-  ax.set_ylabel('Number of threads', fontsize=16)
+  ax.set_ylabel(r'$n$ (Number of threads)', fontsize=16)
   #plt.rcParams['axes.linewidth'] = 1
 
   for i in range(dataMatrix.shape[0]):

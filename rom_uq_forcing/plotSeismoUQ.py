@@ -73,7 +73,7 @@ def getDataSingleID(ptId, dataDir, forcingSize, numSets):
 def getROMData(ptIds, romSizeVp, romWorkDir):
   print('')
   romDirsFullPath = [romWorkDir+'/'+d for d in os.listdir(romWorkDir)
-                     if 'rom' in d and str(romSizeVp) in d 
+                     if 'rom' in d and str(romSizeVp) in d
                      and 'nThreads_4' in d]
   assert(len(romDirsFullPath)==1)
 
@@ -181,7 +181,8 @@ def tsplot(ax, x, y, pct, color='r',
   half = int((len(pct)-1)/2) if len(pct) % 2 != 0 else int(len(pct)/2)
   #colormap = plt.cm.get_cmap('BuPu')
   #print(colormap(0))
-  mycolors = ['#264653', '#2a9d8f', '#e9c46a']
+  #mycolors = ['#264653', '#2a9d8f', ]
+  mycolors = ['#d62828', '#f77f00', '#e9c46a']
 
   for i in range(half):
     ax.fill_between(x, P[i,:], P[-(i+1),:],
@@ -209,7 +210,7 @@ def plotFullSeismogram(idi, data, pct, filename):
   plt.grid('on')
   tsplot(ax, t, data, [pct[0], pct[-1]],
          plot_median=False, plot_mean=True, line_color='black',
-         alpha=0.5, zorder=5)
+         alpha=0.7, zorder=5)
 
   ax.set_xlim([-50, 2050])
   ax.set_ylim([-3e-7, 3e-7])
@@ -260,7 +261,7 @@ def plotZoom(idi, data, dataFom, pct, filename):
   plt.grid('on')
   tsplot(ax, t, data, pct,
          plot_median=False, plot_mean=True, line_color='black',
-         alpha=1, zorder=5)
+         alpha=0.7, zorder=5)
 
   ax.plot(t, fom_mean, 'o', markersize=2, color='k',
               label='mean (FOM)', markerfacecolor='none', zorder=6)

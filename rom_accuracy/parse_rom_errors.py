@@ -49,15 +49,12 @@ def extractSamplingValues(tdir):
   return inputs['sampling']['values']
 
 #=========================================
-def extractRomSize(tdir):
+def extractRomSizes(tdir):
   ifile = tdir + '/input.yaml'
   inputs = yaml.safe_load(open(ifile))
   vpRomSize = inputs['rom']['velocity']['numModes']
   spRomSize = inputs['rom']['stress']['numModes']
-  if (vpRomSize == spRomSize):
-    return vpRomSize
-  else:
-    sys.exit('num of modes used for velocity and stress is different')
+  return np.array([vpRomSize, spRomSize])
 
 #=========================================
 def parseRomErrorsScenario1(dataDir, dofName):
@@ -97,7 +94,7 @@ def parseRomErrorsScenario1(dataDir, dofName):
     print(romDirsFullPath[i*numRomSizes])
 
   nR = len(romDirsFullPath)
-  nC = 6
+  nC = 7
   data = np.zeros((nR, nC))
 
   # loop over rom dirs
@@ -117,9 +114,9 @@ def parseRomErrorsScenario1(dataDir, dofName):
     linf = extractErrors(romErrFile, dofName, 'linf')
 
     data[r,0]   = thisTestValue
-    data[r,1]   = extractRomSize(romDir)
-    data[r,2:4] = ltwo
-    data[r,4:6] = linf
+    data[r,1:3] = extractRomSizes(romDir)
+    data[r,3:5] = ltwo
+    data[r,5:7] = linf
     r+=1
   return data
 
@@ -131,8 +128,7 @@ def parseRomErrorsScenario2(dataDir, dofName):
   # but we have, for each # of modes, one single ROM dir containing
   # all samples of the forcing since we use the multiple rhs trick.
   # we have one file for each test as:
-  # for numModes = X, we have a dir:
-  #       rom_mesh_..._nThreads_..._nPod_X_X
+  # we have a dir:  rom_mesh_..._nThreads_..._nPod_Xvp_Xsp
   # inside we have:
   #       finalError_{vp,sp}_i: final fom state for i-th test
 
@@ -142,18 +138,18 @@ def parseRomErrorsScenario2(dataDir, dofName):
   def func(elem): return int(elem.split('_')[-1])
   fomDirsFullPath = sorted(fomDirsFullPath,key=func)
 
-  # get all rom dirs
-  romDirsFullPath = [dataDir+'/'+d for d in os.listdir(dataDir) if 'rom' in d]
-  print(romDirsFullPath)
-  # sort based on the rom size (which is at end of dir name)
-  def func(elem): return int(elem.split('_')[-1])
+  # get all rom dirs where the num of modes for vp and sp is different
+  romDirsFullPath = [dataDir+'/'+d for d in os.listdir(dataDir)
+                     if 'rom' in d and d.split('_')[-2]!=d.split('_')[-1]]
+  # sort based on the vp rom size
+  def func(elem): return int(elem.split('_')[-2])
   romDirsFullPath = sorted(romDirsFullPath,key=func)
+  print(romDirsFullPath)
 
   numTestPts = len(fomDirsFullPath)
   print(numTestPts)
-  numRomSizes = len(romDirsFullPath)
-  nR = numTestPts * numRomSizes
-  nC = 6
+  nR = numTestPts * len(romDirsFullPath)
+  nC = 7
   data = np.zeros((nR, nC))
 
   # loop over fom test dirs
@@ -179,9 +175,9 @@ def parseRomErrorsScenario2(dataDir, dofName):
       assert( thisTestValue == samples[testID] )
 
       data[r,0]   = thisTestValue
-      data[r,1]   = extractRomSize(romDir)
-      data[r,2:4] = ltwo
-      data[r,4:6] = linf
+      data[r,1:3] = extractRomSizes(romDir)
+      data[r,3:5] = ltwo
+      data[r,5:7] = linf
       r+=1
   return data
 

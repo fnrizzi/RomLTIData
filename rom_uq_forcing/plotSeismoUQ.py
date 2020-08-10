@@ -70,19 +70,16 @@ def getDataSingleID(ptId, dataDir, forcingSize, numSets):
   return D
 
 #=====================================================================
-def getROMData(ptIds, romSize, romWorkDir):
+def getROMData(ptIds, romSizeVp, romWorkDir):
   print('')
   romDirsFullPath = [romWorkDir+'/'+d for d in os.listdir(romWorkDir)
-                     if 'rom' in d and str(romSize) in d]
+                     if 'rom' in d and str(romSizeVp) in d 
+                     and 'nThreads_4' in d]
   assert(len(romDirsFullPath)==1)
-  # # sort based on the ROM size which is the the last item in dir name
-  # def func(elem): return int(elem.split('_')[-1])
-  # romDirsFullPath = sorted(romDirsFullPath,key=func)
-  # print(romDirsFullPath)
 
   romDir = romDirsFullPath[0]
   currRomSize = extractRomSizeFromInputFile(romDir)
-  assert(romSize==currRomSize)
+  assert(romSizeVp==currRomSize)
   print('ROM: size={}'.format(currRomSize))
   # extract the forcing size
   currForcingSize = extractForcingSizeFromInputFile(romDir)
@@ -251,7 +248,7 @@ def plotFullSeismogram(idi, data, pct, filename):
                handletextpad=0.2, frameon=False, markerscale=0.75)
 
   plt.tight_layout()
-  fig.savefig(filename+'.png', format="png", bbox_inches='tight', dpi=300)
+  fig.savefig('./plots/'+filename+'.png', format="png", bbox_inches='tight', dpi=300)
 
 
 #=====================================================================
@@ -299,12 +296,12 @@ def plotZoom(idi, data, dataFom, pct, filename):
                borderpad=0, handletextpad=0.2, frameon=False, markerscale=0.75)
 
   plt.tight_layout()
-  fig.savefig(filename+'.png', format="png", bbox_inches='tight', dpi=300)
+  fig.savefig('./plots/'+filename+'.png', format="png", bbox_inches='tight', dpi=300)
 
 
 #=====================================================================
 #=====================================================================
-romSize = 436
+romSizeVp = 436
 ptId = [0,1,2]
 romWorkDir = '.'
 fomWorkDir = '.'
@@ -312,7 +309,7 @@ fomWorkDir = '.'
 percentiles = [5, 10, 25, 75, 90, 95]
 
 [fomK1, t] = getFOMData(ptId, fomWorkDir)
-[romK1]    = getROMData(ptId, romSize, romWorkDir)
+[romK1]    = getROMData(ptId, romSizeVp, romWorkDir)
 
 # loop over point ids
 print('loop')

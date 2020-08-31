@@ -182,7 +182,7 @@ def tsplot(ax, x, y, pct, color='r',
   #colormap = plt.cm.get_cmap('BuPu')
   #print(colormap(0))
   #mycolors = ['#264653', '#2a9d8f', ]
-  mycolors = ['#d62828', '#f77f00', '#e9c46a']
+  mycolors = ['#d62828', '#e9c46a']
 
   for i in range(half):
     ax.fill_between(x, P[i,:], P[-(i+1),:],
@@ -210,17 +210,17 @@ def plotFullSeismogram(idi, data, pct, filename):
   plt.grid('on')
   tsplot(ax, t, data, [pct[0], pct[-1]],
          plot_median=False, plot_mean=True, line_color='black',
-         alpha=0.7, zorder=5)
+         alpha=1, zorder=5)
 
   ax.set_xlim([-50, 2050])
   ax.set_ylim([-3e-7, 3e-7])
 
   ax.set_yticks(np.linspace(-3e-7, 3e-7, 13))
   ax.set_xticks(np.linspace(0, 2000, 6))
-  # if idi==0: ylab = r'$v_{\phi}(r_{earth}, 0.174533, t)$'
-  # if idi==1: ylab = r'$v_{\phi}(r_{earth}, \pi/6, t)$'
-  # if idi==2: ylab = r'$v_{\phi}(r_{earth}, 2\pi/6, t)$'
-  ylab = r'$v_{\phi}(t)$'
+  # if idi==0: ylab = r'$v(r_{earth}, 0.174533, t)$'
+  # if idi==1: ylab = r'$v(r_{earth}, \pi/6, t)$'
+  # if idi==2: ylab = r'$v(r_{earth}, 2\pi/6, t)$'
+  ylab = r'$v(t)$'
   ax.set_ylabel(ylab, fontsize=18)
   ax.set_xlabel(r'Time (seconds)', fontsize=18)
   ax.tick_params(axis='y', which='major', labelsize=15)
@@ -261,7 +261,7 @@ def plotZoom(idi, data, dataFom, pct, filename):
   plt.grid('on')
   tsplot(ax, t, data, pct,
          plot_median=False, plot_mean=True, line_color='black',
-         alpha=0.7, zorder=5)
+         alpha=1, zorder=5)
 
   ax.plot(t, fom_mean, 'o', markersize=2, color='k',
               label='mean (FOM)', markerfacecolor='none', zorder=6)
@@ -286,7 +286,7 @@ def plotZoom(idi, data, dataFom, pct, filename):
     ax.set_xlim([1600, 1800])
     ax.set_ylim([-1.8e-7, 2e-7])
 
-  ax.set_ylabel(r'$v_{\phi}(t)$', fontsize=18)
+  ax.set_ylabel(r'$v(t)$', fontsize=18)
   ax.set_xlabel(r'Time (seconds)', fontsize=18)
   ax.tick_params(axis='y', which='major', labelsize=15)
   ax.tick_params(axis='y', which='minor', labelsize=15)
@@ -307,7 +307,7 @@ ptId = [0,1,2]
 romWorkDir = '.'
 fomWorkDir = '.'
 
-percentiles = [5, 10, 25, 75, 90, 95]
+percentiles = [5, 25, 75, 95]
 
 [fomK1, t] = getFOMData(ptId, fomWorkDir)
 [romK1]    = getROMData(ptId, romSizeVp, romWorkDir)

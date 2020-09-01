@@ -1,0 +1,33 @@
+general:
+  meshDir: /home/fnrizzi/waveRuns/uqForcing//meshes/mesh512x2048
+  dt: 0.1
+  finalTime: 2000
+  checkNumericalDispersion: true
+  checkCfl: true
+  includeMatPropInJacobian: true
+  exploitForcingSparsity: true
+io:
+  snapshotMatrix:
+    binary: true
+    velocity:
+      freq: 10
+      fileName: snaps_vp
+    stress:
+      freq: 10
+      fileName: snaps_sp
+source:
+  signal:
+    kind: ricker
+    depth: 150.0
+    angle: 0.0
+    period: 31.98781047165836
+    delay: 90.0
+material:
+  kind: prem
+rom:
+  velocity:
+    numModes: 436
+    modesFile: /home/fnrizzi/waveRuns/romAccuracyScenario2/train2/pod/lsv_vp
+  stress:
+    numModes: 417
+    modesFile: /home/fnrizzi/waveRuns/romAccuracyScenario2/train2/pod/lsv_sp

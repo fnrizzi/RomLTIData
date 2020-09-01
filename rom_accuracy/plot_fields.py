@@ -69,8 +69,9 @@ def doPlot(th, r, z, figID, cm, bd, fileName, label, plotDestDir, label2='', Tva
   fig1.colorbar(h1)
 
   if label=='fom':
-    plt.text(-5, 0, label2+str(Tvalue), horizontalalignment='center', rotation=90,
-             verticalalignment='center', fontsize=16)
+    if Tvalue!=-1:
+      plt.text(-5, 0, label2+str(Tvalue), horizontalalignment='center', rotation=90,
+               verticalalignment='center', fontsize=16)
     plt.text(0, 1400, 'FOM', horizontalalignment='center', rotation=90,
              verticalalignment='center', fontsize=16)
   elif label=='rom':
@@ -97,11 +98,11 @@ def plotFieldsScenario2():
 
   Tprint = ['69', '51.78']
   Tvals  = [69, 51.78003645]
-  fomFiles = ['./scenario2/train2points/data/fom_mesh512x2048_nThreads_36_dt_0.1_T_2000_snaps_true_seismo_true_mat_prem_fRank_1_test_11/state_timestep_20000_vp', 
+  fomFiles = ['./scenario2/train2points/data/fom_mesh512x2048_nThreads_36_dt_0.1_T_2000_snaps_true_seismo_true_mat_prem_fRank_1_test_11/state_timestep_20000_vp',
               './scenario2/train2points/data/fom_mesh512x2048_nThreads_36_dt_0.1_T_2000_snaps_true_seismo_true_mat_prem_fRank_1_test_0/state_timestep_20000_vp']
 
-  romFiles = ['./scenario2/train2points/data/rom_mesh512x2048_nThreads_18_dt_0.1_T_2000_snaps_true_mat_prem_fRank_14_nPod_436_436/fomReconstructedState_timestep_20000_f_11_vp', 
-              './scenario2/train2points/data/rom_mesh512x2048_nThreads_18_dt_0.1_T_2000_snaps_true_mat_prem_fRank_14_nPod_436_436/fomReconstructedState_timestep_20000_f_0_vp']
+  romFiles = ['./scenario2/train2points/data/rom_mesh512x2048_nThreads_18_dt_0.1_T_2000_snaps_true_mat_prem_fRank_14_nPod_436_417/fomReconstructedState_timestep_20000_f_11_vp',
+              './scenario2/train2points/data/rom_mesh512x2048_nThreads_18_dt_0.1_T_2000_snaps_true_mat_prem_fRank_14_nPod_436_417/fomReconstructedState_timestep_20000_f_0_vp']
 
   plotDestDir = './scenario2/train2points/plots'
 
@@ -114,7 +115,7 @@ def plotFieldsScenario2():
     # fom
     fomState = np.loadtxt(fom, skiprows=1)
     fileName = 'fom_T_'+str(T)+'.png'
-    doPlot(th, r, fomState.reshape((nr, nth)), 0, cm1, [-3e-10, 3e-10], fileName, 'fom', plotDestDir, 'T=', T)
+    doPlot(th, r, fomState.reshape((nr, nth)), 0, cm1, [-3e-10, 3e-10], fileName, 'fom', plotDestDir) #, 'T=', T)
 
     # rom
     romState = np.loadtxt(rom, skiprows=1)

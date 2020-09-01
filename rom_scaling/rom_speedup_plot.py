@@ -55,7 +55,7 @@ def findNormalizingValue(data, romSize, nThr, N):
   # in this sceario, how many sets of runs do I need to do?
   #   I need: N/nThr  because we do nThr runs in parallel at same time
   # so each set allows me to complete nThr samples.
-  setsOfRuns = float(N/nThr)
+  setsOfRuns = float(N/(nThr/1))
 
   for i in range(data.shape[0]):
     thisNumThr   = int(data[i][0])

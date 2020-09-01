@@ -131,11 +131,11 @@ def plotBar(dataDic, meshLabels, nThreads, metric, stat):
     ax.tick_params(axis='y', which='major', labelsize=15)
     ax.tick_params(axis='y', which='minor', labelsize=13)
 
-    # plot peak theoretical mem BW
-    ax.plot([min(pos)-0.2, max(pos)+width*70],
-            [peakMemBW, peakMemBW], '--k', linewidth=1.2, zorder=7)
-    ax.text((min(pos)+width+max(pos)+width*75)*0.45,
-            peakMemBW+12, 'Machine\'s theoretical peak', fontsize=15)
+    # # plot peak theoretical mem BW
+    # ax.plot([min(pos)-0.2, max(pos)+width*70],
+    #         [peakMemBW, peakMemBW], '--k', linewidth=1.2, zorder=7)
+    # ax.text((min(pos)+width+max(pos)+width*75)*0.45,
+    #         peakMemBW+12, 'Machine\'s theoretical peak', fontsize=15)
 
   elif metric=='cpu':
     ax.set_yscale('log')

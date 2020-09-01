@@ -31,22 +31,23 @@ def findTrainPoints(workDir, scenario):
 def doPlot(trainVals, M, dof, scenario, normKind, workDir):
   if scenario==1:
     # 28 117 222 1117 1914 2227 2329 2385
-    romSizes = [117, 222, 1117, 2329, 2385]
+    vpRomSizes = [117, 222, 1117, 2329, 2385]
+    spRomSizes = [117, 222, 1117, 2329, 2385]
     mk = {117:'D', 222:'p', 1117:'>', 2329:'v', 2385:'o'}
   elif scenario==2:
-    # 170, 275, 311, 342, 369, 393, 415, 436
-    romSizes = [311, 369, 415, 436]
+    vpRomSizes = [311, 369, 415, 436]
+    spRomSizes = [276, 343, 394, 417]
     mk = {311:'D', 369:'p', 415:'>', 436:'o'}
-  print(romSizes)
+  print(vpRomSizes)
 
   # col indices where to find the errors
   # for ROM, the data is an array where:
   #             col0   : testValue
-  #             col1   : rom size
-  #             col2,3 : abs-l2 and rel-l2
-  #             col4,5 : abs-linf and rel-linf
-  absL2,   relL2   = 2, 3
-  absLInf, relLInf = 4, 5
+  #             col1,2 : vp/sp rom size
+  #             col3,4 : abs-l2 and rel-l2
+  #             col5,6 : abs-linf and rel-linf
+  absL2,   relL2   = 3, 4
+  absLInf, relLInf = 5, 6
 
   if normKind==-1:
     targetCol = relLInf
@@ -60,14 +61,17 @@ def doPlot(trainVals, M, dof, scenario, normKind, workDir):
   # extract data for a given rom size
   fig = plt.figure(0)
   ax = plt.gca()
-  for romS in romSizes:
+  for vpK,spK in zip(vpRomSizes, spRomSizes):
     # select only where we match the current romsize
-    D = M[ M[:,1] == romS]
+    D = M[ M[:,1] == vpK]
     # sort by the the test points so that line plots works ok
     D = D[D[:,0].argsort()]
-    plt.plot(D[:,0], D[:, targetCol], '-', marker=mk[romS],
-             #markerfacecolor='none',
-             markersize=7, linewidth=1.5, label='p='+str(int(romS)))
+
+    thisLab1 = r'$K_{v_{\phi}}=$'+str(int(vpK))
+    thisLab2 = r'$K_{\sigma}=$'+str(int(spK))
+    plt.plot(D[:,0], D[:, targetCol], '-',
+             marker=mk[vpK], markersize=7,
+             linewidth=1.5, label=thisLab1+', '+thisLab2)
 
   for x in trainVals:
     midTrain = 0.5*(trainVals[0]+trainVals[1])

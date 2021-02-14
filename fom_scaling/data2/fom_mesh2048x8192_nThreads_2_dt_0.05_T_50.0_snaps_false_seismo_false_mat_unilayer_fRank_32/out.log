@@ -1,0 +1,77 @@
+*** Parsing input ***
+
+meshDir = /home/fnrizzi/shavePerf/fomscaling/meshes/mesh2048x8192 
+checkDispersion = true 
+timeStep = 0.05 
+finalT = 50 
+numSteps = 1000 
+includeMatPropInJacobian true 
+exploitForcingSparsity true 
+
+enableSnapshotMatrix = false 
+enableSeimogram = false 
+
+matModelType = unilayer 
+rho(c0,c1,c2) = 2500 0 0
+vs(c0,c1,c2)  = 5000 0 0
+
+signal  type= gaussianDeriv depth[km]= 640 angle[deg]= 0 period[sec]= 60 delay[sec]= 210 
+
+enableSampling = true 
+numParams_ = 1 
+paramName_ = signalPeriod 
+values = 60 60.6452 61.2903 61.9355 62.5806 63.2258 63.871 64.5161 65.1613 65.8065 66.4516 67.0968 67.7419 68.3871 69.0323 69.6774 70.3226 70.9677 71.6129 72.2581 72.9032 73.5484 74.1935 74.8387 75.4839 76.129 76.7742 77.4194 78.0645 78.7097 79.3548 80 
+enableRankTwoF_ = true 
+forcingSize_ = 32 
+
+*** Reading meshfile info ***
+
+thetaLeft (deg) = 0
+thetaRight (deg) = 180
+CMB radius (km) = 3480
+Earth surf radius (km) = 6371
+dth [rad] = 0.00038354201606516825
+drr [km] = 1.4123106985832927
+numGptVp = 16777216
+numGptSp = 33544192
+nth = 8192
+nr = 2048
+
+*** Compute FOM Jacobians: with mat prop ***
+Reading graph for vp ...Done
+Reading Vp stencil coeffs for vp...Done
+Reading graph for sp ...Done
+minMaxVs = 5000 5000
+jacVp:  nnz = 67088384 nrows = 16777216 ncols = 33544192
+jacSp:  nnz = 67088384 nrows = 33544192 ncols = 16777216
+Doing FOM with sampling of forcing period
+Total number of samples 32
+Target Source coords (depth [km], r [km], th [deg], th [rad]) = 640 5731 0 0
+Source angle cannot be on left edge, mapping to: 0.00038354201606516825
+Source mapped to GID = 13058049 with depth (km) = 639.77674645823151 with angle (rad) = 0.00038354201606516825 angle (deg) = 0.021975338786472957
+centerFreq = 0.20462064650223113
+minPeriod  = 4.8870923687023744
+Numerical dispersion criterion along r: OK! 
+drr = 1412.3106985832928, ratio = 30000
+Numerical dispersion criterion along theta: OK! 
+maxArc = 2443.5461843511871, ratio = 30000
+CFL: OK! 
+cfl = 0.26488832419694175
+
+loopTime = 3857.1806675040
+dataCollectionTime = 0.0025773600
+flops = 10197598304.0000000000
+memMB = 59760.2978515625
+flops/bytes = 0.1627365984
+aveBandwidth(GB/s) =    15.13 
+minBandwidth(GB/s) =    14.92 
+maxBandwidth(GB/s) =    15.23 
+aveGFlop =  2.6438 
+minGFlop =  2.6077 
+maxGFlop =  2.6618 
+totTime(se) = 3857.1711 
+aveTime(ms) = 3857.1711 
+maxTime(ms) = 3910.5910 
+minTime(ms) = 3831.1185 
+
+finalProcessTime = 0.0000009930

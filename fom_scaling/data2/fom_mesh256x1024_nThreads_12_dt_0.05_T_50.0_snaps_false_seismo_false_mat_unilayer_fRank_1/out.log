@@ -1,0 +1,70 @@
+*** Parsing input ***
+
+meshDir = /home/fnrizzi/shavePerf/fomscaling/meshes/mesh256x1024 
+checkDispersion = true 
+timeStep = 0.05 
+finalT = 50 
+numSteps = 1000 
+includeMatPropInJacobian true 
+exploitForcingSparsity true 
+
+enableSnapshotMatrix = false 
+enableSeimogram = false 
+
+matModelType = unilayer 
+rho(c0,c1,c2) = 2500 0 0
+vs(c0,c1,c2)  = 5000 0 0
+
+signal  type= gaussianDeriv depth[km]= 640 angle[deg]= 0 period[sec]= 60 delay[sec]= 180 
+
+enableSampling = false 
+
+*** Reading meshfile info ***
+
+thetaLeft (deg) = 0
+thetaRight (deg) = 180
+CMB radius (km) = 3480
+Earth surf radius (km) = 6371
+dth [rad] = 0.0030709605606938349
+drr [km] = 11.337254901960785
+numGptVp = 262144
+numGptSp = 523008
+nth = 1024
+nr = 256
+
+*** Compute FOM Jacobians: with mat prop ***
+Reading graph for vp ...Done
+Reading Vp stencil coeffs for vp...Done
+Reading graph for sp ...Done
+minMaxVs = 5000 5000
+jacVp:  nnz = 1046016 nrows = 262144 ncols = 523008
+jacSp:  nnz = 1046016 nrows = 523008 ncols = 262144
+Target Source coords (depth [km], r [km], th [deg], th [rad]) = 640 5731 0 0
+Source angle cannot be on left edge, mapping to: 0.0030709605606938349
+Source mapped to GID = 203777 with depth (km) = 634.88627450980437 with angle (rad) = 0.0030709605606938349 angle (deg) = 0.17595307917888561
+centerFreq = 0.025555722301523927
+minPeriod  = 39.130179464360843
+Numerical dispersion criterion along r: OK! 
+drr = 11337.254901960785, ratio = 30000
+Numerical dispersion criterion along theta: OK! 
+maxArc = 19565.089732180422, ratio = 30000
+CFL: OK! 
+cfl = 0.03308274394499712
+
+loopTime = 0.6330527550
+dataCollectionTime = 0.0017942130
+flops = 4969219.0000000000
+memMB = 65.8535461426
+flops/bytes = 0.0719629665
+aveBandwidth(GB/s) =   102.64 
+minBandwidth(GB/s) =    68.10 
+maxBandwidth(GB/s) =   113.59 
+aveGFlop =  7.9307 
+minGFlop =  5.2620 
+maxGFlop =  8.7773 
+totTime(se) =  0.6266 
+aveTime(ms) =  0.6266 
+maxTime(ms) =  0.9444 
+minTime(ms) =  0.5661 
+
+finalProcessTime = 0.0000008570

@@ -1,6 +1,6 @@
 *** Parsing input ***
 
-meshDir = /home/fnrizzi/waveRuns/fomScalingFinal/meshes/mesh2048x8192 
+meshDir = /home/fnrizzi/shavePerf/fomscaling/meshes/mesh2048x8192 
 checkDispersion = true 
 timeStep = 0.05 
 finalT = 50 
@@ -58,20 +58,20 @@ maxArc = 2443.5461843511871, ratio = 30000
 CFL: OK! 
 cfl = 0.26488832419694175
 
-loopTime = 1730.8779509190
-dataCollectionTime = 0.0021665260
+loopTime = 1726.5615071480
+dataCollectionTime = 0.0027620980
 flops = 15296397456.0000000000
-memMB = 89960.7968750000
-flops/bytes = 0.1621570939
-aveBandwidth(GB/s) =    50.76 
-minBandwidth(GB/s) =    50.24 
-maxBandwidth(GB/s) =    51.43 
-aveGFlop =  8.8374 
-minGFlop =  8.7478 
-maxGFlop =  8.9542 
-totTime(se) = 1730.8676 
-aveTime(ms) = 1730.8676 
-maxTime(ms) = 1748.5994 
-minTime(ms) = 1708.2855 
+memMB = 88424.7983398438
+flops/bytes = 0.1649738723
+aveBandwidth(GB/s) =    50.01 
+minBandwidth(GB/s) =    49.34 
+maxBandwidth(GB/s) =    50.55 
+aveGFlop =  8.8595 
+minGFlop =  8.7396 
+maxGFlop =  8.9545 
+totTime(se) = 1726.5496 
+aveTime(ms) = 1726.5496 
+maxTime(ms) = 1750.2344 
+minTime(ms) = 1708.2299 
 
-finalProcessTime = 0.0000009180
+finalProcessTime = 0.0000009430

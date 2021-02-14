@@ -1,5 +1,5 @@
 general:
-  meshDir: /home/fnrizzi/waveRuns/fomScalingFinal/meshes/mesh1024x4096
+  meshDir: /home/fnrizzi/shavePerf/fomscaling/meshes/mesh1024x4096
   dt: 0.05
   finalTime: 50.0
   checkNumericalDispersion: true

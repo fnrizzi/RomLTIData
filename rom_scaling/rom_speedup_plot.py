@@ -149,13 +149,13 @@ def do2dPlot(dataMatrix, thCases, fCases, romSize, nThr, N):
   ax.set_xticks(np.arange(1, nC+1, 1)-0.5)
   xlab = [str(int(p)) for p in fCases]
   ax.set_xticklabels(xlab, fontsize=11)
-  ax.set_xlabel(r'$M$', fontsize=16)
+  ax.set_xlabel(r'$M$ (Number of simultaneous trajectories)', fontsize=14)
 
   ax.set_yticks(np.arange(1, nR+1, 1)-0.5)
   #ylab = [str(int(p)) for p in thCases[::-1]]
   ylab = [str(int(p)) for p in thCases]
   ax.set_yticklabels(ylab, fontsize=12)
-  ax.set_ylabel(r'$n$ (Number of threads)', fontsize=16)
+  ax.set_ylabel(r'$n$ (Number of threads)', fontsize=14)
   #plt.rcParams['axes.linewidth'] = 1
 
   for i in range(dataMatrix.shape[0]):

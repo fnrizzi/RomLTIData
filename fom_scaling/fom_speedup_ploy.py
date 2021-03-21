@@ -150,13 +150,14 @@ def do2dPlot(dataMatrix, thCases, fCases, numDofs, nThr, N):
   ax.set_xticks(np.arange(1, nC+1, 1)-0.5)
   xlab = [str(int(p)) for p in fCases]
   ax.set_xticklabels(xlab, fontsize=12)
-  ax.set_xlabel(r'$M$', fontsize=16)
+  ax.set_xlabel(r'$M$ (Number of simultaneous trajectories)', fontsize=14)
+
 
   ax.set_yticks(np.arange(1, nR+1, 1)-0.5)
   #ylab = [str(int(p)) for p in thCases[::-1]]
   ylab = [str(int(p)) for p in thCases]
   ax.set_yticklabels(ylab, fontsize=12)
-  ax.set_ylabel(r'$n$ (Number of threads)', fontsize=16)
+  ax.set_ylabel(r'$n$ (Number of threads)', fontsize=14)
 
   # for i in range(dataMatrix.shape[0]):
   #   for j in range(dataMatrix.shape[1]):
@@ -188,10 +189,6 @@ def main(dataFile, fomID, nThr, N):
 if __name__== "__main__":
 #////////////////////////////////////////////
   parser = ArgumentParser()
-  # parser.add_argument("-file", "--file",
-  #                     dest="dataFile",
-  #                     help="where to get data from\n")
-
   parser.add_argument("-fom-id", "--fom-id", "-fomid", "--fomid",
                       dest="fomID", default=1, type=int,
                       help="Fom case id: 0,1,2,3\n")

@@ -18,14 +18,12 @@ myAlpha = .9
 
 # num of dofs for each case for plotting
 #785152, 3143168, 12577792, 50321408
-meshLabelsPlot = [r'0.78e6', r'3e6', r'12e6', r'50e6']
+meshLabelsPlot = [r'$0.78~\cdot~10^6$', 
+                  r'$3~\cdot~10^6$', 
+                  r'$12~\cdot~10^6$', 
+                  r'$50~\cdot~10^6$']
 
 nThreads = [2, 8, 36]
-#colors = {2:  '#003f5c', 8:  '#ef5675', 36: '#7a5195'}
-#colors = {2:  '#ef5675', 8: '#7a5195', 36: '#00818a'}
-#colors = {2:'#1e10a3', 8:'#ed005f', 36:'#ffa600'}
-#colors= {2:'#3e71a3', 8:'#e665a5', 36:'#ffa600'}
-#colors= {2:'#3e71a3', 8:'#8c66ce', 36:'#ff00ac'}
 colors = {2:'#2d4676', 8:'#ff9e11', 36:'#cd4d84'}
 
 fSizes = [1,4,16,48]

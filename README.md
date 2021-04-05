@@ -1,7 +1,6 @@
 # RomLTIData
 
-This repository contains data generated with [this code](https://github.com/fnrizzi/ElasticShearWaves) 
-used for a paper submitted to SISC on 11th Sept. 2020 on ROMs for linear time-invariant dynamical systems. 
-The arXiv preprint can be found at: https://arxiv.org/abs/2009.11742. 
+This repository contains the data generated with [this code](https://github.com/fnrizzi/ElasticShearWaves) 
+used for the following paper on ROMs for linear time-invariant (LTI) dynamical systems: https://arxiv.org/abs/2009.11742. 
+Paper is under review.
 The data are made public as part of the paper submission. 
-
